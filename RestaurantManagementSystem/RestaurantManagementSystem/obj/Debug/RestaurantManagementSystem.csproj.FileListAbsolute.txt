@@ -1,0 +1,10 @@
+E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project\RestaurantManagementSystem\RestaurantManagementSystem\bin\Debug\RestaurantManagementSystem.exe.config
+E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project\RestaurantManagementSystem\RestaurantManagementSystem\bin\Debug\RestaurantManagementSystem.exe
+E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project\RestaurantManagementSystem\RestaurantManagementSystem\bin\Debug\RestaurantManagementSystem.pdb
+E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.csproj.AssemblyReference.cache
+E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.Form1.resources
+E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.Properties.Resources.resources
+E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.csproj.GenerateResource.cache
+E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.csproj.CoreCompileInputs.cache
+E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.exe
+E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.pdb
