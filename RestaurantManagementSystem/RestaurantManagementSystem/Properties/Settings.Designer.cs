@@ -12,7 +12,7 @@ namespace RestaurantManagementSystem.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.12.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.11.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -26,11 +26,22 @@ namespace RestaurantManagementSystem.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=HieuNguyen\\SQLEXPRESS;Initial Catalog=QLNV1;Persist Security Info=Tru" +
-            "e;User ID=sa;Password=1234;TrustServerCertificate=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=local;Initial Catalog=QLNV1;Persist Security Info=True;User ID=sa;Pas" +
+            "sword=1234;TrustServerCertificate=True")]
         public string QLNV1ConnectionString {
             get {
                 return ((string)(this["QLNV1ConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-T2GDPKG;Initial Catalog=QLNV1;Persist Security Info=True;User" +
+            " ID=sa;Password=1;Encrypt=True;TrustServerCertificate=True")]
+        public string QLNV1ConnectionString1 {
+            get {
+                return ((string)(this["QLNV1ConnectionString1"]));
             }
         }
     }

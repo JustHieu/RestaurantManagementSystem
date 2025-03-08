@@ -19,6 +19,8 @@ namespace RestaurantManagementSystem
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'qLNV1DataSet3.DIADIEM_PHONG' table. You can move, or remove it, as needed.
+            this.dIADIEM_PHONGTableAdapter1.Fill(this.qLNV1DataSet3.DIADIEM_PHONG);
             // TODO: This line of code loads data into the 'qLNV1DataSet1.DIADIEM_PHONG' table. You can move, or remove it, as needed.
             this.dIADIEM_PHONGTableAdapter.Fill(this.qLNV1DataSet1.DIADIEM_PHONG);
 
