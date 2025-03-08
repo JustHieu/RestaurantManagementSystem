@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "D:\\ly_thuyet\\Code_window\\Project\\RestaurantManagementSystem\\RestaurantManagementSystem\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3FD6461E-E1AF-45EA-8582-A24FDF07A850}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|d:\\ly_thuyet\\code_window\\project\\restaurantmanagementsystem\\restaurantmanagementsystem\\restaurantmanagementsystem\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3FD6461E-E1AF-45EA-8582-A24FDF07A850}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3FD6461E-E1AF-45EA-8582-A24FDF07A850}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|d:\\ly_thuyet\\code_window\\project\\restaurantmanagementsystem\\restaurantmanagementsystem\\restaurantmanagementsystem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3FD6461E-E1AF-45EA-8582-A24FDF07A850}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3FD6461E-E1AF-45EA-8582-A24FDF07A850}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|d:\\ly_thuyet\\code_window\\project\\restaurantmanagementsystem\\restaurantmanagementsystem\\restaurantmanagementsystem\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{3FD6461E-E1AF-45EA-8582-A24FDF07A850}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\Project\\RestaurantManagementSystem\\RestaurantManagementSystem\\restaurantmanagementsystem\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{3FD6461E-E1AF-45EA-8582-A24FDF07A850}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
@@ -18,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,7 +30,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "Form2.cs [Design]",
+              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\Project\\RestaurantManagementSystem\\RestaurantManagementSystem\\RestaurantManagementSystem\\Form2.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\Form2.cs",
+              "ToolTip": "D:\\ly_thuyet\\Code_window\\Project\\RestaurantManagementSystem\\RestaurantManagementSystem\\RestaurantManagementSystem\\Form2.cs [Design]",
+              "RelativeToolTip": "RestaurantManagementSystem\\Form2.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T02:20:44.797Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "App.config",
               "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\Project\\RestaurantManagementSystem\\RestaurantManagementSystem\\RestaurantManagementSystem\\App.config",
               "RelativeDocumentMoniker": "RestaurantManagementSystem\\App.config",
@@ -39,12 +55,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\Project\\RestaurantManagementSystem\\RestaurantManagementSystem\\RestaurantManagementSystem\\Form1.cs",
               "RelativeDocumentMoniker": "RestaurantManagementSystem\\Form1.cs",
-              "ToolTip": "D:\\ly_thuyet\\Code_window\\Project\\RestaurantManagementSystem\\RestaurantManagementSystem\\RestaurantManagementSystem\\Form1.cs [Design]*",
-              "RelativeToolTip": "RestaurantManagementSystem\\Form1.cs [Design]*",
+              "ToolTip": "D:\\ly_thuyet\\Code_window\\Project\\RestaurantManagementSystem\\RestaurantManagementSystem\\RestaurantManagementSystem\\Form1.cs [Design]",
+              "RelativeToolTip": "RestaurantManagementSystem\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-08T01:16:03.077Z",
               "EditorCaption": " [Design]"
