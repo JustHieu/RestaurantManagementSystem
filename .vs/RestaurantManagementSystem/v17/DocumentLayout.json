@@ -1,0 +1,94 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project\\RestaurantManagementSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|e:\\hcmute\\2024-2025\\hkii\\laptrinhwindows\\project\\restaurantmanagementsystem\\restaurantmanagementsystem\\classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|e:\\hcmute\\2024-2025\\hkii\\laptrinhwindows\\project\\restaurantmanagementsystem\\restaurantmanagementsystem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|e:\\hcmute\\2024-2025\\hkii\\laptrinhwindows\\project\\restaurantmanagementsystem\\restaurantmanagementsystem\\food.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\food.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|e:\\hcmute\\2024-2025\\hkii\\laptrinhwindows\\project\\restaurantmanagementsystem\\restaurantmanagementsystem\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Food.cs",
+              "DocumentMoniker": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project\\RestaurantManagementSystem\\RestaurantManagementSystem\\Food.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\Food.cs",
+              "ToolTip": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project\\RestaurantManagementSystem\\RestaurantManagementSystem\\Food.cs",
+              "RelativeToolTip": "RestaurantManagementSystem\\Food.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T15:14:24.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Person.cs",
+              "DocumentMoniker": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project\\RestaurantManagementSystem\\RestaurantManagementSystem\\Person.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\Person.cs",
+              "ToolTip": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project\\RestaurantManagementSystem\\RestaurantManagementSystem\\Person.cs",
+              "RelativeToolTip": "RestaurantManagementSystem\\Person.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T15:14:19.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClassDiagram1.cd",
+              "DocumentMoniker": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project\\RestaurantManagementSystem\\RestaurantManagementSystem\\ClassDiagram1.cd",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\ClassDiagram1.cd",
+              "ToolTip": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project\\RestaurantManagementSystem\\RestaurantManagementSystem\\ClassDiagram1.cd",
+              "RelativeToolTip": "RestaurantManagementSystem\\ClassDiagram1.cd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
+              "WhenOpened": "2025-03-11T14:58:43.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project\\RestaurantManagementSystem\\RestaurantManagementSystem\\Form1.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\Form1.cs",
+              "ToolTip": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project\\RestaurantManagementSystem\\RestaurantManagementSystem\\Form1.cs [Design]",
+              "RelativeToolTip": "RestaurantManagementSystem\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T14:58:27.934Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

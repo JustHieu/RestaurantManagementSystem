@@ -1,0 +1,4 @@
+E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.csproj.AssemblyReference.cache
+E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.Properties.Resources.resources
+E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.csproj.GenerateResource.cache
+E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.csproj.CoreCompileInputs.cache
