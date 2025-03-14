@@ -2,3 +2,11 @@ E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project\RestaurantManagementSystem\Rest
 E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.Properties.Resources.resources
 E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.csproj.GenerateResource.cache
 E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.csproj.CoreCompileInputs.cache
+E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project\RestaurantManagementSystem\RestaurantManagementSystem\bin\Debug\RestaurantManagementSystem.exe.config
+E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project\RestaurantManagementSystem\RestaurantManagementSystem\bin\Debug\RestaurantManagementSystem.exe
+E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project\RestaurantManagementSystem\RestaurantManagementSystem\bin\Debug\RestaurantManagementSystem.pdb
+E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project\RestaurantManagementSystem\RestaurantManagementSystem\bin\Debug\Guna.UI2.dll
+E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\Restaura.BF770190.Up2Date
+E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.exe
+E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.pdb
+E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.FirstForm.resources
