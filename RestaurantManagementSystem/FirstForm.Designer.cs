@@ -45,11 +45,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.bookTableButton2 = new Guna.UI2.WinForms.Guna2Button();
             this.aboutUsButton = new Guna.UI2.WinForms.Guna2Button();
             this.label5 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.instagramButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quitButton)).BeginInit();
@@ -142,11 +142,11 @@
             this.bookTableButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.bookTableButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.bookTableButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(114)))), ((int)(((byte)(0)))));
-            this.bookTableButton.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.bookTableButton.Font = new System.Drawing.Font("Philosopher", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bookTableButton.ForeColor = System.Drawing.Color.White;
-            this.bookTableButton.Location = new System.Drawing.Point(1395, 39);
+            this.bookTableButton.Location = new System.Drawing.Point(1384, 39);
             this.bookTableButton.Name = "bookTableButton";
-            this.bookTableButton.Size = new System.Drawing.Size(215, 45);
+            this.bookTableButton.Size = new System.Drawing.Size(226, 45);
             this.bookTableButton.TabIndex = 1;
             this.bookTableButton.Text = "Book a table";
             // 
@@ -157,7 +157,7 @@
             this.contactButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.contactButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.contactButton.FillColor = System.Drawing.Color.Transparent;
-            this.contactButton.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contactButton.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contactButton.ForeColor = System.Drawing.Color.White;
             this.contactButton.Location = new System.Drawing.Point(1102, 39);
             this.contactButton.Name = "contactButton";
@@ -172,7 +172,7 @@
             this.menuButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.menuButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.menuButton.FillColor = System.Drawing.Color.Transparent;
-            this.menuButton.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuButton.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuButton.ForeColor = System.Drawing.Color.White;
             this.menuButton.Location = new System.Drawing.Point(916, 39);
             this.menuButton.Name = "menuButton";
@@ -188,7 +188,7 @@
             this.aboutButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.aboutButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.aboutButton.FillColor = System.Drawing.Color.Transparent;
-            this.aboutButton.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aboutButton.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aboutButton.ForeColor = System.Drawing.Color.White;
             this.aboutButton.Location = new System.Drawing.Point(730, 39);
             this.aboutButton.Name = "aboutButton";
@@ -203,7 +203,7 @@
             this.homeButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.homeButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.homeButton.FillColor = System.Drawing.Color.Transparent;
-            this.homeButton.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.homeButton.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.homeButton.ForeColor = System.Drawing.Color.White;
             this.homeButton.Location = new System.Drawing.Point(544, 39);
             this.homeButton.Name = "homeButton";
@@ -227,11 +227,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Philosopher", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("MoglanDemo", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(103, 267);
+            this.label1.Location = new System.Drawing.Point(95, 214);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(402, 108);
+            this.label1.Size = new System.Drawing.Size(560, 147);
             this.label1.TabIndex = 2;
             this.label1.Text = "Enjoy Our";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -240,36 +240,23 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Philosopher", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("MoglanDemo", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(103, 358);
+            this.label2.Location = new System.Drawing.Point(95, 361);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(565, 108);
+            this.label2.Size = new System.Drawing.Size(801, 147);
             this.label2.TabIndex = 3;
             this.label2.Text = "Delicious Meal";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(116, 503);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(884, 27);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Savor the finest dishes crafted with premium ingredients, offering a remarkable d" +
-    "ining experience.";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(116, 530);
+            this.label4.Location = new System.Drawing.Point(116, 564);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(784, 27);
+            this.label4.Size = new System.Drawing.Size(776, 21);
             this.label4.TabIndex = 5;
             this.label4.Text = "Whether you prefer a hearty or light meal, our menu is designed to delight every " +
     "palate.";
@@ -282,11 +269,11 @@
             this.bookTableButton2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.bookTableButton2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.bookTableButton2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(114)))), ((int)(((byte)(0)))));
-            this.bookTableButton2.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold);
+            this.bookTableButton2.Font = new System.Drawing.Font("Philosopher", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bookTableButton2.ForeColor = System.Drawing.Color.White;
             this.bookTableButton2.Location = new System.Drawing.Point(121, 718);
             this.bookTableButton2.Name = "bookTableButton2";
-            this.bookTableButton2.Size = new System.Drawing.Size(215, 45);
+            this.bookTableButton2.Size = new System.Drawing.Size(233, 45);
             this.bookTableButton2.TabIndex = 6;
             this.bookTableButton2.Text = "Book a table";
             // 
@@ -300,7 +287,7 @@
             this.aboutUsButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.aboutUsButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.aboutUsButton.FillColor = System.Drawing.Color.Transparent;
-            this.aboutUsButton.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aboutUsButton.Font = new System.Drawing.Font("Philosopher", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aboutUsButton.ForeColor = System.Drawing.Color.White;
             this.aboutUsButton.Location = new System.Drawing.Point(502, 718);
             this.aboutUsButton.Name = "aboutUsButton";
@@ -312,14 +299,27 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(116, 557);
+            this.label5.Location = new System.Drawing.Point(116, 591);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(758, 54);
+            this.label5.Size = new System.Drawing.Size(734, 42);
             this.label5.TabIndex = 12;
             this.label5.Text = "Join us and indulge in a culinary journey that promises both flavor and satisfact" +
     "ion.\n\n";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(116, 536);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(872, 21);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Savor the finest dishes crafted with premium ingredients, offering a remarkable d" +
+    "ining experience.";
             // 
             // FirstForm
             // 
@@ -328,12 +328,12 @@
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1942, 890);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.aboutUsButton);
             this.Controls.Add(this.bookTableButton2);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.guna2Panel1);
@@ -370,10 +370,10 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2Button bookTableButton2;
         private Guna.UI2.WinForms.Guna2Button aboutUsButton;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label3;
     }
 }
