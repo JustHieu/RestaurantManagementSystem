@@ -1,0 +1,111 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+using System.Windows.Forms;
+
+
+namespace RestaurantManagementSystem
+{
+    public partial class mainFrm : Form
+    {
+        public mainFrm()
+        {
+            InitializeComponent();
+            homeButton.MouseEnter += HomeButton_MouseEnter;
+            homeButton.MouseLeave += HomeButton_MouseLeave;
+            aboutButton.MouseEnter += AboutButton_MouseEnter;
+            aboutButton.MouseLeave += AboutButton_MouseLeave;
+            menuButton.MouseEnter += MenuButton_MouseEnter;
+            menuButton.MouseLeave += MenuButton_MouseLeave;
+            contactButton.MouseEnter += ContactButton_MouseEnter;
+            contactButton.MouseLeave += ContactButton_MouseLeave;
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+        private void HomeButton_MouseEnter(object sender, EventArgs e)
+        {
+
+            homeButton.ForeColor = Color.FromArgb(239, 116, 43);
+        }
+
+        private void HomeButton_MouseLeave(object sender, EventArgs e)
+        {
+            homeButton.ForeColor = Color.White;
+        }
+        private void AboutButton_MouseEnter(object sender, EventArgs e)
+        {
+
+            aboutButton.ForeColor = Color.FromArgb(239, 116, 43);
+        }
+
+        private void AboutButton_MouseLeave(object sender, EventArgs e)
+        {
+            aboutButton.ForeColor = Color.White;
+        }
+        private void MenuButton_MouseEnter(object sender, EventArgs e)
+        {
+
+            menuButton.ForeColor = Color.FromArgb(239, 116, 43);
+        }
+
+        private void MenuButton_MouseLeave(object sender, EventArgs e)
+        {
+            menuButton.ForeColor = Color.White;
+        }
+        private void ContactButton_MouseEnter(object sender, EventArgs e)
+        {
+
+            contactButton.ForeColor = Color.FromArgb(239, 116, 43);
+        }
+
+        private void ContactButton_MouseLeave(object sender, EventArgs e)
+        {
+            contactButton.ForeColor = Color.White;
+        }
+
+        private void homeButton_Click(object sender, EventArgs e)
+        {
+            ShowFormInPanel(new FirstForm());
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        private void ShowFormInPanel(Form form)
+        {
+            showFrm.Controls.Clear(); // Xóa các form cũ
+            form.TopLevel = false;
+            form.FormBorderStyle = FormBorderStyle.None;
+            form.Dock = DockStyle.Fill;
+
+            showFrm.Controls.Add(form);
+            form.Show();
+        }
+
+        private void mainFrm_Load(object sender, EventArgs e)
+        {
+            ShowFormInPanel(new FirstForm());
+        }
+
+        private void aboutButton_Click(object sender, EventArgs e)
+        {
+            ShowUserControl(new aboutUC());
+        }
+        private void ShowUserControl(UserControl userControl)
+        {
+            showFrm.Controls.Clear();
+            userControl.Dock = DockStyle.Fill;
+            showFrm.Controls.Add(userControl);
+        }
+    }
+}

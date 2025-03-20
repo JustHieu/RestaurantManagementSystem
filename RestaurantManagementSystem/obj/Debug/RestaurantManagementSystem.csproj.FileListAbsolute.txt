@@ -97,3 +97,5 @@ E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project\RestaurantManagementSystem\Rest
 E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project\RestaurantManagementSystem\RestaurantManagementSystem\bin\Debug\tr\Microsoft.Data.SqlClient.resources.dll
 E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project\RestaurantManagementSystem\RestaurantManagementSystem\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
 E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project\RestaurantManagementSystem\RestaurantManagementSystem\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.aboutUC.resources
+E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.mainFrm.resources
