@@ -25,6 +25,7 @@ namespace RestaurantManagementSystem
             menuButton.MouseLeave += MenuButton_MouseLeave;
             contactButton.MouseEnter += ContactButton_MouseEnter;
             contactButton.MouseLeave += ContactButton_MouseLeave;
+            
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -74,7 +75,9 @@ namespace RestaurantManagementSystem
 
         private void homeButton_Click(object sender, EventArgs e)
         {
-            ShowFormInPanel(new FirstForm());
+            FirstForm firstForm = new FirstForm();
+            firstForm.ShowOtherUserControl += FirstForm_ShowInMainFormPanel;  // Đăng ký sự kiện
+            ShowFormInPanel(firstForm);
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -94,7 +97,10 @@ namespace RestaurantManagementSystem
 
         private void mainFrm_Load(object sender, EventArgs e)
         {
-            ShowFormInPanel(new FirstForm());
+
+            FirstForm firstForm = new FirstForm();
+            firstForm.ShowOtherUserControl += FirstForm_ShowInMainFormPanel;  // Đăng ký sự kiện
+            ShowFormInPanel(firstForm);
         }
 
         private void aboutButton_Click(object sender, EventArgs e)
@@ -106,6 +112,16 @@ namespace RestaurantManagementSystem
             showFrm.Controls.Clear();
             userControl.Dock = DockStyle.Fill;
             showFrm.Controls.Add(userControl);
+        }
+        private void FirstForm_ShowInMainFormPanel(object sender, EventArgs e)
+        {
+            // Xóa bất kỳ Form nào đang có trong Panel
+            showFrm.Controls.Clear();
+
+            // Tạo và hiển thị UserControl trong Panel của MainForm
+            aboutUC aboutUserControl = new aboutUC();
+            aboutUserControl.Dock = DockStyle.Fill;
+            showFrm.Controls.Add(aboutUserControl);
         }
     }
 }

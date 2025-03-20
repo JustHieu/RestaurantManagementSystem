@@ -66,8 +66,8 @@ namespace RestaurantManagementSystem
 
         private void aboutUsButton_Click(object sender, EventArgs e)
         {
-            mainFrm mainFrm = new mainFrm();
-            
+            ShowOtherUserControl?.Invoke(this, EventArgs.Empty);
+
         }
         
     }
