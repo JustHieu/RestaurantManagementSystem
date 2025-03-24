@@ -200,3 +200,16 @@ Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\
 Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\Restaura.BF770190.Up2Date
 Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.exe
 Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.pdb
+Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\bin\Debug\runtimes\win-x86\native\WebView2Loader.dll
+Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\bin\Debug\runtimes\win-x64\native\WebView2Loader.dll
+Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\bin\Debug\runtimes\win-arm64\native\WebView2Loader.dll
+Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\bin\Debug\Microsoft.Web.WebView2.Core.dll
+Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\bin\Debug\Microsoft.Web.WebView2.WinForms.dll
+Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\bin\Debug\Microsoft.Web.WebView2.Wpf.dll
+Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\bin\Debug\Microsoft.Web.WebView2.Core.xml
+Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\bin\Debug\Microsoft.Web.WebView2.WinForms.xml
+Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\bin\Debug\Microsoft.Web.WebView2.Wpf.xml
+Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.contactUC.resources
+Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.foodItemMiniUC.resources
+Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.menuUC.resources
+Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.bookTableForm.resources

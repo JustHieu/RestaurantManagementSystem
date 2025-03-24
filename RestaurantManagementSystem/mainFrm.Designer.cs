@@ -151,6 +151,7 @@
             this.bookTableButton.Size = new System.Drawing.Size(226, 45);
             this.bookTableButton.TabIndex = 1;
             this.bookTableButton.Text = "Book a table";
+            this.bookTableButton.Click += new System.EventHandler(this.bookTableButton_Click);
             // 
             // contactButton
             // 
@@ -166,6 +167,7 @@
             this.contactButton.Size = new System.Drawing.Size(180, 45);
             this.contactButton.TabIndex = 6;
             this.contactButton.Text = "Contact";
+            this.contactButton.Click += new System.EventHandler(this.contactButton_Click);
             // 
             // menuButton
             // 
@@ -181,6 +183,7 @@
             this.menuButton.Size = new System.Drawing.Size(180, 45);
             this.menuButton.TabIndex = 4;
             this.menuButton.Text = "Menu";
+            this.menuButton.Click += new System.EventHandler(this.menuButton_Click);
             // 
             // aboutButton
             // 

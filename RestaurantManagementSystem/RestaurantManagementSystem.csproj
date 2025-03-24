@@ -95,6 +95,15 @@
     <Reference Include="Microsoft.IdentityModel.Tokens, Version=7.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.IdentityModel.Tokens.7.5.0\lib\net472\Microsoft.IdentityModel.Tokens.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Web.WebView2.Core, Version=1.0.3124.44, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.3124.44\lib\net462\Microsoft.Web.WebView2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.WinForms, Version=1.0.3124.44, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.3124.44\lib\net462\Microsoft.Web.WebView2.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.Wpf, Version=1.0.3124.44, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.3124.44\lib\net462\Microsoft.Web.WebView2.Wpf.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
@@ -175,6 +184,12 @@
     <Compile Include="aboutUC.Designer.cs">
       <DependentUpon>aboutUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="bookTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bookTableForm.Designer.cs">
+      <DependentUpon>bookTableForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Class\Bill.cs" />
     <Compile Include="Class\Chef.cs" />
     <Compile Include="Class\Customer.cs" />
@@ -187,11 +202,17 @@
     <Compile Include="Class\Manager.cs" />
     <Compile Include="Class\Menu.cs" />
     <Compile Include="Class\Person.cs" />
-    <Compile Include="foodItermMiniUC.cs">
+    <Compile Include="contactUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="foodItermMiniUC.Designer.cs">
-      <DependentUpon>foodItermMiniUC.cs</DependentUpon>
+    <Compile Include="contactUC.Designer.cs">
+      <DependentUpon>contactUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="foodItemMiniUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="foodItemMiniUC.Designer.cs">
+      <DependentUpon>foodItemMiniUC.cs</DependentUpon>
     </Compile>
     <Compile Include="mainFrm.cs">
       <SubType>Form</SubType>
@@ -221,11 +242,23 @@
     <EmbeddedResource Include="aboutUC.resx">
       <DependentUpon>aboutUC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="bookTableForm.resx">
+      <DependentUpon>bookTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="contactUC.resx">
+      <DependentUpon>contactUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FirstForm.resx">
       <DependentUpon>FirstForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="foodItemMiniUC.resx">
+      <DependentUpon>foodItemMiniUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mainFrm.resx">
       <DependentUpon>mainFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuUC.resx">
+      <DependentUpon>menuUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -268,5 +301,7 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Microsoft.Data.SqlClient.SNI.6.0.2\build\net462\Microsoft.Data.SqlClient.SNI.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Data.SqlClient.SNI.6.0.2\build\net462\Microsoft.Data.SqlClient.SNI.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Web.WebView2.1.0.3124.44\build\Microsoft.Web.WebView2.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Web.WebView2.1.0.3124.44\build\Microsoft.Web.WebView2.targets'))" />
   </Target>
+  <Import Project="..\packages\Microsoft.Web.WebView2.1.0.3124.44\build\Microsoft.Web.WebView2.targets" Condition="Exists('..\packages\Microsoft.Web.WebView2.1.0.3124.44\build\Microsoft.Web.WebView2.targets')" />
 </Project>

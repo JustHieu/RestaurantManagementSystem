@@ -123,5 +123,28 @@ namespace RestaurantManagementSystem
             aboutUserControl.Dock = DockStyle.Fill;
             showFrm.Controls.Add(aboutUserControl);
         }
+
+        private void menuButton_Click(object sender, EventArgs e)
+        {
+            menuUC menu = new menuUC();
+            showFrm.Controls.Clear();
+            menu.Dock = DockStyle.Fill;
+            showFrm.Controls.Add(menu);
+        }
+
+        private void contactButton_Click(object sender, EventArgs e)
+        {
+            contactUC contact = new contactUC();
+            showFrm.Controls.Clear();
+            contact.Dock = DockStyle.Fill;
+            showFrm.Controls.Add(contact);
+        }
+
+        private void bookTableButton_Click(object sender, EventArgs e)
+        {
+            bookTableForm bform = new bookTableForm(this);
+            bform.Show();
+            this.Hide();
+        }
     }
 }

@@ -3,35 +3,44 @@
   "WorkspaceRootPath": "Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|q:\\code\\laptrinhwinform\\a\\restaurantmanagementsystem\\restaurantmanagementsystem\\mainfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\mainfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|q:\\code\\laptrinhwinform\\a\\restaurantmanagementsystem\\restaurantmanagementsystem\\booktableform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\booktableform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\restaurantmanagementsystem\\aboutuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\aboutuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\restaurantmanagementsystem\\firstform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\firstform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\restaurantmanagementsystem\\aboutuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\aboutuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\restaurantmanagementsystem\\booktableform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\booktableform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\restaurantmanagementsystem\\mainfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\mainfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\restaurantmanagementsystem\\firstform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\firstform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\restaurantmanagementsystem\\booktableform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\booktableform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\restaurantmanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|RestaurantManagementSystem||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\restaurantmanagementsystem\\mainfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\mainfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\restaurantmanagementsystem\\menuuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\menuuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\restaurantmanagementsystem\\contactuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\contactuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\restaurantmanagementsystem\\menuuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\menuuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\restaurantmanagementsystem\\contactuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\contactuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\restaurantmanagementsystem\\imgsource\\background.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}",
@@ -53,117 +62,144 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FirstForm.cs",
-              "DocumentMoniker": "Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\RestaurantManagementSystem\\FirstForm.cs",
-              "RelativeDocumentMoniker": "RestaurantManagementSystem\\FirstForm.cs",
-              "ToolTip": "Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\RestaurantManagementSystem\\FirstForm.cs",
-              "RelativeToolTip": "RestaurantManagementSystem\\FirstForm.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAnwBwAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T03:47:59.629Z",
-              "IsPinned": true
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "mainFrm.cs",
+              "DocumentMoniker": "Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\RestaurantManagementSystem\\mainFrm.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\mainFrm.cs",
+              "ToolTip": "Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\RestaurantManagementSystem\\mainFrm.cs",
+              "RelativeToolTip": "RestaurantManagementSystem\\mainFrm.cs",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAuwJMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T16:25:19.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "bookTableForm.Designer.cs",
+              "DocumentMoniker": "Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\RestaurantManagementSystem\\bookTableForm.Designer.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\bookTableForm.Designer.cs",
+              "ToolTip": "Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\RestaurantManagementSystem\\bookTableForm.Designer.cs",
+              "RelativeToolTip": "RestaurantManagementSystem\\bookTableForm.Designer.cs",
+              "ViewState": "AgIAAB8BAAAAAAAAAAAlwCwBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T11:21:27.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "menuUC.cs",
+              "DocumentMoniker": "Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\RestaurantManagementSystem\\menuUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\menuUC.cs",
+              "ToolTip": "Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\RestaurantManagementSystem\\menuUC.cs",
+              "RelativeToolTip": "RestaurantManagementSystem\\menuUC.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAADgAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T09:53:39.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\RestaurantManagementSystem\\Program.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\Program.cs",
+              "ToolTip": "Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\RestaurantManagementSystem\\Program.cs",
+              "RelativeToolTip": "RestaurantManagementSystem\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T03:43:40.671Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "bookTableForm.cs [Design]",
+              "DocumentMoniker": "Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\RestaurantManagementSystem\\bookTableForm.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\bookTableForm.cs",
+              "ToolTip": "Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\RestaurantManagementSystem\\bookTableForm.cs [Design]",
+              "RelativeToolTip": "RestaurantManagementSystem\\bookTableForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T10:17:21.026Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "bookTableForm.cs",
+              "DocumentMoniker": "Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\RestaurantManagementSystem\\bookTableForm.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\bookTableForm.cs",
+              "ToolTip": "Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\RestaurantManagementSystem\\bookTableForm.cs",
+              "RelativeToolTip": "RestaurantManagementSystem\\bookTableForm.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAAB0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T10:34:14.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "mainFrm.cs [Design]",
               "DocumentMoniker": "Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\RestaurantManagementSystem\\mainFrm.cs",
               "RelativeDocumentMoniker": "RestaurantManagementSystem\\mainFrm.cs",
               "ToolTip": "Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\RestaurantManagementSystem\\mainFrm.cs [Design]",
               "RelativeToolTip": "RestaurantManagementSystem\\mainFrm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T16:19:26.919Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FirstForm.cs [Design]",
-              "DocumentMoniker": "Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\RestaurantManagementSystem\\FirstForm.cs",
-              "RelativeDocumentMoniker": "RestaurantManagementSystem\\FirstForm.cs",
-              "ToolTip": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project\\RestaurantManagementSystem\\RestaurantManagementSystem\\FirstForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T03:42:58.62Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "aboutUC.cs [Design]",
-              "DocumentMoniker": "Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\RestaurantManagementSystem\\aboutUC.cs",
-              "RelativeDocumentMoniker": "RestaurantManagementSystem\\aboutUC.cs",
-              "ToolTip": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project\\RestaurantManagementSystem\\RestaurantManagementSystem\\aboutUC.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T03:15:13.384Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "aboutUC.cs",
-              "DocumentMoniker": "Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\RestaurantManagementSystem\\aboutUC.cs",
-              "RelativeDocumentMoniker": "RestaurantManagementSystem\\aboutUC.cs",
-              "ToolTip": "Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\RestaurantManagementSystem\\aboutUC.cs",
-              "RelativeToolTip": "RestaurantManagementSystem\\aboutUC.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAQwDQAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T09:39:32.261Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "mainFrm.cs",
-              "DocumentMoniker": "Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\RestaurantManagementSystem\\mainFrm.cs",
-              "RelativeDocumentMoniker": "RestaurantManagementSystem\\mainFrm.cs",
-              "ToolTip": "Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\RestaurantManagementSystem\\mainFrm.cs",
-              "RelativeToolTip": "RestaurantManagementSystem\\mainFrm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHkAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T16:25:19.017Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\RestaurantManagementSystem\\Program.cs",
-              "RelativeDocumentMoniker": "RestaurantManagementSystem\\Program.cs",
-              "ToolTip": "Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\RestaurantManagementSystem\\Program.cs",
-              "RelativeToolTip": "RestaurantManagementSystem\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T03:43:40.671Z"
+              "WhenOpened": "2025-03-17T16:19:26.919Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "RestaurantManagementSystem",
-              "DocumentMoniker": "Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\RestaurantManagementSystem\\RestaurantManagementSystem.csproj",
-              "RelativeDocumentMoniker": "RestaurantManagementSystem\\RestaurantManagementSystem.csproj",
-              "ToolTip": "Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\RestaurantManagementSystem\\RestaurantManagementSystem.csproj",
-              "RelativeToolTip": "RestaurantManagementSystem\\RestaurantManagementSystem.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-03-14T09:40:01.993Z"
+              "Title": "contactUC.cs [Design]",
+              "DocumentMoniker": "Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\RestaurantManagementSystem\\contactUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\contactUC.cs",
+              "ToolTip": "Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\RestaurantManagementSystem\\contactUC.cs [Design]",
+              "RelativeToolTip": "RestaurantManagementSystem\\contactUC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T09:41:39.704Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "menuUC.cs [Design]",
+              "DocumentMoniker": "Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\RestaurantManagementSystem\\menuUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\menuUC.cs",
+              "ToolTip": "Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\RestaurantManagementSystem\\menuUC.cs [Design]",
+              "RelativeToolTip": "RestaurantManagementSystem\\menuUC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T09:03:46.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "contactUC.cs",
+              "DocumentMoniker": "Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\RestaurantManagementSystem\\contactUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\contactUC.cs",
+              "ToolTip": "Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\RestaurantManagementSystem\\contactUC.cs",
+              "RelativeToolTip": "RestaurantManagementSystem\\contactUC.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAA/wDgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T09:47:31.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "background.jpg - Bitmap [1690x1127, 24 bit, JPG]",
               "DocumentMoniker": "Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\RestaurantManagementSystem\\imgSource\\background.jpg",
               "RelativeDocumentMoniker": "RestaurantManagementSystem\\imgSource\\background.jpg",
-              "ToolTip": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project\\RestaurantManagementSystem\\RestaurantManagementSystem\\imgSource\\background.jpg - Bitmap [1690x1127, 24 bit, JPG]",
+              "ToolTip": "Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\RestaurantManagementSystem\\imgSource\\background.jpg - Bitmap [1690x1127, 24 bit, JPG]",
+              "RelativeToolTip": "RestaurantManagementSystem\\imgSource\\background.jpg - Bitmap [1690x1127, 24 bit, JPG]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
               "WhenOpened": "2025-03-14T06:27:58.371Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "FirstForm.Designer.cs",
               "DocumentMoniker": "Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\RestaurantManagementSystem\\FirstForm.Designer.cs",
               "RelativeDocumentMoniker": "RestaurantManagementSystem\\FirstForm.Designer.cs",
@@ -175,7 +211,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "ClassDiagram1.cd",
               "DocumentMoniker": "Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\RestaurantManagementSystem\\Class\\ClassDiagram1.cd",
               "RelativeDocumentMoniker": "RestaurantManagementSystem\\Class\\ClassDiagram1.cd",
