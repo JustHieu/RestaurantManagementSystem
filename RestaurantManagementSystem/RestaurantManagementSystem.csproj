@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -187,11 +187,23 @@
     <Compile Include="Class\Manager.cs" />
     <Compile Include="Class\Menu.cs" />
     <Compile Include="Class\Person.cs" />
+    <Compile Include="foodItermMiniUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="foodItermMiniUC.Designer.cs">
+      <DependentUpon>foodItermMiniUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="mainFrm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="mainFrm.Designer.cs">
       <DependentUpon>mainFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menuUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="menuUC.Designer.cs">
+      <DependentUpon>menuUC.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Class\Info.cs" />
