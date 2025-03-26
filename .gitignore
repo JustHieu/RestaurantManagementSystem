@@ -1,0 +1,10 @@
+# Loại bỏ các thư mục build của Visual Studio
+bin/
+obj/
+.vs/
+packages/
+*.user
+*.suo
+
+# WebView2 và các file tạm
+*.WebView2/
