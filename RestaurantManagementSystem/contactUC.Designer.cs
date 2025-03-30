@@ -273,7 +273,7 @@
             // contactUC
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.Transparent;
+            this.BackColor = System.Drawing.Color.Black;
             this.Controls.Add(this.webView21);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);

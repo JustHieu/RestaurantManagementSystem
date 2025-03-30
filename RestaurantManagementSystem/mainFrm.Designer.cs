@@ -135,6 +135,7 @@
             this.accountButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.accountButton.TabIndex = 7;
             this.accountButton.TabStop = false;
+            this.accountButton.Click += new System.EventHandler(this.accountButton_Click);
             // 
             // bookTableButton
             // 

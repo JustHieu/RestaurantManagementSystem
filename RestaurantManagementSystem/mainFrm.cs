@@ -146,5 +146,10 @@ namespace RestaurantManagementSystem
             bform.Show();
             this.Hide();
         }
+
+        private void accountButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

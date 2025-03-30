@@ -44,6 +44,15 @@
     <Reference Include="Guna.UI2, Version=2.0.4.7, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.7\lib\net472\Guna.UI2.dll</HintPath>
     </Reference>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.WinForms, Version=0.9.7.1, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.WinForms.0.9.7.1\lib\net45\LiveCharts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.8.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
@@ -104,6 +113,8 @@
     <Reference Include="Microsoft.Web.WebView2.Wpf, Version=1.0.3124.44, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Web.WebView2.1.0.3124.44\lib\net462\Microsoft.Web.WebView2.Wpf.dll</HintPath>
     </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
@@ -167,6 +178,8 @@
       <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
     </Reference>
     <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -176,6 +189,8 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="aboutUC.cs">
@@ -208,17 +223,77 @@
     <Compile Include="contactUC.Designer.cs">
       <DependentUpon>contactUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="cookingIngredientsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cookingIngredientsForm.Designer.cs">
+      <DependentUpon>cookingIngredientsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="foodItemMiniUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="foodItemMiniUC.Designer.cs">
       <DependentUpon>foodItemMiniUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="foodItemUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="foodItemUC.Designer.cs">
+      <DependentUpon>foodItemUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="foodOrderUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="foodOrderUC.Designer.cs">
+      <DependentUpon>foodOrderUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ingredientsItemUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ingredientsItemUC.Designer.cs">
+      <DependentUpon>ingredientsItemUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="mainFrm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="mainFrm.Designer.cs">
       <DependentUpon>mainFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="managerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="managerForm.Designer.cs">
+      <DependentUpon>managerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="managerColdStorageUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="managerColdStorageUC.Designer.cs">
+      <DependentUpon>managerColdStorageUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="managerMenuUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="managerMenuUC.Designer.cs">
+      <DependentUpon>managerMenuUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="managerStatisticalUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="managerStatisticalUC.Designer.cs">
+      <DependentUpon>managerStatisticalUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="managerTableHistoryUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="managerTableHistoryUC.Designer.cs">
+      <DependentUpon>managerTableHistoryUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manageStaffUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="manageStaffUC.Designer.cs">
+      <DependentUpon>manageStaffUC.cs</DependentUpon>
     </Compile>
     <Compile Include="menuUC.cs">
       <SubType>UserControl</SubType>
@@ -239,6 +314,36 @@
     <Compile Include="Class\RestaurantConfig.cs" />
     <Compile Include="Class\Staff.cs" />
     <Compile Include="Class\Table.cs" />
+    <Compile Include="staffForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staffForm.Designer.cs">
+      <DependentUpon>staffForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="staffKitchenUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="staffKitchenUC.Designer.cs">
+      <DependentUpon>staffKitchenUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="staffMenuUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="staffMenuUC.Designer.cs">
+      <DependentUpon>staffMenuUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="staffTableStatusUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="staffTableStatusUC.Designer.cs">
+      <DependentUpon>staffTableStatusUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tableUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tableUC.Designer.cs">
+      <DependentUpon>tableUC.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="aboutUC.resx">
       <DependentUpon>aboutUC.cs</DependentUpon>
     </EmbeddedResource>
@@ -248,14 +353,44 @@
     <EmbeddedResource Include="contactUC.resx">
       <DependentUpon>contactUC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="cookingIngredientsForm.resx">
+      <DependentUpon>cookingIngredientsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FirstForm.resx">
       <DependentUpon>FirstForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="foodItemMiniUC.resx">
       <DependentUpon>foodItemMiniUC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="foodItemUC.resx">
+      <DependentUpon>foodItemUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="foodOrderUC.resx">
+      <DependentUpon>foodOrderUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ingredientsItemUC.resx">
+      <DependentUpon>ingredientsItemUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mainFrm.resx">
       <DependentUpon>mainFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="managerForm.resx">
+      <DependentUpon>managerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="managerColdStorageUC.resx">
+      <DependentUpon>managerColdStorageUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="managerMenuUC.resx">
+      <DependentUpon>managerMenuUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="managerStatisticalUC.resx">
+      <DependentUpon>managerStatisticalUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="managerTableHistoryUC.resx">
+      <DependentUpon>managerTableHistoryUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manageStaffUC.resx">
+      <DependentUpon>manageStaffUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="menuUC.resx">
       <DependentUpon>menuUC.cs</DependentUpon>
@@ -264,6 +399,21 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staffForm.resx">
+      <DependentUpon>staffForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staffKitchenUC.resx">
+      <DependentUpon>staffKitchenUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staffMenuUC.resx">
+      <DependentUpon>staffMenuUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staffTableStatusUC.resx">
+      <DependentUpon>staffTableStatusUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tableUC.resx">
+      <DependentUpon>tableUC.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Class\ClassDiagram1.cd" />
     <None Include="packages.config" />
@@ -293,6 +443,48 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\facebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\quit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\bell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\user1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\book-alt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\apps.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\hat-chef.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\imagebig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\history.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\chart-histogram.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.6.0.2\build\net462\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.6.0.2\build\net462\Microsoft.Data.SqlClient.SNI.targets')" />

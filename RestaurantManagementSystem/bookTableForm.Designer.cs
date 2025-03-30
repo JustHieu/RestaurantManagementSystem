@@ -41,13 +41,6 @@
             this.emailTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.phoneTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.bookTableButton = new Guna.UI2.WinForms.Guna2Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.finalyLabel = new System.Windows.Forms.Label();
@@ -115,11 +108,13 @@
             // 
             // numberOfPeopleComboBox
             // 
-            this.numberOfPeopleComboBox.BackColor = System.Drawing.Color.Transparent;
-            this.numberOfPeopleComboBox.BorderColor = System.Drawing.Color.Transparent;
+            this.numberOfPeopleComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.numberOfPeopleComboBox.BorderColor = System.Drawing.Color.White;
+            this.numberOfPeopleComboBox.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            this.numberOfPeopleComboBox.BorderThickness = 0;
             this.numberOfPeopleComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.numberOfPeopleComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.numberOfPeopleComboBox.FillColor = System.Drawing.Color.Transparent;
+            this.numberOfPeopleComboBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.numberOfPeopleComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.numberOfPeopleComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.numberOfPeopleComboBox.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold);
@@ -134,22 +129,22 @@
             "6 Person",
             "7 Person",
             "8 Person"});
-            this.numberOfPeopleComboBox.Location = new System.Drawing.Point(87, 269);
+            this.numberOfPeopleComboBox.Location = new System.Drawing.Point(87, 264);
             this.numberOfPeopleComboBox.Name = "numberOfPeopleComboBox";
             this.numberOfPeopleComboBox.Size = new System.Drawing.Size(228, 36);
             this.numberOfPeopleComboBox.TabIndex = 7;
             // 
             // dateDateTimePicker
             // 
-            this.dateDateTimePicker.BackColor = System.Drawing.Color.Black;
-            this.dateDateTimePicker.BorderColor = System.Drawing.Color.Transparent;
-            this.dateDateTimePicker.BorderThickness = 2;
+            this.dateDateTimePicker.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.dateDateTimePicker.BorderColor = System.Drawing.Color.White;
+            this.dateDateTimePicker.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
             this.dateDateTimePicker.Checked = true;
             this.dateDateTimePicker.CustomFormat = "MM/dd/yyyy";
-            this.dateDateTimePicker.FillColor = System.Drawing.Color.Transparent;
+            this.dateDateTimePicker.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dateDateTimePicker.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold);
             this.dateDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateDateTimePicker.Location = new System.Drawing.Point(357, 269);
+            this.dateDateTimePicker.Location = new System.Drawing.Point(357, 264);
             this.dateDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dateDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dateDateTimePicker.Name = "dateDateTimePicker";
@@ -159,15 +154,15 @@
             // 
             // timeDateTimePicker
             // 
-            this.timeDateTimePicker.BackColor = System.Drawing.Color.Black;
-            this.timeDateTimePicker.BorderColor = System.Drawing.Color.Transparent;
-            this.timeDateTimePicker.BorderThickness = 2;
+            this.timeDateTimePicker.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.timeDateTimePicker.BorderColor = System.Drawing.Color.White;
+            this.timeDateTimePicker.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
             this.timeDateTimePicker.Checked = true;
             this.timeDateTimePicker.CustomFormat = "hh:mm tt";
-            this.timeDateTimePicker.FillColor = System.Drawing.Color.Transparent;
+            this.timeDateTimePicker.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.timeDateTimePicker.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold);
             this.timeDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.timeDateTimePicker.Location = new System.Drawing.Point(619, 269);
+            this.timeDateTimePicker.Location = new System.Drawing.Point(619, 264);
             this.timeDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.timeDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.timeDateTimePicker.Name = "timeDateTimePicker";
@@ -178,19 +173,22 @@
             // 
             // nameTextBox
             // 
-            this.nameTextBox.BorderColor = System.Drawing.Color.Transparent;
+            this.nameTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.nameTextBox.BorderColor = System.Drawing.Color.White;
+            this.nameTextBox.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            this.nameTextBox.BorderThickness = 0;
             this.nameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.nameTextBox.DefaultText = "";
             this.nameTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.nameTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.nameTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.nameTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.nameTextBox.FillColor = System.Drawing.Color.Transparent;
+            this.nameTextBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.nameTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.nameTextBox.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold);
             this.nameTextBox.ForeColor = System.Drawing.Color.White;
             this.nameTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.nameTextBox.Location = new System.Drawing.Point(85, 402);
+            this.nameTextBox.Location = new System.Drawing.Point(85, 386);
             this.nameTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.PlaceholderForeColor = System.Drawing.Color.White;
@@ -201,19 +199,22 @@
             // 
             // emailTextBox
             // 
-            this.emailTextBox.BorderColor = System.Drawing.Color.Transparent;
+            this.emailTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.emailTextBox.BorderColor = System.Drawing.Color.White;
+            this.emailTextBox.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            this.emailTextBox.BorderThickness = 0;
             this.emailTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.emailTextBox.DefaultText = "";
             this.emailTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.emailTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.emailTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.emailTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.emailTextBox.FillColor = System.Drawing.Color.Transparent;
+            this.emailTextBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.emailTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.emailTextBox.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold);
             this.emailTextBox.ForeColor = System.Drawing.Color.White;
             this.emailTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.emailTextBox.Location = new System.Drawing.Point(357, 402);
+            this.emailTextBox.Location = new System.Drawing.Point(357, 386);
             this.emailTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.PlaceholderForeColor = System.Drawing.Color.White;
@@ -224,19 +225,22 @@
             // 
             // phoneTextBox
             // 
-            this.phoneTextBox.BorderColor = System.Drawing.Color.Transparent;
+            this.phoneTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.phoneTextBox.BorderColor = System.Drawing.Color.White;
+            this.phoneTextBox.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            this.phoneTextBox.BorderThickness = 0;
             this.phoneTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.phoneTextBox.DefaultText = "";
             this.phoneTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.phoneTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.phoneTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.phoneTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.phoneTextBox.FillColor = System.Drawing.Color.Transparent;
+            this.phoneTextBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.phoneTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.phoneTextBox.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold);
             this.phoneTextBox.ForeColor = System.Drawing.Color.White;
             this.phoneTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.phoneTextBox.Location = new System.Drawing.Point(619, 402);
+            this.phoneTextBox.Location = new System.Drawing.Point(619, 386);
             this.phoneTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.phoneTextBox.Name = "phoneTextBox";
             this.phoneTextBox.PlaceholderForeColor = System.Drawing.Color.White;
@@ -247,14 +251,17 @@
             // 
             // guna2TextBox1
             // 
-            this.guna2TextBox1.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2TextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2TextBox1.BorderColor = System.Drawing.Color.White;
+            this.guna2TextBox1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            this.guna2TextBox1.BorderThickness = 0;
             this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox1.DefaultText = "";
             this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2TextBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold);
             this.guna2TextBox1.ForeColor = System.Drawing.Color.White;
@@ -267,78 +274,6 @@
             this.guna2TextBox1.SelectedText = "";
             this.guna2TextBox1.Size = new System.Drawing.Size(762, 87);
             this.guna2TextBox1.TabIndex = 14;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Calibri", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(82, 435);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(229, 15);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "_____________________________________";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Calibri", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(82, 603);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(763, 15);
-            this.label6.TabIndex = 16;
-            this.label6.Text = "_________________________________________________________________________________" +
-    "_____________________________________________\r\n";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Calibri", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(356, 435);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(229, 15);
-            this.label7.TabIndex = 17;
-            this.label7.Text = "_____________________________________";
-
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Calibri", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(618, 435);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(229, 15);
-            this.label8.TabIndex = 18;
-            this.label8.Text = "_____________________________________";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Calibri", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(84, 299);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(229, 15);
-            this.label9.TabIndex = 19;
-            this.label9.Text = "_____________________________________";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Calibri", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(356, 299);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(229, 15);
-            this.label10.TabIndex = 20;
-            this.label10.Text = "_____________________________________";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Calibri", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(618, 299);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(229, 15);
-            this.label11.TabIndex = 21;
-            this.label11.Text = "_____________________________________";
             // 
             // bookTableButton
             // 
@@ -384,13 +319,6 @@
             this.Controls.Add(this.numberOfPeopleComboBox);
             this.Controls.Add(this.timeDateTimePicker);
             this.Controls.Add(this.dateDateTimePicker);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.guna2TextBox1);
             this.Controls.Add(this.phoneTextBox);
             this.Controls.Add(this.emailTextBox);
@@ -426,13 +354,6 @@
         private Guna.UI2.WinForms.Guna2TextBox emailTextBox;
         private Guna.UI2.WinForms.Guna2TextBox phoneTextBox;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
         private Guna.UI2.WinForms.Guna2Button bookTableButton;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Label finalyLabel;
