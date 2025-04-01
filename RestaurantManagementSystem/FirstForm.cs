@@ -69,7 +69,11 @@ namespace RestaurantManagementSystem
             ShowOtherUserControl?.Invoke(this, EventArgs.Empty);
 
         }
-        
+
+        private void bookTableButton2_Click(object sender, EventArgs e)
+        {
+            ShowOtherUserControl?.Invoke(this, EventArgs.Empty);
+        }
     }
 }
 

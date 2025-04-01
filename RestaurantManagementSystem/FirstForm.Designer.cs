@@ -106,6 +106,7 @@
             this.bookTableButton2.Size = new System.Drawing.Size(233, 45);
             this.bookTableButton2.TabIndex = 6;
             this.bookTableButton2.Text = "Book a table";
+            this.bookTableButton2.Click += new System.EventHandler(this.bookTableButton2_Click);
             // 
             // aboutUsButton
             // 

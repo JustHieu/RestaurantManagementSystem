@@ -142,9 +142,10 @@ namespace RestaurantManagementSystem
 
         private void bookTableButton_Click(object sender, EventArgs e)
         {
-            bookTableForm bform = new bookTableForm(this);
-            bform.Show();
-            this.Hide();
+            bookTableUC bform = new bookTableUC();
+            showFrm.Controls.Clear();
+            bform.Dock = DockStyle.Fill;
+            showFrm.Controls.Add(bform);
         }
 
         private void accountButton_Click(object sender, EventArgs e)

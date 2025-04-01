@@ -107,7 +107,7 @@
             // toDateTimePicker
             // 
             this.toDateTimePicker.AutoRoundedCorners = true;
-            this.toDateTimePicker.BackColor = System.Drawing.SystemColors.Control;
+            this.toDateTimePicker.BackColor = System.Drawing.Color.White;
             this.toDateTimePicker.Checked = true;
             this.toDateTimePicker.CustomFormat = "MM/dd/yyyy";
             this.toDateTimePicker.FillColor = System.Drawing.Color.WhiteSmoke;
@@ -125,7 +125,7 @@
             // fromDateTimePicker
             // 
             this.fromDateTimePicker.AutoRoundedCorners = true;
-            this.fromDateTimePicker.BackColor = System.Drawing.SystemColors.Control;
+            this.fromDateTimePicker.BackColor = System.Drawing.Color.White;
             this.fromDateTimePicker.Checked = true;
             this.fromDateTimePicker.CustomFormat = "MM/dd/yyyy";
             this.fromDateTimePicker.FillColor = System.Drawing.Color.WhiteSmoke;

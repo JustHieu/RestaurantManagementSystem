@@ -43,6 +43,7 @@
             this.deleteButton = new Guna.UI2.WinForms.Guna2Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.seachButton = new Guna.UI2.WinForms.Guna2Button();
+            this.typeComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -50,6 +51,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Silver;
+            this.panel1.Controls.Add(this.typeComboBox);
             this.panel1.Controls.Add(this.cookingIngredientsButton);
             this.panel1.Controls.Add(this.priceTextBox);
             this.panel1.Controls.Add(this.descriptionTextBox);
@@ -157,7 +159,7 @@
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.PlaceholderText = "ID";
             this.idTextBox.SelectedText = "";
-            this.idTextBox.Size = new System.Drawing.Size(204, 38);
+            this.idTextBox.Size = new System.Drawing.Size(179, 38);
             this.idTextBox.TabIndex = 2;
             // 
             // insertImageButton
@@ -196,7 +198,7 @@
             this.searchTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.searchTextBox.CustomizableEdges.BottomRight = false;
             this.searchTextBox.CustomizableEdges.TopRight = false;
-            this.searchTextBox.DefaultText = "Search";
+            this.searchTextBox.DefaultText = "";
             this.searchTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.searchTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.searchTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -207,7 +209,7 @@
             this.searchTextBox.Location = new System.Drawing.Point(330, 64);
             this.searchTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.searchTextBox.Name = "searchTextBox";
-            this.searchTextBox.PlaceholderText = "";
+            this.searchTextBox.PlaceholderText = "Search";
             this.searchTextBox.SelectedText = "";
             this.searchTextBox.Size = new System.Drawing.Size(378, 42);
             this.searchTextBox.TabIndex = 43;
@@ -287,6 +289,26 @@
             this.seachButton.Size = new System.Drawing.Size(97, 41);
             this.seachButton.TabIndex = 44;
             // 
+            // typeComboBox
+            // 
+            this.typeComboBox.AutoRoundedCorners = true;
+            this.typeComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.typeComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.typeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.typeComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.typeComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.typeComboBox.Font = new System.Drawing.Font("Calibri", 10.8F);
+            this.typeComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.typeComboBox.ItemHeight = 30;
+            this.typeComboBox.Items.AddRange(new object[] {
+            "Starters",
+            "Main Dishes",
+            "Beverage"});
+            this.typeComboBox.Location = new System.Drawing.Point(323, 382);
+            this.typeComboBox.Name = "typeComboBox";
+            this.typeComboBox.Size = new System.Drawing.Size(173, 36);
+            this.typeComboBox.TabIndex = 52;
+            // 
             // managerMenuUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -323,5 +345,6 @@
         private Guna.UI2.WinForms.Guna2Button deleteButton;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private Guna.UI2.WinForms.Guna2Button seachButton;
+        private Guna.UI2.WinForms.Guna2ComboBox typeComboBox;
     }
 }

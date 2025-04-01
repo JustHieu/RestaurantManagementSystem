@@ -212,7 +212,6 @@ Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\
 Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.contactUC.resources
 Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.foodItemMiniUC.resources
 Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.menuUC.resources
-Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.bookTableForm.resources
 Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.cookingIngredientsForm.resources
 Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.foodItemUC.resources
 Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.foodOrderUC.resources
@@ -237,3 +236,4 @@ Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\
 Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.managerColdStorageUC.resources
 Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.managerStatisticalUC.resources
 Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.manageStaffUC.resources
+Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.bookTableUC.resources

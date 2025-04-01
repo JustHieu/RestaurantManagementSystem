@@ -71,7 +71,7 @@
             this.searchTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.searchTextBox.CustomizableEdges.BottomRight = false;
             this.searchTextBox.CustomizableEdges.TopRight = false;
-            this.searchTextBox.DefaultText = "Search";
+            this.searchTextBox.DefaultText = "";
             this.searchTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.searchTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.searchTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -82,7 +82,7 @@
             this.searchTextBox.Location = new System.Drawing.Point(262, 63);
             this.searchTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.searchTextBox.Name = "searchTextBox";
-            this.searchTextBox.PlaceholderText = "";
+            this.searchTextBox.PlaceholderText = "Search";
             this.searchTextBox.SelectedText = "";
             this.searchTextBox.Size = new System.Drawing.Size(375, 42);
             this.searchTextBox.TabIndex = 45;
@@ -196,7 +196,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(714, 631);
             this.panel1.TabIndex = 55;
-
             // 
             // positionComboBox
             // 
@@ -275,7 +274,6 @@
             this.label5.Size = new System.Drawing.Size(149, 27);
             this.label5.TabIndex = 78;
             this.label5.Text = "Phone Number:";
-
             // 
             // label4
             // 
@@ -381,11 +379,12 @@
             // 
             this.birthOfDayDateTimePicker.AutoRoundedCorners = true;
             this.birthOfDayDateTimePicker.BackColor = System.Drawing.Color.LightGray;
+            this.birthOfDayDateTimePicker.BorderColor = System.Drawing.Color.White;
             this.birthOfDayDateTimePicker.Checked = true;
             this.birthOfDayDateTimePicker.CustomFormat = "MM/dd/yyyy";
-            this.birthOfDayDateTimePicker.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.birthOfDayDateTimePicker.FillColor = System.Drawing.Color.Gainsboro;
             this.birthOfDayDateTimePicker.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold);
-            this.birthOfDayDateTimePicker.ForeColor = System.Drawing.Color.White;
+            this.birthOfDayDateTimePicker.ForeColor = System.Drawing.Color.Black;
             this.birthOfDayDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.birthOfDayDateTimePicker.Location = new System.Drawing.Point(258, 366);
             this.birthOfDayDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
@@ -450,7 +449,6 @@
             this.Controls.Add(this.listView1);
             this.Name = "manageStaffUC";
             this.Size = new System.Drawing.Size(1675, 932);
-
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

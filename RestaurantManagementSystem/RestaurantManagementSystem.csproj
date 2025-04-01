@@ -199,11 +199,11 @@
     <Compile Include="aboutUC.Designer.cs">
       <DependentUpon>aboutUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="bookTableForm.cs">
-      <SubType>Form</SubType>
+    <Compile Include="bookTableUC.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="bookTableForm.Designer.cs">
-      <DependentUpon>bookTableForm.cs</DependentUpon>
+    <Compile Include="bookTableUC.Designer.cs">
+      <DependentUpon>bookTableUC.cs</DependentUpon>
     </Compile>
     <Compile Include="Class\Bill.cs" />
     <Compile Include="Class\Chef.cs" />
@@ -347,8 +347,8 @@
     <EmbeddedResource Include="aboutUC.resx">
       <DependentUpon>aboutUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="bookTableForm.resx">
-      <DependentUpon>bookTableForm.cs</DependentUpon>
+    <EmbeddedResource Include="bookTableUC.resx">
+      <DependentUpon>bookTableUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="contactUC.resx">
       <DependentUpon>contactUC.cs</DependentUpon>
@@ -485,6 +485,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="imgSource\chart-histogram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\aboutbackground2chinhmau.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\rest1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.6.0.2\build\net462\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.6.0.2\build\net462\Microsoft.Data.SqlClient.SNI.targets')" />

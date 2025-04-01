@@ -197,7 +197,7 @@
             this.address.Name = "address";
             this.address.Size = new System.Drawing.Size(728, 24);
             this.address.TabIndex = 26;
-            this.address.Text = "Moo See, 720A Đ. Điện Biên Phủ, Vinhomes Tân Cảng, Bình Thạnh, Hồ Chí Minh, Việt " +
+            this.address.Text = "Moo Sea, 720A Đ. Điện Biên Phủ, Vinhomes Tân Cảng, Bình Thạnh, Hồ Chí Minh, Việt " +
     "Nam.\r\n";
             // 
             // label1
@@ -237,7 +237,7 @@
             // guna2PictureBox4
             // 
             this.guna2PictureBox4.BorderRadius = 50;
-            this.guna2PictureBox4.Image = global::RestaurantManagementSystem.Properties.Resources.facebook;
+            this.guna2PictureBox4.Image = global::RestaurantManagementSystem.Properties.Resources.user1;
             this.guna2PictureBox4.ImageRotate = 0F;
             this.guna2PictureBox4.Location = new System.Drawing.Point(1029, 660);
             this.guna2PictureBox4.Name = "guna2PictureBox4";
@@ -249,7 +249,7 @@
             // guna2PictureBox3
             // 
             this.guna2PictureBox3.BorderRadius = 50;
-            this.guna2PictureBox3.Image = global::RestaurantManagementSystem.Properties.Resources.facebook;
+            this.guna2PictureBox3.Image = global::RestaurantManagementSystem.Properties.Resources.user1;
             this.guna2PictureBox3.ImageRotate = 0F;
             this.guna2PictureBox3.Location = new System.Drawing.Point(1029, 481);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
@@ -261,7 +261,7 @@
             // guna2PictureBox2
             // 
             this.guna2PictureBox2.BorderRadius = 50;
-            this.guna2PictureBox2.Image = global::RestaurantManagementSystem.Properties.Resources.facebook;
+            this.guna2PictureBox2.Image = global::RestaurantManagementSystem.Properties.Resources.user1;
             this.guna2PictureBox2.ImageRotate = 0F;
             this.guna2PictureBox2.Location = new System.Drawing.Point(1029, 298);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
