@@ -20,7 +20,7 @@ namespace RestaurantManagementSystem
             LoadMainDishesItems();
             LoadBeverageItems();
         }
-        private string connectionString = "Data Source=LAPTOP-HCL43H54;Initial Catalog=RestaurantDB;Persist Security Info=True;User ID=sa;Password=quan1772005";
+        private string connectionString = "Data Source=.\\SQLEXPRESS;Initial Catalog=RestaurantDB;Persist Security Info=True;User ID=sa;Password=123";
 
         private void LoadStartersItems()
         {
