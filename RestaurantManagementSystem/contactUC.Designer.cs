@@ -195,10 +195,10 @@
             this.address.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.address.Location = new System.Drawing.Point(206, 183);
             this.address.Name = "address";
-            this.address.Size = new System.Drawing.Size(728, 24);
+            this.address.Size = new System.Drawing.Size(718, 24);
             this.address.TabIndex = 26;
-            this.address.Text = "Moo Sea, 720A Đ. Điện Biên Phủ, Vinhomes Tân Cảng, Bình Thạnh, Hồ Chí Minh, Việt " +
-    "Nam.\r\n";
+            this.address.Text = "Mo Sea, 720A Đ. Điện Biên Phủ, Vinhomes Tân Cảng, Bình Thạnh, Hồ Chí Minh, Việt N" +
+    "am.\r\n";
             // 
             // label1
             // 

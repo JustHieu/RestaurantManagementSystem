@@ -15,6 +15,7 @@ namespace RestaurantManagementSystem
     {
 
         public event EventHandler ShowOtherUserControl;
+        public event EventHandler ShowBookTableUserControl;
         public FirstForm()
         {
             InitializeComponent();
@@ -72,7 +73,7 @@ namespace RestaurantManagementSystem
 
         private void bookTableButton2_Click(object sender, EventArgs e)
         {
-            ShowOtherUserControl?.Invoke(this, EventArgs.Empty);
+            ShowBookTableUserControl?.Invoke(this, EventArgs.Empty);
         }
     }
 }

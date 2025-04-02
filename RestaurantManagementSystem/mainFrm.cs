@@ -77,7 +77,16 @@ namespace RestaurantManagementSystem
         {
             FirstForm firstForm = new FirstForm();
             firstForm.ShowOtherUserControl += FirstForm_ShowInMainFormPanel;  // Đăng ký sự kiện
+            firstForm.ShowBookTableUserControl += FirstForm_ShowBookTableUserControl;
             ShowFormInPanel(firstForm);
+        }
+
+        private void FirstForm_ShowBookTableUserControl(object sender, EventArgs e)
+        {
+            showFrm.Controls.Clear();
+            bookTableUC bform = new bookTableUC();
+            bform.Dock = DockStyle.Fill;
+            showFrm.Controls.Add(bform);
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -100,6 +109,7 @@ namespace RestaurantManagementSystem
 
             FirstForm firstForm = new FirstForm();
             firstForm.ShowOtherUserControl += FirstForm_ShowInMainFormPanel;  // Đăng ký sự kiện
+            firstForm.ShowBookTableUserControl += FirstForm_ShowBookTableUserControl;
             ShowFormInPanel(firstForm);
         }
 
