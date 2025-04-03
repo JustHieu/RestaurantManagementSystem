@@ -301,6 +301,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackgroundImage = global::RestaurantManagementSystem.Properties.Resources.rest1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.bookTableButton);
             this.Controls.Add(this.numberOfPeopleComboBox);

@@ -375,3 +375,4 @@ E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project1\RestaurantManagementSystem\Res
 E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project1\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\Restaura.BF770190.Up2Date
 E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project1\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.exe
 E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project1\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.pdb
+E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project1\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.loginForm.resources

@@ -160,6 +160,16 @@ namespace RestaurantManagementSystem
 
         private void accountButton_Click(object sender, EventArgs e)
         {
+            loginForm loginForm = new loginForm();
+
+            // Khi đóng loginForm, form này (this) sẽ Show trở lại
+            
+            this.Hide();
+            loginForm.Show();
+            loginForm.FormClosed += (s, args) =>
+            {
+                this.Show();
+            };
 
         }
     }

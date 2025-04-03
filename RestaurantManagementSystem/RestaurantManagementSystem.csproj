@@ -253,6 +253,12 @@
     <Compile Include="ingredientsItemUC.Designer.cs">
       <DependentUpon>ingredientsItemUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="loginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginForm.Designer.cs">
+      <DependentUpon>loginForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="mainFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -370,6 +376,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ingredientsItemUC.resx">
       <DependentUpon>ingredientsItemUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginForm.resx">
+      <DependentUpon>loginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mainFrm.resx">
       <DependentUpon>mainFrm.cs</DependentUpon>
@@ -491,6 +500,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="imgSource\rest1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\facebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\instagram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\google.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\linkedin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\github.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\close.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.6.0.2\build\net462\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.6.0.2\build\net462\Microsoft.Data.SqlClient.SNI.targets')" />
