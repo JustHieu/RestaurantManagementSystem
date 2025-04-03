@@ -253,11 +253,11 @@
     <Compile Include="ingredientsItemUC.Designer.cs">
       <DependentUpon>ingredientsItemUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="loginForm.cs">
+    <Compile Include="signInForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="loginForm.Designer.cs">
-      <DependentUpon>loginForm.cs</DependentUpon>
+    <Compile Include="signInForm.Designer.cs">
+      <DependentUpon>signInForm.cs</DependentUpon>
     </Compile>
     <Compile Include="mainFrm.cs">
       <SubType>Form</SubType>
@@ -320,6 +320,12 @@
     <Compile Include="Class\RestaurantConfig.cs" />
     <Compile Include="Class\Staff.cs" />
     <Compile Include="Class\Table.cs" />
+    <Compile Include="signUpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signUpForm.Designer.cs">
+      <DependentUpon>signUpForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="staffForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -377,8 +383,8 @@
     <EmbeddedResource Include="ingredientsItemUC.resx">
       <DependentUpon>ingredientsItemUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="loginForm.resx">
-      <DependentUpon>loginForm.cs</DependentUpon>
+    <EmbeddedResource Include="signInForm.resx">
+      <DependentUpon>signInForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mainFrm.resx">
       <DependentUpon>mainFrm.cs</DependentUpon>
@@ -408,6 +414,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="signUpForm.resx">
+      <DependentUpon>signUpForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="staffForm.resx">
       <DependentUpon>staffForm.cs</DependentUpon>

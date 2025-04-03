@@ -160,7 +160,7 @@ namespace RestaurantManagementSystem
 
         private void accountButton_Click(object sender, EventArgs e)
         {
-            loginForm loginForm = new loginForm();
+            signInForm loginForm = new signInForm();
 
             // Khi đóng loginForm, form này (this) sẽ Show trở lại
             
