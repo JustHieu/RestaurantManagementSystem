@@ -205,7 +205,7 @@ namespace RestaurantManagementSystem
 
             try
             {
-                // Lấy ID từ hàng được chọn trong ListView
+               
                 int selectedId;
                 if (!int.TryParse(staffListView.SelectedItems[0].SubItems[0].Text, out selectedId))
                 {
