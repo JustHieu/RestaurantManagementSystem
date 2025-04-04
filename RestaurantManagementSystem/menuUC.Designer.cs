@@ -45,9 +45,10 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Location = new System.Drawing.Point(1751, 214);
+            this.panel1.Location = new System.Drawing.Point(2408, 321);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(146, 660);
+            this.panel1.Size = new System.Drawing.Size(201, 990);
             this.panel1.TabIndex = 19;
             // 
             // label6
@@ -56,9 +57,10 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Coral;
-            this.label6.Location = new System.Drawing.Point(292, 158);
+            this.label6.Location = new System.Drawing.Point(402, 237);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(186, 23);
+            this.label6.Size = new System.Drawing.Size(255, 33);
             this.label6.TabIndex = 18;
             this.label6.Text = "FRESH TASTE BUDS";
             // 
@@ -68,9 +70,10 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Coral;
-            this.label5.Location = new System.Drawing.Point(851, 158);
+            this.label5.Location = new System.Drawing.Point(1170, 237);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(186, 23);
+            this.label5.Size = new System.Drawing.Size(255, 33);
             this.label5.TabIndex = 17;
             this.label5.Text = "TOP RATES DISHES";
             // 
@@ -80,9 +83,10 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Coral;
-            this.label4.Location = new System.Drawing.Point(1419, 158);
+            this.label4.Location = new System.Drawing.Point(1951, 237);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(175, 23);
+            this.label4.Size = new System.Drawing.Size(240, 33);
             this.label4.TabIndex = 16;
             this.label4.Text = "DRINK AND WINES";
             // 
@@ -92,9 +96,10 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Philosopher", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(1394, 181);
+            this.label3.Location = new System.Drawing.Point(1917, 272);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(226, 54);
+            this.label3.Size = new System.Drawing.Size(317, 75);
             this.label3.TabIndex = 15;
             this.label3.Text = "BEVERAGE";
             // 
@@ -104,9 +109,10 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Philosopher", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(810, 181);
+            this.label2.Location = new System.Drawing.Point(1114, 272);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(272, 54);
+            this.label2.Size = new System.Drawing.Size(381, 75);
             this.label2.TabIndex = 14;
             this.label2.Text = "MAIN DISHES";
             // 
@@ -116,9 +122,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Philosopher", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(280, 181);
+            this.label1.Location = new System.Drawing.Point(385, 272);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(213, 54);
+            this.label1.Size = new System.Drawing.Size(296, 75);
             this.label1.TabIndex = 13;
             this.label1.Text = "STARTERS";
             // 
@@ -130,11 +137,11 @@
             this.flowLayoutPanelBeverage.AutoScroll = true;
             this.flowLayoutPanelBeverage.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutPanelBeverage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.flowLayoutPanelBeverage.Location = new System.Drawing.Point(1255, 250);
-            this.flowLayoutPanelBeverage.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
+            this.flowLayoutPanelBeverage.Location = new System.Drawing.Point(1719, 370);
+            this.flowLayoutPanelBeverage.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.flowLayoutPanelBeverage.Name = "flowLayoutPanelBeverage";
-            this.flowLayoutPanelBeverage.Padding = new System.Windows.Forms.Padding(36, 32, 36, 32);
-            this.flowLayoutPanelBeverage.Size = new System.Drawing.Size(465, 485);
+            this.flowLayoutPanelBeverage.Padding = new System.Windows.Forms.Padding(50, 48, 50, 48);
+            this.flowLayoutPanelBeverage.Size = new System.Drawing.Size(733, 728);
             this.flowLayoutPanelBeverage.TabIndex = 12;
             // 
             // flowLayoutPanelMainDishes
@@ -145,11 +152,11 @@
             this.flowLayoutPanelMainDishes.AutoScroll = true;
             this.flowLayoutPanelMainDishes.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutPanelMainDishes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.flowLayoutPanelMainDishes.Location = new System.Drawing.Point(704, 250);
-            this.flowLayoutPanelMainDishes.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
+            this.flowLayoutPanelMainDishes.Location = new System.Drawing.Point(961, 370);
+            this.flowLayoutPanelMainDishes.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.flowLayoutPanelMainDishes.Name = "flowLayoutPanelMainDishes";
-            this.flowLayoutPanelMainDishes.Padding = new System.Windows.Forms.Padding(36, 32, 36, 32);
-            this.flowLayoutPanelMainDishes.Size = new System.Drawing.Size(465, 485);
+            this.flowLayoutPanelMainDishes.Padding = new System.Windows.Forms.Padding(50, 48, 50, 48);
+            this.flowLayoutPanelMainDishes.Size = new System.Drawing.Size(733, 728);
             this.flowLayoutPanelMainDishes.TabIndex = 11;
             // 
             // flowLayoutPanelStarters
@@ -160,16 +167,16 @@
             this.flowLayoutPanelStarters.AutoScroll = true;
             this.flowLayoutPanelStarters.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutPanelStarters.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.flowLayoutPanelStarters.Location = new System.Drawing.Point(161, 250);
-            this.flowLayoutPanelStarters.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
+            this.flowLayoutPanelStarters.Location = new System.Drawing.Point(214, 370);
+            this.flowLayoutPanelStarters.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.flowLayoutPanelStarters.Name = "flowLayoutPanelStarters";
-            this.flowLayoutPanelStarters.Padding = new System.Windows.Forms.Padding(36, 32, 36, 32);
-            this.flowLayoutPanelStarters.Size = new System.Drawing.Size(465, 485);
+            this.flowLayoutPanelStarters.Padding = new System.Windows.Forms.Padding(50, 48, 50, 48);
+            this.flowLayoutPanelStarters.Size = new System.Drawing.Size(733, 728);
             this.flowLayoutPanelStarters.TabIndex = 10;
             // 
             // menuUC
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.Controls.Add(this.panel1);
@@ -182,9 +189,10 @@
             this.Controls.Add(this.flowLayoutPanelBeverage);
             this.Controls.Add(this.flowLayoutPanelMainDishes);
             this.Controls.Add(this.flowLayoutPanelStarters);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "menuUC";
-            this.Size = new System.Drawing.Size(1900, 879);
+            this.Size = new System.Drawing.Size(2612, 1318);
+            this.Load += new System.EventHandler(this.menuUC_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

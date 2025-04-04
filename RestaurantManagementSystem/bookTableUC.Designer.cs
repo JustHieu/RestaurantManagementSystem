@@ -72,11 +72,11 @@
             this.numberOfPeopleComboBox.BorderThickness = 0;
             this.numberOfPeopleComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.numberOfPeopleComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.numberOfPeopleComboBox.FillColor = System.Drawing.Color.Gray;
+            this.numberOfPeopleComboBox.FillColor = System.Drawing.Color.LightGray;
             this.numberOfPeopleComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.numberOfPeopleComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.numberOfPeopleComboBox.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold);
-            this.numberOfPeopleComboBox.ForeColor = System.Drawing.Color.White;
+            this.numberOfPeopleComboBox.ForeColor = System.Drawing.Color.Black;
             this.numberOfPeopleComboBox.ItemHeight = 30;
             this.numberOfPeopleComboBox.Items.AddRange(new object[] {
             "1 Person",
@@ -99,9 +99,9 @@
             this.timeDateTimePicker.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
             this.timeDateTimePicker.Checked = true;
             this.timeDateTimePicker.CustomFormat = "hh:mm tt";
-            this.timeDateTimePicker.FillColor = System.Drawing.Color.Gray;
+            this.timeDateTimePicker.FillColor = System.Drawing.Color.White;
             this.timeDateTimePicker.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold);
-            this.timeDateTimePicker.ForeColor = System.Drawing.Color.White;
+            this.timeDateTimePicker.ForeColor = System.Drawing.Color.Black;
             this.timeDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.timeDateTimePicker.Location = new System.Drawing.Point(944, 341);
             this.timeDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
@@ -119,9 +119,9 @@
             this.dateDateTimePicker.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
             this.dateDateTimePicker.Checked = true;
             this.dateDateTimePicker.CustomFormat = "MM/dd/yyyy";
-            this.dateDateTimePicker.FillColor = System.Drawing.Color.Gray;
+            this.dateDateTimePicker.FillColor = System.Drawing.Color.White;
             this.dateDateTimePicker.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold);
-            this.dateDateTimePicker.ForeColor = System.Drawing.Color.White;
+            this.dateDateTimePicker.ForeColor = System.Drawing.Color.Black;
             this.dateDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateDateTimePicker.Location = new System.Drawing.Point(682, 341);
             this.dateDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
@@ -143,7 +143,7 @@
             this.specialRequestsTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.specialRequestsTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.specialRequestsTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.specialRequestsTextBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.specialRequestsTextBox.FillColor = System.Drawing.Color.LightGray;
             this.specialRequestsTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.specialRequestsTextBox.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold);
             this.specialRequestsTextBox.ForeColor = System.Drawing.Color.Black;
@@ -169,7 +169,7 @@
             this.phoneTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.phoneTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.phoneTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.phoneTextBox.FillColor = System.Drawing.Color.DarkGray;
+            this.phoneTextBox.FillColor = System.Drawing.Color.LightGray;
             this.phoneTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.phoneTextBox.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold);
             this.phoneTextBox.ForeColor = System.Drawing.Color.Black;
@@ -177,7 +177,7 @@
             this.phoneTextBox.Location = new System.Drawing.Point(944, 463);
             this.phoneTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.phoneTextBox.Name = "phoneTextBox";
-            this.phoneTextBox.PlaceholderForeColor = System.Drawing.Color.White;
+            this.phoneTextBox.PlaceholderForeColor = System.Drawing.Color.DimGray;
             this.phoneTextBox.PlaceholderText = "Phone";
             this.phoneTextBox.SelectedText = "";
             this.phoneTextBox.Size = new System.Drawing.Size(228, 38);
@@ -195,7 +195,7 @@
             this.emailTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.emailTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.emailTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.emailTextBox.FillColor = System.Drawing.Color.DarkGray;
+            this.emailTextBox.FillColor = System.Drawing.Color.LightGray;
             this.emailTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.emailTextBox.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold);
             this.emailTextBox.ForeColor = System.Drawing.Color.Black;
@@ -203,7 +203,7 @@
             this.emailTextBox.Location = new System.Drawing.Point(682, 463);
             this.emailTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.PlaceholderForeColor = System.Drawing.Color.White;
+            this.emailTextBox.PlaceholderForeColor = System.Drawing.Color.DimGray;
             this.emailTextBox.PlaceholderText = "Email";
             this.emailTextBox.SelectedText = "";
             this.emailTextBox.Size = new System.Drawing.Size(228, 38);
@@ -221,7 +221,7 @@
             this.nameTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.nameTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.nameTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.nameTextBox.FillColor = System.Drawing.Color.DarkGray;
+            this.nameTextBox.FillColor = System.Drawing.Color.LightGray;
             this.nameTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.nameTextBox.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold);
             this.nameTextBox.ForeColor = System.Drawing.Color.Black;
@@ -229,7 +229,7 @@
             this.nameTextBox.Location = new System.Drawing.Point(410, 463);
             this.nameTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.nameTextBox.Name = "nameTextBox";
-            this.nameTextBox.PlaceholderForeColor = System.Drawing.Color.White;
+            this.nameTextBox.PlaceholderForeColor = System.Drawing.Color.DimGray;
             this.nameTextBox.PlaceholderText = "Your Name";
             this.nameTextBox.SelectedText = "";
             this.nameTextBox.Size = new System.Drawing.Size(228, 38);
@@ -242,7 +242,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(114)))), ((int)(((byte)(0)))));
             this.label2.Location = new System.Drawing.Point(560, 121);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 28);
+            this.label2.Size = new System.Drawing.Size(145, 40);
             this.label2.TabIndex = 28;
             this.label2.Text = "________";
             // 
@@ -254,7 +254,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(547, 158);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(585, 124);
+            this.label4.Size = new System.Drawing.Size(819, 175);
             this.label4.TabIndex = 27;
             this.label4.Text = "Book A Table";
             // 
@@ -265,7 +265,7 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(114)))), ((int)(((byte)(0)))));
             this.label3.Location = new System.Drawing.Point(930, 121);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 28);
+            this.label3.Size = new System.Drawing.Size(145, 40);
             this.label3.TabIndex = 26;
             this.label3.Text = "________";
             // 
@@ -276,7 +276,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(114)))), ((int)(((byte)(0)))));
             this.label1.Location = new System.Drawing.Point(677, 130);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(247, 28);
+            this.label1.Size = new System.Drawing.Size(356, 40);
             this.label1.TabIndex = 25;
             this.label1.Text = "ONLINE RESERVATION\r\n";
             // 
@@ -291,7 +291,7 @@
             this.finalyLabel.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.finalyLabel.Location = new System.Drawing.Point(408, 792);
             this.finalyLabel.Name = "finalyLabel";
-            this.finalyLabel.Size = new System.Drawing.Size(255, 23);
+            this.finalyLabel.Size = new System.Drawing.Size(329, 32);
             this.finalyLabel.TabIndex = 38;
             this.finalyLabel.Text = "-----------------------------------\r\n";
             this.finalyLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -301,7 +301,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BackgroundImage = global::RestaurantManagementSystem.Properties.Resources.rest1;
+            this.BackgroundImage = global::RestaurantManagementSystem.Properties.Resources.menuBackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.bookTableButton);
             this.Controls.Add(this.numberOfPeopleComboBox);
@@ -316,6 +316,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.finalyLabel);
+            this.DoubleBuffered = true;
+            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "bookTableUC";
             this.Size = new System.Drawing.Size(1600, 877);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();

@@ -20,22 +20,29 @@ namespace RestaurantManagementSystem
             LoadMainDishesItems();
             LoadBeverageItems();
         }
-        private string connectionString = "Data Source=.\\SQLEXPRESS;Initial Catalog=RestaurantDB;Persist Security Info=True;User ID=sa;Password=123";
 
+        // Chuỗi kết nối
+        private string connectionString = "Data Source=.;Initial Catalog=RestaurantData;Persist Security Info=True;User ID=sa;Password=123";
+
+        // Hàm tải món khai vị
         private void LoadStartersItems()
         {
-            LoadFoodItems("SELECT Name, Description, Price FROM Starters", flowLayoutPanelStarters);
+            LoadFoodItems("SELECT Name, Descrip, Price FROM Dish WHERE Type = 'Start Dish'", flowLayoutPanelStarters);
         }
 
+        // Hàm tải món chính
         private void LoadMainDishesItems()
         {
-            LoadFoodItems("SELECT Name, Description, Price FROM MainDishes", flowLayoutPanelMainDishes);
-        }
-        private void LoadBeverageItems()
-        {
-            LoadFoodItems("SELECT Name, Description, Price FROM Beverage", flowLayoutPanelBeverage);
+            LoadFoodItems("SELECT Name, Descrip, Price FROM Dish WHERE Type = 'Main Dish'", flowLayoutPanelMainDishes);
         }
 
+        // Hàm tải đồ uống
+        private void LoadBeverageItems()
+        {
+            LoadFoodItems("SELECT Name, Descrip, Price FROM Dish WHERE Type = 'Beverages'", flowLayoutPanelBeverage);
+        }
+
+        // Hàm tải món ăn vào FlowLayoutPanel
         private void LoadFoodItems(string query, FlowLayoutPanel panel)
         {
             try
@@ -51,9 +58,10 @@ namespace RestaurantManagementSystem
                     while (reader.Read())
                     {
                         string name = reader["Name"].ToString();
-                        string description = reader["Description"].ToString();
+                        string description = reader["Descrip"].ToString(); // Đổi từ "Description" thành "Descrip"
                         string price = reader["Price"].ToString();
 
+                        // Tạo đối tượng món ăn và hiển thị
                         foodItemMiniUC item = new foodItemMiniUC();
                         item.SetData(name, description, "$" + price);
                         panel.Controls.Add(item);
@@ -64,6 +72,11 @@ namespace RestaurantManagementSystem
             {
                 MessageBox.Show("Lỗi tải dữ liệu: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void menuUC_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

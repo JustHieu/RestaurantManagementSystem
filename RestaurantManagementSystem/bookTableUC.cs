@@ -83,6 +83,8 @@ namespace RestaurantManagementSystem
                 finalyLabel.Visible = true;
 
             }
+
         }
+
     }
 }

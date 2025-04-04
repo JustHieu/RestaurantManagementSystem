@@ -22,7 +22,7 @@ namespace RestaurantManagementSystem
             //arrangeComboBox.SelectedIndex = 0;
         }
 
-        private string connectionString = "Data Source=LAPTOP-HCL43H54;Initial Catalog=RestaurantDB;Persist Security Info=True;User ID=sa;Password=quan1772005";
+        private string connectionString = "Data Source=.;Initial Catalog=RestaurantDB;Persist Security Info=True;User ID=sa;Password=123";
 
 
         private void startersButton_Click(object sender, EventArgs e)

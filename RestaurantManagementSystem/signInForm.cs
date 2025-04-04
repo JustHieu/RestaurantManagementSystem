@@ -53,5 +53,28 @@ namespace RestaurantManagementSystem
                 };
             
         }
+
+        private void signInBtn_Click(object sender, EventArgs e)
+        {
+            // Lấy thông tin từ các TextBox
+            string username = emailTextbox.Text.Trim();
+            string password = passwordTextbox.Text.Trim();
+
+            // Kiểm tra tài khoản và mật khẩu
+            if (username == "admin@gmail.com" && password == "123")
+            {
+                // Mở form quản lý nếu đăng nhập thành công
+                managerForm signUpForm = new managerForm();
+                signUpForm.Show();
+                this.Hide();  // Ẩn form đăng nhập
+                signUpForm.FormClosed += (s, args) => this.Show(); // Hiển thị lại form đăng nhập khi đóng form quản lý
+            }
+            else
+            {
+                // Thông báo nếu đăng nhập thất bại
+                MessageBox.Show("Sai tài khoản hoặc mật khẩu!", "Đăng nhập thất bại", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
     }
 }
