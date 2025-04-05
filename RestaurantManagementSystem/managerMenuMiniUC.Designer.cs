@@ -28,102 +28,113 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.nameLabel = new System.Windows.Forms.Label();
             this.priceLabel = new System.Windows.Forms.Label();
             this.ingredientLabel = new System.Windows.Forms.Label();
-            this.nameLabel = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.DishPictureBox = new System.Windows.Forms.PictureBox();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.guna2CustomGradientPanel1.SuspendLayout();
+            this.guna2CustomGradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DishPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
+            // guna2CustomGradientPanel1
+            // 
+            this.guna2CustomGradientPanel1.BorderRadius = 20;
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2CustomGradientPanel2);
+            this.guna2CustomGradientPanel1.Controls.Add(this.DishPictureBox);
+            this.guna2CustomGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
+            this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
+            this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(270, 339);
+            this.guna2CustomGradientPanel1.TabIndex = 9;
+            // 
+            // guna2CustomGradientPanel2
+            // 
+            this.guna2CustomGradientPanel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel2.BorderRadius = 12;
+            this.guna2CustomGradientPanel2.Controls.Add(this.nameLabel);
+            this.guna2CustomGradientPanel2.Controls.Add(this.priceLabel);
+            this.guna2CustomGradientPanel2.Controls.Add(this.ingredientLabel);
+            this.guna2CustomGradientPanel2.CustomizableEdges.TopLeft = false;
+            this.guna2CustomGradientPanel2.CustomizableEdges.TopRight = false;
+            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(23, 194);
+            this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
+            this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(228, 129);
+            this.guna2CustomGradientPanel2.TabIndex = 10;
+            // 
+            // nameLabel
+            // 
+            this.nameLabel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.nameLabel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.nameLabel.Font = new System.Drawing.Font("Virendra", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameLabel.Location = new System.Drawing.Point(0, 0);
+            this.nameLabel.Name = "nameLabel";
+            this.nameLabel.Size = new System.Drawing.Size(228, 36);
+            this.nameLabel.TabIndex = 2;
+            this.nameLabel.Text = "label1";
+            this.nameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // priceLabel
             // 
-            this.priceLabel.AutoSize = true;
-            this.priceLabel.Font = new System.Drawing.Font("Philosopher", 20.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.priceLabel.Location = new System.Drawing.Point(3, 387);
+            this.priceLabel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.priceLabel.Font = new System.Drawing.Font("Luxury", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.priceLabel.Location = new System.Drawing.Point(115, 87);
+            this.priceLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.priceLabel.Name = "priceLabel";
-            this.priceLabel.Size = new System.Drawing.Size(142, 65);
-            this.priceLabel.TabIndex = 1;
+            this.priceLabel.Size = new System.Drawing.Size(85, 28);
+            this.priceLabel.TabIndex = 0;
             this.priceLabel.Text = "label1";
             // 
             // ingredientLabel
             // 
-            this.ingredientLabel.AutoSize = true;
-            this.ingredientLabel.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ingredientLabel.Location = new System.Drawing.Point(3, 339);
+            this.ingredientLabel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ingredientLabel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.ingredientLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ingredientLabel.Location = new System.Drawing.Point(0, 36);
             this.ingredientLabel.Name = "ingredientLabel";
-            this.ingredientLabel.Size = new System.Drawing.Size(88, 38);
-            this.ingredientLabel.TabIndex = 2;
-            this.ingredientLabel.Text = "label2";
-            // 
-            // nameLabel
-            // 
-            this.nameLabel.AutoSize = true;
-            this.nameLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.nameLabel.Font = new System.Drawing.Font("Philosopher", 20.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nameLabel.ForeColor = System.Drawing.Color.Black;
-            this.nameLabel.Location = new System.Drawing.Point(3, 0);
-            this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(319, 82);
-            this.nameLabel.TabIndex = 3;
-            this.nameLabel.Text = "label1";
-            this.nameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.nameLabel.Click += new System.EventHandler(this.nameLabel_Click);
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Controls.Add(this.DishPictureBox, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.nameLabel, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.ingredientLabel, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.priceLabel, 0, 3);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(22, 21);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 4;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 53F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(325, 485);
-            this.tableLayoutPanel1.TabIndex = 4;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
+            this.ingredientLabel.Size = new System.Drawing.Size(228, 93);
+            this.ingredientLabel.TabIndex = 1;
+            this.ingredientLabel.Text = "label1";
             // 
             // DishPictureBox
             // 
-            this.DishPictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DishPictureBox.Location = new System.Drawing.Point(3, 85);
+            this.DishPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DishPictureBox.Location = new System.Drawing.Point(23, 22);
+            this.DishPictureBox.Margin = new System.Windows.Forms.Padding(2);
             this.DishPictureBox.Name = "DishPictureBox";
-            this.DishPictureBox.Size = new System.Drawing.Size(319, 251);
+            this.DishPictureBox.Size = new System.Drawing.Size(228, 167);
             this.DishPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.DishPictureBox.TabIndex = 0;
+            this.DishPictureBox.TabIndex = 9;
             this.DishPictureBox.TabStop = false;
-            this.DishPictureBox.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // managerMenuMiniUC
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Silver;
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.guna2CustomGradientPanel1);
+            this.Margin = new System.Windows.Forms.Padding(5, 7, 5, 5);
             this.Name = "managerMenuMiniUC";
-            this.Size = new System.Drawing.Size(373, 527);
+            this.Size = new System.Drawing.Size(270, 339);
             this.Load += new System.EventHandler(this.managerMenuMiniUC_Load);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
+            this.guna2CustomGradientPanel1.ResumeLayout(false);
+            this.guna2CustomGradientPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DishPictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
         private System.Windows.Forms.PictureBox DishPictureBox;
-        private System.Windows.Forms.Label priceLabel;
-        private System.Windows.Forms.Label ingredientLabel;
         private System.Windows.Forms.Label nameLabel;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Label ingredientLabel;
+        private System.Windows.Forms.Label priceLabel;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel2;
     }
 }

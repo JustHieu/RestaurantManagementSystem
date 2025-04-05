@@ -555,6 +555,12 @@
   <ItemGroup>
     <None Include="imgSource\menuBackground.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\image4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\restaurantAvt.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.6.0.2\build\net462\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.6.0.2\build\net462\Microsoft.Data.SqlClient.SNI.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

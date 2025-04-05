@@ -518,3 +518,4 @@ D:\ly_thuyet\Code_window\RestaurantManagementSystem\RestaurantManagementSystem\o
 D:\ly_thuyet\Code_window\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.exe
 D:\ly_thuyet\Code_window\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.pdb
 D:\ly_thuyet\Code_window\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.managerMenuMiniUC.resources
+E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project1\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.managerMenuMiniUC.resources

@@ -22,7 +22,7 @@ namespace RestaurantManagementSystem
         }
 
         // Chuỗi kết nối
-        private string connectionString = "Data Source=.;Initial Catalog=RestaurantData;Persist Security Info=True;User ID=sa;Password=123";
+        private string connectionString = "Data Source=.\\SQLExpress;Initial Catalog=RestaurantData;Persist Security Info=True;User ID=sa;Password=123";
 
         // Hàm tải món khai vị
         private void LoadStartersItems()

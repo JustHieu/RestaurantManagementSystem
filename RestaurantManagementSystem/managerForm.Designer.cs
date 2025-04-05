@@ -61,7 +61,7 @@
             this.showPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.showPanel.Location = new System.Drawing.Point(271, 76);
             this.showPanel.Name = "showPanel";
-            this.showPanel.Size = new System.Drawing.Size(1635, 932);
+            this.showPanel.Size = new System.Drawing.Size(1671, 932);
             this.showPanel.TabIndex = 18;
             // 
             // titleLabel
@@ -77,7 +77,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
             this.panel1.Controls.Add(this.notificationButton);
             this.panel1.Controls.Add(this.accountLabel);
             this.panel1.Controls.Add(this.accontPictureBox);
@@ -86,7 +86,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(271, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1635, 76);
+            this.panel1.Size = new System.Drawing.Size(1671, 76);
             this.panel1.TabIndex = 17;
             // 
             // notificationButton
@@ -126,6 +126,7 @@
             // quitButton
             // 
             this.quitButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.quitButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.quitButton.FlatAppearance.BorderSize = 0;
             this.quitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.quitButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
@@ -323,7 +324,7 @@
             this.logOutButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.logOutButton.FlatAppearance.BorderSize = 0;
             this.logOutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.logOutButton.Font = new System.Drawing.Font("Philosopher", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logOutButton.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logOutButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.logOutButton.Image = global::RestaurantManagementSystem.Properties.Resources.exit;
             this.logOutButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -340,7 +341,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1906, 1008);
+            this.ClientSize = new System.Drawing.Size(1942, 1008);
             this.Controls.Add(this.showPanel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.guna2Panel3);

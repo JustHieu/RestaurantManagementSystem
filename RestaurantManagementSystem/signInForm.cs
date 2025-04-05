@@ -58,7 +58,7 @@ namespace RestaurantManagementSystem
         {
             string username = emailTextbox.Text.Trim();
             string password = passwordTextbox.Text.Trim();
-            if (username == "admin@gmail.com" && password == "123")
+            if (username == "a" && password == "123")
             {
                 managerForm signUpForm = new managerForm();
                 signUpForm.Show();

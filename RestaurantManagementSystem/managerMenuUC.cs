@@ -16,7 +16,7 @@ namespace RestaurantManagementSystem
 {
     public partial class managerMenuUC : UserControl
     {
-        private string connectionString = "Data Source=.;Initial Catalog=RestaurantData;Persist Security Info=True;User ID=sa;Password=123";
+        private string connectionString = "Data Source=.\\SQLEXPRESS;Initial Catalog=RestaurantData;Persist Security Info=True;User ID=sa;Password=123";
         private string imagePath = "";
         private int selectedDishId = -1;  // ID của món ăn được chọn
 
@@ -73,15 +73,13 @@ namespace RestaurantManagementSystem
                         item.Click += (s, e) =>
                         {
                             selectedDishId = (int)item.Tag;
+                            idTextBox.Text = item.Tag.ToString();
                             nameTextBox.Text = name;
                             descriptionTextBox.Text = description;
                             priceTextBox.Text = price;
                             imagePath = picturePath;
-
-                            // Hiển thị loại món ăn lên ComboBox
                             typeComboBox.SelectedItem = dishType;
 
-                            // Hiển thị ảnh
                             if (File.Exists(picturePath))
                             {
                                 dishImage.Image = Image.FromFile(picturePath);
@@ -244,6 +242,11 @@ namespace RestaurantManagementSystem
         {
             string keyword = searchTextBox.Text.Trim();
             LoadMenuItems(keyword);
+        }
+
+        private void cookingIngredientsButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

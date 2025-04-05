@@ -1,118 +1,142 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\",
+  "WorkspaceRootPath": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|d:\\ly_thuyet\\code_window\\restaurantmanagementsystem\\restaurantmanagementsystem\\signinform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\signinform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|e:\\hcmute\\2024-2025\\hkii\\laptrinhwindows\\project1\\restaurantmanagementsystem\\restaurantmanagementsystem\\staffmenuuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\staffmenuuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|d:\\ly_thuyet\\code_window\\restaurantmanagementsystem\\restaurantmanagementsystem\\managestaffuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\managestaffuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|e:\\hcmute\\2024-2025\\hkii\\laptrinhwindows\\project1\\restaurantmanagementsystem\\restaurantmanagementsystem\\stafftablestatusuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\stafftablestatusuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\signinform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\signinform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\menuuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\menuuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\managestaffuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\managestaffuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\managertablehistoryuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\managertablehistoryuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\managerstatisticaluc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\managerstatisticaluc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\managermenuuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\managermenuuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\managermenuminiuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\managermenuminiuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\booktableuc.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\booktableuc.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\staffkitchenuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\staffkitchenuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\tableuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\restaurantmanagementsystem\\tableuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\tableuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\booktableuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\booktableuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\restaurantmanagementsystem\\managertablehistoryuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\managertablehistoryuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\booktableuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\booktableuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\restaurantmanagementsystem\\managerstatisticaluc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\managerstatisticaluc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\contactuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\contactuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|e:\\hcmute\\2024-2025\\hkii\\laptrinhwindows\\project1\\restaurantmanagementsystem\\restaurantmanagementsystem\\managermenuuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\managermenuuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\cookingingredientsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\cookingingredientsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\restaurantmanagementsystem\\managermenuminiuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\managermenuminiuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\fooditemminiuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\fooditemminiuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\foodorderuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\foodorderuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\ingredientsitemuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\ingredientsitemuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\managerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\managerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\signupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\signupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\staffmenuuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\staffmenuuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\staffkitchenuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\staffkitchenuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\staffform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\staffform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\fooditemuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\restaurantmanagementsystem\\fooditemuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\fooditemuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\managercoldstorageuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|e:\\hcmute\\2024-2025\\hkii\\laptrinhwindows\\project1\\restaurantmanagementsystem\\restaurantmanagementsystem\\fooditemminiuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\fooditemminiuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\restaurantmanagementsystem\\managermenuminiuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\managermenuminiuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\restaurantmanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\restaurantmanagementsystem\\managermenuuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\managermenuuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\restaurantmanagementsystem\\signinform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\signinform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\restaurantmanagementsystem\\managerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\managerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\restaurantmanagementsystem\\managermenuminiuc.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\managermenuminiuc.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\restaurantmanagementsystem\\contactuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\contactuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\restaurantmanagementsystem\\managercoldstorageuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\managercoldstorageuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\restaurantmanagementsystem\\ingredientsitemuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\ingredientsitemuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\restaurantmanagementsystem\\managercoldstorageuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\managercoldstorageuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\managerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\managerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\restaurantmanagementsystem\\managestaffuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\managestaffuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\restaurantmanagementsystem\\managerstatisticaluc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\managerstatisticaluc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\restaurantmanagementsystem\\managertablehistoryuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\managertablehistoryuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\restaurantmanagementsystem\\signinform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\signinform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\restaurantmanagementsystem\\mainfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\mainfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\restaurantmanagementsystem\\managestaffuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\managestaffuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\restaurantmanagementsystem\\booktableuc.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\booktableuc.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\restaurantmanagementsystem\\staffkitchenuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\staffkitchenuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\restaurantmanagementsystem\\booktableuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\booktableuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\restaurantmanagementsystem\\cookingingredientsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\cookingingredientsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\restaurantmanagementsystem\\foodorderuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\foodorderuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\restaurantmanagementsystem\\signupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\signupform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\restaurantmanagementsystem\\staffmenuuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\staffmenuuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\restaurantmanagementsystem\\staffkitchenuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\staffkitchenuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\restaurantmanagementsystem\\staffform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\staffform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -131,127 +155,312 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "signInForm.cs",
-              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\signInForm.cs",
-              "RelativeDocumentMoniker": "RestaurantManagementSystem\\signInForm.cs",
-              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\signInForm.cs",
-              "RelativeToolTip": "RestaurantManagementSystem\\signInForm.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAADwv0sAAAAAAAAAAAAAAA==",
+              "Title": "staffMenuUC.cs [Design]",
+              "DocumentMoniker": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\staffMenuUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\staffMenuUC.cs",
+              "ToolTip": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\staffMenuUC.cs [Design]",
+              "RelativeToolTip": "RestaurantManagementSystem\\staffMenuUC.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T08:15:24.185Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-05T07:02:32.447Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "manageStaffUC.cs",
-              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\manageStaffUC.cs",
-              "RelativeDocumentMoniker": "RestaurantManagementSystem\\manageStaffUC.cs",
-              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\manageStaffUC.cs",
-              "RelativeToolTip": "RestaurantManagementSystem\\manageStaffUC.cs",
-              "ViewState": "AgIAACcBAAAAAAAAAAAUwM8AAAAPAAAAAAAAAA==",
+              "Title": "staffTableStatusUC.cs [Design]",
+              "DocumentMoniker": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\staffTableStatusUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\staffTableStatusUC.cs",
+              "ToolTip": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\staffTableStatusUC.cs [Design]",
+              "RelativeToolTip": "RestaurantManagementSystem\\staffTableStatusUC.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T06:36:07.735Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-05T07:02:31.63Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "managerTableHistoryUC.cs [Design]",
+              "DocumentMoniker": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerTableHistoryUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\managerTableHistoryUC.cs",
+              "ToolTip": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerTableHistoryUC.cs [Design]",
+              "RelativeToolTip": "RestaurantManagementSystem\\managerTableHistoryUC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T05:45:15.337Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "tableUC.cs [Design]",
+              "DocumentMoniker": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\tableUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\tableUC.cs",
+              "ToolTip": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\tableUC.cs [Design]",
+              "RelativeToolTip": "RestaurantManagementSystem\\tableUC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T05:44:33.098Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "managerMenuMiniUC.cs [Design]",
+              "DocumentMoniker": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerMenuMiniUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\managerMenuMiniUC.cs",
+              "ToolTip": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerMenuMiniUC.cs [Design]",
+              "RelativeToolTip": "RestaurantManagementSystem\\managerMenuMiniUC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T09:42:33.819Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "managerTableHistoryUC.cs [Design]",
-              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerTableHistoryUC.cs",
-              "RelativeDocumentMoniker": "RestaurantManagementSystem\\managerTableHistoryUC.cs",
-              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerTableHistoryUC.cs [Design]",
-              "RelativeToolTip": "RestaurantManagementSystem\\managerTableHistoryUC.cs [Design]",
+              "Title": "managerMenuUC.cs [Design]",
+              "DocumentMoniker": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerMenuUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\managerMenuUC.cs",
+              "ToolTip": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerMenuUC.cs [Design]",
+              "RelativeToolTip": "RestaurantManagementSystem\\managerMenuUC.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T05:45:15.337Z"
+              "WhenOpened": "2025-04-05T06:09:30.676Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "manageStaffUC.cs [Design]",
-              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\manageStaffUC.cs",
+              "Title": "managerStatisticalUC.cs [Design]",
+              "DocumentMoniker": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerStatisticalUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\managerStatisticalUC.cs",
+              "ToolTip": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerStatisticalUC.cs [Design]",
+              "RelativeToolTip": "RestaurantManagementSystem\\managerStatisticalUC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T05:45:17.759Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "foodItemUC.cs [Design]",
+              "DocumentMoniker": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\foodItemUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\foodItemUC.cs",
+              "ToolTip": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\foodItemUC.cs [Design]",
+              "RelativeToolTip": "RestaurantManagementSystem\\foodItemUC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T02:53:09.461Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "foodItemMiniUC.cs [Design]",
+              "DocumentMoniker": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\foodItemMiniUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\foodItemMiniUC.cs",
+              "ToolTip": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\foodItemMiniUC.cs [Design]",
+              "RelativeToolTip": "RestaurantManagementSystem\\foodItemMiniUC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T07:02:21.779Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "managerMenuMiniUC.cs",
+              "DocumentMoniker": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerMenuMiniUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\managerMenuMiniUC.cs",
+              "ToolTip": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerMenuMiniUC.cs",
+              "RelativeToolTip": "RestaurantManagementSystem\\managerMenuMiniUC.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAUwBUAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T09:00:21.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\Program.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\Program.cs",
+              "ToolTip": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\Program.cs",
+              "RelativeToolTip": "RestaurantManagementSystem\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T05:31:04.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "managerMenuUC.cs",
+              "DocumentMoniker": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerMenuUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\managerMenuUC.cs",
+              "ToolTip": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerMenuUC.cs",
+              "RelativeToolTip": "RestaurantManagementSystem\\managerMenuUC.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAAABQAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T08:48:15.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "signInForm.cs [Design]",
+              "DocumentMoniker": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\signInForm.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\signInForm.cs",
+              "ToolTip": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\signInForm.cs [Design]",
+              "RelativeToolTip": "RestaurantManagementSystem\\signInForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T04:05:03.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "managerForm.cs",
+              "DocumentMoniker": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerForm.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\managerForm.cs",
+              "ToolTip": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerForm.cs",
+              "RelativeToolTip": "RestaurantManagementSystem\\managerForm.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAqwFcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T00:47:27.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "managerMenuMiniUC.Designer.cs",
+              "DocumentMoniker": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerMenuMiniUC.Designer.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\managerMenuMiniUC.Designer.cs",
+              "ToolTip": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerMenuMiniUC.Designer.cs",
+              "RelativeToolTip": "RestaurantManagementSystem\\managerMenuMiniUC.Designer.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T05:19:37.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "contactUC.cs [Design]",
+              "DocumentMoniker": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\contactUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\contactUC.cs",
+              "ToolTip": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\contactUC.cs [Design]",
+              "RelativeToolTip": "RestaurantManagementSystem\\contactUC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T02:53:48.236Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "managerColdStorageUC.cs [Design]",
+              "DocumentMoniker": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerColdStorageUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\managerColdStorageUC.cs",
+              "ToolTip": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerColdStorageUC.cs [Design]",
+              "RelativeToolTip": "RestaurantManagementSystem\\managerColdStorageUC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T08:30:35.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ingredientsItemUC.cs [Design]",
+              "DocumentMoniker": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\ingredientsItemUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\ingredientsItemUC.cs",
+              "ToolTip": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\ingredientsItemUC.cs [Design]",
+              "RelativeToolTip": "RestaurantManagementSystem\\ingredientsItemUC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T02:53:29.479Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "managerColdStorageUC.cs",
+              "DocumentMoniker": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerColdStorageUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\managerColdStorageUC.cs",
+              "ToolTip": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerColdStorageUC.cs",
+              "RelativeToolTip": "RestaurantManagementSystem\\managerColdStorageUC.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T00:42:17.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "manageStaffUC.cs",
+              "DocumentMoniker": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\manageStaffUC.cs",
               "RelativeDocumentMoniker": "RestaurantManagementSystem\\manageStaffUC.cs",
-              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\manageStaffUC.cs [Design]",
+              "ToolTip": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\manageStaffUC.cs",
+              "RelativeToolTip": "RestaurantManagementSystem\\manageStaffUC.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABIAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T06:36:07.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "managerStatisticalUC.cs",
+              "DocumentMoniker": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerStatisticalUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\managerStatisticalUC.cs",
+              "ToolTip": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerStatisticalUC.cs",
+              "RelativeToolTip": "RestaurantManagementSystem\\managerStatisticalUC.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T08:48:52.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "managerTableHistoryUC.cs",
+              "DocumentMoniker": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerTableHistoryUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\managerTableHistoryUC.cs",
+              "ToolTip": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerTableHistoryUC.cs",
+              "RelativeToolTip": "RestaurantManagementSystem\\managerTableHistoryUC.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T08:48:56.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "signInForm.cs",
+              "DocumentMoniker": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\signInForm.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\signInForm.cs",
+              "ToolTip": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\signInForm.cs",
+              "RelativeToolTip": "RestaurantManagementSystem\\signInForm.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAmwDwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T08:15:24.185Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "mainFrm.cs",
+              "DocumentMoniker": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\mainFrm.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\mainFrm.cs",
+              "ToolTip": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\mainFrm.cs",
+              "RelativeToolTip": "RestaurantManagementSystem\\mainFrm.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAUwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T08:34:08.011Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "manageStaffUC.cs [Design]",
+              "DocumentMoniker": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\manageStaffUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\manageStaffUC.cs",
+              "ToolTip": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\manageStaffUC.cs [Design]",
               "RelativeToolTip": "RestaurantManagementSystem\\manageStaffUC.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-04T01:33:36.454Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "menuUC.cs [Design]",
-              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\menuUC.cs",
-              "RelativeDocumentMoniker": "RestaurantManagementSystem\\menuUC.cs",
-              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\menuUC.cs [Design]",
-              "RelativeToolTip": "RestaurantManagementSystem\\menuUC.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T02:52:28.626Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "signInForm.cs [Design]",
-              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\signInForm.cs",
-              "RelativeDocumentMoniker": "RestaurantManagementSystem\\signInForm.cs",
-              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\signInForm.cs [Design]",
-              "RelativeToolTip": "RestaurantManagementSystem\\signInForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T04:05:03.587Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "managerStatisticalUC.cs [Design]",
-              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerStatisticalUC.cs",
-              "RelativeDocumentMoniker": "RestaurantManagementSystem\\managerStatisticalUC.cs",
-              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerStatisticalUC.cs [Design]",
-              "RelativeToolTip": "RestaurantManagementSystem\\managerStatisticalUC.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T05:45:17.759Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "managerMenuUC.cs [Design]",
-              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerMenuUC.cs",
-              "RelativeDocumentMoniker": "RestaurantManagementSystem\\managerMenuUC.cs",
-              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerMenuUC.cs [Design]",
-              "RelativeToolTip": "RestaurantManagementSystem\\managerMenuUC.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T23:59:28.083Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "managerMenuMiniUC.cs [Design]",
-              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerMenuMiniUC.cs",
-              "RelativeDocumentMoniker": "RestaurantManagementSystem\\managerMenuMiniUC.cs",
-              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerMenuMiniUC.cs [Design]",
-              "RelativeToolTip": "RestaurantManagementSystem\\managerMenuMiniUC.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T17:13:01.867Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\Program.cs",
-              "RelativeDocumentMoniker": "RestaurantManagementSystem\\Program.cs",
-              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\Program.cs",
-              "RelativeToolTip": "RestaurantManagementSystem\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T05:31:04.504Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 25,
               "Title": "bookTableUC.Designer.cs",
-              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\bookTableUC.Designer.cs",
+              "DocumentMoniker": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\bookTableUC.Designer.cs",
               "RelativeDocumentMoniker": "RestaurantManagementSystem\\bookTableUC.Designer.cs",
-              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\bookTableUC.Designer.cs",
+              "ToolTip": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\bookTableUC.Designer.cs",
               "RelativeToolTip": "RestaurantManagementSystem\\bookTableUC.Designer.cs",
               "ViewState": "AgIAAKUAAAAAAAAAAAAowLgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -259,44 +468,21 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 26,
               "Title": "staffKitchenUC.cs [Design]",
-              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\staffKitchenUC.cs",
+              "DocumentMoniker": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\staffKitchenUC.cs",
               "RelativeDocumentMoniker": "RestaurantManagementSystem\\staffKitchenUC.cs",
               "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\staffKitchenUC.cs [Design]",
-              "RelativeToolTip": "RestaurantManagementSystem\\staffKitchenUC.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-04T05:44:35.161Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "tableUC.cs [Design]",
-              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\tableUC.cs",
-              "RelativeDocumentMoniker": "RestaurantManagementSystem\\tableUC.cs",
-              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\tableUC.cs [Design]",
-              "RelativeToolTip": "RestaurantManagementSystem\\tableUC.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T05:44:33.098Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "bookTableUC.cs [Design]",
-              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\bookTableUC.cs",
-              "RelativeDocumentMoniker": "RestaurantManagementSystem\\bookTableUC.cs",
-              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\bookTableUC.cs [Design]",
-              "RelativeToolTip": "RestaurantManagementSystem\\bookTableUC.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T05:51:41.082Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 27,
               "Title": "bookTableUC.cs",
-              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\bookTableUC.cs",
+              "DocumentMoniker": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\bookTableUC.cs",
               "RelativeDocumentMoniker": "RestaurantManagementSystem\\bookTableUC.cs",
-              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\bookTableUC.cs",
+              "ToolTip": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\bookTableUC.cs",
               "RelativeToolTip": "RestaurantManagementSystem\\bookTableUC.cs",
               "ViewState": "AgIAADQAAAAAAAAAAAAowBoAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -304,100 +490,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 29,
               "Title": "foodOrderUC.cs [Design]",
-              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\foodOrderUC.cs",
+              "DocumentMoniker": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\foodOrderUC.cs",
               "RelativeDocumentMoniker": "RestaurantManagementSystem\\foodOrderUC.cs",
               "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\foodOrderUC.cs [Design]",
-              "RelativeToolTip": "RestaurantManagementSystem\\foodOrderUC.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-04T05:51:23.137Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ingredientsItemUC.cs [Design]",
-              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\ingredientsItemUC.cs",
-              "RelativeDocumentMoniker": "RestaurantManagementSystem\\ingredientsItemUC.cs",
-              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\ingredientsItemUC.cs [Design]",
-              "RelativeToolTip": "RestaurantManagementSystem\\ingredientsItemUC.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T02:53:29.479Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 28,
               "Title": "cookingIngredientsForm.cs [Design]",
-              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\cookingIngredientsForm.cs",
+              "DocumentMoniker": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\cookingIngredientsForm.cs",
               "RelativeDocumentMoniker": "RestaurantManagementSystem\\cookingIngredientsForm.cs",
               "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\cookingIngredientsForm.cs [Design]",
-              "RelativeToolTip": "RestaurantManagementSystem\\cookingIngredientsForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-04T02:53:45.279Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "contactUC.cs [Design]",
-              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\contactUC.cs",
-              "RelativeDocumentMoniker": "RestaurantManagementSystem\\contactUC.cs",
-              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\contactUC.cs [Design]",
-              "RelativeToolTip": "RestaurantManagementSystem\\contactUC.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T02:53:48.236Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "foodItemMiniUC.cs [Design]",
-              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\foodItemMiniUC.cs",
-              "RelativeDocumentMoniker": "RestaurantManagementSystem\\foodItemMiniUC.cs",
-              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\foodItemMiniUC.cs [Design]",
-              "RelativeToolTip": "RestaurantManagementSystem\\foodItemMiniUC.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T02:53:10.677Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "managerForm.cs [Design]",
-              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerForm.cs",
-              "RelativeDocumentMoniker": "RestaurantManagementSystem\\managerForm.cs",
-              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerForm.cs [Design]",
-              "RelativeToolTip": "RestaurantManagementSystem\\managerForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T00:02:38.651Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 30,
               "Title": "signUpForm.cs [Design]",
-              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\signUpForm.cs",
+              "DocumentMoniker": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\signUpForm.cs",
               "RelativeDocumentMoniker": "RestaurantManagementSystem\\signUpForm.cs",
               "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\signUpForm.cs [Design]",
-              "RelativeToolTip": "RestaurantManagementSystem\\signUpForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-04T04:04:55.38Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 31,
               "Title": "staffMenuUC.cs",
-              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\staffMenuUC.cs",
+              "DocumentMoniker": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\staffMenuUC.cs",
               "RelativeDocumentMoniker": "RestaurantManagementSystem\\staffMenuUC.cs",
-              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\staffMenuUC.cs",
+              "ToolTip": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\staffMenuUC.cs",
               "RelativeToolTip": "RestaurantManagementSystem\\staffMenuUC.cs",
               "ViewState": "AgIAADwAAAAAAAAAAAAQwBgAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T05:34:35.765Z"
+              "WhenOpened": "2025-04-04T05:34:35.765Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 32,
               "Title": "staffKitchenUC.cs",
-              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\staffKitchenUC.cs",
+              "DocumentMoniker": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\staffKitchenUC.cs",
               "RelativeDocumentMoniker": "RestaurantManagementSystem\\staffKitchenUC.cs",
-              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\staffKitchenUC.cs",
+              "ToolTip": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\staffKitchenUC.cs",
               "RelativeToolTip": "RestaurantManagementSystem\\staffKitchenUC.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -405,50 +545,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 33,
               "Title": "staffForm.cs",
-              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\staffForm.cs",
+              "DocumentMoniker": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\staffForm.cs",
               "RelativeDocumentMoniker": "RestaurantManagementSystem\\staffForm.cs",
-              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\staffForm.cs",
+              "ToolTip": "E:\\HCMUTE\\2024-2025\\HKII\\LapTrinhWindows\\Project1\\RestaurantManagementSystem\\RestaurantManagementSystem\\staffForm.cs",
               "RelativeToolTip": "RestaurantManagementSystem\\staffForm.cs",
               "ViewState": "AgIAADoAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-04T05:34:21.615Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "foodItemUC.cs [Design]",
-              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\foodItemUC.cs",
-              "RelativeDocumentMoniker": "RestaurantManagementSystem\\foodItemUC.cs",
-              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\foodItemUC.cs [Design]",
-              "RelativeToolTip": "RestaurantManagementSystem\\foodItemUC.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T02:53:09.461Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "managerColdStorageUC.cs",
-              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerColdStorageUC.cs",
-              "RelativeDocumentMoniker": "RestaurantManagementSystem\\managerColdStorageUC.cs",
-              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerColdStorageUC.cs",
-              "RelativeToolTip": "RestaurantManagementSystem\\managerColdStorageUC.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAwwDQAAABgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T00:42:17.504Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "managerForm.cs",
-              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerForm.cs",
-              "RelativeDocumentMoniker": "RestaurantManagementSystem\\managerForm.cs",
-              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerForm.cs",
-              "RelativeToolTip": "RestaurantManagementSystem\\managerForm.cs",
-              "ViewState": "AgIAAGsAAAAAAAAAAAAcwFcAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T00:47:27.499Z"
             }
           ]
         }

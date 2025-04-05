@@ -13,7 +13,7 @@ namespace RestaurantManagementSystem
 {
     public partial class managerColdStorageUC : UserControl
     {
-        private string connectionString = "Data Source=.;Initial Catalog=RestaurantData;Persist Security Info=True;User ID=sa;Password=123";
+        private string connectionString = "Data Source=.\\SQLEXPRESS;Initial Catalog=RestaurantData;Persist Security Info=True;User ID=sa;Password=123";
         public managerColdStorageUC()
         {
             InitializeComponent();
