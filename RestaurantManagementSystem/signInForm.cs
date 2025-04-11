@@ -65,11 +65,28 @@ namespace RestaurantManagementSystem
                 this.Hide();  
                 signUpForm.FormClosed += (s, args) => this.Show();
             }
+            else if (username == "b" && password == "123")
+            {
+                staffForm staff = new staffForm();
+                staff.Show();
+                this.Hide();
+                staff.FormClosed += (s, args) => this.Show();
+            }
             else
             {
                 MessageBox.Show("Sai tài khoản hoặc mật khẩu!", "Đăng nhập thất bại", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+           
 
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            keyAccessFrom bookTable = new keyAccessFrom();
+            bookTable.Show();
+            this.Hide();
+            bookTable.FormClosed += (s, args) => this.Show();
         }
     }
 }

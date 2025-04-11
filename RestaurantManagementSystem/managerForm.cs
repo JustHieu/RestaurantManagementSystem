@@ -121,5 +121,10 @@ namespace RestaurantManagementSystem
         {
             this.Close();
         }
+
+        private void showPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

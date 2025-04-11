@@ -16,7 +16,7 @@ namespace RestaurantManagementSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new managerForm());
+            Application.Run(new mainFrm());
         }
     }
 }

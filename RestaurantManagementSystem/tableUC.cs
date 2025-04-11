@@ -12,36 +12,48 @@ namespace RestaurantManagementSystem
 {
     public partial class tableUC : UserControl
     {
-        public int TableId { get; private set; }
-        public bool State { get; private set; }
+        public int TableID { get; private set; }
+        public event EventHandler OnTableSelected;
+        public bool IsSelected { get; private set; }
 
-        public event EventHandler<int> OnTableClicked;
+        public void SetSelected(bool selected)
+        {
+            IsSelected = selected;
+            this.BackColor = selected ? Color.LightBlue : Color.White;  // Đổi màu để biết bàn đang được chọn
+        }
 
         public tableUC()
         {
             InitializeComponent();
-            table11Button.Click += table11Button_Click;
+            //table11Button.Click += table11Button_Click;
         }
 
-        public void SetData(Table table)
+        public void SetTableID(int id)
         {
-            TableId = table.IdTable;
-            State = table.StateTable;
-            if (State)
-            {
-                table11Button.FillColor = Color.Red;
-            }
-            else
-            {
-                table11Button.FillColor = Color.FromArgb(74, 48, 55);
-            }
-            table11Button.Text = "Table " + TableId;
+            TableID = id;
+            idTableLabel.Text = "Table " + id.ToString();
         }
 
         private void table11Button_Click(object sender, EventArgs e)
         {
             //    table11Button.FillColor = Color.LightGray;
-            OnTableClicked.Invoke(this, TableId);
+            //OnTableClicked.Invoke(this, TableId);
+        }
+
+        private void addBtn_Click(object sender, EventArgs e)
+        {
+            SetSelected(true);
+            OnTableSelected?.Invoke(this, EventArgs.Empty);
+        }
+
+        private void tableUC_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

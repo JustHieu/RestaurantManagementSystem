@@ -29,88 +29,91 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.lblDescription = new System.Windows.Forms.Label();
-            this.bntAdd = new Guna.UI2.WinForms.Guna2Button();
-            this.lblPrice = new System.Windows.Forms.Label();
-            this.lblName = new System.Windows.Forms.Label();
+            this.addBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.priceLabel = new System.Windows.Forms.Label();
+            this.nameLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox = new System.Windows.Forms.PictureBox();
+            this.descripLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.dishImage = new System.Windows.Forms.PictureBox();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dishImage)).BeginInit();
             this.SuspendLayout();
             // 
-            // lblDescription
+            // addBtn
             // 
-            this.lblDescription.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblDescription.Font = new System.Drawing.Font("Philosopher", 7.999999F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescription.Location = new System.Drawing.Point(0, 39);
-            this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(272, 54);
-            this.lblDescription.TabIndex = 7;
-            this.lblDescription.Text = "Salát kiểu Thái với thịt bò nướng, đu đủ ngâm chua, giá đỗ, hành tây tím, cà chua" +
-    ",...";
+            this.addBtn.BorderRadius = 15;
+            this.addBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.addBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.addBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.addBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.addBtn.FillColor = System.Drawing.Color.DarkGray;
+            this.addBtn.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addBtn.ForeColor = System.Drawing.Color.White;
+            this.addBtn.Location = new System.Drawing.Point(205, 482);
+            this.addBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.addBtn.Name = "addBtn";
+            this.addBtn.Size = new System.Drawing.Size(187, 63);
+            this.addBtn.TabIndex = 15;
+            this.addBtn.Text = "ADD";
+            this.addBtn.Click += new System.EventHandler(this.addBtn_Click_1);
             // 
-            // bntAdd
+            // priceLabel
             // 
-            this.bntAdd.BorderRadius = 15;
-            this.bntAdd.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.bntAdd.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.bntAdd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.bntAdd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.bntAdd.FillColor = System.Drawing.Color.DarkGray;
-            this.bntAdd.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bntAdd.ForeColor = System.Drawing.Color.White;
-            this.bntAdd.Location = new System.Drawing.Point(149, 321);
-            this.bntAdd.Name = "bntAdd";
-            this.bntAdd.Size = new System.Drawing.Size(136, 42);
-            this.bntAdd.TabIndex = 15;
-            this.bntAdd.Text = "THÊM";
-            this.bntAdd.Click += new System.EventHandler(this.bntAdd_Click);
+            this.priceLabel.AutoSize = true;
+            this.priceLabel.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.priceLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.priceLabel.Location = new System.Drawing.Point(16, 495);
+            this.priceLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.priceLabel.Name = "priceLabel";
+            this.priceLabel.Size = new System.Drawing.Size(109, 38);
+            this.priceLabel.TabIndex = 14;
+            this.priceLabel.Text = "120000";
+            this.priceLabel.Click += new System.EventHandler(this.lblPrice_Click);
             // 
-            // lblPrice
+            // nameLabel
             // 
-            this.lblPrice.AutoSize = true;
-            this.lblPrice.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lblPrice.Location = new System.Drawing.Point(12, 330);
-            this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(77, 27);
-            this.lblPrice.TabIndex = 14;
-            this.lblPrice.Text = "120000";
-            this.lblPrice.Click += new System.EventHandler(this.lblPrice_Click);
-            // 
-            // lblName
-            // 
-            this.lblName.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblName.Font = new System.Drawing.Font("Philosopher", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(0, 0);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(272, 39);
-            this.lblName.TabIndex = 6;
-            this.lblName.Text = "THAI BEEF SALAT";
-            this.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.nameLabel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.nameLabel.Font = new System.Drawing.Font("Philosopher", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameLabel.Location = new System.Drawing.Point(0, 0);
+            this.nameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.nameLabel.Name = "nameLabel";
+            this.nameLabel.Size = new System.Drawing.Size(374, 58);
+            this.nameLabel.TabIndex = 6;
+            this.nameLabel.Text = "THAI BEEF SALAT";
+            this.nameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.nameLabel.Click += new System.EventHandler(this.nameLabel_Click);
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.lblDescription);
-            this.panel1.Controls.Add(this.lblName);
-            this.panel1.Location = new System.Drawing.Point(13, 225);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Controls.Add(this.descripLabel);
+            this.panel1.Controls.Add(this.nameLabel);
+            this.panel1.Location = new System.Drawing.Point(18, 338);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(272, 93);
+            this.panel1.Size = new System.Drawing.Size(374, 140);
             this.panel1.TabIndex = 16;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // pictureBox
+            // descripLabel
             // 
-            this.pictureBox.Location = new System.Drawing.Point(11, 10);
-            this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(274, 210);
-            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox.TabIndex = 13;
-            this.pictureBox.TabStop = false;
-            this.pictureBox.Click += new System.EventHandler(this.pictureBox_Click);
+            this.descripLabel.BackColor = System.Drawing.Color.Transparent;
+            this.descripLabel.Location = new System.Drawing.Point(6, 74);
+            this.descripLabel.Name = "descripLabel";
+            this.descripLabel.Size = new System.Drawing.Size(150, 26);
+            this.descripLabel.TabIndex = 7;
+            this.descripLabel.Text = "guna2HtmlLabel1";
+            // 
+            // dishImage
+            // 
+            this.dishImage.Location = new System.Drawing.Point(15, 15);
+            this.dishImage.Margin = new System.Windows.Forms.Padding(4);
+            this.dishImage.Name = "dishImage";
+            this.dishImage.Size = new System.Drawing.Size(377, 315);
+            this.dishImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.dishImage.TabIndex = 13;
+            this.dishImage.TabStop = false;
+            this.dishImage.Click += new System.EventHandler(this.pictureBox_Click);
             // 
             // guna2BorderlessForm1
             // 
@@ -120,33 +123,34 @@
             // 
             // foodItemUC
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Controls.Add(this.bntAdd);
-            this.Controls.Add(this.lblPrice);
-            this.Controls.Add(this.pictureBox);
+            this.Controls.Add(this.addBtn);
+            this.Controls.Add(this.priceLabel);
+            this.Controls.Add(this.dishImage);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(10);
+            this.Margin = new System.Windows.Forms.Padding(14, 15, 14, 15);
             this.Name = "foodItemUC";
-            this.Padding = new System.Windows.Forms.Padding(10);
-            this.Size = new System.Drawing.Size(296, 372);
+            this.Padding = new System.Windows.Forms.Padding(14, 15, 14, 15);
+            this.Size = new System.Drawing.Size(407, 558);
+            this.Load += new System.EventHandler(this.foodItemUC_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dishImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblDescription;
-        private Guna.UI2.WinForms.Guna2Button bntAdd;
-        private System.Windows.Forms.Label lblPrice;
-        private System.Windows.Forms.Label lblName;
-        private System.Windows.Forms.PictureBox pictureBox;
+        private Guna.UI2.WinForms.Guna2Button addBtn;
+        private System.Windows.Forms.Label priceLabel;
+        private System.Windows.Forms.Label nameLabel;
+        private System.Windows.Forms.PictureBox dishImage;
         private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel descripLabel;
     }
 }

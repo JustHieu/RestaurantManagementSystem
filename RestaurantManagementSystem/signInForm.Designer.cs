@@ -158,7 +158,7 @@
             this.emailTextbox.Font = new System.Drawing.Font("SF Pro Display", 9F);
             this.emailTextbox.ForeColor = System.Drawing.Color.Black;
             this.emailTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.emailTextbox.Location = new System.Drawing.Point(150, 414);
+            this.emailTextbox.Location = new System.Drawing.Point(150, 376);
             this.emailTextbox.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.emailTextbox.Name = "emailTextbox";
             this.emailTextbox.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -182,7 +182,7 @@
             this.passwordTextbox.Font = new System.Drawing.Font("SF Pro Display", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordTextbox.ForeColor = System.Drawing.Color.Black;
             this.passwordTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.passwordTextbox.Location = new System.Drawing.Point(150, 528);
+            this.passwordTextbox.Location = new System.Drawing.Point(150, 454);
             this.passwordTextbox.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.passwordTextbox.Name = "passwordTextbox";
             this.passwordTextbox.PasswordChar = '*';
@@ -214,7 +214,7 @@
             this.signInBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(93)))), ((int)(((byte)(100)))));
             this.signInBtn.Font = new System.Drawing.Font("SF Pro Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signInBtn.ForeColor = System.Drawing.Color.White;
-            this.signInBtn.Location = new System.Drawing.Point(231, 718);
+            this.signInBtn.Location = new System.Drawing.Point(232, 665);
             this.signInBtn.Margin = new System.Windows.Forms.Padding(4);
             this.signInBtn.Name = "signInBtn";
             this.signInBtn.Size = new System.Drawing.Size(275, 68);
@@ -228,12 +228,13 @@
             this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label3.Font = new System.Drawing.Font("SF Pro Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.label3.Location = new System.Drawing.Point(226, 639);
+            this.label3.Location = new System.Drawing.Point(214, 588);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(288, 33);
+            this.label3.Size = new System.Drawing.Size(346, 33);
             this.label3.TabIndex = 10;
-            this.label3.Text = "Forget Your Password ?\r\n";
+            this.label3.Text = "Have You Reserved a Table?";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // pictureBox4
             // 

@@ -157,6 +157,12 @@
   <data name="quit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\imgSource\quit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bell" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imgSource\bell.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imgSource\image10.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="facebook1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\imgSource\facebook.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -169,6 +175,9 @@
   <data name="image4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\imgSource\image4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="avt2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imgSource\avt2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="github" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\imgSource\github.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -178,8 +187,8 @@
   <data name="apps" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\imgSource\apps.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bell" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\imgSource\bell.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="restaurantAvt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imgSource\restaurantAvt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="book-alt" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\imgSource\book-alt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,7 +217,10 @@
   <data name="03a44ef259593d7540d179611882def0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\03a44ef259593d7540d179611882def0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="restaurantAvt" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\imgSource\restaurantAvt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="image3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="avt21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imgSource\avt2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -7,46 +7,63 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace RestaurantManagementSystem
 {
     public partial class foodItemUC : UserControl
     {
         public string FoodName { get; private set; }
-        public string FoodPrice { get; private set; }
+        public decimal FoodPrice { get; private set; }
+        public int DishID { get; private set; }
 
-        // Event khi nhấn nút "Thêm"
-        public event EventHandler OnAddClicked;
+        public event EventHandler OnAddFood;
+
+
         public foodItemUC()
         {
             InitializeComponent();
-            bntAdd.MouseEnter += BntAdd_MouseEnter;
-            bntAdd.MouseLeave += BntAdd_MouseLeave;
+            addBtn.MouseEnter += BntAdd_MouseEnter;
+            addBtn.MouseLeave += BntAdd_MouseLeave;
         }
         private void BntAdd_MouseEnter(object sender, EventArgs e)
         {
 
-            bntAdd.FillColor = Color.Gray;
+            addBtn.FillColor = Color.Gray;
         }
 
         private void BntAdd_MouseLeave(object sender, EventArgs e)
         {
-            bntAdd.FillColor = Color.DarkGray;
+            addBtn.FillColor = Color.DarkGray;
         }
-        public void SetData(string name, string description, string price, Image image)
+        public void SetData(int dishID, string name, string description, decimal price, string imagePath)
         {
+            DishID = dishID;
             FoodName = name;
             FoodPrice = price;
-            lblDescription.Text = description;
-            lblName.Text = name;
-            lblPrice.Text = price;
-            pictureBox.Image = image;
-        }
 
-        private void bntAdd_Click(object sender, EventArgs e)
-        {
-            OnAddClicked?.Invoke(this, EventArgs.Empty);
+            nameLabel.Text = name;
+            descripLabel.Text = description;
+            priceLabel.Text = price.ToString("C");
+
+            try
+            {
+                if (File.Exists(imagePath))
+                {
+                    dishImage.Image = Image.FromFile(imagePath);
+                }
+                else
+                {
+                    //dishImage.Image = Properties.Resources.defaultImage;
+                }
+            }
+            catch
+            {
+                //dishImage.Image = Properties.Resources.defaultImage;
+            }
         }
+       
+
 
         private void lblPrice_Click(object sender, EventArgs e)
         {
@@ -61,6 +78,26 @@ namespace RestaurantManagementSystem
         private void pictureBox_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void lblDescription_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nameLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void foodItemUC_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void addBtn_Click_1(object sender, EventArgs e)
+        {
+            OnAddFood?.Invoke(this, EventArgs.Empty);
         }
     }
 }

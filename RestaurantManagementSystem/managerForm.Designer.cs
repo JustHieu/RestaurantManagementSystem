@@ -59,19 +59,22 @@
             // 
             this.showPanel.BackColor = System.Drawing.SystemColors.ControlLight;
             this.showPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.showPanel.Location = new System.Drawing.Point(271, 76);
+            this.showPanel.Location = new System.Drawing.Point(373, 114);
+            this.showPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.showPanel.Name = "showPanel";
-            this.showPanel.Size = new System.Drawing.Size(1671, 932);
+            this.showPanel.Size = new System.Drawing.Size(2297, 1398);
             this.showPanel.TabIndex = 18;
+            this.showPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.showPanel_Paint);
             // 
             // titleLabel
             // 
             this.titleLabel.AutoSize = true;
             this.titleLabel.Font = new System.Drawing.Font("Palatino Linotype", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titleLabel.ForeColor = System.Drawing.Color.White;
-            this.titleLabel.Location = new System.Drawing.Point(19, 18);
+            this.titleLabel.Location = new System.Drawing.Point(26, 27);
+            this.titleLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(114, 41);
+            this.titleLabel.Size = new System.Drawing.Size(160, 57);
             this.titleLabel.TabIndex = 11;
             this.titleLabel.Text = "MENU";
             // 
@@ -84,9 +87,10 @@
             this.panel1.Controls.Add(this.titleLabel);
             this.panel1.Controls.Add(this.quitButton);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(271, 0);
+            this.panel1.Location = new System.Drawing.Point(373, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1671, 76);
+            this.panel1.Size = new System.Drawing.Size(2297, 114);
             this.panel1.TabIndex = 17;
             // 
             // notificationButton
@@ -96,9 +100,10 @@
             this.notificationButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.notificationButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.notificationButton.Image = global::RestaurantManagementSystem.Properties.Resources.bell;
-            this.notificationButton.Location = new System.Drawing.Point(1553, 18);
+            this.notificationButton.Location = new System.Drawing.Point(2135, 27);
+            this.notificationButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.notificationButton.Name = "notificationButton";
-            this.notificationButton.Size = new System.Drawing.Size(46, 45);
+            this.notificationButton.Size = new System.Drawing.Size(63, 68);
             this.notificationButton.TabIndex = 16;
             this.notificationButton.UseVisualStyleBackColor = true;
             // 
@@ -107,18 +112,20 @@
             this.accountLabel.AutoSize = true;
             this.accountLabel.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.accountLabel.ForeColor = System.Drawing.Color.White;
-            this.accountLabel.Location = new System.Drawing.Point(1390, 30);
+            this.accountLabel.Location = new System.Drawing.Point(1911, 45);
+            this.accountLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.accountLabel.Name = "accountLabel";
-            this.accountLabel.Size = new System.Drawing.Size(108, 27);
+            this.accountLabel.Size = new System.Drawing.Size(151, 38);
             this.accountLabel.TabIndex = 15;
             this.accountLabel.Text = "MANAGER";
             // 
             // accontPictureBox
             // 
             this.accontPictureBox.Image = global::RestaurantManagementSystem.Properties.Resources.user1;
-            this.accontPictureBox.Location = new System.Drawing.Point(1324, 12);
+            this.accontPictureBox.Location = new System.Drawing.Point(1820, 18);
+            this.accontPictureBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.accontPictureBox.Name = "accontPictureBox";
-            this.accontPictureBox.Size = new System.Drawing.Size(60, 58);
+            this.accontPictureBox.Size = new System.Drawing.Size(82, 87);
             this.accontPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.accontPictureBox.TabIndex = 14;
             this.accontPictureBox.TabStop = false;
@@ -131,9 +138,10 @@
             this.quitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.quitButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.quitButton.Image = global::RestaurantManagementSystem.Properties.Resources.quit;
-            this.quitButton.Location = new System.Drawing.Point(1623, 14);
+            this.quitButton.Location = new System.Drawing.Point(2232, 21);
+            this.quitButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.quitButton.Name = "quitButton";
-            this.quitButton.Size = new System.Drawing.Size(46, 45);
+            this.quitButton.Size = new System.Drawing.Size(63, 68);
             this.quitButton.TabIndex = 7;
             this.quitButton.UseVisualStyleBackColor = true;
             this.quitButton.Click += new System.EventHandler(this.quitButton_Click);
@@ -141,9 +149,10 @@
             // menuPanel
             // 
             this.menuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.menuPanel.Location = new System.Drawing.Point(3, 198);
+            this.menuPanel.Location = new System.Drawing.Point(4, 297);
+            this.menuPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.menuPanel.Name = "menuPanel";
-            this.menuPanel.Size = new System.Drawing.Size(10, 70);
+            this.menuPanel.Size = new System.Drawing.Size(14, 105);
             this.menuPanel.TabIndex = 11;
             // 
             // guna2Panel3
@@ -163,16 +172,18 @@
             this.guna2Panel3.Controls.Add(this.logOutButton);
             this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel3.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(271, 1008);
+            this.guna2Panel3.Size = new System.Drawing.Size(373, 1512);
             this.guna2Panel3.TabIndex = 16;
             // 
             // statisticalPanel
             // 
             this.statisticalPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.statisticalPanel.Location = new System.Drawing.Point(3, 502);
+            this.statisticalPanel.Location = new System.Drawing.Point(4, 753);
+            this.statisticalPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.statisticalPanel.Name = "statisticalPanel";
-            this.statisticalPanel.Size = new System.Drawing.Size(10, 70);
+            this.statisticalPanel.Size = new System.Drawing.Size(14, 105);
             this.statisticalPanel.TabIndex = 21;
             this.statisticalPanel.Visible = false;
             // 
@@ -188,9 +199,10 @@
             this.statisticalButton.Image = global::RestaurantManagementSystem.Properties.Resources.chart_histogram;
             this.statisticalButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.statisticalButton.ImageOffset = new System.Drawing.Point(20, 0);
-            this.statisticalButton.Location = new System.Drawing.Point(0, 502);
+            this.statisticalButton.Location = new System.Drawing.Point(0, 753);
+            this.statisticalButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.statisticalButton.Name = "statisticalButton";
-            this.statisticalButton.Size = new System.Drawing.Size(271, 70);
+            this.statisticalButton.Size = new System.Drawing.Size(373, 105);
             this.statisticalButton.TabIndex = 22;
             this.statisticalButton.Text = "Statistical";
             this.statisticalButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -200,9 +212,10 @@
             // manageStaffPanel
             // 
             this.manageStaffPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.manageStaffPanel.Location = new System.Drawing.Point(3, 426);
+            this.manageStaffPanel.Location = new System.Drawing.Point(4, 639);
+            this.manageStaffPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.manageStaffPanel.Name = "manageStaffPanel";
-            this.manageStaffPanel.Size = new System.Drawing.Size(10, 70);
+            this.manageStaffPanel.Size = new System.Drawing.Size(14, 105);
             this.manageStaffPanel.TabIndex = 19;
             this.manageStaffPanel.Visible = false;
             // 
@@ -218,9 +231,10 @@
             this.manageStaffButton.Image = global::RestaurantManagementSystem.Properties.Resources.users;
             this.manageStaffButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.manageStaffButton.ImageOffset = new System.Drawing.Point(20, 0);
-            this.manageStaffButton.Location = new System.Drawing.Point(0, 426);
+            this.manageStaffButton.Location = new System.Drawing.Point(0, 639);
+            this.manageStaffButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.manageStaffButton.Name = "manageStaffButton";
-            this.manageStaffButton.Size = new System.Drawing.Size(271, 70);
+            this.manageStaffButton.Size = new System.Drawing.Size(373, 105);
             this.manageStaffButton.TabIndex = 20;
             this.manageStaffButton.Text = "Manage Staff ";
             this.manageStaffButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -230,18 +244,20 @@
             // coldStoragePanel
             // 
             this.coldStoragePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.coldStoragePanel.Location = new System.Drawing.Point(3, 350);
+            this.coldStoragePanel.Location = new System.Drawing.Point(4, 525);
+            this.coldStoragePanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.coldStoragePanel.Name = "coldStoragePanel";
-            this.coldStoragePanel.Size = new System.Drawing.Size(10, 70);
+            this.coldStoragePanel.Size = new System.Drawing.Size(14, 105);
             this.coldStoragePanel.TabIndex = 17;
             this.coldStoragePanel.Visible = false;
             // 
             // tableStatusPanel
             // 
             this.tableStatusPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.tableStatusPanel.Location = new System.Drawing.Point(3, 274);
+            this.tableStatusPanel.Location = new System.Drawing.Point(4, 411);
+            this.tableStatusPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableStatusPanel.Name = "tableStatusPanel";
-            this.tableStatusPanel.Size = new System.Drawing.Size(10, 70);
+            this.tableStatusPanel.Size = new System.Drawing.Size(14, 105);
             this.tableStatusPanel.TabIndex = 15;
             this.tableStatusPanel.Visible = false;
             // 
@@ -257,9 +273,10 @@
             this.coldStorageButton.Image = global::RestaurantManagementSystem.Properties.Resources.apps;
             this.coldStorageButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.coldStorageButton.ImageOffset = new System.Drawing.Point(20, 0);
-            this.coldStorageButton.Location = new System.Drawing.Point(0, 350);
+            this.coldStorageButton.Location = new System.Drawing.Point(0, 525);
+            this.coldStorageButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.coldStorageButton.Name = "coldStorageButton";
-            this.coldStorageButton.Size = new System.Drawing.Size(271, 70);
+            this.coldStorageButton.Size = new System.Drawing.Size(373, 105);
             this.coldStorageButton.TabIndex = 18;
             this.coldStorageButton.Text = "Cold Storage";
             this.coldStorageButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -278,9 +295,10 @@
             this.tableHistoryButton.Image = global::RestaurantManagementSystem.Properties.Resources.history;
             this.tableHistoryButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.tableHistoryButton.ImageOffset = new System.Drawing.Point(20, 0);
-            this.tableHistoryButton.Location = new System.Drawing.Point(0, 274);
+            this.tableHistoryButton.Location = new System.Drawing.Point(0, 411);
+            this.tableHistoryButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableHistoryButton.Name = "tableHistoryButton";
-            this.tableHistoryButton.Size = new System.Drawing.Size(271, 70);
+            this.tableHistoryButton.Size = new System.Drawing.Size(373, 105);
             this.tableHistoryButton.TabIndex = 16;
             this.tableHistoryButton.Text = "Table History";
             this.tableHistoryButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -299,9 +317,10 @@
             this.menuButton.Image = global::RestaurantManagementSystem.Properties.Resources.book_alt;
             this.menuButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.menuButton.ImageOffset = new System.Drawing.Point(20, 0);
-            this.menuButton.Location = new System.Drawing.Point(0, 198);
+            this.menuButton.Location = new System.Drawing.Point(0, 297);
+            this.menuButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.menuButton.Name = "menuButton";
-            this.menuButton.Size = new System.Drawing.Size(271, 70);
+            this.menuButton.Size = new System.Drawing.Size(373, 105);
             this.menuButton.TabIndex = 14;
             this.menuButton.Text = "Menu";
             this.menuButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -313,8 +332,9 @@
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(271, 192);
+            this.pictureBox2.Size = new System.Drawing.Size(373, 288);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 13;
             this.pictureBox2.TabStop = false;
@@ -328,9 +348,10 @@
             this.logOutButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.logOutButton.Image = global::RestaurantManagementSystem.Properties.Resources.exit;
             this.logOutButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.logOutButton.Location = new System.Drawing.Point(44, 960);
+            this.logOutButton.Location = new System.Drawing.Point(60, 1440);
+            this.logOutButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.logOutButton.Name = "logOutButton";
-            this.logOutButton.Size = new System.Drawing.Size(147, 45);
+            this.logOutButton.Size = new System.Drawing.Size(202, 68);
             this.logOutButton.TabIndex = 4;
             this.logOutButton.Text = "LOG OUT";
             this.logOutButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -339,13 +360,14 @@
             // 
             // managerForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1942, 1008);
+            this.ClientSize = new System.Drawing.Size(2670, 1512);
             this.Controls.Add(this.showPanel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.guna2Panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "managerForm";
             this.Text = "managerForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

@@ -16,5 +16,10 @@ namespace RestaurantManagementSystem
         {
             InitializeComponent();
         }
+
+        private void staffKitchenUC_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

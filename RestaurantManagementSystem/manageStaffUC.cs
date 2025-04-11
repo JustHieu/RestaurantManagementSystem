@@ -16,7 +16,7 @@ namespace RestaurantManagementSystem
     public partial class manageStaffUC : UserControl
     {
 
-        private string connectionString = "Data Source=.\\SQLEXPRESS;Initial Catalog=RestaurantData;Persist Security Info=True;User ID=sa;Password=123";
+        private string connectionString = "Data Source=.;Initial Catalog=RestaurantData;Persist Security Info=True;User ID=sa;Password=123";
         private string imagePath = "";
 
         public manageStaffUC()

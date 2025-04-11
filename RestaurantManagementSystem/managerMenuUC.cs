@@ -16,7 +16,7 @@ namespace RestaurantManagementSystem
 {
     public partial class managerMenuUC : UserControl
     {
-        private string connectionString = "Data Source=.\\SQLEXPRESS;Initial Catalog=RestaurantData;Persist Security Info=True;User ID=sa;Password=123";
+        private string connectionString = "Data Source=.;Initial Catalog=RestaurantData;Persist Security Info=True;User ID=sa;Password=123";
         private string imagePath = "";
         private int selectedDishId = -1;  // ID của món ăn được chọn
 
@@ -206,7 +206,7 @@ namespace RestaurantManagementSystem
         }
 
         // Chọn ảnh từ máy tính
-        private void insertImageButton_Click(object sender, EventArgs e)
+      /*  private void insertImageButton_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog
             {
@@ -220,7 +220,7 @@ namespace RestaurantManagementSystem
                 dishImage.Image = Image.FromFile(imagePath);
                 dishImage.SizeMode = PictureBoxSizeMode.StretchImage;
             }
-        }
+        }*/
 
         // Xóa trắng các ô nhập liệu
         private void ClearFields()
@@ -247,6 +247,23 @@ namespace RestaurantManagementSystem
         private void cookingIngredientsButton_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void insertImageButton_Click_1(object sender, EventArgs e)
+        {
+
+            OpenFileDialog openFileDialog = new OpenFileDialog
+            {
+                Title = "Chọn ảnh món ăn",
+                Filter = "Hình ảnh|*.jpg;*.jpeg;*.png;*.bmp;*.gif"
+            };
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                imagePath = openFileDialog.FileName;
+                dishImage.Image = Image.FromFile(imagePath);
+                dishImage.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
         }
     }
 }
