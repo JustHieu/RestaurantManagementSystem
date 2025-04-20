@@ -45,9 +45,6 @@
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2CustomGradientPanel2);
             this.guna2CustomGradientPanel1.Controls.Add(this.DishPictureBox);
             this.guna2CustomGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
-            this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
-            this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
             this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(270, 339);
@@ -83,6 +80,7 @@
             // 
             this.priceLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.priceLabel.Font = new System.Drawing.Font("Luxury", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.priceLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
             this.priceLabel.Location = new System.Drawing.Point(115, 87);
             this.priceLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.priceLabel.Name = "priceLabel";
@@ -95,6 +93,7 @@
             this.ingredientLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ingredientLabel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.ingredientLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ingredientLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.ingredientLabel.Location = new System.Drawing.Point(0, 36);
             this.ingredientLabel.Name = "ingredientLabel";
             this.ingredientLabel.Size = new System.Drawing.Size(228, 93);

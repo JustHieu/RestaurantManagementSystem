@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing.Drawing2D;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace RestaurantManagementSystem
 {
@@ -26,7 +28,8 @@ namespace RestaurantManagementSystem
         }
         private int GetTableIdByBooking(int idBooking)
         {
-            string connectionString = "Data Source=.;Initial Catalog=RestaurantData;Persist Security Info=True;User ID=sa;Password=123";
+            Database db = new Database();
+            string connectionString = db.Connectstring();
             string query = "SELECT idTable FROM BookingKey WHERE idBooking = @idBooking";
 
             try
@@ -64,7 +67,7 @@ namespace RestaurantManagementSystem
                 // Mở form đặt bàn với đúng tableId và idBooking
                 bookTableFrm orderForm = new bookTableFrm(tableId, idBooking);
                 orderForm.Show();
-                this.Hide();
+                //this.Hide();
             }
             catch (Exception ex)
             {
@@ -93,7 +96,8 @@ namespace RestaurantManagementSystem
         }
         private int CheckKeyAccess(string accessKey)
         {
-            string connectionString = "Data Source=.;Initial Catalog=RestaurantData;Persist Security Info=True;User ID=sa;Password=123";
+            Database db = new Database();
+            string connectionString = db.Connectstring();
             string query = "SELECT idBooking FROM BookingKey WHERE accessKey = @accessKey";
 
             try
@@ -156,7 +160,18 @@ namespace RestaurantManagementSystem
 
         private void keyAccessFrom_Load(object sender, EventArgs e)
         {
+            Rectangle rect = new Rectangle(0, 0, this.Width, this.Height);
+            int radius = 33;
 
+            GraphicsPath path = new GraphicsPath();
+            path.AddArc(rect.X, rect.Y, radius, radius, 180, 90);
+            path.AddArc(rect.Width - radius, rect.X, radius, radius, 270, 90);
+            path.AddArc(rect.Width - radius, rect.Height - radius, radius, radius, 0, 90);
+            path.AddArc(rect.X, rect.Height - radius, radius, radius, 90, 90);
+            path.CloseFigure();
+
+            this.Region = new Region(path);
         }
+        
     }
 }

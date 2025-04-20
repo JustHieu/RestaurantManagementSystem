@@ -361,7 +361,6 @@ E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project1\RestaurantManagementSystem\Res
 E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project1\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.managerColdStorageUC.resources
 E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project1\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.managerMenuUC.resources
 E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project1\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.managerStatisticalUC.resources
-E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project1\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.managerTableHistoryUC.resources
 E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project1\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.manageStaffUC.resources
 E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project1\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.menuUC.resources
 E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project1\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.Properties.Resources.resources
@@ -663,3 +662,10 @@ D:\ly_thuyet\proj\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debu
 D:\ly_thuyet\proj\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.bookTableFrm.resources
 D:\ly_thuyet\proj\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.keyAccessFrom.resources
 D:\ly_thuyet\proj\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.showTableDetailUC.resources
+E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project1\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.bookTableFrm.resources
+E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project1\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.keyAccessFrom.resources
+E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project1\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.showTableDetailUC.resources
+E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project1\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.managerTableHistoryMiniUC.resources
+E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project1\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.managerTableHistory.resources
+E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project1\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.managerInfoUC.resources
+E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project1\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.managerUsedIngredient.resources

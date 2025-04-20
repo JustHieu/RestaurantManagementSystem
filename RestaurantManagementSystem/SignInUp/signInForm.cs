@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RestaurantManagementSystem.SignInUp;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,7 @@ using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Configuration;
 using System.Windows.Forms;
 
 namespace RestaurantManagementSystem
@@ -16,6 +18,8 @@ namespace RestaurantManagementSystem
         public signInForm()
         {
             InitializeComponent();
+            check.MouseEnter += Label3_MouseEnter;
+            check.MouseLeave += Label3_MouseLeave;
         }
 
         private void loginForm_Load(object sender, EventArgs e)
@@ -29,7 +33,6 @@ namespace RestaurantManagementSystem
             path.AddArc(rect.Width - radius, rect.Height - radius, radius, radius, 0, 90);
             path.AddArc(rect.X, rect.Height - radius, radius, radius, 90, 90);
             path.CloseFigure();
-
             this.Region = new Region(path);
         }
 
@@ -58,25 +61,39 @@ namespace RestaurantManagementSystem
         {
             string username = emailTextbox.Text.Trim();
             string password = passwordTextbox.Text.Trim();
-            if (username == "a" && password == "123")
+            string role = LoginService.GetUserRole(username, password);
+
+            if (role != null)
             {
-                managerForm signUpForm = new managerForm();
-                signUpForm.Show();
-                this.Hide();  
-                signUpForm.FormClosed += (s, args) => this.Show();
-            }
-            else if (username == "b" && password == "123")
-            {
-                staffForm staff = new staffForm();
-                staff.Show();
-                this.Hide();
-                staff.FormClosed += (s, args) => this.Show();
+                switch (role)
+                {
+                    case "Manager":
+                        managerForm managerForm = new managerForm(username);
+                        managerForm.Show();
+                        this.Hide(); 
+                        managerForm.FormClosed += (s, args) => this.Show();
+                        break;
+
+                    case "Staff":
+                        staffForm staffForm = new staffForm(username);
+                        staffForm.Show();
+                        this.Hide(); 
+                        staffForm.FormClosed += (s, args) => this.Show();
+                        break;
+
+                    case "Customer":
+                        
+                        break;
+
+                    default:
+                        MessageBox.Show("Role không hợp lệ.");
+                        break;
+                }
             }
             else
             {
                 MessageBox.Show("Sai tài khoản hoặc mật khẩu!", "Đăng nhập thất bại", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-           
 
 
         }
@@ -87,6 +104,16 @@ namespace RestaurantManagementSystem
             bookTable.Show();
             this.Hide();
             bookTable.FormClosed += (s, args) => this.Show();
+        }
+        private void Label3_MouseEnter(object sender, EventArgs e)
+        {
+
+            check.ForeColor = Color.FromArgb(28, 39, 49);
+        }
+
+        private void Label3_MouseLeave(object sender, EventArgs e)
+        {
+            check.ForeColor = Color.FromArgb(180, 180, 180);
         }
     }
 }

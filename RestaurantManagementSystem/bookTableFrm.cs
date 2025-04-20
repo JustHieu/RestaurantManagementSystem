@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data;
+
 using System.Data.SqlClient;
 
 namespace RestaurantManagementSystem
@@ -27,7 +27,8 @@ namespace RestaurantManagementSystem
 
         private SqlDataReader GetMenuData()
         {
-            string connectionString = "Data Source=.;Initial Catalog=RestaurantData;Persist Security Info=True;User ID=sa;Password=123";
+            Database db = new Database();
+            string connectionString = db.Connectstring();
             string query = "SELECT Id, Name, Descrip, Price, Picture FROM Dish";
 
             try
@@ -68,7 +69,8 @@ namespace RestaurantManagementSystem
         }
         private void LoadOrderDetails()
         {
-            string connectionString = "Data Source=.;Initial Catalog=RestaurantData;Persist Security Info=True;User ID=sa;Password=123";
+            Database db = new Database();
+            string connectionString = db.Connectstring();
             string query = "SELECT d.Id, d.Name, td.quantity, td.price " +
                            "FROM TableDetail td " +
                            "JOIN Dish d ON td.dishID = d.Id " +
@@ -133,7 +135,8 @@ namespace RestaurantManagementSystem
         // Hàm lưu món ăn vào cơ sở dữ liệu
         private void SaveOrderToDatabase(foodOrderUC item)
         {
-            string connectionString = "Data Source=.;Initial Catalog=RestaurantData;Persist Security Info=True;User ID=sa;Password=123";
+            Database db = new Database();
+            string connectionString = db.Connectstring();
             string query = "INSERT INTO TableDetail (idBooking, idTable, dishID, quantity, price) " +
                            "VALUES (@idBooking, @idTable, @dishID, @quantity, @price)";
 

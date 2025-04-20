@@ -63,20 +63,18 @@
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Location = new System.Drawing.Point(1506, 297);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(1095, 198);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(826, 46);
+            this.panel1.Size = new System.Drawing.Size(601, 31);
             this.panel1.TabIndex = 63;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Philosopher", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(94, 6);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(68, 4);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(113, 36);
+            this.label7.Size = new System.Drawing.Size(78, 24);
             this.label7.TabIndex = 2;
             this.label7.Text = "Quantity";
             // 
@@ -84,10 +82,9 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Philosopher", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(664, 6);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(483, 4);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(72, 36);
+            this.label6.Size = new System.Drawing.Size(50, 24);
             this.label6.TabIndex = 1;
             this.label6.Text = "Price";
             // 
@@ -95,10 +92,9 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Philosopher", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(384, 6);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(279, 4);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(81, 36);
+            this.label5.Size = new System.Drawing.Size(54, 24);
             this.label5.TabIndex = 0;
             this.label5.Text = "Name";
             // 
@@ -108,10 +104,9 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Philosopher", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(2189, 1203);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(1590, 841);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 45);
+            this.label4.Size = new System.Drawing.Size(27, 31);
             this.label4.TabIndex = 62;
             this.label4.Text = "$";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -122,10 +117,9 @@
             this.totalLabel.BackColor = System.Drawing.Color.Transparent;
             this.totalLabel.Font = new System.Drawing.Font("Philosopher", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.totalLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.totalLabel.Location = new System.Drawing.Point(2046, 1203);
-            this.totalLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.totalLabel.Location = new System.Drawing.Point(1488, 841);
             this.totalLabel.Name = "totalLabel";
-            this.totalLabel.Size = new System.Drawing.Size(40, 45);
+            this.totalLabel.Size = new System.Drawing.Size(28, 31);
             this.totalLabel.TabIndex = 61;
             this.totalLabel.Text = "0";
             this.totalLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -133,7 +127,7 @@
             // completeButton
             // 
             this.completeButton.AutoRoundedCorners = true;
-            this.completeButton.BorderRadius = 35;
+            this.completeButton.BorderRadius = 23;
             this.completeButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.completeButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.completeButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -141,10 +135,9 @@
             this.completeButton.FillColor = System.Drawing.Color.Green;
             this.completeButton.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
             this.completeButton.ForeColor = System.Drawing.Color.White;
-            this.completeButton.Location = new System.Drawing.Point(1929, 1312);
-            this.completeButton.Margin = new System.Windows.Forms.Padding(4);
+            this.completeButton.Location = new System.Drawing.Point(1403, 875);
             this.completeButton.Name = "completeButton";
-            this.completeButton.Size = new System.Drawing.Size(341, 72);
+            this.completeButton.Size = new System.Drawing.Size(248, 48);
             this.completeButton.TabIndex = 60;
             this.completeButton.Text = "COMPLETE";
             this.completeButton.Click += new System.EventHandler(this.completeButton_Click);
@@ -153,7 +146,7 @@
             // 
             this.deleteAllButton.AutoRoundedCorners = true;
             this.deleteAllButton.BackColor = System.Drawing.Color.Transparent;
-            this.deleteAllButton.BorderRadius = 35;
+            this.deleteAllButton.BorderRadius = 23;
             this.deleteAllButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.deleteAllButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.deleteAllButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -161,10 +154,9 @@
             this.deleteAllButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.deleteAllButton.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
             this.deleteAllButton.ForeColor = System.Drawing.Color.White;
-            this.deleteAllButton.Location = new System.Drawing.Point(1550, 1312);
-            this.deleteAllButton.Margin = new System.Windows.Forms.Padding(4);
+            this.deleteAllButton.Location = new System.Drawing.Point(1127, 875);
             this.deleteAllButton.Name = "deleteAllButton";
-            this.deleteAllButton.Size = new System.Drawing.Size(341, 72);
+            this.deleteAllButton.Size = new System.Drawing.Size(248, 48);
             this.deleteAllButton.TabIndex = 59;
             this.deleteAllButton.Text = "DELETE ALL";
             this.deleteAllButton.Click += new System.EventHandler(this.deleteAllButton_Click);
@@ -175,10 +167,9 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Philosopher", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(1942, 1203);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(1412, 841);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(102, 45);
+            this.label3.Size = new System.Drawing.Size(70, 31);
             this.label3.TabIndex = 58;
             this.label3.Text = "Total:";
             // 
@@ -207,10 +198,9 @@
             "10",
             "11",
             "12"});
-            this.tableComboBox.Location = new System.Drawing.Point(1682, 213);
-            this.tableComboBox.Margin = new System.Windows.Forms.Padding(4);
+            this.tableComboBox.Location = new System.Drawing.Point(1223, 142);
             this.tableComboBox.Name = "tableComboBox";
-            this.tableComboBox.Size = new System.Drawing.Size(147, 36);
+            this.tableComboBox.Size = new System.Drawing.Size(108, 36);
             this.tableComboBox.TabIndex = 57;
             // 
             // label2
@@ -219,10 +209,9 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
             this.label2.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(1584, 226);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(1152, 151);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 38);
+            this.label2.Size = new System.Drawing.Size(65, 27);
             this.label2.TabIndex = 56;
             this.label2.Text = "Table:";
             // 
@@ -237,13 +226,12 @@
             this.timeDateTimePicker.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold);
             this.timeDateTimePicker.ForeColor = System.Drawing.Color.White;
             this.timeDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.timeDateTimePicker.Location = new System.Drawing.Point(1950, 213);
-            this.timeDateTimePicker.Margin = new System.Windows.Forms.Padding(4);
+            this.timeDateTimePicker.Location = new System.Drawing.Point(1418, 142);
             this.timeDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.timeDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.timeDateTimePicker.Name = "timeDateTimePicker";
             this.timeDateTimePicker.ShowUpDown = true;
-            this.timeDateTimePicker.Size = new System.Drawing.Size(314, 54);
+            this.timeDateTimePicker.Size = new System.Drawing.Size(228, 36);
             this.timeDateTimePicker.TabIndex = 55;
             this.timeDateTimePicker.Value = new System.DateTime(2025, 3, 24, 0, 0, 0, 0);
             // 
@@ -258,12 +246,11 @@
             this.dateDateTimePicker.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold);
             this.dateDateTimePicker.ForeColor = System.Drawing.Color.White;
             this.dateDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateDateTimePicker.Location = new System.Drawing.Point(1950, 132);
-            this.dateDateTimePicker.Margin = new System.Windows.Forms.Padding(4);
+            this.dateDateTimePicker.Location = new System.Drawing.Point(1418, 88);
             this.dateDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dateDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dateDateTimePicker.Name = "dateDateTimePicker";
-            this.dateDateTimePicker.Size = new System.Drawing.Size(314, 54);
+            this.dateDateTimePicker.Size = new System.Drawing.Size(228, 36);
             this.dateDateTimePicker.TabIndex = 54;
             this.dateDateTimePicker.Value = new System.DateTime(2025, 3, 24, 0, 0, 0, 0);
             // 
@@ -273,10 +260,9 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
             this.label1.Font = new System.Drawing.Font("Philosopher", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(1578, 118);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(1148, 79);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(298, 64);
+            this.label1.Size = new System.Drawing.Size(209, 45);
             this.label1.TabIndex = 53;
             this.label1.Text = "NEW ORDER";
             // 
@@ -292,10 +278,9 @@
             this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
             this.guna2Button3.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Location = new System.Drawing.Point(1506, 58);
-            this.guna2Button3.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Button3.Location = new System.Drawing.Point(1095, 39);
             this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(828, 288);
+            this.guna2Button3.Size = new System.Drawing.Size(602, 192);
             this.guna2Button3.TabIndex = 52;
             // 
             // arrangeComboBox
@@ -312,11 +297,11 @@
             this.arrangeComboBox.Items.AddRange(new object[] {
             "A -> Z",
             "Z -> A"});
-            this.arrangeComboBox.Location = new System.Drawing.Point(1297, 135);
-            this.arrangeComboBox.Margin = new System.Windows.Forms.Padding(4);
+            this.arrangeComboBox.Location = new System.Drawing.Point(943, 90);
             this.arrangeComboBox.Name = "arrangeComboBox";
-            this.arrangeComboBox.Size = new System.Drawing.Size(177, 36);
+            this.arrangeComboBox.Size = new System.Drawing.Size(130, 36);
             this.arrangeComboBox.TabIndex = 50;
+            this.arrangeComboBox.SelectedIndexChanged += new System.EventHandler(this.arrangeComboBox_SelectedIndexChanged);
             // 
             // guna2ShapesTool1
             // 
@@ -329,23 +314,21 @@
             // orderFlowLayoutPanel
             // 
             this.orderFlowLayoutPanel.AutoScroll = true;
-            this.orderFlowLayoutPanel.BackColor = System.Drawing.Color.LightGray;
+            this.orderFlowLayoutPanel.BackColor = System.Drawing.Color.White;
             this.orderFlowLayoutPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.orderFlowLayoutPanel.Location = new System.Drawing.Point(1506, 344);
-            this.orderFlowLayoutPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.orderFlowLayoutPanel.Location = new System.Drawing.Point(1095, 229);
             this.orderFlowLayoutPanel.Name = "orderFlowLayoutPanel";
-            this.orderFlowLayoutPanel.Padding = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.orderFlowLayoutPanel.Size = new System.Drawing.Size(826, 822);
+            this.orderFlowLayoutPanel.Padding = new System.Windows.Forms.Padding(1);
+            this.orderFlowLayoutPanel.Size = new System.Drawing.Size(602, 609);
             this.orderFlowLayoutPanel.TabIndex = 51;
             // 
             // arrangeLabel
             // 
             this.arrangeLabel.AutoSize = true;
             this.arrangeLabel.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.arrangeLabel.Location = new System.Drawing.Point(1167, 142);
-            this.arrangeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.arrangeLabel.Location = new System.Drawing.Point(849, 95);
             this.arrangeLabel.Name = "arrangeLabel";
-            this.arrangeLabel.Size = new System.Drawing.Size(125, 38);
+            this.arrangeLabel.Size = new System.Drawing.Size(88, 27);
             this.arrangeLabel.TabIndex = 49;
             this.arrangeLabel.Text = "Arrange:";
             // 
@@ -362,16 +345,16 @@
             this.seachButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.seachButton.ForeColor = System.Drawing.Color.White;
             this.seachButton.Image = global::RestaurantManagementSystem.Properties.Resources.search;
-            this.seachButton.Location = new System.Drawing.Point(1342, 58);
-            this.seachButton.Margin = new System.Windows.Forms.Padding(4);
+            this.seachButton.Location = new System.Drawing.Point(976, 39);
             this.seachButton.Name = "seachButton";
-            this.seachButton.Size = new System.Drawing.Size(133, 62);
+            this.seachButton.Size = new System.Drawing.Size(97, 41);
             this.seachButton.TabIndex = 48;
+            this.seachButton.Click += new System.EventHandler(this.seachButton_Click);
             // 
             // searchTextBox
             // 
             this.searchTextBox.AutoRoundedCorners = true;
-            this.searchTextBox.BorderRadius = 30;
+            this.searchTextBox.BorderRadius = 20;
             this.searchTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.searchTextBox.CustomizableEdges.BottomRight = false;
             this.searchTextBox.CustomizableEdges.TopRight = false;
@@ -383,12 +366,12 @@
             this.searchTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.searchTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.searchTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.searchTextBox.Location = new System.Drawing.Point(836, 58);
-            this.searchTextBox.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.searchTextBox.Location = new System.Drawing.Point(608, 39);
+            this.searchTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.searchTextBox.Name = "searchTextBox";
             this.searchTextBox.PlaceholderText = "Search";
             this.searchTextBox.SelectedText = "";
-            this.searchTextBox.Size = new System.Drawing.Size(510, 63);
+            this.searchTextBox.Size = new System.Drawing.Size(371, 42);
             this.searchTextBox.TabIndex = 47;
             // 
             // beverageButton
@@ -403,10 +386,9 @@
             this.beverageButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
             this.beverageButton.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
             this.beverageButton.ForeColor = System.Drawing.Color.White;
-            this.beverageButton.Location = new System.Drawing.Point(573, 135);
-            this.beverageButton.Margin = new System.Windows.Forms.Padding(4);
+            this.beverageButton.Location = new System.Drawing.Point(417, 90);
             this.beverageButton.Name = "beverageButton";
-            this.beverageButton.Size = new System.Drawing.Size(234, 72);
+            this.beverageButton.Size = new System.Drawing.Size(170, 48);
             this.beverageButton.TabIndex = 46;
             this.beverageButton.Text = "BEVERAGE";
             this.beverageButton.Click += new System.EventHandler(this.beverageButton_Click);
@@ -423,10 +405,9 @@
             this.mainDishesButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
             this.mainDishesButton.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
             this.mainDishesButton.ForeColor = System.Drawing.Color.White;
-            this.mainDishesButton.Location = new System.Drawing.Point(331, 135);
-            this.mainDishesButton.Margin = new System.Windows.Forms.Padding(4);
+            this.mainDishesButton.Location = new System.Drawing.Point(241, 90);
             this.mainDishesButton.Name = "mainDishesButton";
-            this.mainDishesButton.Size = new System.Drawing.Size(234, 72);
+            this.mainDishesButton.Size = new System.Drawing.Size(170, 48);
             this.mainDishesButton.TabIndex = 45;
             this.mainDishesButton.Text = "MAIN DISHES";
             this.mainDishesButton.Click += new System.EventHandler(this.mainDishesButton_Click);
@@ -443,10 +424,9 @@
             this.startersButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
             this.startersButton.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
             this.startersButton.ForeColor = System.Drawing.Color.White;
-            this.startersButton.Location = new System.Drawing.Point(89, 135);
-            this.startersButton.Margin = new System.Windows.Forms.Padding(4);
+            this.startersButton.Location = new System.Drawing.Point(65, 90);
             this.startersButton.Name = "startersButton";
-            this.startersButton.Size = new System.Drawing.Size(234, 72);
+            this.startersButton.Size = new System.Drawing.Size(170, 48);
             this.startersButton.TabIndex = 44;
             this.startersButton.Text = "STARTERS";
             this.startersButton.Click += new System.EventHandler(this.startersButton_Click);
@@ -454,19 +434,19 @@
             // foodFlowLayoutPanel
             // 
             this.foodFlowLayoutPanel.AutoScroll = true;
-            this.foodFlowLayoutPanel.BackColor = System.Drawing.Color.Silver;
+            this.foodFlowLayoutPanel.BackColor = System.Drawing.Color.White;
             this.foodFlowLayoutPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.foodFlowLayoutPanel.Location = new System.Drawing.Point(89, 202);
-            this.foodFlowLayoutPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.foodFlowLayoutPanel.Location = new System.Drawing.Point(65, 135);
             this.foodFlowLayoutPanel.Name = "foodFlowLayoutPanel";
-            this.foodFlowLayoutPanel.Padding = new System.Windows.Forms.Padding(14, 15, 14, 15);
-            this.foodFlowLayoutPanel.Size = new System.Drawing.Size(1384, 1180);
+            this.foodFlowLayoutPanel.Padding = new System.Windows.Forms.Padding(10);
+            this.foodFlowLayoutPanel.Size = new System.Drawing.Size(1056, 788);
             this.foodFlowLayoutPanel.TabIndex = 43;
             // 
             // staffMenuUC
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.totalLabel);
@@ -488,9 +468,8 @@
             this.Controls.Add(this.mainDishesButton);
             this.Controls.Add(this.startersButton);
             this.Controls.Add(this.foodFlowLayoutPanel);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "staffMenuUC";
-            this.Size = new System.Drawing.Size(2303, 1398);
+            this.Size = new System.Drawing.Size(1675, 932);
             this.Load += new System.EventHandler(this.staffMenuUC_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

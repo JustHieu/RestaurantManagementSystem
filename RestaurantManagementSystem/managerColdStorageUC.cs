@@ -13,7 +13,7 @@ namespace RestaurantManagementSystem
 {
     public partial class managerColdStorageUC : UserControl
     {
-        private string connectionString = "Data Source=.;Initial Catalog=RestaurantData;Persist Security Info=True;User ID=sa;Password=123";
+        
         public managerColdStorageUC()
         {
             InitializeComponent();
@@ -29,6 +29,8 @@ namespace RestaurantManagementSystem
         }
         private void DisplayIngredientInformation(ListViewItem item)
         {
+             Database db = new Database();
+            string connectionString = db.Connectstring();
             try
             {
                 // Lấy ID từ item được chọn
@@ -82,6 +84,8 @@ namespace RestaurantManagementSystem
         // Hàm tải nguyên liệu lên ListView
         private void LoadIngredients()
         {
+            Database db = new Database();
+            string connectionString = db.Connectstring();
             try
             {
                 using (SqlConnection conn = new SqlConnection(connectionString))
@@ -135,6 +139,8 @@ namespace RestaurantManagementSystem
 
         private void addButton_Click(object sender, EventArgs e)
         {
+             Database db = new Database();
+            string connectionString = db.Connectstring();
             try
             {
                 using (SqlConnection conn = new SqlConnection(connectionString))
@@ -180,7 +186,8 @@ namespace RestaurantManagementSystem
                 MessageBox.Show("Vui lòng chọn nguyên liệu cần xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-
+            Database db = new Database();
+            string connectionString = db.Connectstring();
             try
             {
                 using (SqlConnection conn = new SqlConnection(connectionString))

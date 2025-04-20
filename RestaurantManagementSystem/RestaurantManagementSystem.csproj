@@ -235,6 +235,8 @@
     <Compile Include="cookingIngredientsForm.Designer.cs">
       <DependentUpon>cookingIngredientsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConnectDatabase\Database.cs" />
+    <Compile Include="FoodItem.cs" />
     <Compile Include="foodItemMiniUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -265,11 +267,35 @@
     <Compile Include="keyAccessFrom.Designer.cs">
       <DependentUpon>keyAccessFrom.cs</DependentUpon>
     </Compile>
+    <Compile Include="managerInfoUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="managerInfoUC.Designer.cs">
+      <DependentUpon>managerInfoUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="managerMenuMiniUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="managerMenuMiniUC.Designer.cs">
       <DependentUpon>managerMenuMiniUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="managerTableHistory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="managerTableHistory.Designer.cs">
+      <DependentUpon>managerTableHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="managerTableHistoryMiniUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="managerTableHistoryMiniUC.Designer.cs">
+      <DependentUpon>managerTableHistoryMiniUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="managerUsedIngredient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="managerUsedIngredient.Designer.cs">
+      <DependentUpon>managerUsedIngredient.cs</DependentUpon>
     </Compile>
     <Compile Include="showTableDetailUC.cs">
       <SubType>UserControl</SubType>
@@ -277,10 +303,11 @@
     <Compile Include="showTableDetailUC.Designer.cs">
       <DependentUpon>showTableDetailUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="signInForm.cs">
+    <Compile Include="SignInUp\LoginService.cs" />
+    <Compile Include="SignInUp\signInForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="signInForm.Designer.cs">
+    <Compile Include="SignInUp\signInForm.Designer.cs">
       <DependentUpon>signInForm.cs</DependentUpon>
     </Compile>
     <Compile Include="mainFrm.cs">
@@ -313,12 +340,6 @@
     <Compile Include="managerStatisticalUC.Designer.cs">
       <DependentUpon>managerStatisticalUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="managerTableHistoryUC.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="managerTableHistoryUC.Designer.cs">
-      <DependentUpon>managerTableHistoryUC.cs</DependentUpon>
-    </Compile>
     <Compile Include="manageStaffUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -344,10 +365,10 @@
     <Compile Include="Class\RestaurantConfig.cs" />
     <Compile Include="Class\Staff.cs" />
     <Compile Include="Class\Table.cs" />
-    <Compile Include="signUpForm.cs">
+    <Compile Include="SignInUp\signUpForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="signUpForm.Designer.cs">
+    <Compile Include="SignInUp\signUpForm.Designer.cs">
       <DependentUpon>signUpForm.cs</DependentUpon>
     </Compile>
     <Compile Include="staffForm.cs">
@@ -413,13 +434,25 @@
     <EmbeddedResource Include="keyAccessFrom.resx">
       <DependentUpon>keyAccessFrom.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="managerInfoUC.resx">
+      <DependentUpon>managerInfoUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="managerMenuMiniUC.resx">
       <DependentUpon>managerMenuMiniUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="managerTableHistory.resx">
+      <DependentUpon>managerTableHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="managerTableHistoryMiniUC.resx">
+      <DependentUpon>managerTableHistoryMiniUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="managerUsedIngredient.resx">
+      <DependentUpon>managerUsedIngredient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="showTableDetailUC.resx">
       <DependentUpon>showTableDetailUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="signInForm.resx">
+    <EmbeddedResource Include="SignInUp\signInForm.resx">
       <DependentUpon>signInForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mainFrm.resx">
@@ -437,9 +470,6 @@
     <EmbeddedResource Include="managerStatisticalUC.resx">
       <DependentUpon>managerStatisticalUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="managerTableHistoryUC.resx">
-      <DependentUpon>managerTableHistoryUC.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="manageStaffUC.resx">
       <DependentUpon>manageStaffUC.cs</DependentUpon>
     </EmbeddedResource>
@@ -451,7 +481,7 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="signUpForm.resx">
+    <EmbeddedResource Include="SignInUp\signUpForm.resx">
       <DependentUpon>signUpForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="staffForm.resx">
@@ -596,6 +626,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="imgSource\avt2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\035_001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\2a4b3a63880a4d811af7c4a3448dc065.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\food.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\goods.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\anh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\booking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\calculator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\profit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\employees.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.6.0.2\build\net462\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.6.0.2\build\net462\Microsoft.Data.SqlClient.SNI.targets')" />

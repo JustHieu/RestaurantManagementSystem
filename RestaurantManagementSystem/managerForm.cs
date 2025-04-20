@@ -2,20 +2,26 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
+using System.IO.Compression;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace RestaurantManagementSystem
 {
     public partial class managerForm : Form
     {
-        public managerForm()
+        private string _username;
+        Database db = new Database();
+        public managerForm(string username="")
         {
             InitializeComponent();
             menuButton_Click(null, EventArgs.Empty);
+            _username = username;
         }
 
         private void menuButton_Click(object sender, EventArgs e)
@@ -37,18 +43,17 @@ namespace RestaurantManagementSystem
 
         private void tableHistoryButton_Click(object sender, EventArgs e)
         {
-            managerTableHistoryUC ts = new managerTableHistoryUC();
+            managerTableHistory menu = new managerTableHistory();
             showPanel.Controls.Clear();
-            ts.Dock = DockStyle.Fill;
-            showPanel.Controls.Add(ts);
-
+            menu.Dock = DockStyle.Fill;
+            showPanel.Controls.Add(menu);
             ResetButtonColors();
             tableStatusPanel.Visible = true;
             Guna.UI2.WinForms.Guna2Button clickedButton = sender as Guna.UI2.WinForms.Guna2Button;
             if (clickedButton != null)
             {
                 clickedButton.FillColor = Color.FromArgb(50, 58, 68);
-                titleLabel.Text = "TABLE STATUS";
+                titleLabel.Text = "TABLE HISTORY";
             }
         }
 
@@ -76,6 +81,10 @@ namespace RestaurantManagementSystem
             menuPanel.Visible = false;
             tableStatusPanel.Visible = false;
             coldStoragePanel.Visible = false;
+            manageStaffPanel.Visible = false;
+            statisticalPanel.Visible = false;
+            settingPanel.Visible = false;
+            usedPanel.Visible = false;
         }
 
         private void logOutButton_Click(object sender, EventArgs e)
@@ -96,7 +105,7 @@ namespace RestaurantManagementSystem
             if (clickedButton != null)
             {
                 clickedButton.FillColor = Color.FromArgb(50, 58, 68);
-                titleLabel.Text = "MANAGE STEFF";
+                titleLabel.Text = "MANAGE STAFF";
             }
         }
 
@@ -113,7 +122,7 @@ namespace RestaurantManagementSystem
             if (clickedButton != null)
             {
                 clickedButton.FillColor = Color.FromArgb(50, 58, 68);
-                titleLabel.Text = "MANAGE STEFF";
+                titleLabel.Text = "DASHBOARD";
             }
         }
 
@@ -125,6 +134,81 @@ namespace RestaurantManagementSystem
         private void showPanel_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void guna2Panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void accountSettingBtn_Click(object sender, EventArgs e)
+        {
+            int employeeID = getEmployeeID(_username);
+            managerInfoUC s = new managerInfoUC(employeeID,_username);
+            showPanel.Controls.Clear();
+            s.Dock = DockStyle.Fill;
+            showPanel.Controls.Add(s);
+
+            ResetButtonColors();
+            settingPanel.Visible = true;
+            Guna.UI2.WinForms.Guna2Button clickedButton = sender as Guna.UI2.WinForms.Guna2Button;
+            if (clickedButton != null)
+            {
+                clickedButton.FillColor = Color.FromArgb(50, 58, 68);
+                titleLabel.Text = "";
+            }
+        }
+        private int getEmployeeID(string username)
+        {
+            string connectionString = db.Connectstring() ;
+
+            string query = "SELECT TOP 1 EmployeeID FROM Account WHERE Username LIKE @Username";
+
+            int employeeID = -1;  
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    using (SqlCommand cmd = new SqlCommand(query, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@Username", username);
+
+                        var result = cmd.ExecuteScalar();  
+
+                        if (result != DBNull.Value)
+                        {
+                            employeeID = Convert.ToInt32(result);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Xử lý lỗi nếu có
+                MessageBox.Show("Error: " + ex.Message);
+            }
+
+            return employeeID;
+        }
+
+        private void usedIngredientBtn_Click(object sender, EventArgs e)
+        {
+            managerUsedIngredient s = new managerUsedIngredient();
+            showPanel.Controls.Clear();
+            s.Dock = DockStyle.Fill;
+            showPanel.Controls.Add(s);
+
+            ResetButtonColors();
+            usedPanel.Visible = true;
+            Guna.UI2.WinForms.Guna2Button clickedButton = sender as Guna.UI2.WinForms.Guna2Button;
+            if (clickedButton != null)
+            {
+                clickedButton.FillColor = Color.FromArgb(50, 58, 68);
+                titleLabel.Text = "Used Ingredient";
+            }
         }
     }
 }

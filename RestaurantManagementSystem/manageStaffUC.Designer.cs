@@ -59,7 +59,7 @@
             // searchTextBox
             // 
             this.searchTextBox.AutoRoundedCorners = true;
-            this.searchTextBox.BorderRadius = 30;
+            this.searchTextBox.BorderRadius = 26;
             this.searchTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.searchTextBox.CustomizableEdges.BottomRight = false;
             this.searchTextBox.CustomizableEdges.TopRight = false;
@@ -71,18 +71,18 @@
             this.searchTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.searchTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.searchTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.searchTextBox.Location = new System.Drawing.Point(360, 94);
-            this.searchTextBox.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.searchTextBox.Location = new System.Drawing.Point(205, 51);
+            this.searchTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.searchTextBox.Name = "searchTextBox";
             this.searchTextBox.PlaceholderText = "Search";
             this.searchTextBox.SelectedText = "";
-            this.searchTextBox.Size = new System.Drawing.Size(516, 63);
+            this.searchTextBox.Size = new System.Drawing.Size(440, 54);
             this.searchTextBox.TabIndex = 45;
             // 
             // changeButton
             // 
             this.changeButton.AutoRoundedCorners = true;
-            this.changeButton.BorderRadius = 40;
+            this.changeButton.BorderRadius = 26;
             this.changeButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.changeButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.changeButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -90,10 +90,9 @@
             this.changeButton.FillColor = System.Drawing.Color.RoyalBlue;
             this.changeButton.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
             this.changeButton.ForeColor = System.Drawing.Color.White;
-            this.changeButton.Location = new System.Drawing.Point(1819, 1228);
-            this.changeButton.Margin = new System.Windows.Forms.Padding(4);
+            this.changeButton.Location = new System.Drawing.Point(1323, 819);
             this.changeButton.Name = "changeButton";
-            this.changeButton.Size = new System.Drawing.Size(231, 82);
+            this.changeButton.Size = new System.Drawing.Size(168, 55);
             this.changeButton.TabIndex = 51;
             this.changeButton.Text = "CHANGE";
             this.changeButton.Click += new System.EventHandler(this.changeButton_Click);
@@ -102,7 +101,7 @@
             // 
             this.deleteButton.AutoRoundedCorners = true;
             this.deleteButton.BackColor = System.Drawing.Color.Transparent;
-            this.deleteButton.BorderRadius = 40;
+            this.deleteButton.BorderRadius = 26;
             this.deleteButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.deleteButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.deleteButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -110,10 +109,9 @@
             this.deleteButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.deleteButton.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
             this.deleteButton.ForeColor = System.Drawing.Color.White;
-            this.deleteButton.Location = new System.Drawing.Point(1321, 1228);
-            this.deleteButton.Margin = new System.Windows.Forms.Padding(4);
+            this.deleteButton.Location = new System.Drawing.Point(961, 819);
             this.deleteButton.Name = "deleteButton";
-            this.deleteButton.Size = new System.Drawing.Size(223, 82);
+            this.deleteButton.Size = new System.Drawing.Size(162, 55);
             this.deleteButton.TabIndex = 52;
             this.deleteButton.Text = "DELETE";
             this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
@@ -122,7 +120,7 @@
             // 
             this.checkButton.AutoRoundedCorners = true;
             this.checkButton.BackColor = System.Drawing.Color.Transparent;
-            this.checkButton.BorderRadius = 40;
+            this.checkButton.BorderRadius = 26;
             this.checkButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.checkButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.checkButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -130,10 +128,9 @@
             this.checkButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.checkButton.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
             this.checkButton.ForeColor = System.Drawing.Color.White;
-            this.checkButton.Location = new System.Drawing.Point(1569, 1228);
-            this.checkButton.Margin = new System.Windows.Forms.Padding(4);
+            this.checkButton.Location = new System.Drawing.Point(1141, 819);
             this.checkButton.Name = "checkButton";
-            this.checkButton.Size = new System.Drawing.Size(221, 82);
+            this.checkButton.Size = new System.Drawing.Size(161, 55);
             this.checkButton.TabIndex = 54;
             this.checkButton.Text = "CHECK";
             this.checkButton.Click += new System.EventHandler(this.checkButton_Click);
@@ -141,7 +138,7 @@
             // addButton
             // 
             this.addButton.AutoRoundedCorners = true;
-            this.addButton.BorderRadius = 40;
+            this.addButton.BorderRadius = 26;
             this.addButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.addButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.addButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -149,10 +146,9 @@
             this.addButton.FillColor = System.Drawing.Color.LimeGreen;
             this.addButton.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
             this.addButton.ForeColor = System.Drawing.Color.White;
-            this.addButton.Location = new System.Drawing.Point(2075, 1228);
-            this.addButton.Margin = new System.Windows.Forms.Padding(4);
+            this.addButton.Location = new System.Drawing.Point(1509, 819);
             this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(228, 82);
+            this.addButton.Size = new System.Drawing.Size(166, 55);
             this.addButton.TabIndex = 53;
             this.addButton.Text = "ADD";
             this.addButton.Click += new System.EventHandler(this.addButton_Click);
@@ -174,10 +170,9 @@
             this.panel1.Controls.Add(this.nameTextBox);
             this.panel1.Controls.Add(this.birthDatePicker);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(1321, 208);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(961, 139);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(982, 946);
+            this.panel1.Size = new System.Drawing.Size(714, 631);
             this.panel1.TabIndex = 55;
             // 
             // positionComboBox
@@ -195,20 +190,18 @@
             "Waiter",
             "Manager",
             "Chef"});
-            this.positionComboBox.Location = new System.Drawing.Point(277, 410);
-            this.positionComboBox.Margin = new System.Windows.Forms.Padding(4);
+            this.positionComboBox.Location = new System.Drawing.Point(201, 273);
             this.positionComboBox.Name = "positionComboBox";
-            this.positionComboBox.Size = new System.Drawing.Size(661, 36);
+            this.positionComboBox.Size = new System.Drawing.Size(482, 36);
             this.positionComboBox.TabIndex = 83;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(81, 420);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(59, 280);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(123, 38);
+            this.label7.Size = new System.Drawing.Size(89, 27);
             this.label7.TabIndex = 82;
             this.label7.Text = "Position:";
             // 
@@ -226,20 +219,18 @@
             this.sexComboBox.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.sexComboBox.Location = new System.Drawing.Point(277, 259);
-            this.sexComboBox.Margin = new System.Windows.Forms.Padding(4);
+            this.sexComboBox.Location = new System.Drawing.Point(201, 173);
             this.sexComboBox.Name = "sexComboBox";
-            this.sexComboBox.Size = new System.Drawing.Size(268, 36);
+            this.sexComboBox.Size = new System.Drawing.Size(196, 36);
             this.sexComboBox.TabIndex = 81;
             // 
             // sexLabel
             // 
             this.sexLabel.AutoSize = true;
             this.sexLabel.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sexLabel.Location = new System.Drawing.Point(81, 259);
-            this.sexLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.sexLabel.Location = new System.Drawing.Point(59, 173);
             this.sexLabel.Name = "sexLabel";
-            this.sexLabel.Size = new System.Drawing.Size(68, 38);
+            this.sexLabel.Size = new System.Drawing.Size(48, 27);
             this.sexLabel.TabIndex = 80;
             this.sexLabel.Text = "Sex:";
             // 
@@ -247,10 +238,9 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(81, 749);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(59, 499);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(124, 38);
+            this.label6.Size = new System.Drawing.Size(88, 27);
             this.label6.TabIndex = 79;
             this.label6.Text = "Address:";
             // 
@@ -258,10 +248,9 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(81, 641);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(59, 427);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(206, 38);
+            this.label5.Size = new System.Drawing.Size(149, 27);
             this.label5.TabIndex = 78;
             this.label5.Text = "Phone Number:";
             // 
@@ -269,10 +258,9 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(81, 146);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(59, 97);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(94, 38);
+            this.label4.Size = new System.Drawing.Size(68, 27);
             this.label4.TabIndex = 77;
             this.label4.Text = "Name:";
             // 
@@ -288,12 +276,12 @@
             this.addressTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.addressTextBox.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
             this.addressTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.addressTextBox.Location = new System.Drawing.Point(316, 730);
-            this.addressTextBox.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.addressTextBox.Location = new System.Drawing.Point(230, 487);
+            this.addressTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.addressTextBox.Name = "addressTextBox";
             this.addressTextBox.PlaceholderText = "";
             this.addressTextBox.SelectedText = "";
-            this.addressTextBox.Size = new System.Drawing.Size(566, 57);
+            this.addressTextBox.Size = new System.Drawing.Size(412, 38);
             this.addressTextBox.TabIndex = 75;
             // 
             // phoneNumberTextBox
@@ -308,12 +296,12 @@
             this.phoneNumberTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.phoneNumberTextBox.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
             this.phoneNumberTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.phoneNumberTextBox.Location = new System.Drawing.Point(316, 631);
-            this.phoneNumberTextBox.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.phoneNumberTextBox.Location = new System.Drawing.Point(230, 421);
+            this.phoneNumberTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.phoneNumberTextBox.Name = "phoneNumberTextBox";
             this.phoneNumberTextBox.PlaceholderText = "";
             this.phoneNumberTextBox.SelectedText = "";
-            this.phoneNumberTextBox.Size = new System.Drawing.Size(557, 57);
+            this.phoneNumberTextBox.Size = new System.Drawing.Size(405, 38);
             this.phoneNumberTextBox.TabIndex = 74;
             // 
             // nameTextBox
@@ -328,12 +316,12 @@
             this.nameTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.nameTextBox.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
             this.nameTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.nameTextBox.Location = new System.Drawing.Point(268, 146);
-            this.nameTextBox.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.nameTextBox.Location = new System.Drawing.Point(195, 97);
+            this.nameTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.PlaceholderText = "";
             this.nameTextBox.SelectedText = "";
-            this.nameTextBox.Size = new System.Drawing.Size(277, 57);
+            this.nameTextBox.Size = new System.Drawing.Size(201, 38);
             this.nameTextBox.TabIndex = 73;
             // 
             // birthDatePicker
@@ -347,12 +335,11 @@
             this.birthDatePicker.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold);
             this.birthDatePicker.ForeColor = System.Drawing.Color.Black;
             this.birthDatePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.birthDatePicker.Location = new System.Drawing.Point(316, 513);
-            this.birthDatePicker.Margin = new System.Windows.Forms.Padding(4);
+            this.birthDatePicker.Location = new System.Drawing.Point(230, 342);
             this.birthDatePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.birthDatePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.birthDatePicker.Name = "birthDatePicker";
-            this.birthDatePicker.Size = new System.Drawing.Size(320, 63);
+            this.birthDatePicker.Size = new System.Drawing.Size(233, 42);
             this.birthDatePicker.TabIndex = 70;
             this.birthDatePicker.Value = new System.DateTime(2025, 3, 24, 0, 0, 0, 0);
             // 
@@ -360,10 +347,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(81, 528);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(59, 352);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(180, 38);
+            this.label2.Size = new System.Drawing.Size(128, 27);
             this.label2.TabIndex = 71;
             this.label2.Text = "Birth Of Day:";
             // 
@@ -373,10 +359,9 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
             this.label1.Font = new System.Drawing.Font("Philosopher", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(1625, 123);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(1182, 82);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(407, 75);
+            this.label1.Size = new System.Drawing.Size(292, 54);
             this.label1.TabIndex = 0;
             this.label1.Text = "INFORMATION";
             // 
@@ -392,19 +377,17 @@
             this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
             this.guna2Button3.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Location = new System.Drawing.Point(1321, 94);
-            this.guna2Button3.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Button3.Location = new System.Drawing.Point(961, 63);
             this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(982, 128);
+            this.guna2Button3.Size = new System.Drawing.Size(714, 85);
             this.guna2Button3.TabIndex = 53;
             // 
             // staffListView
             // 
             this.staffListView.HideSelection = false;
-            this.staffListView.Location = new System.Drawing.Point(128, 222);
-            this.staffListView.Margin = new System.Windows.Forms.Padding(4);
+            this.staffListView.Location = new System.Drawing.Point(93, 148);
             this.staffListView.Name = "staffListView";
-            this.staffListView.Size = new System.Drawing.Size(1140, 1096);
+            this.staffListView.Size = new System.Drawing.Size(830, 732);
             this.staffListView.TabIndex = 0;
             this.staffListView.UseCompatibleStateImageBehavior = false;
             // 
@@ -421,19 +404,17 @@
             this.seachButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.seachButton.ForeColor = System.Drawing.Color.White;
             this.seachButton.Image = global::RestaurantManagementSystem.Properties.Resources.search;
-            this.seachButton.Location = new System.Drawing.Point(870, 94);
-            this.seachButton.Margin = new System.Windows.Forms.Padding(4);
+            this.seachButton.Location = new System.Drawing.Point(641, 51);
             this.seachButton.Name = "seachButton";
-            this.seachButton.Size = new System.Drawing.Size(129, 62);
+            this.seachButton.Size = new System.Drawing.Size(102, 54);
             this.seachButton.TabIndex = 46;
             // 
             // insertImageButton
             // 
             this.insertImageButton.Image = global::RestaurantManagementSystem.Properties.Resources.image;
-            this.insertImageButton.Location = new System.Drawing.Point(848, 324);
-            this.insertImageButton.Margin = new System.Windows.Forms.Padding(4);
+            this.insertImageButton.Location = new System.Drawing.Point(617, 216);
             this.insertImageButton.Name = "insertImageButton";
-            this.insertImageButton.Size = new System.Drawing.Size(60, 64);
+            this.insertImageButton.Size = new System.Drawing.Size(44, 43);
             this.insertImageButton.TabIndex = 85;
             this.insertImageButton.UseVisualStyleBackColor = true;
             this.insertImageButton.Click += new System.EventHandler(this.insertImageButton_Click);
@@ -442,17 +423,19 @@
             // 
             this.staffImage.BackColor = System.Drawing.Color.White;
             this.staffImage.Image = global::RestaurantManagementSystem.Properties.Resources.man__1_;
-            this.staffImage.Location = new System.Drawing.Point(592, 66);
+            this.staffImage.Location = new System.Drawing.Point(431, 44);
+            this.staffImage.Margin = new System.Windows.Forms.Padding(2);
             this.staffImage.Name = "staffImage";
-            this.staffImage.Size = new System.Drawing.Size(316, 322);
+            this.staffImage.Size = new System.Drawing.Size(230, 215);
             this.staffImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.staffImage.TabIndex = 84;
             this.staffImage.TabStop = false;
             // 
             // manageStaffUC
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.searchTextBox);
             this.Controls.Add(this.guna2Button3);
@@ -463,9 +446,8 @@
             this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.changeButton);
             this.Controls.Add(this.staffListView);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "manageStaffUC";
-            this.Size = new System.Drawing.Size(2303, 1398);
+            this.Size = new System.Drawing.Size(1675, 932);
             this.Load += new System.EventHandler(this.manageStaffUC_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

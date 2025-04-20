@@ -63,13 +63,13 @@
             this.keyTxt.Font = new System.Drawing.Font("SF Pro Display", 9F);
             this.keyTxt.ForeColor = System.Drawing.Color.Black;
             this.keyTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.keyTxt.Location = new System.Drawing.Point(76, 399);
-            this.keyTxt.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.keyTxt.Location = new System.Drawing.Point(61, 330);
+            this.keyTxt.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.keyTxt.Name = "keyTxt";
             this.keyTxt.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.keyTxt.PlaceholderText = "KeyAccess";
             this.keyTxt.SelectedText = "";
-            this.keyTxt.Size = new System.Drawing.Size(456, 66);
+            this.keyTxt.Size = new System.Drawing.Size(332, 44);
             this.keyTxt.TabIndex = 7;
             this.keyTxt.TextChanged += new System.EventHandler(this.keyTxt_TextChanged);
             // 
@@ -83,10 +83,9 @@
             this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
             this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(711, 0);
-            this.guna2CustomGradientPanel1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(517, 0);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1434, 915);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1043, 610);
             this.guna2CustomGradientPanel1.TabIndex = 21;
             // 
             // closeLoginForm
@@ -94,10 +93,9 @@
             this.closeLoginForm.BackColor = System.Drawing.Color.Transparent;
             this.closeLoginForm.Cursor = System.Windows.Forms.Cursors.Hand;
             this.closeLoginForm.Image = global::RestaurantManagementSystem.Properties.Resources.close;
-            this.closeLoginForm.Location = new System.Drawing.Point(669, 10);
-            this.closeLoginForm.Margin = new System.Windows.Forms.Padding(4);
+            this.closeLoginForm.Location = new System.Drawing.Point(487, 7);
             this.closeLoginForm.Name = "closeLoginForm";
-            this.closeLoginForm.Size = new System.Drawing.Size(41, 45);
+            this.closeLoginForm.Size = new System.Drawing.Size(30, 30);
             this.closeLoginForm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.closeLoginForm.TabIndex = 11;
             this.closeLoginForm.TabStop = false;
@@ -109,10 +107,9 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("SF Pro Display", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(60, 399);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(17, 316);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(648, 25);
+            this.label5.Size = new System.Drawing.Size(478, 18);
             this.label5.TabIndex = 11;
             this.label5.Text = "Welcome to our restaurant – where great food and warm smiles await you!";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -121,13 +118,12 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("SF Pro Display", 14.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("SF Pro Display", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Snow;
-            this.label4.Location = new System.Drawing.Point(100, 329);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(34, 237);
             this.label4.Name = "label4";
             this.label4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label4.Size = new System.Drawing.Size(518, 41);
+            this.label4.Size = new System.Drawing.Size(428, 33);
             this.label4.TabIndex = 2;
             this.label4.Text = "WELCOME TO MY RESTAURANT";
             // 
@@ -144,23 +140,21 @@
             this.signUpBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(100)))), ((int)(((byte)(114)))));
             this.signUpBtn.Font = new System.Drawing.Font("SF Pro Display", 12F);
             this.signUpBtn.ForeColor = System.Drawing.Color.White;
-            this.signUpBtn.Location = new System.Drawing.Point(167, 514);
-            this.signUpBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.signUpBtn.Location = new System.Drawing.Point(113, 416);
             this.signUpBtn.Name = "signUpBtn";
-            this.signUpBtn.Size = new System.Drawing.Size(275, 68);
+            this.signUpBtn.Size = new System.Drawing.Size(200, 45);
             this.signUpBtn.TabIndex = 14;
-            this.signUpBtn.Text = "CONNECT";
+            this.signUpBtn.Text = "Check Table";
             this.signUpBtn.Click += new System.EventHandler(this.signUpBtn_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("SF Pro Display", 26.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(72, 106);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Font = new System.Drawing.Font("SF Pro Display", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(80, 106);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(555, 74);
+            this.label1.Size = new System.Drawing.Size(377, 51);
             this.label1.TabIndex = 22;
             this.label1.Text = "Access Your Table ";
             // 
@@ -168,10 +162,9 @@
             // 
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Image = global::RestaurantManagementSystem.Properties.Resources.github;
-            this.pictureBox4.Location = new System.Drawing.Point(387, 309);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox4.Location = new System.Drawing.Point(319, 254);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(41, 45);
+            this.pictureBox4.Size = new System.Drawing.Size(30, 30);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 20;
             this.pictureBox4.TabStop = false;
@@ -180,10 +173,9 @@
             // 
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Image = global::RestaurantManagementSystem.Properties.Resources.instagram;
-            this.pictureBox3.Location = new System.Drawing.Point(233, 309);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox3.Location = new System.Drawing.Point(207, 254);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(41, 45);
+            this.pictureBox3.Size = new System.Drawing.Size(30, 30);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 19;
             this.pictureBox3.TabStop = false;
@@ -192,10 +184,9 @@
             // 
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::RestaurantManagementSystem.Properties.Resources.google;
-            this.pictureBox2.Location = new System.Drawing.Point(310, 309);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Location = new System.Drawing.Point(263, 254);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(41, 45);
+            this.pictureBox2.Size = new System.Drawing.Size(30, 30);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 18;
             this.pictureBox2.TabStop = false;
@@ -204,20 +195,19 @@
             // 
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::RestaurantManagementSystem.Properties.Resources.facebook1;
-            this.pictureBox1.Location = new System.Drawing.Point(156, 309);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Location = new System.Drawing.Point(151, 254);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(41, 45);
+            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
             // 
             // keyAccessFrom
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1436, 898);
+            this.ClientSize = new System.Drawing.Size(1044, 599);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.signUpBtn);
             this.Controls.Add(this.guna2CustomGradientPanel1);
@@ -227,7 +217,9 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.keyTxt);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "keyAccessFrom";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "keyAccessFrom";
             this.Load += new System.EventHandler(this.keyAccessFrom_Load);
             this.guna2CustomGradientPanel1.ResumeLayout(false);

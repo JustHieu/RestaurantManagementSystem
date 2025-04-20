@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace RestaurantManagementSystem
 {
-    public partial class managerTableHistoryUC : UserControl
+    public partial class managerUsedIngredient : UserControl
     {
-        public managerTableHistoryUC()
+        public managerUsedIngredient()
         {
             InitializeComponent();
         }

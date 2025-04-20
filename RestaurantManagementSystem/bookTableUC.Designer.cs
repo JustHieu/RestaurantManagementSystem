@@ -128,7 +128,7 @@
             this.datePicker.Name = "datePicker";
             this.datePicker.Size = new System.Drawing.Size(228, 36);
             this.datePicker.TabIndex = 31;
-            this.datePicker.Value = new System.DateTime(2025, 3, 24, 0, 0, 0, 0);
+            this.datePicker.Value = new System.DateTime(2025, 4, 4, 0, 0, 0, 0);
             // 
             // specialRequestsTextBox
             // 
@@ -215,7 +215,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(114)))), ((int)(((byte)(0)))));
             this.label2.Location = new System.Drawing.Point(560, 121);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(145, 40);
+            this.label2.Size = new System.Drawing.Size(100, 28);
             this.label2.TabIndex = 28;
             this.label2.Text = "________";
             // 
@@ -223,11 +223,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 55.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Luxury", 55.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(535, 158);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(848, 147);
+            this.label4.Size = new System.Drawing.Size(623, 117);
             this.label4.TabIndex = 27;
             this.label4.Text = "Book A Table";
             // 
@@ -238,7 +238,7 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(114)))), ((int)(((byte)(0)))));
             this.label3.Location = new System.Drawing.Point(930, 121);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(145, 40);
+            this.label3.Size = new System.Drawing.Size(100, 28);
             this.label3.TabIndex = 26;
             this.label3.Text = "________";
             // 
@@ -249,7 +249,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(114)))), ((int)(((byte)(0)))));
             this.label1.Location = new System.Drawing.Point(677, 130);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(356, 40);
+            this.label1.Size = new System.Drawing.Size(247, 28);
             this.label1.TabIndex = 25;
             this.label1.Text = "ONLINE RESERVATION\r\n";
             // 
@@ -264,7 +264,7 @@
             this.finalyLabel.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.finalyLabel.Location = new System.Drawing.Point(408, 792);
             this.finalyLabel.Name = "finalyLabel";
-            this.finalyLabel.Size = new System.Drawing.Size(329, 32);
+            this.finalyLabel.Size = new System.Drawing.Size(255, 23);
             this.finalyLabel.TabIndex = 38;
             this.finalyLabel.Text = "-----------------------------------\r\n";
             this.finalyLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

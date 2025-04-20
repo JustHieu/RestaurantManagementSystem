@@ -8,7 +8,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data;
+
 using System.Data.SqlClient;
 
 namespace RestaurantManagementSystem
@@ -23,8 +23,9 @@ namespace RestaurantManagementSystem
         }
         private int GetRandomAvailableTable()
         {
-            string connectionString = "Data Source=.;Initial Catalog=RestaurantData;Persist Security Info=True;User ID=sa;Password=123";
-            string query = "SELECT idTable FROM Tables WHERE status = 'Trống'";
+            Database db = new Database();
+            string connectionString = db.Connectstring();
+            string query = "SELECT idTable FROM Tables WHERE status = 'Empty'";
 
             try
             {
@@ -69,7 +70,8 @@ namespace RestaurantManagementSystem
         }
         private bool IsTableAvailable(int tableId, DateTime selectedTime)
         {
-            string connectionString = "Data Source=.;Initial Catalog=RestaurantData;Persist Security Info=True;User ID=sa;Password=123";
+            Database db = new Database();
+            string connectionString = db.Connectstring();
             try
             {
                 using (SqlConnection conn = new SqlConnection(connectionString))
@@ -152,8 +154,8 @@ namespace RestaurantManagementSystem
             }
 
             string key = GenerateKey();
-            string connectionString = "Data Source=.;Initial Catalog=RestaurantData;Persist Security Info=True;User ID=sa;Password=123";
-
+            Database db = new Database();
+            string connectionString = db.Connectstring();
             try
             {
                 using (SqlConnection conn = new SqlConnection(connectionString))
@@ -183,6 +185,7 @@ namespace RestaurantManagementSystem
                         keyCmd.ExecuteNonQuery();
 
                         MessageBox.Show($"Booking successful! Your table number is: {tableId}. Your access key is: {key}");
+
                     }
                     else
                     {

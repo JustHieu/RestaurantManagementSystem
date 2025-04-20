@@ -29,7 +29,7 @@ namespace RestaurantManagementSystem
         private void BntAdd_MouseEnter(object sender, EventArgs e)
         {
 
-            addBtn.FillColor = Color.Gray;
+            addBtn.FillColor = Color.Orange;
         }
 
         private void BntAdd_MouseLeave(object sender, EventArgs e)

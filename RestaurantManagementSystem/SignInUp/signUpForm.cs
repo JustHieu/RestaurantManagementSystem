@@ -49,5 +49,10 @@ namespace RestaurantManagementSystem
             formCheck = false;
             this.Close();
         }
+
+        private void signUpBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

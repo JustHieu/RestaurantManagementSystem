@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Microsoft.Web.WebView2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,6 +27,14 @@ namespace RestaurantManagementSystem
             guna2PictureBox3.MouseLeave += (s, e) => ZoomOut(guna2PictureBox3);
             guna2PictureBox4.MouseEnter += (s, e) => ZoomIn(guna2PictureBox4);
             guna2PictureBox4.MouseLeave += (s, e) => ZoomOut(guna2PictureBox4);
+            this.Resize += (s, e) =>
+            {
+                // Đảm bảo rằng WebView2 luôn có góc bo tròn khi form thay đổi kích thước
+                ApplyRoundedCorners(webView21);
+            };
+
+            // Gọi hàm để áp dụng bo tròn ngay từ đầu
+            ApplyRoundedCorners(webView21);
         }
 
         private void address_Click(object sender, EventArgs e)
@@ -51,6 +61,22 @@ namespace RestaurantManagementSystem
         {
             pic.Size = new Size((int)(pic.Width / 1.1), (int)(pic.Height / 1.1)); // Thu nhỏ về ban đầu
             pic.Location = new Point(pic.Location.X + (int)(pic.Width * 0.05), pic.Location.Y + (int)(pic.Height * 0.05)); // Giữ tâm
+        }
+        private void ApplyRoundedCorners(WebView2 webView)
+        {
+            // Tạo một vùng bo tròn cho WebView2
+            using (GraphicsPath path = new GraphicsPath())
+            {
+                int cornerRadius = 30;  // Độ bo tròn của góc
+                path.AddArc(0, 0, cornerRadius, cornerRadius, 180, 90); // Top-left corner
+                path.AddArc(webView.Width - cornerRadius - 1, 0, cornerRadius, cornerRadius, 270, 90); // Top-right corner
+                path.AddArc(webView.Width - cornerRadius - 1, webView.Height - cornerRadius - 1, cornerRadius, cornerRadius, 0, 90); // Bottom-right corner
+                path.AddArc(0, webView.Height - cornerRadius - 1, cornerRadius, cornerRadius, 90, 90); // Bottom-left corner
+                path.CloseFigure();
+
+                // Áp dụng vùng bo tròn cho WebView2
+                webView.Region = new Region(path);
+            }
         }
     }
 }

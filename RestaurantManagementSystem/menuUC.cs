@@ -13,6 +13,7 @@ namespace RestaurantManagementSystem
 {
     public partial class menuUC : UserControl
     {
+        Database db = new Database();
         public menuUC()
         {
             InitializeComponent();
@@ -22,7 +23,7 @@ namespace RestaurantManagementSystem
         }
 
         // Chuỗi kết nối
-        private string connectionString = "Data Source=.;Initial Catalog=RestaurantData;Persist Security Info=True;User ID=sa;Password=123";
+        
 
         // Hàm tải món khai vị
         private void LoadStartersItems()
@@ -45,6 +46,7 @@ namespace RestaurantManagementSystem
         // Hàm tải món ăn vào FlowLayoutPanel
         private void LoadFoodItems(string query, FlowLayoutPanel panel)
         {
+            string connectionString = db.Connectstring();
             try
             {
                 using (SqlConnection conn = new SqlConnection(connectionString))

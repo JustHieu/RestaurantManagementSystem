@@ -43,6 +43,7 @@
             // addBtn
             // 
             this.addBtn.BorderRadius = 15;
+            this.addBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.addBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.addBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.addBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -50,10 +51,9 @@
             this.addBtn.FillColor = System.Drawing.Color.DarkGray;
             this.addBtn.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addBtn.ForeColor = System.Drawing.Color.White;
-            this.addBtn.Location = new System.Drawing.Point(205, 482);
-            this.addBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.addBtn.Location = new System.Drawing.Point(149, 321);
             this.addBtn.Name = "addBtn";
-            this.addBtn.Size = new System.Drawing.Size(187, 63);
+            this.addBtn.Size = new System.Drawing.Size(136, 42);
             this.addBtn.TabIndex = 15;
             this.addBtn.Text = "ADD";
             this.addBtn.Click += new System.EventHandler(this.addBtn_Click_1);
@@ -63,10 +63,9 @@
             this.priceLabel.AutoSize = true;
             this.priceLabel.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.priceLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.priceLabel.Location = new System.Drawing.Point(16, 495);
-            this.priceLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.priceLabel.Location = new System.Drawing.Point(12, 330);
             this.priceLabel.Name = "priceLabel";
-            this.priceLabel.Size = new System.Drawing.Size(109, 38);
+            this.priceLabel.Size = new System.Drawing.Size(77, 27);
             this.priceLabel.TabIndex = 14;
             this.priceLabel.Text = "120000";
             this.priceLabel.Click += new System.EventHandler(this.lblPrice_Click);
@@ -76,9 +75,8 @@
             this.nameLabel.Dock = System.Windows.Forms.DockStyle.Top;
             this.nameLabel.Font = new System.Drawing.Font("Philosopher", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameLabel.Location = new System.Drawing.Point(0, 0);
-            this.nameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(374, 58);
+            this.nameLabel.Size = new System.Drawing.Size(272, 39);
             this.nameLabel.TabIndex = 6;
             this.nameLabel.Text = "THAI BEEF SALAT";
             this.nameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -88,28 +86,28 @@
             // 
             this.panel1.Controls.Add(this.descripLabel);
             this.panel1.Controls.Add(this.nameLabel);
-            this.panel1.Location = new System.Drawing.Point(18, 338);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.panel1.Location = new System.Drawing.Point(13, 225);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(374, 140);
+            this.panel1.Size = new System.Drawing.Size(272, 93);
             this.panel1.TabIndex = 16;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // descripLabel
             // 
             this.descripLabel.BackColor = System.Drawing.Color.Transparent;
-            this.descripLabel.Location = new System.Drawing.Point(6, 74);
+            this.descripLabel.Location = new System.Drawing.Point(4, 49);
+            this.descripLabel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.descripLabel.Name = "descripLabel";
-            this.descripLabel.Size = new System.Drawing.Size(150, 26);
+            this.descripLabel.Size = new System.Drawing.Size(108, 18);
             this.descripLabel.TabIndex = 7;
             this.descripLabel.Text = "guna2HtmlLabel1";
             // 
             // dishImage
             // 
-            this.dishImage.Location = new System.Drawing.Point(15, 15);
-            this.dishImage.Margin = new System.Windows.Forms.Padding(4);
+            this.dishImage.Location = new System.Drawing.Point(11, 10);
             this.dishImage.Name = "dishImage";
-            this.dishImage.Size = new System.Drawing.Size(377, 315);
+            this.dishImage.Size = new System.Drawing.Size(274, 210);
             this.dishImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.dishImage.TabIndex = 13;
             this.dishImage.TabStop = false;
@@ -123,7 +121,7 @@
             // 
             // foodItemUC
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -131,10 +129,10 @@
             this.Controls.Add(this.priceLabel);
             this.Controls.Add(this.dishImage);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(14, 15, 14, 15);
+            this.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
             this.Name = "foodItemUC";
-            this.Padding = new System.Windows.Forms.Padding(14, 15, 14, 15);
-            this.Size = new System.Drawing.Size(407, 558);
+            this.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.Size = new System.Drawing.Size(296, 372);
             this.Load += new System.EventHandler(this.foodItemUC_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

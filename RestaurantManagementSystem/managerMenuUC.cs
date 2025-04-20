@@ -16,7 +16,8 @@ namespace RestaurantManagementSystem
 {
     public partial class managerMenuUC : UserControl
     {
-        private string connectionString = "Data Source=.;Initial Catalog=RestaurantData;Persist Security Info=True;User ID=sa;Password=123";
+        Database db = new Database();
+        
         private string imagePath = "";
         private int selectedDishId = -1;  // ID của món ăn được chọn
 
@@ -29,6 +30,7 @@ namespace RestaurantManagementSystem
         // Tải danh sách món ăn
         private void LoadMenuItems(string keyword = "")
         {
+            string connectionString = db.Connectstring();
             try
             {
                 using (SqlConnection conn = new SqlConnection(connectionString))
@@ -110,6 +112,7 @@ namespace RestaurantManagementSystem
         // Thêm món ăn mới
         private void addButton_Click(object sender, EventArgs e)
         {
+            string connectionString = db.Connectstring();
             string dishType = typeComboBox.SelectedItem.ToString();
             try
             {
@@ -144,7 +147,7 @@ namespace RestaurantManagementSystem
                 MessageBox.Show("Vui lòng chọn món ăn cần xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-
+            string connectionString = db.Connectstring();
             try
             {
                 using (SqlConnection conn = new SqlConnection(connectionString))
@@ -172,6 +175,7 @@ namespace RestaurantManagementSystem
         // Cập nhật món ăn
         private void changeButton_Click(object sender, EventArgs e)
         {
+            string connectionString = db.Connectstring();
             string dishType = typeComboBox.SelectedItem.ToString();
             if (selectedDishId == -1)
             {
@@ -264,6 +268,11 @@ namespace RestaurantManagementSystem
                 dishImage.Image = Image.FromFile(imagePath);
                 dishImage.SizeMode = PictureBoxSizeMode.StretchImage;
             }
+        }
+
+        private void menuPanel_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

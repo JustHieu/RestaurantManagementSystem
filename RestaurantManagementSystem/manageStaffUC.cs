@@ -16,7 +16,8 @@ namespace RestaurantManagementSystem
     public partial class manageStaffUC : UserControl
     {
 
-        private string connectionString = "Data Source=.;Initial Catalog=RestaurantData;Persist Security Info=True;User ID=sa;Password=123";
+        Database db = new Database();
+        
         private string imagePath = "";
 
         public manageStaffUC()
@@ -35,6 +36,7 @@ namespace RestaurantManagementSystem
 
         private void DisplayEmployeeInformation(ListViewItem item)
         {
+            string connectionString = db.Connectstring();
             try
             {
                 int selectedId = int.Parse(item.SubItems[0].Text);
@@ -79,6 +81,7 @@ namespace RestaurantManagementSystem
 
         private void LoadStaffData()
         {
+            string connectionString = db.Connectstring();
             try
             {
                 using (SqlConnection conn = new SqlConnection(connectionString))
@@ -136,6 +139,7 @@ namespace RestaurantManagementSystem
 
         private void addButton_Click(object sender, EventArgs e)
         {
+            string connectionString = db.Connectstring();
             try
             {
                 using (SqlConnection conn = new SqlConnection(connectionString))
@@ -215,6 +219,7 @@ namespace RestaurantManagementSystem
 
                 // Lấy đường dẫn ảnh từ cơ sở dữ liệu nếu chưa chọn ảnh mới
                 string finalImagePath = imagePath;
+                string connectionString = db.Connectstring();
 
                 if (string.IsNullOrEmpty(finalImagePath))
                 {
@@ -294,6 +299,7 @@ namespace RestaurantManagementSystem
 
         private void deleteButton_Click(object sender, EventArgs e)
         {
+            string connectionString = db.Connectstring();
             if (staffListView.SelectedItems.Count == 0)
             {
                 MessageBox.Show("Vui lòng chọn nhân viên cần xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
