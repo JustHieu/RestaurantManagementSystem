@@ -28,23 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ciFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.saveButton = new Guna.UI2.WinForms.Guna2Button();
             this.cookingingredientsLabel = new System.Windows.Forms.Label();
             this.cancelButton = new Guna.UI2.WinForms.Guna2Button();
             this.searchTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.iListView = new System.Windows.Forms.ListView();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.addButton = new Guna.UI2.WinForms.Guna2Button();
             this.seachButton = new Guna.UI2.WinForms.Guna2Button();
+            this.ingListView = new System.Windows.Forms.ListView();
+            this.deleteButton = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
-            // 
-            // ciFlowLayoutPanel
-            // 
-            this.ciFlowLayoutPanel.BackColor = System.Drawing.Color.Gainsboro;
-            this.ciFlowLayoutPanel.Location = new System.Drawing.Point(768, 91);
-            this.ciFlowLayoutPanel.Name = "ciFlowLayoutPanel";
-            this.ciFlowLayoutPanel.Size = new System.Drawing.Size(358, 582);
-            this.ciFlowLayoutPanel.TabIndex = 54;
             // 
             // saveButton
             // 
@@ -57,17 +50,18 @@
             this.saveButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.saveButton.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
             this.saveButton.ForeColor = System.Drawing.Color.White;
-            this.saveButton.Location = new System.Drawing.Point(768, 694);
+            this.saveButton.Location = new System.Drawing.Point(870, 689);
             this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(175, 48);
+            this.saveButton.Size = new System.Drawing.Size(120, 48);
             this.saveButton.TabIndex = 53;
             this.saveButton.Text = "SAVE";
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
             // cookingingredientsLabel
             // 
             this.cookingingredientsLabel.AutoSize = true;
             this.cookingingredientsLabel.Font = new System.Drawing.Font("Philosopher", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cookingingredientsLabel.Location = new System.Drawing.Point(761, 31);
+            this.cookingingredientsLabel.Location = new System.Drawing.Point(693, 31);
             this.cookingingredientsLabel.Name = "cookingingredientsLabel";
             this.cookingingredientsLabel.Size = new System.Drawing.Size(354, 41);
             this.cookingingredientsLabel.TabIndex = 52;
@@ -84,9 +78,9 @@
             this.cancelButton.FillColor = System.Drawing.Color.Red;
             this.cancelButton.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
             this.cancelButton.ForeColor = System.Drawing.Color.White;
-            this.cancelButton.Location = new System.Drawing.Point(957, 694);
+            this.cancelButton.Location = new System.Drawing.Point(1011, 689);
             this.cancelButton.Name = "cancelButton";
-            this.cancelButton.Size = new System.Drawing.Size(169, 48);
+            this.cancelButton.Size = new System.Drawing.Size(115, 48);
             this.cancelButton.TabIndex = 51;
             this.cancelButton.Text = "CANCEL";
             this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
@@ -96,6 +90,8 @@
             this.searchTextBox.AutoRoundedCorners = true;
             this.searchTextBox.BorderRadius = 20;
             this.searchTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.searchTextBox.CustomizableEdges.BottomRight = false;
+            this.searchTextBox.CustomizableEdges.TopRight = false;
             this.searchTextBox.DefaultText = "Search";
             this.searchTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.searchTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -112,36 +108,40 @@
             this.searchTextBox.Size = new System.Drawing.Size(341, 42);
             this.searchTextBox.TabIndex = 49;
             // 
-            // iListView
+            // listView1
             // 
-            this.iListView.HideSelection = false;
-            this.iListView.Location = new System.Drawing.Point(30, 91);
-            this.iListView.Name = "iListView";
-            this.iListView.Size = new System.Drawing.Size(713, 651);
-            this.iListView.TabIndex = 48;
-            this.iListView.UseCompatibleStateImageBehavior = false;
+            this.listView1.FullRowSelect = true;
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(30, 91);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(553, 579);
+            this.listView1.TabIndex = 48;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
             // 
-            // guna2Button1
+            // addButton
             // 
-            this.guna2Button1.BorderRadius = 20;
-            this.guna2Button1.CustomizableEdges.BottomLeft = false;
-            this.guna2Button1.CustomizableEdges.BottomRight = false;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.RoyalBlue;
-            this.guna2Button1.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(539, 52);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(204, 43);
-            this.guna2Button1.TabIndex = 55;
-            this.guna2Button1.Text = "ADD INGREDIENTS";
+            this.addButton.AutoRoundedCorners = true;
+            this.addButton.BorderRadius = 20;
+            this.addButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.addButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.addButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.addButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.addButton.FillColor = System.Drawing.Color.RoyalBlue;
+            this.addButton.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
+            this.addButton.ForeColor = System.Drawing.Color.White;
+            this.addButton.Location = new System.Drawing.Point(363, 694);
+            this.addButton.Name = "addButton";
+            this.addButton.Size = new System.Drawing.Size(220, 43);
+            this.addButton.TabIndex = 55;
+            this.addButton.Text = "ADD INGREDIENTS";
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
             // seachButton
             // 
             this.seachButton.AutoRoundedCorners = true;
+            this.seachButton.CustomizableEdges.BottomLeft = false;
+            this.seachButton.CustomizableEdges.TopLeft = false;
             this.seachButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.seachButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.seachButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -150,10 +150,40 @@
             this.seachButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.seachButton.ForeColor = System.Drawing.Color.White;
             this.seachButton.Image = global::RestaurantManagementSystem.Properties.Resources.search;
-            this.seachButton.Location = new System.Drawing.Point(377, 32);
+            this.seachButton.Location = new System.Drawing.Point(367, 32);
             this.seachButton.Name = "seachButton";
             this.seachButton.Size = new System.Drawing.Size(97, 41);
             this.seachButton.TabIndex = 50;
+            this.seachButton.Click += new System.EventHandler(this.seachButton_Click);
+            // 
+            // ingListView
+            // 
+            this.ingListView.FullRowSelect = true;
+            this.ingListView.HideSelection = false;
+            this.ingListView.Location = new System.Drawing.Point(608, 91);
+            this.ingListView.Name = "ingListView";
+            this.ingListView.Size = new System.Drawing.Size(518, 578);
+            this.ingListView.TabIndex = 56;
+            this.ingListView.UseCompatibleStateImageBehavior = false;
+            this.ingListView.View = System.Windows.Forms.View.Details;
+            // 
+            // deleteButton
+            // 
+            this.deleteButton.AutoRoundedCorners = true;
+            this.deleteButton.BorderRadius = 20;
+            this.deleteButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.deleteButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.deleteButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.deleteButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.deleteButton.FillColor = System.Drawing.Color.RoyalBlue;
+            this.deleteButton.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
+            this.deleteButton.ForeColor = System.Drawing.Color.White;
+            this.deleteButton.Location = new System.Drawing.Point(608, 694);
+            this.deleteButton.Name = "deleteButton";
+            this.deleteButton.Size = new System.Drawing.Size(239, 43);
+            this.deleteButton.TabIndex = 57;
+            this.deleteButton.Text = "DELETE INGREDIENTS";
+            this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
             // 
             // cookingIngredientsForm
             // 
@@ -161,32 +191,34 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(1151, 764);
-            this.Controls.Add(this.ciFlowLayoutPanel);
+            this.Controls.Add(this.deleteButton);
+            this.Controls.Add(this.ingListView);
             this.Controls.Add(this.saveButton);
             this.Controls.Add(this.cookingingredientsLabel);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.searchTextBox);
-            this.Controls.Add(this.iListView);
-            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.addButton);
             this.Controls.Add(this.seachButton);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "cookingIngredientsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "cookingIngredientsForm";
+            this.Load += new System.EventHandler(this.cookingIngredientsForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.FlowLayoutPanel ciFlowLayoutPanel;
         private Guna.UI2.WinForms.Guna2Button saveButton;
         private System.Windows.Forms.Label cookingingredientsLabel;
         private Guna.UI2.WinForms.Guna2Button cancelButton;
         private Guna.UI2.WinForms.Guna2TextBox searchTextBox;
-        private System.Windows.Forms.ListView iListView;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private System.Windows.Forms.ListView listView1;
+        private Guna.UI2.WinForms.Guna2Button addButton;
         private Guna.UI2.WinForms.Guna2Button seachButton;
+        private System.Windows.Forms.ListView ingListView;
+        private Guna.UI2.WinForms.Guna2Button deleteButton;
     }
 }

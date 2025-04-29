@@ -45,6 +45,7 @@
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2CustomGradientPanel2);
             this.guna2CustomGradientPanel1.Controls.Add(this.DishPictureBox);
             this.guna2CustomGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(67)))), ((int)(((byte)(0)))));
             this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(270, 339);
@@ -68,7 +69,7 @@
             // 
             this.nameLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.nameLabel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.nameLabel.Font = new System.Drawing.Font("Virendra", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameLabel.Location = new System.Drawing.Point(0, 0);
             this.nameLabel.Name = "nameLabel";
             this.nameLabel.Size = new System.Drawing.Size(228, 36);
@@ -79,7 +80,7 @@
             // priceLabel
             // 
             this.priceLabel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.priceLabel.Font = new System.Drawing.Font("Luxury", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.priceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.priceLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
             this.priceLabel.Location = new System.Drawing.Point(115, 87);
             this.priceLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);

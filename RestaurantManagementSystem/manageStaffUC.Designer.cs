@@ -33,7 +33,8 @@
             this.deleteButton = new Guna.UI2.WinForms.Guna2Button();
             this.checkButton = new Guna.UI2.WinForms.Guna2Button();
             this.addButton = new Guna.UI2.WinForms.Guna2Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.insertImageButton = new System.Windows.Forms.Button();
+            this.staffImage = new System.Windows.Forms.PictureBox();
             this.positionComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.sexComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -47,13 +48,13 @@
             this.birthDatePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.staffListView = new System.Windows.Forms.ListView();
             this.seachButton = new Guna.UI2.WinForms.Guna2Button();
-            this.insertImageButton = new System.Windows.Forms.Button();
-            this.staffImage = new System.Windows.Forms.PictureBox();
-            this.panel1.SuspendLayout();
+            this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             ((System.ComponentModel.ISupportInitialize)(this.staffImage)).BeginInit();
+            this.guna2CustomGradientPanel1.SuspendLayout();
+            this.guna2CustomGradientPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // searchTextBox
@@ -153,27 +154,27 @@
             this.addButton.Text = "ADD";
             this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
-            // panel1
+            // insertImageButton
             // 
-            this.panel1.BackColor = System.Drawing.Color.LightGray;
-            this.panel1.Controls.Add(this.insertImageButton);
-            this.panel1.Controls.Add(this.staffImage);
-            this.panel1.Controls.Add(this.positionComboBox);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.sexComboBox);
-            this.panel1.Controls.Add(this.sexLabel);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.addressTextBox);
-            this.panel1.Controls.Add(this.phoneNumberTextBox);
-            this.panel1.Controls.Add(this.nameTextBox);
-            this.panel1.Controls.Add(this.birthDatePicker);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(961, 139);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(714, 631);
-            this.panel1.TabIndex = 55;
+            this.insertImageButton.Image = global::RestaurantManagementSystem.Properties.Resources.image;
+            this.insertImageButton.Location = new System.Drawing.Point(609, 251);
+            this.insertImageButton.Name = "insertImageButton";
+            this.insertImageButton.Size = new System.Drawing.Size(44, 43);
+            this.insertImageButton.TabIndex = 85;
+            this.insertImageButton.UseVisualStyleBackColor = true;
+            this.insertImageButton.Click += new System.EventHandler(this.insertImageButton_Click);
+            // 
+            // staffImage
+            // 
+            this.staffImage.BackColor = System.Drawing.Color.White;
+            this.staffImage.Image = global::RestaurantManagementSystem.Properties.Resources.man__1_;
+            this.staffImage.Location = new System.Drawing.Point(423, 79);
+            this.staffImage.Margin = new System.Windows.Forms.Padding(2);
+            this.staffImage.Name = "staffImage";
+            this.staffImage.Size = new System.Drawing.Size(230, 215);
+            this.staffImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.staffImage.TabIndex = 84;
+            this.staffImage.TabStop = false;
             // 
             // positionComboBox
             // 
@@ -190,7 +191,7 @@
             "Waiter",
             "Manager",
             "Chef"});
-            this.positionComboBox.Location = new System.Drawing.Point(201, 273);
+            this.positionComboBox.Location = new System.Drawing.Point(193, 308);
             this.positionComboBox.Name = "positionComboBox";
             this.positionComboBox.Size = new System.Drawing.Size(482, 36);
             this.positionComboBox.TabIndex = 83;
@@ -198,8 +199,9 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(59, 280);
+            this.label7.Location = new System.Drawing.Point(51, 315);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(89, 27);
             this.label7.TabIndex = 82;
@@ -219,7 +221,7 @@
             this.sexComboBox.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.sexComboBox.Location = new System.Drawing.Point(201, 173);
+            this.sexComboBox.Location = new System.Drawing.Point(193, 208);
             this.sexComboBox.Name = "sexComboBox";
             this.sexComboBox.Size = new System.Drawing.Size(196, 36);
             this.sexComboBox.TabIndex = 81;
@@ -227,8 +229,9 @@
             // sexLabel
             // 
             this.sexLabel.AutoSize = true;
+            this.sexLabel.BackColor = System.Drawing.Color.Transparent;
             this.sexLabel.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sexLabel.Location = new System.Drawing.Point(59, 173);
+            this.sexLabel.Location = new System.Drawing.Point(51, 208);
             this.sexLabel.Name = "sexLabel";
             this.sexLabel.Size = new System.Drawing.Size(48, 27);
             this.sexLabel.TabIndex = 80;
@@ -237,8 +240,9 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(59, 499);
+            this.label6.Location = new System.Drawing.Point(51, 534);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(88, 27);
             this.label6.TabIndex = 79;
@@ -247,8 +251,9 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(59, 427);
+            this.label5.Location = new System.Drawing.Point(51, 462);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(149, 27);
             this.label5.TabIndex = 78;
@@ -257,8 +262,9 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(59, 97);
+            this.label4.Location = new System.Drawing.Point(51, 132);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(68, 27);
             this.label4.TabIndex = 77;
@@ -267,6 +273,7 @@
             // addressTextBox
             // 
             this.addressTextBox.AutoRoundedCorners = true;
+            this.addressTextBox.BackColor = System.Drawing.Color.LightGray;
             this.addressTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.addressTextBox.DefaultText = "";
             this.addressTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -276,7 +283,7 @@
             this.addressTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.addressTextBox.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
             this.addressTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.addressTextBox.Location = new System.Drawing.Point(230, 487);
+            this.addressTextBox.Location = new System.Drawing.Point(222, 522);
             this.addressTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.addressTextBox.Name = "addressTextBox";
             this.addressTextBox.PlaceholderText = "";
@@ -287,6 +294,7 @@
             // phoneNumberTextBox
             // 
             this.phoneNumberTextBox.AutoRoundedCorners = true;
+            this.phoneNumberTextBox.BackColor = System.Drawing.Color.LightGray;
             this.phoneNumberTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.phoneNumberTextBox.DefaultText = "";
             this.phoneNumberTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -296,7 +304,7 @@
             this.phoneNumberTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.phoneNumberTextBox.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
             this.phoneNumberTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.phoneNumberTextBox.Location = new System.Drawing.Point(230, 421);
+            this.phoneNumberTextBox.Location = new System.Drawing.Point(222, 456);
             this.phoneNumberTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.phoneNumberTextBox.Name = "phoneNumberTextBox";
             this.phoneNumberTextBox.PlaceholderText = "";
@@ -307,6 +315,7 @@
             // nameTextBox
             // 
             this.nameTextBox.AutoRoundedCorners = true;
+            this.nameTextBox.BackColor = System.Drawing.Color.LightGray;
             this.nameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.nameTextBox.DefaultText = "";
             this.nameTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -316,7 +325,7 @@
             this.nameTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.nameTextBox.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
             this.nameTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.nameTextBox.Location = new System.Drawing.Point(195, 97);
+            this.nameTextBox.Location = new System.Drawing.Point(187, 132);
             this.nameTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.PlaceholderText = "";
@@ -335,7 +344,7 @@
             this.birthDatePicker.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold);
             this.birthDatePicker.ForeColor = System.Drawing.Color.Black;
             this.birthDatePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.birthDatePicker.Location = new System.Drawing.Point(230, 342);
+            this.birthDatePicker.Location = new System.Drawing.Point(222, 377);
             this.birthDatePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.birthDatePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.birthDatePicker.Name = "birthDatePicker";
@@ -346,8 +355,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(59, 352);
+            this.label2.Location = new System.Drawing.Point(51, 387);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(128, 27);
             this.label2.TabIndex = 71;
@@ -359,31 +369,15 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
             this.label1.Font = new System.Drawing.Font("Philosopher", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(1182, 82);
+            this.label1.Location = new System.Drawing.Point(203, 17);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(292, 54);
             this.label1.TabIndex = 0;
             this.label1.Text = "INFORMATION";
             // 
-            // guna2Button3
-            // 
-            this.guna2Button3.BorderRadius = 50;
-            this.guna2Button3.CustomizableEdges.BottomLeft = false;
-            this.guna2Button3.CustomizableEdges.BottomRight = false;
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Location = new System.Drawing.Point(961, 63);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(714, 85);
-            this.guna2Button3.TabIndex = 53;
-            // 
             // staffListView
             // 
+            this.staffListView.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.staffListView.HideSelection = false;
             this.staffListView.Location = new System.Drawing.Point(93, 148);
             this.staffListView.Name = "staffListView";
@@ -409,51 +403,72 @@
             this.seachButton.Size = new System.Drawing.Size(102, 54);
             this.seachButton.TabIndex = 46;
             // 
-            // insertImageButton
+            // guna2CustomGradientPanel1
             // 
-            this.insertImageButton.Image = global::RestaurantManagementSystem.Properties.Resources.image;
-            this.insertImageButton.Location = new System.Drawing.Point(617, 216);
-            this.insertImageButton.Name = "insertImageButton";
-            this.insertImageButton.Size = new System.Drawing.Size(44, 43);
-            this.insertImageButton.TabIndex = 85;
-            this.insertImageButton.UseVisualStyleBackColor = true;
-            this.insertImageButton.Click += new System.EventHandler(this.insertImageButton_Click);
+            this.guna2CustomGradientPanel1.BorderRadius = 50;
+            this.guna2CustomGradientPanel1.Controls.Add(this.insertImageButton);
+            this.guna2CustomGradientPanel1.Controls.Add(this.staffImage);
+            this.guna2CustomGradientPanel1.Controls.Add(this.label2);
+            this.guna2CustomGradientPanel1.Controls.Add(this.positionComboBox);
+            this.guna2CustomGradientPanel1.Controls.Add(this.birthDatePicker);
+            this.guna2CustomGradientPanel1.Controls.Add(this.label7);
+            this.guna2CustomGradientPanel1.Controls.Add(this.nameTextBox);
+            this.guna2CustomGradientPanel1.Controls.Add(this.sexComboBox);
+            this.guna2CustomGradientPanel1.Controls.Add(this.phoneNumberTextBox);
+            this.guna2CustomGradientPanel1.Controls.Add(this.sexLabel);
+            this.guna2CustomGradientPanel1.Controls.Add(this.addressTextBox);
+            this.guna2CustomGradientPanel1.Controls.Add(this.label6);
+            this.guna2CustomGradientPanel1.Controls.Add(this.label4);
+            this.guna2CustomGradientPanel1.Controls.Add(this.label5);
+            this.guna2CustomGradientPanel1.CustomizableEdges.TopLeft = false;
+            this.guna2CustomGradientPanel1.CustomizableEdges.TopRight = false;
+            this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.LightGray;
+            this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.LightGray;
+            this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.LightGray;
+            this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.LightGray;
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(961, 139);
+            this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(714, 631);
+            this.guna2CustomGradientPanel1.TabIndex = 56;
             // 
-            // staffImage
+            // guna2CustomGradientPanel2
             // 
-            this.staffImage.BackColor = System.Drawing.Color.White;
-            this.staffImage.Image = global::RestaurantManagementSystem.Properties.Resources.man__1_;
-            this.staffImage.Location = new System.Drawing.Point(431, 44);
-            this.staffImage.Margin = new System.Windows.Forms.Padding(2);
-            this.staffImage.Name = "staffImage";
-            this.staffImage.Size = new System.Drawing.Size(230, 215);
-            this.staffImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.staffImage.TabIndex = 84;
-            this.staffImage.TabStop = false;
+            this.guna2CustomGradientPanel2.BorderRadius = 50;
+            this.guna2CustomGradientPanel2.Controls.Add(this.label1);
+            this.guna2CustomGradientPanel2.CustomizableEdges.BottomLeft = false;
+            this.guna2CustomGradientPanel2.CustomizableEdges.BottomRight = false;
+            this.guna2CustomGradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
+            this.guna2CustomGradientPanel2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
+            this.guna2CustomGradientPanel2.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
+            this.guna2CustomGradientPanel2.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
+            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(961, 63);
+            this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
+            this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(714, 85);
+            this.guna2CustomGradientPanel2.TabIndex = 57;
             // 
             // manageStaffUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.searchTextBox);
-            this.Controls.Add(this.guna2Button3);
             this.Controls.Add(this.seachButton);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.guna2CustomGradientPanel2);
+            this.Controls.Add(this.searchTextBox);
             this.Controls.Add(this.checkButton);
             this.Controls.Add(this.addButton);
             this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.changeButton);
             this.Controls.Add(this.staffListView);
+            this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Name = "manageStaffUC";
             this.Size = new System.Drawing.Size(1675, 932);
             this.Load += new System.EventHandler(this.manageStaffUC_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.staffImage)).EndInit();
+            this.guna2CustomGradientPanel1.ResumeLayout(false);
+            this.guna2CustomGradientPanel1.PerformLayout();
+            this.guna2CustomGradientPanel2.ResumeLayout(false);
+            this.guna2CustomGradientPanel2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -464,9 +479,7 @@
         private Guna.UI2.WinForms.Guna2Button deleteButton;
         private Guna.UI2.WinForms.Guna2Button checkButton;
         private Guna.UI2.WinForms.Guna2Button addButton;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2TextBox addressTextBox;
         private Guna.UI2.WinForms.Guna2TextBox phoneNumberTextBox;
@@ -482,5 +495,7 @@
         private System.Windows.Forms.ListView staffListView;
         private System.Windows.Forms.PictureBox staffImage;
         private System.Windows.Forms.Button insertImageButton;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel2;
     }
 }

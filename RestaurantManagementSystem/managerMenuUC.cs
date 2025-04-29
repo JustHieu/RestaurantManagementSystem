@@ -250,7 +250,15 @@ namespace RestaurantManagementSystem
 
         private void cookingIngredientsButton_Click(object sender, EventArgs e)
         {
-
+            if (selectedDishId != -1)
+            {
+                cookingIngredientsForm cookingForm = new cookingIngredientsForm(selectedDishId);
+                cookingForm.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Hãy chọn một món ăn trước!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void insertImageButton_Click_1(object sender, EventArgs e)

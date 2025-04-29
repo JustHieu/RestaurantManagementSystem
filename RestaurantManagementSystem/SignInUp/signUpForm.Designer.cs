@@ -64,7 +64,7 @@
             this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(-161, -14);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(650, 638);
-            this.guna2CustomGradientPanel1.TabIndex = 11;
+            this.guna2CustomGradientPanel1.TabIndex = 0;
             // 
             // closeSignUpForm
             // 
@@ -101,7 +101,7 @@
             this.label4.Location = new System.Drawing.Point(248, 179);
             this.label4.Name = "label4";
             this.label4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label4.Size = new System.Drawing.Size(295, 48);
+            this.label4.Size = new System.Drawing.Size(304, 48);
             this.label4.TabIndex = 12;
             this.label4.Text = "Welcome Back!";
             // 
@@ -235,7 +235,7 @@
             this.label1.Font = new System.Drawing.Font("SF Pro Display", 34.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(541, 61);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(429, 69);
+            this.label1.Size = new System.Drawing.Size(442, 69);
             this.label1.TabIndex = 12;
             this.label1.Text = "Create Account";
             // 

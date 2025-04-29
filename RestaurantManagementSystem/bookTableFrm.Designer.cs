@@ -98,7 +98,7 @@
             this.completeButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.completeButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.completeButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.completeButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
+            this.completeButton.FillColor = System.Drawing.Color.Tomato;
             this.completeButton.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
             this.completeButton.ForeColor = System.Drawing.Color.White;
             this.completeButton.Location = new System.Drawing.Point(1564, 992);
@@ -156,7 +156,7 @@
             this.label4.Location = new System.Drawing.Point(897, 18);
             this.label4.Name = "label4";
             this.label4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label4.Size = new System.Drawing.Size(422, 48);
+            this.label4.Size = new System.Drawing.Size(433, 48);
             this.label4.TabIndex = 75;
             this.label4.Text = "Welcome to Your Table";
             // 

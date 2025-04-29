@@ -290,7 +290,7 @@
             this.manageStaffButton.ImageOffset = new System.Drawing.Point(20, 0);
             this.manageStaffButton.Location = new System.Drawing.Point(0, 426);
             this.manageStaffButton.Name = "manageStaffButton";
-            this.manageStaffButton.Size = new System.Drawing.Size(271, 70);
+            this.manageStaffButton.Size = new System.Drawing.Size(284, 70);
             this.manageStaffButton.TabIndex = 20;
             this.manageStaffButton.Text = "Manage Staff ";
             this.manageStaffButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -329,7 +329,7 @@
             this.coldStorageButton.ImageOffset = new System.Drawing.Point(20, 0);
             this.coldStorageButton.Location = new System.Drawing.Point(0, 350);
             this.coldStorageButton.Name = "coldStorageButton";
-            this.coldStorageButton.Size = new System.Drawing.Size(271, 70);
+            this.coldStorageButton.Size = new System.Drawing.Size(284, 70);
             this.coldStorageButton.TabIndex = 18;
             this.coldStorageButton.Text = "Cold Storage";
             this.coldStorageButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -350,7 +350,7 @@
             this.tableHistoryButton.ImageOffset = new System.Drawing.Point(20, 0);
             this.tableHistoryButton.Location = new System.Drawing.Point(0, 274);
             this.tableHistoryButton.Name = "tableHistoryButton";
-            this.tableHistoryButton.Size = new System.Drawing.Size(271, 70);
+            this.tableHistoryButton.Size = new System.Drawing.Size(284, 70);
             this.tableHistoryButton.TabIndex = 16;
             this.tableHistoryButton.Text = "Table History";
             this.tableHistoryButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -371,7 +371,7 @@
             this.menuButton.ImageOffset = new System.Drawing.Point(20, 0);
             this.menuButton.Location = new System.Drawing.Point(0, 198);
             this.menuButton.Name = "menuButton";
-            this.menuButton.Size = new System.Drawing.Size(271, 70);
+            this.menuButton.Size = new System.Drawing.Size(284, 70);
             this.menuButton.TabIndex = 14;
             this.menuButton.Text = "Menu";
             this.menuButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;

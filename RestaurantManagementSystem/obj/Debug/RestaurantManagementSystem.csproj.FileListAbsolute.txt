@@ -223,7 +223,6 @@ Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\
 Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.staffTableStatusUC.resources
 Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.tableUC.resources
 Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.staffKitchenUC.resources
-Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.managerTableHistoryUC.resources
 Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\bin\Debug\LiveCharts.dll
 Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\bin\Debug\LiveCharts.WinForms.dll
 Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\bin\Debug\LiveCharts.Wpf.dll
@@ -669,3 +668,14 @@ E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project1\RestaurantManagementSystem\Res
 E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project1\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.managerTableHistory.resources
 E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project1\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.managerInfoUC.resources
 E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Project1\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.managerUsedIngredient.resources
+Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.bookTableFrm.resources
+Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.keyAccessFrom.resources
+Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.managerInfoUC.resources
+Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.managerMenuMiniUC.resources
+Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.managerTableHistory.resources
+Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.managerTableHistoryMiniUC.resources
+Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.managerUsedIngredient.resources
+Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.showTableDetailUC.resources
+Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.signInForm.resources
+Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.signUpForm.resources
+Q:\CODE\LapTrinhWinform\A\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.managerStatisticalBestSellerUC.resources

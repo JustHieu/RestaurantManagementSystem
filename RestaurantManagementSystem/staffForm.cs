@@ -87,9 +87,11 @@ namespace RestaurantManagementSystem
             menuButton.FillColor = Color.FromArgb(20, 28, 38);
             tableStatusButton.FillColor = Color.FromArgb(20, 28, 38);
             kitchenButton.FillColor = Color.FromArgb(20, 28, 38);
+            settingBtn.FillColor = Color.FromArgb(20, 28, 38);
             menuPanel.Visible = false;
             tableStatusPanel.Visible = false;
             kitchenPanel.Visible = false;
+            settingPanel.Visible = false;
         }
 
         private void quitButton_Click(object sender, EventArgs e)

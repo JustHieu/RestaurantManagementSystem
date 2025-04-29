@@ -34,8 +34,8 @@
             this.payButton = new Guna.UI2.WinForms.Guna2Button();
             this.label3 = new System.Windows.Forms.Label();
             this.tableLabel = new System.Windows.Forms.Label();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.detailPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.SuspendLayout();
             // 
             // tablePanel
@@ -43,9 +43,9 @@
             this.tablePanel.AutoScroll = true;
             this.tablePanel.BackColor = System.Drawing.Color.White;
             this.tablePanel.Location = new System.Drawing.Point(61, 60);
-            this.tablePanel.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.tablePanel.Margin = new System.Windows.Forms.Padding(10);
             this.tablePanel.Name = "tablePanel";
-            this.tablePanel.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.tablePanel.Padding = new System.Windows.Forms.Padding(10);
             this.tablePanel.Size = new System.Drawing.Size(1004, 710);
             this.tablePanel.TabIndex = 63;
             // 
@@ -111,50 +111,47 @@
             this.tableLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
             this.tableLabel.Font = new System.Drawing.Font("Philosopher", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tableLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.tableLabel.Location = new System.Drawing.Point(1251, 117);
+            this.tableLabel.Location = new System.Drawing.Point(1274, 119);
             this.tableLabel.Name = "tableLabel";
             this.tableLabel.Size = new System.Drawing.Size(139, 45);
             this.tableLabel.TabIndex = 65;
             this.tableLabel.Text = "TABLE 1";
             // 
-            // guna2Button3
-            // 
-            this.guna2Button3.BorderRadius = 50;
-            this.guna2Button3.CustomizableEdges.BottomLeft = false;
-            this.guna2Button3.CustomizableEdges.BottomRight = false;
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Location = new System.Drawing.Point(1041, 60);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(618, 166);
-            this.guna2Button3.TabIndex = 64;
-            // 
             // detailPanel
             // 
             this.detailPanel.Location = new System.Drawing.Point(1041, 225);
-            this.detailPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.detailPanel.Margin = new System.Windows.Forms.Padding(2);
             this.detailPanel.Name = "detailPanel";
             this.detailPanel.Size = new System.Drawing.Size(618, 510);
             this.detailPanel.TabIndex = 73;
+            // 
+            // guna2CustomGradientPanel2
+            // 
+            this.guna2CustomGradientPanel2.BorderRadius = 50;
+            this.guna2CustomGradientPanel2.CustomizableEdges.BottomLeft = false;
+            this.guna2CustomGradientPanel2.CustomizableEdges.BottomRight = false;
+            this.guna2CustomGradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
+            this.guna2CustomGradientPanel2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
+            this.guna2CustomGradientPanel2.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
+            this.guna2CustomGradientPanel2.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
+            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(1041, 60);
+            this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
+            this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(618, 166);
+            this.guna2CustomGradientPanel2.TabIndex = 75;
             // 
             // staffTableStatusUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.tableLabel);
+            this.Controls.Add(this.guna2CustomGradientPanel2);
             this.Controls.Add(this.payButton);
             this.Controls.Add(this.detailPanel);
-            this.Controls.Add(this.guna2Button3);
-            this.Controls.Add(this.tablePanel);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.totalLabel);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.tableLabel);
+            this.Controls.Add(this.tablePanel);
             this.Name = "staffTableStatusUC";
             this.Size = new System.Drawing.Size(1675, 932);
             this.Load += new System.EventHandler(this.staffTableStatusUC_Load);
@@ -170,7 +167,7 @@
         private Guna.UI2.WinForms.Guna2Button payButton;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label tableLabel;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private System.Windows.Forms.FlowLayoutPanel detailPanel;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel2;
     }
 }

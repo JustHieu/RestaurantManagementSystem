@@ -104,6 +104,7 @@
     <Reference Include="Microsoft.IdentityModel.Tokens, Version=7.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.IdentityModel.Tokens.7.5.0\lib\net472\Microsoft.IdentityModel.Tokens.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Microsoft.Web.WebView2.Core, Version=1.0.3124.44, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Web.WebView2.1.0.3124.44\lib\net462\Microsoft.Web.WebView2.Core.dll</HintPath>
     </Reference>
@@ -216,6 +217,7 @@
     <Compile Include="Class\Customer.cs" />
     <Compile Include="Class\Dessert.cs" />
     <Compile Include="Class\Drink.cs" />
+    <Compile Include="Class\FinancialReport.cs" />
     <Compile Include="Class\Food.cs" />
     <Compile Include="Class\Ingredient.cs" />
     <Compile Include="Class\Inventory.cs" />
@@ -278,6 +280,12 @@
     </Compile>
     <Compile Include="managerMenuMiniUC.Designer.cs">
       <DependentUpon>managerMenuMiniUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="managerStatisticalBestSellerUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="managerStatisticalBestSellerUC.Designer.cs">
+      <DependentUpon>managerStatisticalBestSellerUC.cs</DependentUpon>
     </Compile>
     <Compile Include="managerTableHistory.cs">
       <SubType>UserControl</SubType>
@@ -439,6 +447,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="managerMenuMiniUC.resx">
       <DependentUpon>managerMenuMiniUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="managerStatisticalBestSellerUC.resx">
+      <DependentUpon>managerStatisticalBestSellerUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="managerTableHistory.resx">
       <DependentUpon>managerTableHistory.cs</DependentUpon>

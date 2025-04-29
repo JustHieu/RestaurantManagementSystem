@@ -41,6 +41,7 @@
             // flowPanel
             // 
             this.flowPanel.AutoScroll = true;
+            this.flowPanel.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.flowPanel.Location = new System.Drawing.Point(176, 201);
             this.flowPanel.Name = "flowPanel";
             this.flowPanel.Size = new System.Drawing.Size(1339, 614);

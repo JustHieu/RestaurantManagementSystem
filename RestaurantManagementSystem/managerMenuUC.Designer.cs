@@ -151,10 +151,10 @@
             this.guna2CustomGradientPanel1.Controls.Add(this.idTextBox);
             this.guna2CustomGradientPanel1.Controls.Add(this.insertImageButton);
             this.guna2CustomGradientPanel1.Controls.Add(this.dishImage);
-            this.guna2CustomGradientPanel1.FillColor = System.Drawing.SystemColors.ButtonFace;
-            this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(35)))), ((int)(((byte)(39)))));
+            this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.FloralWhite;
+            this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(30)))), ((int)(((byte)(10)))));
             this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.Black;
-            this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(35)))), ((int)(((byte)(39)))));
+            this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(20)))), ((int)(((byte)(10)))));
             this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(1124, 78);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(600, 757);

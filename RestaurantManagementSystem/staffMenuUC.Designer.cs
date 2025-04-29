@@ -43,7 +43,6 @@
             this.timeDateTimePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.dateDateTimePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.arrangeComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2ShapesTool1 = new Guna.UI2.WinForms.Guna2ShapesTool(this.components);
             this.orderFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
@@ -54,6 +53,7 @@
             this.mainDishesButton = new Guna.UI2.WinForms.Guna2Button();
             this.startersButton = new Guna.UI2.WinForms.Guna2Button();
             this.foodFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -198,7 +198,7 @@
             "10",
             "11",
             "12"});
-            this.tableComboBox.Location = new System.Drawing.Point(1223, 142);
+            this.tableComboBox.Location = new System.Drawing.Point(1244, 126);
             this.tableComboBox.Name = "tableComboBox";
             this.tableComboBox.Size = new System.Drawing.Size(108, 36);
             this.tableComboBox.TabIndex = 57;
@@ -209,7 +209,7 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
             this.label2.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(1152, 151);
+            this.label2.Location = new System.Drawing.Point(1162, 135);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 27);
             this.label2.TabIndex = 56;
@@ -226,7 +226,7 @@
             this.timeDateTimePicker.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold);
             this.timeDateTimePicker.ForeColor = System.Drawing.Color.White;
             this.timeDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.timeDateTimePicker.Location = new System.Drawing.Point(1418, 142);
+            this.timeDateTimePicker.Location = new System.Drawing.Point(1423, 126);
             this.timeDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.timeDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.timeDateTimePicker.Name = "timeDateTimePicker";
@@ -246,7 +246,7 @@
             this.dateDateTimePicker.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold);
             this.dateDateTimePicker.ForeColor = System.Drawing.Color.White;
             this.dateDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateDateTimePicker.Location = new System.Drawing.Point(1418, 88);
+            this.dateDateTimePicker.Location = new System.Drawing.Point(1423, 64);
             this.dateDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dateDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dateDateTimePicker.Name = "dateDateTimePicker";
@@ -260,28 +260,11 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
             this.label1.Font = new System.Drawing.Font("Philosopher", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(1148, 79);
+            this.label1.Location = new System.Drawing.Point(1159, 55);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(209, 45);
             this.label1.TabIndex = 53;
             this.label1.Text = "NEW ORDER";
-            // 
-            // guna2Button3
-            // 
-            this.guna2Button3.BorderRadius = 50;
-            this.guna2Button3.CustomizableEdges.BottomLeft = false;
-            this.guna2Button3.CustomizableEdges.BottomRight = false;
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Location = new System.Drawing.Point(1095, 39);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(602, 192);
-            this.guna2Button3.TabIndex = 52;
             // 
             // arrangeComboBox
             // 
@@ -442,23 +425,37 @@
             this.foodFlowLayoutPanel.Size = new System.Drawing.Size(1056, 788);
             this.foodFlowLayoutPanel.TabIndex = 43;
             // 
+            // guna2CustomGradientPanel2
+            // 
+            this.guna2CustomGradientPanel2.BorderRadius = 50;
+            this.guna2CustomGradientPanel2.CustomizableEdges.BottomLeft = false;
+            this.guna2CustomGradientPanel2.CustomizableEdges.BottomRight = false;
+            this.guna2CustomGradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
+            this.guna2CustomGradientPanel2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
+            this.guna2CustomGradientPanel2.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
+            this.guna2CustomGradientPanel2.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
+            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(1095, 7);
+            this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
+            this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(602, 192);
+            this.guna2CustomGradientPanel2.TabIndex = 65;
+            // 
             // staffMenuUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Controls.Add(this.tableComboBox);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.timeDateTimePicker);
+            this.Controls.Add(this.dateDateTimePicker);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.guna2CustomGradientPanel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.totalLabel);
             this.Controls.Add(this.completeButton);
             this.Controls.Add(this.deleteAllButton);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.tableComboBox);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.timeDateTimePicker);
-            this.Controls.Add(this.dateDateTimePicker);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.guna2Button3);
             this.Controls.Add(this.arrangeComboBox);
             this.Controls.Add(this.orderFlowLayoutPanel);
             this.Controls.Add(this.arrangeLabel);
@@ -494,7 +491,6 @@
         private Guna.UI2.WinForms.Guna2DateTimePicker timeDateTimePicker;
         private Guna.UI2.WinForms.Guna2DateTimePicker dateDateTimePicker;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2ComboBox arrangeComboBox;
         private Guna.UI2.WinForms.Guna2ShapesTool guna2ShapesTool1;
         private System.Windows.Forms.FlowLayoutPanel orderFlowLayoutPanel;
@@ -505,5 +501,6 @@
         private Guna.UI2.WinForms.Guna2Button mainDishesButton;
         private Guna.UI2.WinForms.Guna2Button startersButton;
         private System.Windows.Forms.FlowLayoutPanel foodFlowLayoutPanel;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel2;
     }
 }
