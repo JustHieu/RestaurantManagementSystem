@@ -1,2 +1,8 @@
+<<<<<<< Updated upstream
 2025/03/26-09:18:22.537 33f8 Creating DB D:\ly_thuyet\Code_window\RestaurantManagementSystem\RestaurantManagementSystem\bin\Debug\RestaurantManagementSystem.exe.WebView2\EBWebView\Default\Session Storage since it was missing.
 2025/03/26-09:18:22.548 33f8 Reusing MANIFEST D:\ly_thuyet\Code_window\RestaurantManagementSystem\RestaurantManagementSystem\bin\Debug\RestaurantManagementSystem.exe.WebView2\EBWebView\Default\Session Storage/MANIFEST-000001
+=======
+2025/04/30-14:11:24.823 41b8 Reusing MANIFEST D:\ly_thuyet\Code_window\RestaurantManagementSystem\RestaurantManagementSystem\bin\Debug\RestaurantManagementSystem.exe.WebView2\EBWebView\Default\Session Storage/MANIFEST-000001
+2025/04/30-14:11:24.825 41b8 Recovering log #3
+2025/04/30-14:11:24.828 41b8 Reusing old log D:\ly_thuyet\Code_window\RestaurantManagementSystem\RestaurantManagementSystem\bin\Debug\RestaurantManagementSystem.exe.WebView2\EBWebView\Default\Session Storage/000003.log 
+>>>>>>> Stashed changes

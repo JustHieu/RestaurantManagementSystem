@@ -3,6 +3,7 @@
   "WorkspaceRootPath": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\",
   "Documents": [
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|d:\\ly_thuyet\\code_window\\restaurantmanagementsystem\\restaurantmanagementsystem\\booktableform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\booktableform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -53,6 +54,126 @@
     {
       "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\class\\classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
       "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\class\\classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
+=======
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\keyaccessfrom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\keyaccessfrom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|d:\\ly_thuyet\\code_window\\restaurantmanagementsystem\\restaurantmanagementsystem\\stafftablestatusuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\stafftablestatusuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|d:\\ly_thuyet\\code_window\\restaurantmanagementsystem\\restaurantmanagementsystem\\stafftablestatusuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\stafftablestatusuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\managerstatisticaluc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\managerstatisticaluc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\managermenuuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\managermenuuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|d:\\ly_thuyet\\code_window\\restaurantmanagementsystem\\restaurantmanagementsystem\\managermenuuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\managermenuuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\managerstatisticaluc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\managerstatisticaluc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\booktablefrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\booktablefrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\booktablefrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\booktablefrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\showtabledetailuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\showtabledetailuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\managestaffuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\managestaffuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\managerusedingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\managerusedingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\managertablehistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\managertablehistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\managertablehistoryminiuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\managertablehistoryminiuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\staffmenuuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\staffmenuuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|d:\\ly_thuyet\\code_window\\restaurantmanagementsystem\\restaurantmanagementsystem\\staffmenuuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\staffmenuuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\booktableuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\booktableuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\managermenuminiuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\managermenuminiuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\ingredientsitemuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\ingredientsitemuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|d:\\ly_thuyet\\code_window\\restaurantmanagementsystem\\restaurantmanagementsystem\\bestselleruc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\bestselleruc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|d:\\ly_thuyet\\code_window\\restaurantmanagementsystem\\restaurantmanagementsystem\\bestselleruc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\bestselleruc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|d:\\ly_thuyet\\code_window\\restaurantmanagementsystem\\restaurantmanagementsystem\\foodorderuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\foodorderuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\fooditemminiuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\fooditemminiuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\fooditemuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\fooditemuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\cookingingredientsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\cookingingredientsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\firstform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\firstform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\fooditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\fooditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\managercoldstorageuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\managercoldstorageuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\booktableuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\booktableuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\restaurantmanagementsystem\\rememberkeypass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\rememberkeypass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+>>>>>>> Stashed changes
     }
   ],
   "DocumentGroupContainers": [
@@ -70,6 +191,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 2,
               "Title": "mainFrm.cs",
               "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\mainFrm.cs",
@@ -140,40 +262,149 @@
               "ViewState": "AgIAABoAAAAAAAAAAAAAAB0AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-24T10:34:14.871Z"
+=======
+              "DocumentIndex": 1,
+              "Title": "staffTableStatusUC.cs",
+              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\staffTableStatusUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\staffTableStatusUC.cs",
+              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\staffTableStatusUC.cs",
+              "RelativeToolTip": "RestaurantManagementSystem\\staffTableStatusUC.cs",
+              "ViewState": "AgIAAFUBAAAAAAAAAAAhwF4BAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T08:51:11.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "managerMenuUC.cs [Design]",
+              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerMenuUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\managerMenuUC.cs",
+              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerMenuUC.cs [Design]",
+              "RelativeToolTip": "RestaurantManagementSystem\\managerMenuUC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T05:40:37.663Z",
+              "EditorCaption": " [Design]"
+>>>>>>> Stashed changes
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+<<<<<<< Updated upstream
               "Title": "mainFrm.cs [Design]",
               "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\mainFrm.cs",
               "RelativeDocumentMoniker": "RestaurantManagementSystem\\mainFrm.cs",
               "ToolTip": "Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\RestaurantManagementSystem\\mainFrm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-17T16:19:26.919Z"
+=======
+              "Title": "managerMenuUC.cs",
+              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerMenuUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\managerMenuUC.cs",
+              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerMenuUC.cs",
+              "RelativeToolTip": "RestaurantManagementSystem\\managerMenuUC.cs",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAswMMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T08:10:33.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "managerStatisticalUC.cs [Design]",
+              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerStatisticalUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\managerStatisticalUC.cs",
+              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerStatisticalUC.cs [Design]",
+              "RelativeToolTip": "RestaurantManagementSystem\\managerStatisticalUC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T15:12:08.281Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "keyAccessFrom.cs [Design]",
+              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\keyAccessFrom.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\keyAccessFrom.cs",
+              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\keyAccessFrom.cs [Design]",
+              "RelativeToolTip": "RestaurantManagementSystem\\keyAccessFrom.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T05:40:24.781Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "managerStatisticalUC.cs",
+              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerStatisticalUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\managerStatisticalUC.cs",
+              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerStatisticalUC.cs",
+              "RelativeToolTip": "RestaurantManagementSystem\\managerStatisticalUC.cs",
+              "ViewState": "AgIAAOsAAAAAAAAAAIAwwP8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T01:48:06.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "staffTableStatusUC.cs [Design]",
+              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\staffTableStatusUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\staffTableStatusUC.cs",
+              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\staffTableStatusUC.cs [Design]",
+              "RelativeToolTip": "RestaurantManagementSystem\\staffTableStatusUC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T08:22:15.406Z",
+              "EditorCaption": " [Design]"
+>>>>>>> Stashed changes
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+<<<<<<< Updated upstream
               "Title": "contactUC.cs [Design]",
               "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\contactUC.cs",
               "RelativeDocumentMoniker": "RestaurantManagementSystem\\contactUC.cs",
               "ToolTip": "Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\RestaurantManagementSystem\\contactUC.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-24T09:41:39.704Z"
+=======
+              "Title": "bookTableFrm.cs",
+              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\bookTableFrm.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\bookTableFrm.cs",
+              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\bookTableFrm.cs",
+              "RelativeToolTip": "RestaurantManagementSystem\\bookTableFrm.cs",
+              "ViewState": "AgIAAJcAAAAAAAAAAAAwwEsBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T14:34:25.709Z",
+              "EditorCaption": ""
+>>>>>>> Stashed changes
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+<<<<<<< Updated upstream
               "Title": "menuUC.cs [Design]",
               "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\menuUC.cs",
               "RelativeDocumentMoniker": "RestaurantManagementSystem\\menuUC.cs",
               "ToolTip": "Q:\\CODE\\LapTrinhWinform\\A\\RestaurantManagementSystem\\RestaurantManagementSystem\\menuUC.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-24T09:03:46.401Z"
+=======
+              "Title": "bookTableFrm.cs [Design]",
+              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\bookTableFrm.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\bookTableFrm.cs",
+              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\bookTableFrm.cs [Design]",
+              "RelativeToolTip": "RestaurantManagementSystem\\bookTableFrm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T05:40:10.763Z",
+              "EditorCaption": " [Design]"
+>>>>>>> Stashed changes
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
+<<<<<<< Updated upstream
               "Title": "contactUC.cs",
               "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\contactUC.cs",
               "RelativeDocumentMoniker": "RestaurantManagementSystem\\contactUC.cs",
@@ -182,10 +413,21 @@
               "ViewState": "AgIAAB0AAAAAAAAAAAA/wDgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-24T09:47:31.797Z"
+=======
+              "Title": "showTableDetailUC.cs [Design]",
+              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\showTableDetailUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\showTableDetailUC.cs",
+              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\showTableDetailUC.cs [Design]",
+              "RelativeToolTip": "RestaurantManagementSystem\\showTableDetailUC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T12:03:45.823Z",
+              "EditorCaption": " [Design]"
+>>>>>>> Stashed changes
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
+<<<<<<< Updated upstream
               "Title": "background.jpg - Bitmap [1690x1127, 24 bit, JPG]",
               "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\imgSource\\background.jpg",
               "RelativeDocumentMoniker": "RestaurantManagementSystem\\imgSource\\background.jpg",
@@ -204,10 +446,33 @@
               "ViewState": "AgIAAB8AAAAAAAAAAAAYwDgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-14T03:48:46.494Z"
+=======
+              "Title": "manageStaffUC.cs [Design]",
+              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\manageStaffUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\manageStaffUC.cs",
+              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\manageStaffUC.cs [Design]",
+              "RelativeToolTip": "RestaurantManagementSystem\\manageStaffUC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T12:03:24.845Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "managerTableHistoryMiniUC.cs [Design]",
+              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerTableHistoryMiniUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\managerTableHistoryMiniUC.cs",
+              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerTableHistoryMiniUC.cs [Design]",
+              "RelativeToolTip": "RestaurantManagementSystem\\managerTableHistoryMiniUC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T17:04:48.603Z",
+              "EditorCaption": " [Design]"
+>>>>>>> Stashed changes
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
+<<<<<<< Updated upstream
               "Title": "ClassDiagram1.cd",
               "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\Class\\ClassDiagram1.cd",
               "RelativeDocumentMoniker": "RestaurantManagementSystem\\Class\\ClassDiagram1.cd",
@@ -215,6 +480,224 @@
               "RelativeToolTip": "RestaurantManagementSystem\\Class\\ClassDiagram1.cd",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
               "WhenOpened": "2025-03-13T07:37:15.253Z"
+=======
+              "Title": "managerTableHistory.cs [Design]",
+              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerTableHistory.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\managerTableHistory.cs",
+              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerTableHistory.cs [Design]",
+              "RelativeToolTip": "RestaurantManagementSystem\\managerTableHistory.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T17:04:47.222Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "managerUsedIngredient.cs [Design]",
+              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerUsedIngredient.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\managerUsedIngredient.cs",
+              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerUsedIngredient.cs [Design]",
+              "RelativeToolTip": "RestaurantManagementSystem\\managerUsedIngredient.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T12:03:27.926Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "staffMenuUC.cs [Design]",
+              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\staffMenuUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\staffMenuUC.cs",
+              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\staffMenuUC.cs [Design]",
+              "RelativeToolTip": "RestaurantManagementSystem\\staffMenuUC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T15:42:21.199Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "staffMenuUC.cs",
+              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\staffMenuUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\staffMenuUC.cs",
+              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\staffMenuUC.cs",
+              "RelativeToolTip": "RestaurantManagementSystem\\staffMenuUC.cs",
+              "ViewState": "AgIAAM0AAAAAAAAAAAAAANcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T08:07:37.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "managerMenuMiniUC.cs [Design]",
+              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerMenuMiniUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\managerMenuMiniUC.cs",
+              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerMenuMiniUC.cs [Design]",
+              "RelativeToolTip": "RestaurantManagementSystem\\managerMenuMiniUC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T13:06:34.011Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "bookTableUC.cs [Design]",
+              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\bookTableUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\bookTableUC.cs",
+              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\bookTableUC.cs [Design]",
+              "RelativeToolTip": "RestaurantManagementSystem\\bookTableUC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T08:51:21.481Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ingredientsItemUC.cs [Design]",
+              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\ingredientsItemUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\ingredientsItemUC.cs",
+              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\ingredientsItemUC.cs [Design]",
+              "RelativeToolTip": "RestaurantManagementSystem\\ingredientsItemUC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T05:40:23.716Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "bestSellerUC.cs [Design]",
+              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\bestSellerUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\bestSellerUC.cs",
+              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\bestSellerUC.cs [Design]",
+              "RelativeToolTip": "RestaurantManagementSystem\\bestSellerUC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T07:21:08.461Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "bestSellerUC.cs",
+              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\bestSellerUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\bestSellerUC.cs",
+              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\bestSellerUC.cs",
+              "RelativeToolTip": "RestaurantManagementSystem\\bestSellerUC.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAIAwwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T07:34:24.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "foodOrderUC.cs [Design]",
+              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\foodOrderUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\foodOrderUC.cs",
+              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\foodOrderUC.cs [Design]",
+              "RelativeToolTip": "RestaurantManagementSystem\\foodOrderUC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T07:19:33.062Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "foodItemMiniUC.cs [Design]",
+              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\foodItemMiniUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\foodItemMiniUC.cs",
+              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\foodItemMiniUC.cs [Design]",
+              "RelativeToolTip": "RestaurantManagementSystem\\foodItemMiniUC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T05:40:18.041Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "foodItemUC.cs [Design]",
+              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\foodItemUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\foodItemUC.cs",
+              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\foodItemUC.cs [Design]",
+              "RelativeToolTip": "RestaurantManagementSystem\\foodItemUC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T05:40:20.048Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "FirstForm.cs [Design]",
+              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\FirstForm.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\FirstForm.cs",
+              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\FirstForm.cs [Design]",
+              "RelativeToolTip": "RestaurantManagementSystem\\FirstForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T05:40:16.288Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "FoodItem.cs",
+              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\FoodItem.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\FoodItem.cs",
+              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\FoodItem.cs",
+              "RelativeToolTip": "RestaurantManagementSystem\\FoodItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T05:40:14.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "cookingIngredientsForm.cs [Design]",
+              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\cookingIngredientsForm.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\cookingIngredientsForm.cs",
+              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\cookingIngredientsForm.cs [Design]",
+              "RelativeToolTip": "RestaurantManagementSystem\\cookingIngredientsForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T05:40:13.222Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "managerColdStorageUC.cs [Design]",
+              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerColdStorageUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\managerColdStorageUC.cs",
+              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\managerColdStorageUC.cs [Design]",
+              "RelativeToolTip": "RestaurantManagementSystem\\managerColdStorageUC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T15:42:27.735Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "bookTableUC.cs",
+              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\bookTableUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\bookTableUC.cs",
+              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\bookTableUC.cs",
+              "RelativeToolTip": "RestaurantManagementSystem\\bookTableUC.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAgwNIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T12:01:48.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "RememberKeyPass.cs [Design]",
+              "DocumentMoniker": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\RememberKeyPass.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\RememberKeyPass.cs",
+              "ToolTip": "D:\\ly_thuyet\\Code_window\\RestaurantManagementSystem\\RestaurantManagementSystem\\RememberKeyPass.cs [Design]",
+              "RelativeToolTip": "RestaurantManagementSystem\\RememberKeyPass.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T14:47:55.045Z",
+              "EditorCaption": " [Design]"
+>>>>>>> Stashed changes
             }
           ]
         }

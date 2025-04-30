@@ -1,5 +1,11 @@
+<<<<<<< Updated upstream
 2025/03/26-09:18:21.597 4b68 Log #3: 11 ops saved to Table #4 OK
 2025/03/26-09:18:21.598 4b68 Archiving D:\ly_thuyet\Code_window\RestaurantManagementSystem\RestaurantManagementSystem\bin\Debug\RestaurantManagementSystem.exe.WebView2\EBWebView\Default\Site Characteristics Database/000003.log: OK
 2025/03/26-09:18:21.598 4b68 Table #4: 11 entries OK
 2025/03/26-09:18:21.599 4b68 Archiving D:\ly_thuyet\Code_window\RestaurantManagementSystem\RestaurantManagementSystem\bin\Debug\RestaurantManagementSystem.exe.WebView2\EBWebView\Default\Site Characteristics Database/MANIFEST-000001: OK
 2025/03/26-09:18:21.604 4b68 **** Repaired leveldb D:\ly_thuyet\Code_window\RestaurantManagementSystem\RestaurantManagementSystem\bin\Debug\RestaurantManagementSystem.exe.WebView2\EBWebView\Default\Site Characteristics Database; recovered 1 files; 302 bytes. Some data may have been lost. ****
+=======
+2025/04/30-13:50:02.411 e90 Reusing MANIFEST D:\ly_thuyet\RestaurantManagementSystem\RestaurantManagementSystem\bin\Debug\RestaurantManagementSystem.exe.WebView2\EBWebView\Default\Site Characteristics Database/MANIFEST-000001
+2025/04/30-13:50:02.412 e90 Recovering log #3
+2025/04/30-13:50:02.412 e90 Reusing old log D:\ly_thuyet\RestaurantManagementSystem\RestaurantManagementSystem\bin\Debug\RestaurantManagementSystem.exe.WebView2\EBWebView\Default\Site Characteristics Database/000003.log 
+>>>>>>> Stashed changes

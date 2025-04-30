@@ -184,7 +184,17 @@
     <Compile Include="aboutUC.Designer.cs">
       <DependentUpon>aboutUC.cs</DependentUpon>
     </Compile>
+<<<<<<< Updated upstream
     <Compile Include="bookTableForm.cs">
+=======
+    <Compile Include="bestSellerUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="bestSellerUC.Designer.cs">
+      <DependentUpon>bestSellerUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bookTableFrm.cs">
+>>>>>>> Stashed changes
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="bookTableForm.Designer.cs">
@@ -214,6 +224,88 @@
     <Compile Include="foodItemMiniUC.Designer.cs">
       <DependentUpon>foodItemMiniUC.cs</DependentUpon>
     </Compile>
+<<<<<<< Updated upstream
+=======
+    <Compile Include="foodItemUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="foodItemUC.Designer.cs">
+      <DependentUpon>foodItemUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="foodOrderUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="foodOrderUC.Designer.cs">
+      <DependentUpon>foodOrderUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ingredientFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ingredientFrm.Designer.cs">
+      <DependentUpon>ingredientFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ingredientsItemUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ingredientsItemUC.Designer.cs">
+      <DependentUpon>ingredientsItemUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="keyAccessFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="keyAccessFrom.Designer.cs">
+      <DependentUpon>keyAccessFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="managerInfoUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="managerInfoUC.Designer.cs">
+      <DependentUpon>managerInfoUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="managerMenuMiniUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="managerMenuMiniUC.Designer.cs">
+      <DependentUpon>managerMenuMiniUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="managerTableHistory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="managerTableHistory.Designer.cs">
+      <DependentUpon>managerTableHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="managerTableHistoryMiniUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="managerTableHistoryMiniUC.Designer.cs">
+      <DependentUpon>managerTableHistoryMiniUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="managerUsedIngredient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="managerUsedIngredient.Designer.cs">
+      <DependentUpon>managerUsedIngredient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RememberKeyPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RememberKeyPass.Designer.cs">
+      <DependentUpon>RememberKeyPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="showTableDetailUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="showTableDetailUC.Designer.cs">
+      <DependentUpon>showTableDetailUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignInUp\LoginService.cs" />
+    <Compile Include="SignInUp\signInForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignInUp\signInForm.Designer.cs">
+      <DependentUpon>signInForm.cs</DependentUpon>
+    </Compile>
+>>>>>>> Stashed changes
     <Compile Include="mainFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -242,8 +334,19 @@
     <EmbeddedResource Include="aboutUC.resx">
       <DependentUpon>aboutUC.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< Updated upstream
     <EmbeddedResource Include="bookTableForm.resx">
       <DependentUpon>bookTableForm.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="bestSellerUC.resx">
+      <DependentUpon>bestSellerUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bookTableFrm.resx">
+      <DependentUpon>bookTableFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bookTableUC.resx">
+      <DependentUpon>bookTableUC.cs</DependentUpon>
+>>>>>>> Stashed changes
     </EmbeddedResource>
     <EmbeddedResource Include="contactUC.resx">
       <DependentUpon>contactUC.cs</DependentUpon>
@@ -254,6 +357,48 @@
     <EmbeddedResource Include="foodItemMiniUC.resx">
       <DependentUpon>foodItemMiniUC.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< Updated upstream
+=======
+    <EmbeddedResource Include="foodItemUC.resx">
+      <DependentUpon>foodItemUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="foodOrderUC.resx">
+      <DependentUpon>foodOrderUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ingredientFrm.resx">
+      <DependentUpon>ingredientFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ingredientsItemUC.resx">
+      <DependentUpon>ingredientsItemUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="keyAccessFrom.resx">
+      <DependentUpon>keyAccessFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="managerInfoUC.resx">
+      <DependentUpon>managerInfoUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="managerMenuMiniUC.resx">
+      <DependentUpon>managerMenuMiniUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="managerTableHistory.resx">
+      <DependentUpon>managerTableHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="managerTableHistoryMiniUC.resx">
+      <DependentUpon>managerTableHistoryMiniUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="managerUsedIngredient.resx">
+      <DependentUpon>managerUsedIngredient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RememberKeyPass.resx">
+      <DependentUpon>RememberKeyPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="showTableDetailUC.resx">
+      <DependentUpon>showTableDetailUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignInUp\signInForm.resx">
+      <DependentUpon>signInForm.cs</DependentUpon>
+    </EmbeddedResource>
+>>>>>>> Stashed changes
     <EmbeddedResource Include="mainFrm.resx">
       <DependentUpon>mainFrm.cs</DependentUpon>
     </EmbeddedResource>
@@ -294,6 +439,180 @@
   <ItemGroup>
     <None Include="Resources\facebook.png" />
   </ItemGroup>
+<<<<<<< Updated upstream
+=======
+  <ItemGroup>
+    <None Include="imgSource\trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\quit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\bell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\user1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\book-alt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\apps.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\hat-chef.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\imagebig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\history.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\chart-histogram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\aboutbackground2chinhmau.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\rest1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\facebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\instagram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\google.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\linkedin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\github.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restaurant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\truyen-tranh-tu-tien-hay-22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\03a44ef259593d7540d179611882def0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if-we-work-on-our-own_-photo-u1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\menuBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\image4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\restaurantAvt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\image10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\avt2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\035_001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\2a4b3a63880a4d811af7c4a3448dc065.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\food.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\goods.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\anh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\booking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\calculator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\profit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgSource\employees.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coin %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\garnish.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flour.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restaurant %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dining-room %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dining-room %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dining-room.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-the-table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reserved.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\culinary.png" />
+  </ItemGroup>
+>>>>>>> Stashed changes
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.6.0.2\build\net462\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.6.0.2\build\net462\Microsoft.Data.SqlClient.SNI.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
