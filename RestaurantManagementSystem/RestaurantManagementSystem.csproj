@@ -199,6 +199,12 @@
     <Compile Include="aboutUC.Designer.cs">
       <DependentUpon>aboutUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="bestSellerUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="bestSellerUC.Designer.cs">
+      <DependentUpon>bestSellerUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="bookTableFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -254,6 +260,12 @@
     </Compile>
     <Compile Include="foodOrderUC.Designer.cs">
       <DependentUpon>foodOrderUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="ingredientsItemUC.cs">
       <SubType>UserControl</SubType>
@@ -401,8 +413,17 @@
     <Compile Include="tableUC.Designer.cs">
       <DependentUpon>tableUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="usedIngredientUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usedIngredientUC.Designer.cs">
+      <DependentUpon>usedIngredientUC.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="aboutUC.resx">
       <DependentUpon>aboutUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bestSellerUC.resx">
+      <DependentUpon>bestSellerUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="bookTableFrm.resx">
       <DependentUpon>bookTableFrm.cs</DependentUpon>
@@ -427,6 +448,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="foodOrderUC.resx">
       <DependentUpon>foodOrderUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ingredientsItemUC.resx">
       <DependentUpon>ingredientsItemUC.cs</DependentUpon>
@@ -498,6 +522,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="tableUC.resx">
       <DependentUpon>tableUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usedIngredientUC.resx">
+      <DependentUpon>usedIngredientUC.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Class\ClassDiagram1.cd" />
     <None Include="packages.config" />
@@ -653,6 +680,57 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="imgSource\employees.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dining-room.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dining-room %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dining-room %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\culinary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dining-room %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-the-table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dining-room %282%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flour.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\herbal-treatment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\herbal-treatment1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\culinary1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\garnish.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dining-room1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\herbal-treatment2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.6.0.2\build\net462\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.6.0.2\build\net462\Microsoft.Data.SqlClient.SNI.targets')" />

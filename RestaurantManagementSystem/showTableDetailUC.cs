@@ -13,29 +13,32 @@ namespace RestaurantManagementSystem
 {
     public partial class showTableDetailUC : UserControl
     {
-        public decimal TotalPrice { get; private set; }
-        public int Quantity { get; private set; }
-        public decimal Price { get; private set; }
-        public string FoodName { get; private set; }
+
+        public decimal TotalPrice { get; set; }
+        public int Quantity { get; set; }
+        public decimal Price { get; set; }
+        public string FoodName { get; set; }
 
         public showTableDetailUC()
         {
             InitializeComponent();
         }
+        public int DishID { get; private set; }
+
+        public void SetData(string name, int quantity, decimal price, int dishID)
+        {
+            FoodName = name;
+            Quantity = quantity;
+            Price = price;
+            DishID = dishID; // gán ID món ăn
+            nameLabel.Text = name;
+            priceLabel.Text = $"{price:C}";
+            quantityLabel.Text = quantity.ToString();
+        }
 
         private void showTableDetailUC_Load(object sender, EventArgs e)
         {
 
-        }
-        public void SetData(string name, int quantity, decimal price)
-        {
-            Quantity = quantity;
-            Price = price;
-            FoodName = name;
-            nameLabel.Text = name;
-            quantityLabel.Text = quantity.ToString();  // Cập nhật số lượng
-            priceLabel.Text = price.ToString("C");
-            TotalPrice = price * quantity;
         }
         public decimal GetTotalPrice()
         {

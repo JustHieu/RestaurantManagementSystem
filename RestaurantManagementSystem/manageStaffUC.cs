@@ -337,5 +337,38 @@ namespace RestaurantManagementSystem
                 MessageBox.Show("Lỗi xóa nhân viên: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void seachButton_Click(object sender, EventArgs e)
+        {
+            string keyword = searchTextBox.Text.Trim().ToLower();  // Lấy nội dung từ ô tìm kiếm
+
+            if (string.IsNullOrEmpty(keyword))
+            {
+                MessageBox.Show("Vui lòng nhập tên nhân viên cần tìm!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            foreach (ListViewItem item in staffListView.Items)
+            {
+                string name = item.SubItems[0].Text.ToLower();  // Cột Name trong ListView
+
+                if (name.Contains(keyword))
+                {
+                    // Chọn và focus vào dòng tìm thấy
+                    item.Selected = true;
+                    item.Focused = true;
+                    item.EnsureVisible();
+                    staffListView.Select();
+
+                    // Hiển thị bảng thông tin chi tiết
+                    DisplayEmployeeInformation(item);
+
+                    MessageBox.Show($"Tìm thấy nhân viên: ID = {item.SubItems[0].Text}", "Kết quả", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+            }
+
+            MessageBox.Show("Không tìm thấy nhân viên nào phù hợp!", "Kết quả", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

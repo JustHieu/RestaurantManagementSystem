@@ -75,7 +75,10 @@ namespace RestaurantManagementSystem
             }
         }
 
-
+        public void IsVisible(Boolean a)
+        {
+            check.Visible=a;
+        }
 
 
 
@@ -172,6 +175,18 @@ namespace RestaurantManagementSystem
 
             this.Region = new Region(path);
         }
-        
+
+        private void check_Click(object sender, EventArgs e)
+        {
+            Form1 bookTable = new Form1();
+            bookTable.Show();
+            this.Hide();
+            bookTable.FormClosed += (s, args) => this.Show();
+        }
+
+        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

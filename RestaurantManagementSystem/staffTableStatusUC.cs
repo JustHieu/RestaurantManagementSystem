@@ -70,8 +70,10 @@ namespace RestaurantManagementSystem
             foreach (DataRow row in tableData.Rows)
             {
                 int id = Convert.ToInt32(row["idTable"]);
+                string status = row["status"].ToString(); // LẤY TRẠNG THÁI
                 tableUC tableItem = new tableUC();
                 tableItem.SetTableID(id);
+                tableItem.SetStatus(status == "Full"); // true = bàn có người
 
                 // Sự kiện khi chọn bàn
                 tableItem.OnTableSelected += (s, e) =>
@@ -91,7 +93,7 @@ namespace RestaurantManagementSystem
         private DataTable GetTablesData()
         {
             string connectionString = db.Connectstring();
-            string query = "SELECT idTable FROM Tables";
+            string query = "SELECT idTable, status FROM Tables";  // THÊM 'status'
 
             try
             {
@@ -112,10 +114,16 @@ namespace RestaurantManagementSystem
         private DataTable GetOrderList(int idBooking)
         {
             string connectionString = db.Connectstring();
-            string query = "SELECT d.Name, td.quantity, td.price " +
-                           "FROM TableDetail td " +
-                           "JOIN Dish d ON td.dishID = d.Id " +
-                           "WHERE td.idBooking = @idBooking";
+            string query = @"
+        SELECT 
+            d.Id AS dishID,
+            d.Name,
+            SUM(td.quantity) AS quantity,
+            SUM(td.price) AS price
+        FROM TableDetail td
+        JOIN Dish d ON td.dishID = d.Id
+        WHERE td.idBooking = @idBooking
+        GROUP BY d.Id, d.Name";
 
             try
             {
@@ -141,8 +149,6 @@ namespace RestaurantManagementSystem
         private void LoadTableDetails(int tableId)
         {
             detailPanel.Controls.Clear();
-
-            // Lấy đúng idBooking từ idTable
             int idBooking = GetBookingIdByTable(tableId);
             if (idBooking == -1) return;
 
@@ -152,7 +158,7 @@ namespace RestaurantManagementSystem
         }
         private decimal GetTotalAmount(int idBooking)
         {
-            DataTable orderData = GetOrderList(idBooking);  // Lấy danh sách món ăn theo idBooking
+            DataTable orderData = GetOrderList(idBooking);  // Đã gộp theo món ăn
             if (orderData == null) return 0;
 
             decimal totalAmount = 0;
@@ -161,16 +167,22 @@ namespace RestaurantManagementSystem
             {
                 string name = row["Name"].ToString();
                 int quantity = Convert.ToInt32(row["quantity"]);
-                decimal price = Convert.ToDecimal(row["price"]);
+                decimal totalPrice = Convert.ToDecimal(row["price"]);
+
+                decimal unitPrice = totalPrice / quantity;
 
                 showTableDetailUC detailItem = new showTableDetailUC();
-                detailItem.SetData(name, quantity, price);
+                int dishID = Convert.ToInt32(row["dishID"]);
+                detailItem.SetData(name, quantity, unitPrice, dishID); // Gán đơn giá lại để hiển thị đúng
                 detailPanel.Controls.Add(detailItem);
 
-                totalAmount += price * quantity;
+                totalAmount += totalPrice;
             }
+
             return totalAmount;
         }
+         
+
         private int GetSelectedTableId()
         {
             if (tablePanel.Controls.Count > 0)
@@ -291,7 +303,6 @@ namespace RestaurantManagementSystem
         private void AddPaymentToThanhToan(int idBooking, int idTable, decimal totalAmount, DateTime? bookingTime)
         {
             string connectionString = db.Connectstring();
-            
 
             try
             {
@@ -299,23 +310,34 @@ namespace RestaurantManagementSystem
                 {
                     conn.Open();
 
-                    // Thêm dữ liệu vào bảng ThanhToan, bao gồm thời gian đặt bàn
-                    string query = "INSERT INTO PaymentHistory (idBooking, idTable, totalAmount, bookingTime) " +
-                                   "VALUES (@idBooking, @idTable, @totalAmount, @bookingTime)";
+                    // ✅ Tính chi phí nguyên liệu từ bảng UsedIngredient
+                    string costQuery = "SELECT SUM(Quantity * Price) FROM UsedIngredient WHERE idTable = @idTable";
+                    SqlCommand costCmd = new SqlCommand(costQuery, conn);
+                    costCmd.Parameters.AddWithValue("@idTable", idTable);
+                    object result = costCmd.ExecuteScalar();
+                    decimal ingredientCost = (result != DBNull.Value && result != null) ? Convert.ToDecimal(result) : 0;
+
+                    // ✅ Lưu vào PaymentHistory bao gồm ingredientCost
+                    string query = @"INSERT INTO PaymentHistory 
+                             (idBooking, idTable, totalAmount, bookingTime, ingredientCost)
+                             VALUES (@idBooking, @idTable, @totalAmount, @bookingTime, @ingredientCost)";
+
                     SqlCommand cmd = new SqlCommand(query, conn);
                     cmd.Parameters.AddWithValue("@idBooking", idBooking);
                     cmd.Parameters.AddWithValue("@idTable", idTable);
                     cmd.Parameters.AddWithValue("@totalAmount", totalAmount);
                     cmd.Parameters.AddWithValue("@bookingTime", bookingTime);
+                    cmd.Parameters.AddWithValue("@ingredientCost", ingredientCost);
 
-                    cmd.ExecuteNonQuery();  
+                    cmd.ExecuteNonQuery();
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi khi cập nhật thông tin thanh toán: " + ex.Message);
+                MessageBox.Show("Lỗi khi lưu thanh toán: " + ex.Message);
             }
         }
+
 
 
         private DateTime? GetBookingTimeByTable(int idTable)

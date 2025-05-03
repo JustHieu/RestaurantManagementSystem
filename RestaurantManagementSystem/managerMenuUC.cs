@@ -19,7 +19,7 @@ namespace RestaurantManagementSystem
         Database db = new Database();
         
         private string imagePath = "";
-        private int selectedDishId = -1;  // ID của món ăn được chọn
+        private int selectedDishId = -1;  
 
         public managerMenuUC()
         {
@@ -27,7 +27,7 @@ namespace RestaurantManagementSystem
             LoadMenuItems();
         }
 
-        // Tải danh sách món ăn
+      
         private void LoadMenuItems(string keyword = "")
         {
             string connectionString = db.Connectstring();
@@ -37,8 +37,6 @@ namespace RestaurantManagementSystem
                 {
                     conn.Open();
                     string query = "SELECT Id, Name, Descrip, Price, Picture, Type FROM Dish";
-
-                    // Nếu có từ khóa tìm kiếm, thêm điều kiện vào câu truy vấn
                     if (!string.IsNullOrEmpty(keyword))
                     {
                         query += " WHERE Name LIKE @Keyword";
@@ -46,7 +44,7 @@ namespace RestaurantManagementSystem
 
                     SqlCommand cmd = new SqlCommand(query, conn);
 
-                    // Thêm tham số tìm kiếm nếu có
+                  
                     if (!string.IsNullOrEmpty(keyword))
                     {
                         cmd.Parameters.AddWithValue("@Keyword", "%" + keyword + "%");
@@ -62,16 +60,14 @@ namespace RestaurantManagementSystem
                         string description = reader["Descrip"].ToString();
                         string price = reader["Price"].ToString();
                         string picturePath = reader["Picture"].ToString();
-                        string dishType = reader["Type"].ToString();  // Lấy loại món ăn
+                        string dishType = reader["Type"].ToString();
 
-                        // Tạo một UserControl cho mỗi món ăn
                         managerMenuMiniUC item = new managerMenuMiniUC();
                         item.Tag = id;
                         item.SetName(name);
                         item.SetPrice("$" + price);
                         item.SetIngredients(description);
 
-                        // Sự kiện click vào món ăn
                         item.Click += (s, e) =>
                         {
                             selectedDishId = (int)item.Tag;
@@ -91,7 +87,6 @@ namespace RestaurantManagementSystem
                             MessageBox.Show("Đã chọn món: " + name + " (ID: " + selectedDishId + ")");
                         };
 
-                        // Hiển thị ảnh nếu có
                         if (File.Exists(picturePath))
                         {
                             item.SetDishImage(Image.FromFile(picturePath));
@@ -109,7 +104,6 @@ namespace RestaurantManagementSystem
 
         }
 
-        // Thêm món ăn mới
         private void addButton_Click(object sender, EventArgs e)
         {
             string connectionString = db.Connectstring();
@@ -128,6 +122,16 @@ namespace RestaurantManagementSystem
                     cmd.Parameters.AddWithValue("@Type", dishType);
 
                     cmd.ExecuteNonQuery();
+
+                    string getIdQuery = "SELECT TOP 1 Id FROM Dish ORDER BY Id DESC";
+                    SqlCommand getIdCmd = new SqlCommand(getIdQuery, conn);
+                    int newDishId = (int)getIdCmd.ExecuteScalar();
+
+                    string insertDishSold = "INSERT INTO DishSold (DishID, TotalQuantity) VALUES (@DishID, 0)";
+                    SqlCommand insertCmd = new SqlCommand(insertDishSold, conn);
+                    insertCmd.Parameters.AddWithValue("@DishID", newDishId);
+                    insertCmd.ExecuteNonQuery();
+
                     MessageBox.Show("Thêm món ăn mới thành công!", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     ClearFields();
                     LoadMenuItems();
@@ -139,7 +143,7 @@ namespace RestaurantManagementSystem
             }
         }
 
-        // Xóa món ăn
+        
         private void deleteButton_Click(object sender, EventArgs e)
         {
             if (selectedDishId == -1)
@@ -147,17 +151,32 @@ namespace RestaurantManagementSystem
                 MessageBox.Show("Vui lòng chọn món ăn cần xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+
             string connectionString = db.Connectstring();
             try
             {
                 using (SqlConnection conn = new SqlConnection(connectionString))
                 {
                     conn.Open();
-                    string query = "DELETE FROM Dish WHERE Id = @Id";
-                    SqlCommand cmd = new SqlCommand(query, conn);
-                    cmd.Parameters.AddWithValue("@Id", selectedDishId);
 
-                    int rowsAffected = cmd.ExecuteNonQuery();
+                    
+                    string deleteIngredientsQuery = "DELETE FROM DishIngredientAssignment WHERE DishID = @Id";
+                    SqlCommand deleteIngredientsCmd = new SqlCommand(deleteIngredientsQuery, conn);
+                    deleteIngredientsCmd.Parameters.AddWithValue("@Id", selectedDishId);
+                    deleteIngredientsCmd.ExecuteNonQuery();
+
+                  
+                    string deleteDishSoldQuery = "DELETE FROM DishSold WHERE DishID = @Id";
+                    SqlCommand deleteDishSoldCmd = new SqlCommand(deleteDishSoldQuery, conn);
+                    deleteDishSoldCmd.Parameters.AddWithValue("@Id", selectedDishId);
+                    deleteDishSoldCmd.ExecuteNonQuery();
+
+                    
+                    string deleteDishQuery = "DELETE FROM Dish WHERE Id = @Id";
+                    SqlCommand deleteDishCmd = new SqlCommand(deleteDishQuery, conn);
+                    deleteDishCmd.Parameters.AddWithValue("@Id", selectedDishId);
+
+                    int rowsAffected = deleteDishCmd.ExecuteNonQuery();
                     if (rowsAffected > 0)
                     {
                         MessageBox.Show("Xóa món ăn thành công!", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -172,7 +191,7 @@ namespace RestaurantManagementSystem
             }
         }
 
-        // Cập nhật món ăn
+        
         private void changeButton_Click(object sender, EventArgs e)
         {
             string connectionString = db.Connectstring();
@@ -199,7 +218,7 @@ namespace RestaurantManagementSystem
                     cmd.ExecuteNonQuery();
                     
                     MessageBox.Show("Cập nhật món ăn thành công!", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    ClearFields();  // Xóa trắng các TextBox sau khi cập nhật
+                    ClearFields();  
                     LoadMenuItems();
                 }
             }
@@ -209,24 +228,7 @@ namespace RestaurantManagementSystem
             }
         }
 
-        // Chọn ảnh từ máy tính
-      /*  private void insertImageButton_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog openFileDialog = new OpenFileDialog
-            {
-                Title = "Chọn ảnh món ăn",
-                Filter = "Hình ảnh|*.jpg;*.jpeg;*.png;*.bmp;*.gif"
-            };
-
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                imagePath = openFileDialog.FileName;
-                dishImage.Image = Image.FromFile(imagePath);
-                dishImage.SizeMode = PictureBoxSizeMode.StretchImage;
-            }
-        }*/
-
-        // Xóa trắng các ô nhập liệu
+     
         private void ClearFields()
         {
             nameTextBox.Text = "";
@@ -250,6 +252,14 @@ namespace RestaurantManagementSystem
 
         private void cookingIngredientsButton_Click(object sender, EventArgs e)
         {
+            if (selectedDishId == -1)
+            {
+                MessageBox.Show("Vui lòng chọn một món ăn trước!");
+                return;
+            }
+
+            cookingIngredientsForm editor = new cookingIngredientsForm(selectedDishId);
+            editor.ShowDialog();
 
         }
 

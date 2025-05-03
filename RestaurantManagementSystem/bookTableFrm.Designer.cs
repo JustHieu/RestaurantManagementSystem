@@ -38,6 +38,8 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.showPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.seachButton = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
@@ -48,10 +50,10 @@
             // menuPanel
             // 
             this.menuPanel.AutoScroll = true;
-            this.menuPanel.Location = new System.Drawing.Point(33, 215);
+            this.menuPanel.Location = new System.Drawing.Point(0, 220);
             this.menuPanel.Margin = new System.Windows.Forms.Padding(2);
             this.menuPanel.Name = "menuPanel";
-            this.menuPanel.Size = new System.Drawing.Size(1319, 789);
+            this.menuPanel.Size = new System.Drawing.Size(1555, 791);
             this.menuPanel.TabIndex = 0;
             this.menuPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.menuPanel_Paint);
             // 
@@ -70,7 +72,7 @@
             this.searchTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.searchTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.searchTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.searchTextBox.Location = new System.Drawing.Point(457, 143);
+            this.searchTextBox.Location = new System.Drawing.Point(319, 137);
             this.searchTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.searchTextBox.Name = "searchTextBox";
             this.searchTextBox.PlaceholderText = "Search";
@@ -84,7 +86,7 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
             this.label1.Font = new System.Drawing.Font("Philosopher", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(1445, 239);
+            this.label1.Location = new System.Drawing.Point(1408, 164);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(209, 45);
             this.label1.TabIndex = 66;
@@ -93,7 +95,6 @@
             // completeButton
             // 
             this.completeButton.AutoRoundedCorners = true;
-            this.completeButton.BorderRadius = 23;
             this.completeButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.completeButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.completeButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -101,9 +102,9 @@
             this.completeButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
             this.completeButton.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
             this.completeButton.ForeColor = System.Drawing.Color.White;
-            this.completeButton.Location = new System.Drawing.Point(1564, 992);
+            this.completeButton.Location = new System.Drawing.Point(1522, 607);
             this.completeButton.Name = "completeButton";
-            this.completeButton.Size = new System.Drawing.Size(248, 48);
+            this.completeButton.Size = new System.Drawing.Size(248, 69);
             this.completeButton.TabIndex = 72;
             this.completeButton.Text = "COMPLETE";
             this.completeButton.Click += new System.EventHandler(this.completeButton_Click);
@@ -120,18 +121,18 @@
             this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
             this.guna2Button3.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Location = new System.Drawing.Point(1402, 215);
+            this.guna2Button3.Location = new System.Drawing.Point(1371, 120);
             this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(545, 169);
+            this.guna2Button3.Size = new System.Drawing.Size(545, 152);
             this.guna2Button3.TabIndex = 65;
             // 
             // orderPanel
             // 
             this.orderPanel.BackColor = System.Drawing.Color.White;
-            this.orderPanel.Location = new System.Drawing.Point(1402, 382);
+            this.orderPanel.Location = new System.Drawing.Point(1371, 266);
             this.orderPanel.Margin = new System.Windows.Forms.Padding(2);
             this.orderPanel.Name = "orderPanel";
-            this.orderPanel.Size = new System.Drawing.Size(545, 594);
+            this.orderPanel.Size = new System.Drawing.Size(545, 344);
             this.orderPanel.TabIndex = 73;
             // 
             // guna2Panel1
@@ -173,11 +174,32 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // showPanel
+            // 
+            this.showPanel.BackColor = System.Drawing.Color.White;
+            this.showPanel.Location = new System.Drawing.Point(1371, 703);
+            this.showPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.showPanel.Name = "showPanel";
+            this.showPanel.Size = new System.Drawing.Size(545, 399);
+            this.showPanel.TabIndex = 77;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Black;
+            this.label2.Font = new System.Drawing.Font("Philosopher", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(1483, 665);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(337, 45);
+            this.label2.TabIndex = 78;
+            this.label2.Text = "List of orders";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(39)))));
-            this.pictureBox2.Image = global::RestaurantManagementSystem.Properties.Resources.avt2;
-            this.pictureBox2.Location = new System.Drawing.Point(1708, 239);
+            this.pictureBox2.Image = global::RestaurantManagementSystem.Properties.Resources.herbal_treatment2;
+            this.pictureBox2.Location = new System.Drawing.Point(1692, 137);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(190, 110);
@@ -198,7 +220,7 @@
             this.seachButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.seachButton.ForeColor = System.Drawing.Color.White;
             this.seachButton.Image = global::RestaurantManagementSystem.Properties.Resources.search;
-            this.seachButton.Location = new System.Drawing.Point(972, 143);
+            this.seachButton.Location = new System.Drawing.Point(833, 137);
             this.seachButton.Name = "seachButton";
             this.seachButton.Size = new System.Drawing.Size(97, 59);
             this.seachButton.TabIndex = 49;
@@ -208,11 +230,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1942, 1044);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.guna2Panel1);
+            this.ClientSize = new System.Drawing.Size(1942, 1102);
             this.Controls.Add(this.orderPanel);
             this.Controls.Add(this.completeButton);
+            this.Controls.Add(this.showPanel);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2Button3);
             this.Controls.Add(this.seachButton);
@@ -246,5 +270,7 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.FlowLayoutPanel showPanel;
+        private System.Windows.Forms.Label label2;
     }
 }

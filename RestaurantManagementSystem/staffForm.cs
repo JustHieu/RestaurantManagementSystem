@@ -74,7 +74,7 @@ namespace RestaurantManagementSystem
             showPanel.Controls.Add(kc);
 
             ResetButtonColors();
-            kitchenPanel.Visible = true;
+           
             Guna.UI2.WinForms.Guna2Button clickedButton = sender as Guna.UI2.WinForms.Guna2Button;
             if (clickedButton != null)
             {
@@ -86,10 +86,10 @@ namespace RestaurantManagementSystem
         {
             menuButton.FillColor = Color.FromArgb(20, 28, 38);
             tableStatusButton.FillColor = Color.FromArgb(20, 28, 38);
-            kitchenButton.FillColor = Color.FromArgb(20, 28, 38);
+           
             menuPanel.Visible = false;
             tableStatusPanel.Visible = false;
-            kitchenPanel.Visible = false;
+           
         }
 
         private void quitButton_Click(object sender, EventArgs e)

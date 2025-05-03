@@ -60,10 +60,12 @@
             this.guna2CustomGradientPanel1.Controls.Add(this.signInBtn);
             this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(27)))), ((int)(((byte)(54)))));
             this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(27)))), ((int)(((byte)(54)))));
+            this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.Gray;
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(44)))), ((int)(((byte)(54)))));
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(-161, -14);
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(-221, -21);
+            this.guna2CustomGradientPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(650, 638);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(894, 957);
             this.guna2CustomGradientPanel1.TabIndex = 11;
             // 
             // closeSignUpForm
@@ -71,9 +73,10 @@
             this.closeSignUpForm.BackColor = System.Drawing.Color.Transparent;
             this.closeSignUpForm.Cursor = System.Windows.Forms.Cursors.Hand;
             this.closeSignUpForm.Image = global::RestaurantManagementSystem.Properties.Resources.close;
-            this.closeSignUpForm.Location = new System.Drawing.Point(162, 14);
+            this.closeSignUpForm.Location = new System.Drawing.Point(223, 21);
+            this.closeSignUpForm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.closeSignUpForm.Name = "closeSignUpForm";
-            this.closeSignUpForm.Size = new System.Drawing.Size(30, 30);
+            this.closeSignUpForm.Size = new System.Drawing.Size(41, 45);
             this.closeSignUpForm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.closeSignUpForm.TabIndex = 21;
             this.closeSignUpForm.TabStop = false;
@@ -85,9 +88,10 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("SF Pro Display", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(254, 287);
+            this.label5.Location = new System.Drawing.Point(349, 430);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(284, 36);
+            this.label5.Size = new System.Drawing.Size(389, 50);
             this.label5.TabIndex = 14;
             this.label5.Text = "Register with your personal details to use all\r\nof site features";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -98,10 +102,11 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("SF Pro Display", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Snow;
-            this.label4.Location = new System.Drawing.Point(248, 179);
+            this.label4.Location = new System.Drawing.Point(341, 268);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label4.Size = new System.Drawing.Size(295, 48);
+            this.label4.Size = new System.Drawing.Size(424, 67);
             this.label4.TabIndex = 12;
             this.label4.Text = "Welcome Back!";
             // 
@@ -118,9 +123,10 @@
             this.signInBtn.FillColor = System.Drawing.Color.Transparent;
             this.signInBtn.Font = new System.Drawing.Font("SF Pro Display", 12F);
             this.signInBtn.ForeColor = System.Drawing.Color.White;
-            this.signInBtn.Location = new System.Drawing.Point(314, 365);
+            this.signInBtn.Location = new System.Drawing.Point(432, 548);
+            this.signInBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.signInBtn.Name = "signInBtn";
-            this.signInBtn.Size = new System.Drawing.Size(150, 40);
+            this.signInBtn.Size = new System.Drawing.Size(206, 60);
             this.signInBtn.TabIndex = 20;
             this.signInBtn.Text = "SIGN IN";
             this.signInBtn.Click += new System.EventHandler(this.signInBtn_Click);
@@ -130,9 +136,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("SF Pro Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.label2.Location = new System.Drawing.Point(633, 213);
+            this.label2.Location = new System.Drawing.Point(870, 320);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(276, 48);
+            this.label2.Size = new System.Drawing.Size(389, 66);
             this.label2.TabIndex = 19;
             this.label2.Text = "or use your email for registration\r\n\r\n";
             // 
@@ -151,13 +158,13 @@
             this.emailTextbox.Font = new System.Drawing.Font("SF Pro Display", 9F);
             this.emailTextbox.ForeColor = System.Drawing.Color.Black;
             this.emailTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.emailTextbox.Location = new System.Drawing.Point(594, 341);
-            this.emailTextbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.emailTextbox.Location = new System.Drawing.Point(817, 512);
+            this.emailTextbox.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.emailTextbox.Name = "emailTextbox";
             this.emailTextbox.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.emailTextbox.PlaceholderText = "Email";
             this.emailTextbox.SelectedText = "";
-            this.emailTextbox.Size = new System.Drawing.Size(332, 44);
+            this.emailTextbox.Size = new System.Drawing.Size(456, 66);
             this.emailTextbox.TabIndex = 18;
             // 
             // nameTextbox
@@ -176,22 +183,23 @@
             this.nameTextbox.Font = new System.Drawing.Font("SF Pro Display", 9F);
             this.nameTextbox.ForeColor = System.Drawing.Color.Black;
             this.nameTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.nameTextbox.Location = new System.Drawing.Point(594, 265);
-            this.nameTextbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.nameTextbox.Location = new System.Drawing.Point(817, 398);
+            this.nameTextbox.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.nameTextbox.Name = "nameTextbox";
             this.nameTextbox.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.nameTextbox.PlaceholderText = "Name";
             this.nameTextbox.SelectedText = "";
-            this.nameTextbox.Size = new System.Drawing.Size(332, 44);
+            this.nameTextbox.Size = new System.Drawing.Size(456, 66);
             this.nameTextbox.TabIndex = 17;
             // 
             // pictureBox4
             // 
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Image = global::RestaurantManagementSystem.Properties.Resources.github;
-            this.pictureBox4.Location = new System.Drawing.Point(821, 156);
+            this.pictureBox4.Location = new System.Drawing.Point(1129, 234);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox4.Size = new System.Drawing.Size(41, 45);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 16;
             this.pictureBox4.TabStop = false;
@@ -200,9 +208,10 @@
             // 
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Image = global::RestaurantManagementSystem.Properties.Resources.instagram;
-            this.pictureBox3.Location = new System.Drawing.Point(709, 156);
+            this.pictureBox3.Location = new System.Drawing.Point(975, 234);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox3.Size = new System.Drawing.Size(41, 45);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 15;
             this.pictureBox3.TabStop = false;
@@ -211,9 +220,10 @@
             // 
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::RestaurantManagementSystem.Properties.Resources.google;
-            this.pictureBox2.Location = new System.Drawing.Point(765, 156);
+            this.pictureBox2.Location = new System.Drawing.Point(1052, 234);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox2.Size = new System.Drawing.Size(41, 45);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 14;
             this.pictureBox2.TabStop = false;
@@ -222,9 +232,10 @@
             // 
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::RestaurantManagementSystem.Properties.Resources.facebook1;
-            this.pictureBox1.Location = new System.Drawing.Point(653, 156);
+            this.pictureBox1.Location = new System.Drawing.Point(898, 234);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox1.Size = new System.Drawing.Size(41, 45);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
@@ -233,9 +244,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("SF Pro Display", 34.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(541, 61);
+            this.label1.Location = new System.Drawing.Point(744, 92);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(429, 69);
+            this.label1.Size = new System.Drawing.Size(625, 98);
             this.label1.TabIndex = 12;
             this.label1.Text = "Create Account";
             // 
@@ -254,13 +266,13 @@
             this.passwordTextbox.Font = new System.Drawing.Font("SF Pro Display", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordTextbox.ForeColor = System.Drawing.Color.Black;
             this.passwordTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.passwordTextbox.Location = new System.Drawing.Point(594, 417);
-            this.passwordTextbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.passwordTextbox.Location = new System.Drawing.Point(817, 626);
+            this.passwordTextbox.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.passwordTextbox.Name = "passwordTextbox";
             this.passwordTextbox.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.passwordTextbox.PlaceholderText = "Password";
             this.passwordTextbox.SelectedText = "";
-            this.passwordTextbox.Size = new System.Drawing.Size(332, 44);
+            this.passwordTextbox.Size = new System.Drawing.Size(456, 66);
             this.passwordTextbox.TabIndex = 21;
             // 
             // signUpBtn
@@ -273,22 +285,23 @@
             this.signUpBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.signUpBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.signUpBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.signUpBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(100)))), ((int)(((byte)(114)))));
+            this.signUpBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.signUpBtn.Font = new System.Drawing.Font("SF Pro Display", 12F);
             this.signUpBtn.ForeColor = System.Drawing.Color.White;
-            this.signUpBtn.Location = new System.Drawing.Point(663, 497);
+            this.signUpBtn.Location = new System.Drawing.Point(912, 746);
+            this.signUpBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.signUpBtn.Name = "signUpBtn";
-            this.signUpBtn.Size = new System.Drawing.Size(200, 45);
+            this.signUpBtn.Size = new System.Drawing.Size(275, 68);
             this.signUpBtn.TabIndex = 13;
             this.signUpBtn.Text = "SIGN UP";
             this.signUpBtn.Click += new System.EventHandler(this.signUpBtn_Click);
             // 
             // signUpForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1044, 600);
+            this.ClientSize = new System.Drawing.Size(1436, 900);
             this.Controls.Add(this.passwordTextbox);
             this.Controls.Add(this.signUpBtn);
             this.Controls.Add(this.label2);
@@ -301,6 +314,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2CustomGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "signUpForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "signUpForm";

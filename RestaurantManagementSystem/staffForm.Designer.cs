@@ -38,15 +38,13 @@
             this.quitButton = new System.Windows.Forms.Button();
             this.menuPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.kitchenPanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.settingPanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.settingBtn = new Guna.UI2.WinForms.Guna2Button();
             this.tableStatusPanel = new Guna.UI2.WinForms.Guna2Panel();
-            this.kitchenButton = new Guna.UI2.WinForms.Guna2Button();
             this.tableStatusButton = new Guna.UI2.WinForms.Guna2Button();
             this.menuButton = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.logOutButton = new System.Windows.Forms.Button();
-            this.settingPanel = new Guna.UI2.WinForms.Guna2Panel();
-            this.settingBtn = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.accontPictureBox)).BeginInit();
             this.guna2Panel3.SuspendLayout();
@@ -59,7 +57,7 @@
             this.showPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.showPanel.Location = new System.Drawing.Point(256, 76);
             this.showPanel.Name = "showPanel";
-            this.showPanel.Size = new System.Drawing.Size(1686, 659);
+            this.showPanel.Size = new System.Drawing.Size(1156, 659);
             this.showPanel.TabIndex = 21;
             // 
             // titleLabel
@@ -84,7 +82,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(256, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1686, 76);
+            this.panel1.Size = new System.Drawing.Size(1156, 76);
             this.panel1.TabIndex = 20;
             // 
             // notificationButton
@@ -148,11 +146,9 @@
             // 
             this.guna2Panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
             this.guna2Panel3.Controls.Add(this.settingPanel);
-            this.guna2Panel3.Controls.Add(this.kitchenPanel);
             this.guna2Panel3.Controls.Add(this.settingBtn);
             this.guna2Panel3.Controls.Add(this.tableStatusPanel);
             this.guna2Panel3.Controls.Add(this.menuPanel);
-            this.guna2Panel3.Controls.Add(this.kitchenButton);
             this.guna2Panel3.Controls.Add(this.tableStatusButton);
             this.guna2Panel3.Controls.Add(this.menuButton);
             this.guna2Panel3.Controls.Add(this.pictureBox2);
@@ -164,14 +160,35 @@
             this.guna2Panel3.TabIndex = 19;
             this.guna2Panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel3_Paint);
             // 
-            // kitchenPanel
+            // settingPanel
             // 
-            this.kitchenPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.kitchenPanel.Location = new System.Drawing.Point(3, 350);
-            this.kitchenPanel.Name = "kitchenPanel";
-            this.kitchenPanel.Size = new System.Drawing.Size(10, 70);
-            this.kitchenPanel.TabIndex = 17;
-            this.kitchenPanel.Visible = false;
+            this.settingPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.settingPanel.Location = new System.Drawing.Point(3, 349);
+            this.settingPanel.Name = "settingPanel";
+            this.settingPanel.Size = new System.Drawing.Size(10, 70);
+            this.settingPanel.TabIndex = 19;
+            this.settingPanel.Visible = false;
+            // 
+            // settingBtn
+            // 
+            this.settingBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.settingBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.settingBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.settingBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.settingBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
+            this.settingBtn.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold);
+            this.settingBtn.ForeColor = System.Drawing.Color.White;
+            this.settingBtn.Image = global::RestaurantManagementSystem.Properties.Resources.user1;
+            this.settingBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.settingBtn.ImageOffset = new System.Drawing.Point(20, 0);
+            this.settingBtn.Location = new System.Drawing.Point(3, 349);
+            this.settingBtn.Name = "settingBtn";
+            this.settingBtn.Size = new System.Drawing.Size(253, 70);
+            this.settingBtn.TabIndex = 20;
+            this.settingBtn.Text = "Setting";
+            this.settingBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.settingBtn.TextOffset = new System.Drawing.Point(30, 0);
+            this.settingBtn.Click += new System.EventHandler(this.settingBtn_Click);
             // 
             // tableStatusPanel
             // 
@@ -181,27 +198,6 @@
             this.tableStatusPanel.Size = new System.Drawing.Size(10, 70);
             this.tableStatusPanel.TabIndex = 15;
             this.tableStatusPanel.Visible = false;
-            // 
-            // kitchenButton
-            // 
-            this.kitchenButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.kitchenButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.kitchenButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.kitchenButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.kitchenButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
-            this.kitchenButton.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kitchenButton.ForeColor = System.Drawing.Color.White;
-            this.kitchenButton.Image = global::RestaurantManagementSystem.Properties.Resources.hat_chef;
-            this.kitchenButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.kitchenButton.ImageOffset = new System.Drawing.Point(20, 0);
-            this.kitchenButton.Location = new System.Drawing.Point(0, 350);
-            this.kitchenButton.Name = "kitchenButton";
-            this.kitchenButton.Size = new System.Drawing.Size(256, 70);
-            this.kitchenButton.TabIndex = 18;
-            this.kitchenButton.Text = "Kitchen";
-            this.kitchenButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.kitchenButton.TextOffset = new System.Drawing.Point(30, 0);
-            this.kitchenButton.Click += new System.EventHandler(this.kitchenButton_Click);
             // 
             // tableStatusButton
             // 
@@ -274,41 +270,11 @@
             this.logOutButton.UseVisualStyleBackColor = true;
             this.logOutButton.Click += new System.EventHandler(this.logOutButton_Click);
             // 
-            // settingPanel
-            // 
-            this.settingPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.settingPanel.Location = new System.Drawing.Point(3, 426);
-            this.settingPanel.Name = "settingPanel";
-            this.settingPanel.Size = new System.Drawing.Size(10, 70);
-            this.settingPanel.TabIndex = 19;
-            this.settingPanel.Visible = false;
-            // 
-            // settingBtn
-            // 
-            this.settingBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.settingBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.settingBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.settingBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.settingBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
-            this.settingBtn.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold);
-            this.settingBtn.ForeColor = System.Drawing.Color.White;
-            this.settingBtn.Image = global::RestaurantManagementSystem.Properties.Resources.user1;
-            this.settingBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.settingBtn.ImageOffset = new System.Drawing.Point(20, 0);
-            this.settingBtn.Location = new System.Drawing.Point(0, 426);
-            this.settingBtn.Name = "settingBtn";
-            this.settingBtn.Size = new System.Drawing.Size(256, 70);
-            this.settingBtn.TabIndex = 20;
-            this.settingBtn.Text = "Setting";
-            this.settingBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.settingBtn.TextOffset = new System.Drawing.Point(30, 0);
-            this.settingBtn.Click += new System.EventHandler(this.settingBtn_Click);
-            // 
             // staffForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1942, 735);
+            this.ClientSize = new System.Drawing.Size(1412, 735);
             this.Controls.Add(this.showPanel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.guna2Panel3);
@@ -336,9 +302,7 @@
         private System.Windows.Forms.Button quitButton;
         private Guna.UI2.WinForms.Guna2Panel menuPanel;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
-        private Guna.UI2.WinForms.Guna2Panel kitchenPanel;
         private Guna.UI2.WinForms.Guna2Panel tableStatusPanel;
-        private Guna.UI2.WinForms.Guna2Button kitchenButton;
         private Guna.UI2.WinForms.Guna2Button tableStatusButton;
         private Guna.UI2.WinForms.Guna2Button menuButton;
         private System.Windows.Forms.PictureBox pictureBox2;

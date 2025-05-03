@@ -145,7 +145,12 @@ namespace RestaurantManagementSystem
             DateTime selectedDate = datePicker.Value.Date;
             DateTime selectedTime = timePicker.Value;
             DateTime reservationTime = selectedDate.Add(selectedTime.TimeOfDay);
-
+            if (reservationTime < DateTime.Now)
+            {
+                MessageBox.Show("You cannot book a table in the past. Please select a valid date and time.",
+                                "Invalid Time", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             int tableId = GetRandomAvailableTable();
             if (tableId == -1)
             {
@@ -176,16 +181,22 @@ namespace RestaurantManagementSystem
 
                     if (rowsAffected > 0)
                     {
-                        // Lưu mã key vào bảng BookingKey
-                        string keyQuery = "INSERT INTO BookingKey (idTable, accessKey, time) VALUES (@TableID, @AccessKey, @Time)";
-                        SqlCommand keyCmd = new SqlCommand(keyQuery, conn);
-                        keyCmd.Parameters.AddWithValue("@TableID", tableId);
-                        keyCmd.Parameters.AddWithValue("@AccessKey", key);
-                        keyCmd.Parameters.AddWithValue("@Time", reservationTime);
-                        keyCmd.ExecuteNonQuery();
+                        string insertKey = @"
+                        INSERT INTO BookingKey (idTable, accessKey, time, phone) 
+                        VALUES (@TableID, @AccessKey, @Time, @Phone)";
+                        SqlCommand insertCmd = new SqlCommand(insertKey, conn);
+                        insertCmd.Parameters.AddWithValue("@TableID", tableId);
+                        insertCmd.Parameters.AddWithValue("@AccessKey", key);
+                        insertCmd.Parameters.AddWithValue("@Time", reservationTime);
+                        insertCmd.Parameters.AddWithValue("@Phone", phone);
+                        insertCmd.ExecuteNonQuery();
 
-                        MessageBox.Show($"Booking successful! Your table number is: {tableId}. Your access key is: {key}");
-
+                        MessageBox.Show($"Your Access Key: {key}",
+                                        "Reservation Confirmed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        keyAccessFrom keyFrm = new keyAccessFrom();
+                        keyFrm.keyLabel.Text = key;
+                        keyFrm.IsVisible(false);
+                        keyFrm.Show();
                     }
                     else
                     {

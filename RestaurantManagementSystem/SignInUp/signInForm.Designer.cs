@@ -60,7 +60,7 @@
             this.guna2CustomGradientPanel1.Controls.Add(this.label4);
             this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
             this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
-            this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.Black;
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
             this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(565, -1);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
@@ -86,7 +86,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("SF Pro Display", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(110, 263);
+            this.label5.Location = new System.Drawing.Point(134, 292);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(284, 36);
             this.label5.TabIndex = 11;
@@ -106,7 +106,7 @@
             this.signUpBtn.FillColor = System.Drawing.Color.Transparent;
             this.signUpBtn.Font = new System.Drawing.Font("SF Pro Display", 12F);
             this.signUpBtn.ForeColor = System.Drawing.Color.White;
-            this.signUpBtn.Location = new System.Drawing.Point(167, 329);
+            this.signUpBtn.Location = new System.Drawing.Point(197, 354);
             this.signUpBtn.Name = "signUpBtn";
             this.signUpBtn.Size = new System.Drawing.Size(150, 40);
             this.signUpBtn.TabIndex = 10;
@@ -119,7 +119,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("SF Pro Display", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Snow;
-            this.label4.Location = new System.Drawing.Point(142, 186);
+            this.label4.Location = new System.Drawing.Point(154, 205);
             this.label4.Name = "label4";
             this.label4.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label4.Size = new System.Drawing.Size(252, 48);
@@ -204,8 +204,8 @@
             this.signInBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.signInBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.signInBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.signInBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(93)))), ((int)(((byte)(100)))));
-            this.signInBtn.Font = new System.Drawing.Font("SF Pro Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signInBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(32)))), ((int)(((byte)(36)))));
+            this.signInBtn.Font = new System.Drawing.Font("SF Pro Display", 12F);
             this.signInBtn.ForeColor = System.Drawing.Color.White;
             this.signInBtn.Location = new System.Drawing.Point(169, 443);
             this.signInBtn.Name = "signInBtn";

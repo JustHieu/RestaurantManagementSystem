@@ -21,6 +21,7 @@ namespace RestaurantManagementSystem
             startersButton_Click(null, EventArgs.Empty);
             //arrangeComboBox.SelectedIndex = 0;
             LoadMenuItems();
+            LoadOccupiedTablesToComboBox();
         }
 
         
@@ -52,6 +53,27 @@ namespace RestaurantManagementSystem
             beverageButton.FillColor = Color.FromArgb(20, 28, 38);
 
         }
+        private void LoadOccupiedTablesToComboBox()
+        {
+            tableCB.Items.Clear();
+
+            string query = "SELECT idTable FROM Tables WHERE status = 'Full'";
+            using (SqlConnection conn = new SqlConnection(db.Connectstring()))
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(query, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    tableCB.Items.Add(reader.GetInt32(0));  // Thêm ID bàn
+                }
+                reader.Close();
+            }
+
+            if (tableCB.Items.Count > 0)
+                tableCB.SelectedIndex = 0;
+        }
+
         private void LoadMenuItems(string keyword = "", string searchType = "Name")
         {
             string connectionString = db.Connectstring();
@@ -124,11 +146,102 @@ namespace RestaurantManagementSystem
         private void deleteAllButton_Click(object sender, EventArgs e)
         {
             orderFlowLayoutPanel.Controls.Clear();
+            orderFlowLayoutPanel.Controls.Clear();
+            currentTotalAmount = 0;  // ✅ Reset tổng tiền
+            totalLabel.Text = "0 $"; // ✅ Reset hiển thị
+        }
+        private int GetLatestBookingID(int tableId)
+        {
+            string query = "SELECT TOP 1 idBooking FROM BookingKey WHERE idTable = @tableId ORDER BY time DESC";
+            using (SqlConnection conn = new SqlConnection(db.Connectstring()))
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@tableId", tableId);
+                object result = cmd.ExecuteScalar();
+                return result != null ? Convert.ToInt32(result) : -1;
+            }
+        }
+        private int GetDishIDByName(string name)
+        {
+            string query = "SELECT Id FROM Dish WHERE Name = @Name";
+            using (SqlConnection conn = new SqlConnection(db.Connectstring()))
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@Name", name);
+                object result = cmd.ExecuteScalar();
+                return result != null ? Convert.ToInt32(result) : -1;
+            }
+        }
+
+        private void SaveDishToTableDetail(int bookingID, int tableID, showTableDetailUC item)
+        {
+            string query = "INSERT INTO TableDetail (idBooking, idTable, dishID, quantity, price) " +
+                           "VALUES (@idBooking, @idTable, @dishID, @quantity, @price)";
+
+            int dishID = GetDishIDByName(item.FoodName);
+            if (dishID == -1) return;
+
+            using (SqlConnection conn = new SqlConnection(db.Connectstring()))
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@idBooking", bookingID);
+                cmd.Parameters.AddWithValue("@idTable", tableID);
+                cmd.Parameters.AddWithValue("@dishID", dishID);
+                cmd.Parameters.AddWithValue("@quantity", item.Quantity);
+                cmd.Parameters.AddWithValue("@price", item.Price * item.Quantity);
+                cmd.ExecuteNonQuery();
+            }
+        }
+        private void UpdateDishSold(int dishID, int quantity)
+        {
+            string connectionString = db.Connectstring();
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = @"
+            IF EXISTS (SELECT 1 FROM DishSold WHERE DishID = @DishID)
+                UPDATE DishSold SET TotalQuantity = TotalQuantity + @Qty WHERE DishID = @DishID
+            ELSE
+                INSERT INTO DishSold (DishID, TotalQuantity) VALUES (@DishID, @Qty)";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@DishID", dishID);
+                cmd.Parameters.AddWithValue("@Qty", quantity);
+                cmd.ExecuteNonQuery();
+            }
         }
 
         private void completeButton_Click(object sender, EventArgs e)
         {
+            if (tableCB.SelectedItem == null)
+            {
+                MessageBox.Show("Please select a table to add items.");
+                return;
+            }
 
+            int selectedTableID = Convert.ToInt32(tableCB.SelectedItem);
+
+            // Lấy idBooking mới nhất của bàn
+            int bookingID = GetLatestBookingID(selectedTableID);
+            if (bookingID == -1)
+            {
+                MessageBox.Show("No active booking found for this table.");
+                return;
+            }
+
+            foreach (showTableDetailUC item in orderFlowLayoutPanel.Controls)
+            {
+                SaveDishToTableDetail(bookingID, selectedTableID, item);        
+                UpdateDishSold(item.DishID, item.Quantity);                       
+            }
+           
+
+            orderFlowLayoutPanel.Controls.Clear();
+            MessageBox.Show("✅ Order updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            currentTotalAmount = 0;
+            totalLabel.Text = "0 $";
         }
 
         private void staffMenuUC_Load(object sender, EventArgs e)
@@ -203,31 +316,33 @@ namespace RestaurantManagementSystem
                 foodFlowLayoutPanel.Controls.Add(itemUC);
             }
         }
+        private decimal currentTotalAmount = 0;
+
         private void AddToOrder(foodItemUC item)
         {
             bool itemExists = false;
 
-            // Kiểm tra nếu món ăn đã có trong giỏ hàng (orderFlowLayoutPanel)
             foreach (Control control in orderFlowLayoutPanel.Controls)
             {
                 if (control is showTableDetailUC orderItem && orderItem.FoodName == item.FoodName)
                 {
-                    // Nếu món ăn đã có, tăng số lượng lên
-                    orderItem.UpdateQuantity(1);  // Tăng số lượng lên 1
+                    orderItem.UpdateQuantity(1);
+                    currentTotalAmount += item.FoodPrice; // ✅ Cộng giá
                     itemExists = true;
                     break;
                 }
             }
 
-            // Nếu món ăn chưa có trong giỏ hàng, thêm vào giỏ hàng
             if (!itemExists)
             {
                 showTableDetailUC newItem = new showTableDetailUC();
-                newItem.SetData(item.FoodName, 1, item.FoodPrice);  // Số lượng ban đầu là 1
+                newItem.SetData(item.FoodName, 1, item.FoodPrice, item.DishID);
                 orderFlowLayoutPanel.Controls.Add(newItem);
+                currentTotalAmount += item.FoodPrice; // ✅ Cộng giá
             }
+
+            totalLabel.Text = currentTotalAmount.ToString("C0");
         }
-
-
+           
     }
 }
