@@ -51,7 +51,7 @@
             // searchTextBox
             // 
             this.searchTextBox.AutoRoundedCorners = true;
-            this.searchTextBox.BorderRadius = 28;
+            this.searchTextBox.BorderRadius = 26;
             this.searchTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.searchTextBox.CustomizableEdges.BottomRight = false;
             this.searchTextBox.CustomizableEdges.TopRight = false;
@@ -63,26 +63,28 @@
             this.searchTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.searchTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.searchTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.searchTextBox.Location = new System.Drawing.Point(198, 47);
+            this.searchTextBox.Location = new System.Drawing.Point(224, 47);
             this.searchTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.searchTextBox.Name = "searchTextBox";
             this.searchTextBox.PlaceholderText = "Search";
             this.searchTextBox.SelectedText = "";
-            this.searchTextBox.Size = new System.Drawing.Size(478, 59);
+            this.searchTextBox.Size = new System.Drawing.Size(452, 55);
             this.searchTextBox.TabIndex = 43;
             // 
             // changeButton
             // 
             this.changeButton.AutoRoundedCorners = true;
+            this.changeButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
             this.changeButton.BorderRadius = 23;
+            this.changeButton.BorderThickness = 1;
             this.changeButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.changeButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.changeButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.changeButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.changeButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
-            this.changeButton.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
-            this.changeButton.ForeColor = System.Drawing.Color.White;
-            this.changeButton.Location = new System.Drawing.Point(1295, 853);
+            this.changeButton.FillColor = System.Drawing.Color.Silver;
+            this.changeButton.Font = new System.Drawing.Font("SF Pro Display", 10.2F, System.Drawing.FontStyle.Bold);
+            this.changeButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
+            this.changeButton.Location = new System.Drawing.Point(1313, 854);
             this.changeButton.Name = "changeButton";
             this.changeButton.Size = new System.Drawing.Size(186, 48);
             this.changeButton.TabIndex = 49;
@@ -92,15 +94,17 @@
             // addButton
             // 
             this.addButton.AutoRoundedCorners = true;
+            this.addButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
             this.addButton.BorderRadius = 23;
+            this.addButton.BorderThickness = 1;
             this.addButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.addButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.addButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.addButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.addButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
-            this.addButton.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
-            this.addButton.ForeColor = System.Drawing.Color.White;
-            this.addButton.Location = new System.Drawing.Point(1504, 853);
+            this.addButton.FillColor = System.Drawing.Color.Silver;
+            this.addButton.Font = new System.Drawing.Font("SF Pro Display", 10.2F, System.Drawing.FontStyle.Bold);
+            this.addButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
+            this.addButton.Location = new System.Drawing.Point(1522, 854);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(186, 48);
             this.addButton.TabIndex = 48;
@@ -109,16 +113,19 @@
             // 
             // deleteButton
             // 
+            this.deleteButton.AutoRoundedCorners = true;
             this.deleteButton.BackColor = System.Drawing.Color.Transparent;
-            this.deleteButton.BorderRadius = 15;
+            this.deleteButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
+            this.deleteButton.BorderRadius = 23;
+            this.deleteButton.BorderThickness = 1;
             this.deleteButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.deleteButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.deleteButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.deleteButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.deleteButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
-            this.deleteButton.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
-            this.deleteButton.ForeColor = System.Drawing.Color.White;
-            this.deleteButton.Location = new System.Drawing.Point(1082, 853);
+            this.deleteButton.FillColor = System.Drawing.Color.Silver;
+            this.deleteButton.Font = new System.Drawing.Font("SF Pro Display", 10.2F, System.Drawing.FontStyle.Bold);
+            this.deleteButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
+            this.deleteButton.Location = new System.Drawing.Point(1100, 854);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(186, 48);
             this.deleteButton.TabIndex = 47;
@@ -132,24 +139,25 @@
             // menuPanel
             // 
             this.menuPanel.AutoScroll = true;
-            this.menuPanel.BackColor = System.Drawing.Color.White;
+            this.menuPanel.BackColor = System.Drawing.Color.Gainsboro;
+            this.menuPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuPanel.Location = new System.Drawing.Point(2, 121);
             this.menuPanel.Margin = new System.Windows.Forms.Padding(2);
             this.menuPanel.Name = "menuPanel";
-            this.menuPanel.Size = new System.Drawing.Size(1145, 696);
+            this.menuPanel.Size = new System.Drawing.Size(1145, 712);
             this.menuPanel.TabIndex = 50;
             this.menuPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.menuPanel_Paint);
             // 
             // guna2CustomGradientPanel1
             // 
             this.guna2CustomGradientPanel1.BorderRadius = 50;
+            this.guna2CustomGradientPanel1.Controls.Add(this.insertImageButton);
             this.guna2CustomGradientPanel1.Controls.Add(this.typeComboBox);
             this.guna2CustomGradientPanel1.Controls.Add(this.cookingIngredientsButton);
             this.guna2CustomGradientPanel1.Controls.Add(this.priceTextBox);
             this.guna2CustomGradientPanel1.Controls.Add(this.descriptionTextBox);
             this.guna2CustomGradientPanel1.Controls.Add(this.nameTextBox);
             this.guna2CustomGradientPanel1.Controls.Add(this.idTextBox);
-            this.guna2CustomGradientPanel1.Controls.Add(this.insertImageButton);
             this.guna2CustomGradientPanel1.Controls.Add(this.dishImage);
             this.guna2CustomGradientPanel1.FillColor = System.Drawing.SystemColors.ButtonFace;
             this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(35)))), ((int)(((byte)(39)))));
@@ -185,13 +193,14 @@
             this.cookingIngredientsButton.AutoRoundedCorners = true;
             this.cookingIngredientsButton.BackColor = System.Drawing.Color.Transparent;
             this.cookingIngredientsButton.BorderRadius = 21;
+            this.cookingIngredientsButton.BorderThickness = 1;
             this.cookingIngredientsButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.cookingIngredientsButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.cookingIngredientsButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.cookingIngredientsButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.cookingIngredientsButton.FillColor = System.Drawing.Color.Gray;
             this.cookingIngredientsButton.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
-            this.cookingIngredientsButton.ForeColor = System.Drawing.Color.White;
+            this.cookingIngredientsButton.ForeColor = System.Drawing.Color.Black;
             this.cookingIngredientsButton.Location = new System.Drawing.Point(94, 677);
             this.cookingIngredientsButton.Name = "cookingIngredientsButton";
             this.cookingIngredientsButton.Size = new System.Drawing.Size(412, 45);
@@ -301,9 +310,9 @@
             this.dishImage.FillColor = System.Drawing.Color.Transparent;
             this.dishImage.Image = global::RestaurantManagementSystem.Properties.Resources.restaurantAvt;
             this.dishImage.ImageRotate = 0F;
-            this.dishImage.Location = new System.Drawing.Point(123, 67);
+            this.dishImage.Location = new System.Drawing.Point(123, 43);
             this.dishImage.Name = "dishImage";
-            this.dishImage.Size = new System.Drawing.Size(316, 205);
+            this.dishImage.Size = new System.Drawing.Size(330, 279);
             this.dishImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.dishImage.TabIndex = 69;
             this.dishImage.TabStop = false;
@@ -323,7 +332,7 @@
             this.seachBtn.Image = global::RestaurantManagementSystem.Properties.Resources.search;
             this.seachBtn.Location = new System.Drawing.Point(665, 47);
             this.seachBtn.Name = "seachBtn";
-            this.seachBtn.Size = new System.Drawing.Size(106, 59);
+            this.seachBtn.Size = new System.Drawing.Size(106, 55);
             this.seachBtn.TabIndex = 44;
             this.seachBtn.Click += new System.EventHandler(this.seachBtn_Click);
             // 
@@ -331,7 +340,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Controls.Add(this.menuPanel);
             this.Controls.Add(this.searchTextBox);
@@ -339,6 +348,7 @@
             this.Controls.Add(this.addButton);
             this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.seachBtn);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
             this.Name = "managerMenuUC";
             this.Size = new System.Drawing.Size(1675, 932);
             this.Load += new System.EventHandler(this.managerMenuUC_Load);

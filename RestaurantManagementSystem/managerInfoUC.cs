@@ -60,6 +60,15 @@ namespace RestaurantManagementSystem
                                 addressTextBox.Text = reader["Address"].ToString();
                                 usernameTextBox.Text = _username;
                                 passwordTextBox.Text = getPassword(_username);
+                                statusLabel.Text = reader["status"].ToString();
+                                if (statusLabel.Text == "Active")
+                                {
+                                    statusLabel.ForeColor = Color.Olive;
+                                }
+                                else if (statusLabel.Text == "Deactive")
+                                {
+                                    statusLabel.ForeColor = Color.Red;
+                                }
                                 // Hiển thị ảnh (nếu có đường dẫn ảnh trong Picture)
                                 string picturePath = reader["Picture"].ToString();
                                 if (!string.IsNullOrEmpty(picturePath))
@@ -67,15 +76,7 @@ namespace RestaurantManagementSystem
                                     pictureBox.Image = Image.FromFile(picturePath);  // Hiển thị ảnh từ đường dẫn
                                 }
 
-                                statusLabel.Text = reader["status"].ToString();
-                                if (statusLabel.Text == "Active")
-                                {
-                                    statusLabel.ForeColor = Color.Olive; 
-                                }
-                                else if (statusLabel.Text == "Deactive")
-                                {
-                                    statusLabel.ForeColor = Color.Red;
-                                }
+                                
                             }
                         }
                     }
@@ -291,6 +292,26 @@ namespace RestaurantManagementSystem
         }
 
         private void statusLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void roleLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void genderLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nameLabel_Click(object sender, EventArgs e)
         {
 
         }

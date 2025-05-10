@@ -78,6 +78,10 @@ namespace RestaurantManagementSystem
             menuButton.FillColor = Color.FromArgb(20, 28, 38);
             tableHistoryButton.FillColor = Color.FromArgb(20, 28, 38);
             coldStorageButton.FillColor = Color.FromArgb(20, 28, 38);
+            manageStaffButton.FillColor = Color.FromArgb(20, 28, 38);
+            usedIngredientBtn.FillColor = Color.FromArgb(20, 28, 38);
+            statisticalButton.FillColor = Color.FromArgb(20, 28, 38);
+            accountSettingBtn.FillColor = Color.FromArgb(20, 28, 38);
             menuPanel.Visible = false;
             tableStatusPanel.Visible = false;
             coldStoragePanel.Visible = false;

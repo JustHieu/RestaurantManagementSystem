@@ -1,3 +1,2 @@
-2025/05/03-11:52:07.025 5180 Reusing MANIFEST E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Test\RestaurantManagementSystem\RestaurantManagementSystem\RestaurantManagementSystem\bin\Debug\RestaurantManagementSystem.exe.WebView2\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
-2025/05/03-11:52:07.036 5180 Recovering log #3
-2025/05/03-11:52:07.040 5180 Reusing old log E:\HCMUTE\2024-2025\HKII\LapTrinhWindows\Test\RestaurantManagementSystem\RestaurantManagementSystem\RestaurantManagementSystem\bin\Debug\RestaurantManagementSystem.exe.WebView2\EBWebView\Default\Local Storage\leveldb/000003.log 
+2025/05/10-01:11:01.074 2dd8 Creating DB Q:\CODE\LapTrinhWinform\B\RestaurantManagementSystem\RestaurantManagementSystem\bin\Debug\RestaurantManagementSystem.exe.WebView2\EBWebView\Default\Local Storage\leveldb since it was missing.
+2025/05/10-01:11:01.098 2dd8 Reusing MANIFEST Q:\CODE\LapTrinhWinform\B\RestaurantManagementSystem\RestaurantManagementSystem\bin\Debug\RestaurantManagementSystem.exe.WebView2\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001

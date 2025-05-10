@@ -31,14 +31,14 @@
             this.saveButton = new Guna.UI2.WinForms.Guna2Button();
             this.ingredientView = new System.Windows.Forms.ListView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.quantityTxt = new System.Windows.Forms.TextBox();
             this.nameTxt = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.closeLoginForm = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.closeLoginForm)).BeginInit();
             this.SuspendLayout();
@@ -52,9 +52,9 @@
             this.saveButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.saveButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.saveButton.FillColor = System.Drawing.Color.Black;
-            this.saveButton.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
+            this.saveButton.Font = new System.Drawing.Font("SF Pro Display", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saveButton.ForeColor = System.Drawing.Color.White;
-            this.saveButton.Location = new System.Drawing.Point(720, 617);
+            this.saveButton.Location = new System.Drawing.Point(792, 627);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(175, 48);
             this.saveButton.TabIndex = 53;
@@ -64,7 +64,7 @@
             // ingredientView
             // 
             this.ingredientView.HideSelection = false;
-            this.ingredientView.Location = new System.Drawing.Point(44, 113);
+            this.ingredientView.Location = new System.Drawing.Point(24, 113);
             this.ingredientView.Name = "ingredientView";
             this.ingredientView.Size = new System.Drawing.Size(486, 491);
             this.ingredientView.TabIndex = 48;
@@ -80,18 +80,34 @@
             this.panel1.Controls.Add(this.nameTxt);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(535, 113);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Location = new System.Drawing.Point(525, 113);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(442, 491);
             this.panel1.TabIndex = 56;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Black;
+            this.panel3.Location = new System.Drawing.Point(223, 291);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(200, 1);
+            this.panel3.TabIndex = 5;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.Location = new System.Drawing.Point(223, 138);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 1);
+            this.panel2.TabIndex = 4;
             // 
             // quantityTxt
             // 
             this.quantityTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.quantityTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.quantityTxt.Location = new System.Drawing.Point(223, 266);
-            this.quantityTxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.quantityTxt.Margin = new System.Windows.Forms.Padding(2);
             this.quantityTxt.Multiline = true;
             this.quantityTxt.Name = "quantityTxt";
             this.quantityTxt.Size = new System.Drawing.Size(200, 20);
@@ -103,7 +119,7 @@
             this.nameTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.nameTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameTxt.Location = new System.Drawing.Point(223, 113);
-            this.nameTxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nameTxt.Margin = new System.Windows.Forms.Padding(2);
             this.nameTxt.Multiline = true;
             this.nameTxt.Name = "nameTxt";
             this.nameTxt.Size = new System.Drawing.Size(200, 20);
@@ -116,7 +132,7 @@
             this.label2.Location = new System.Drawing.Point(32, 261);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(122, 33);
+            this.label2.Size = new System.Drawing.Size(125, 33);
             this.label2.TabIndex = 1;
             this.label2.Text = "Quantity";
             // 
@@ -127,7 +143,7 @@
             this.label1.Location = new System.Drawing.Point(32, 109);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 33);
+            this.label1.Size = new System.Drawing.Size(90, 33);
             this.label1.TabIndex = 0;
             this.label1.Text = "Name";
             // 
@@ -156,27 +172,11 @@
             this.closeLoginForm.TabStop = false;
             this.closeLoginForm.Click += new System.EventHandler(this.closeLoginForm_Click);
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.Location = new System.Drawing.Point(223, 138);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 1);
-            this.panel2.TabIndex = 4;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Black;
-            this.panel3.Location = new System.Drawing.Point(223, 291);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 1);
-            this.panel3.TabIndex = 5;
-            // 
             // cookingIngredientsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(988, 697);
             this.Controls.Add(this.closeLoginForm);
             this.Controls.Add(this.label3);

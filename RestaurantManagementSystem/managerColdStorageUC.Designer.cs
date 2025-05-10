@@ -40,8 +40,8 @@
             this.seachButton = new Guna.UI2.WinForms.Guna2Button();
             this.deleteButton = new Guna.UI2.WinForms.Guna2Button();
             this.addButton = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.ingredientListView = new System.Windows.Forms.ListView();
+            this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,7 +72,7 @@
             this.contactTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.contactTextBox.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
             this.contactTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.contactTextBox.Location = new System.Drawing.Point(98, 416);
+            this.contactTextBox.Location = new System.Drawing.Point(115, 526);
             this.contactTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.contactTextBox.Name = "contactTextBox";
             this.contactTextBox.PlaceholderText = "Contact";
@@ -92,7 +92,7 @@
             this.priceTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.priceTextBox.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
             this.priceTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.priceTextBox.Location = new System.Drawing.Point(98, 269);
+            this.priceTextBox.Location = new System.Drawing.Point(115, 352);
             this.priceTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.priceTextBox.Name = "priceTextBox";
             this.priceTextBox.PlaceholderText = "Price";
@@ -112,7 +112,7 @@
             this.placeImportTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.placeImportTextBox.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
             this.placeImportTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.placeImportTextBox.Location = new System.Drawing.Point(98, 351);
+            this.placeImportTextBox.Location = new System.Drawing.Point(115, 438);
             this.placeImportTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.placeImportTextBox.Name = "placeImportTextBox";
             this.placeImportTextBox.PlaceholderText = "Place of import";
@@ -132,7 +132,7 @@
             this.quantityTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.quantityTextBox.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
             this.quantityTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.quantityTextBox.Location = new System.Drawing.Point(98, 188);
+            this.quantityTextBox.Location = new System.Drawing.Point(115, 265);
             this.quantityTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.quantityTextBox.Name = "quantityTextBox";
             this.quantityTextBox.PlaceholderText = "Quantity";
@@ -152,7 +152,7 @@
             this.nameTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.nameTextBox.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
             this.nameTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.nameTextBox.Location = new System.Drawing.Point(98, 111);
+            this.nameTextBox.Location = new System.Drawing.Point(115, 175);
             this.nameTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.PlaceholderText = "Name";
@@ -172,7 +172,7 @@
             this.idTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.idTextBox.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
             this.idTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.idTextBox.Location = new System.Drawing.Point(98, 36);
+            this.idTextBox.Location = new System.Drawing.Point(115, 87);
             this.idTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.PlaceholderText = "ID";
@@ -195,7 +195,7 @@
             // searchTextBox
             // 
             this.searchTextBox.AutoRoundedCorners = true;
-            this.searchTextBox.BorderRadius = 23;
+            this.searchTextBox.BorderRadius = 25;
             this.searchTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.searchTextBox.CustomizableEdges.BottomRight = false;
             this.searchTextBox.CustomizableEdges.TopRight = false;
@@ -207,12 +207,12 @@
             this.searchTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.searchTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.searchTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.searchTextBox.Location = new System.Drawing.Point(293, 57);
+            this.searchTextBox.Location = new System.Drawing.Point(296, 30);
             this.searchTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.searchTextBox.Name = "searchTextBox";
             this.searchTextBox.PlaceholderText = "Search";
             this.searchTextBox.SelectedText = "";
-            this.searchTextBox.Size = new System.Drawing.Size(378, 48);
+            this.searchTextBox.Size = new System.Drawing.Size(389, 53);
             this.searchTextBox.TabIndex = 59;
             this.searchTextBox.TextChanged += new System.EventHandler(this.searchTextBox_TextChanged);
             // 
@@ -229,24 +229,26 @@
             this.seachButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.seachButton.ForeColor = System.Drawing.Color.White;
             this.seachButton.Image = global::RestaurantManagementSystem.Properties.Resources.search;
-            this.seachButton.Location = new System.Drawing.Point(670, 57);
+            this.seachButton.Location = new System.Drawing.Point(673, 30);
             this.seachButton.Name = "seachButton";
-            this.seachButton.Size = new System.Drawing.Size(94, 48);
+            this.seachButton.Size = new System.Drawing.Size(105, 53);
             this.seachButton.TabIndex = 60;
             // 
             // deleteButton
             // 
             this.deleteButton.AutoRoundedCorners = true;
             this.deleteButton.BackColor = System.Drawing.Color.Transparent;
+            this.deleteButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
             this.deleteButton.BorderRadius = 23;
+            this.deleteButton.BorderThickness = 1;
             this.deleteButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.deleteButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.deleteButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.deleteButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.deleteButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.deleteButton.FillColor = System.Drawing.Color.Silver;
             this.deleteButton.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
-            this.deleteButton.ForeColor = System.Drawing.Color.White;
-            this.deleteButton.Location = new System.Drawing.Point(1135, 849);
+            this.deleteButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
+            this.deleteButton.Location = new System.Drawing.Point(1153, 849);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(191, 48);
             this.deleteButton.TabIndex = 61;
@@ -257,47 +259,46 @@
             // 
             this.addButton.AutoRoundedCorners = true;
             this.addButton.BackColor = System.Drawing.Color.Transparent;
+            this.addButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
             this.addButton.BorderRadius = 23;
+            this.addButton.BorderThickness = 1;
             this.addButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.addButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.addButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.addButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.addButton.FillColor = System.Drawing.Color.LimeGreen;
+            this.addButton.FillColor = System.Drawing.Color.Silver;
             this.addButton.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
-            this.addButton.ForeColor = System.Drawing.Color.White;
-            this.addButton.Location = new System.Drawing.Point(1433, 849);
+            this.addButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
+            this.addButton.Location = new System.Drawing.Point(1426, 849);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(191, 48);
             this.addButton.TabIndex = 62;
             this.addButton.Text = "ADD";
             this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
-            // guna2Button3
-            // 
-            this.guna2Button3.BorderRadius = 50;
-            this.guna2Button3.CustomizableEdges.BottomLeft = false;
-            this.guna2Button3.CustomizableEdges.BottomRight = false;
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Location = new System.Drawing.Point(1066, 88);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(614, 85);
-            this.guna2Button3.TabIndex = 63;
-            // 
             // ingredientListView
             // 
-            this.ingredientListView.Font = new System.Drawing.Font("Consolas", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ingredientListView.Font = new System.Drawing.Font("SF Pro Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ingredientListView.HideSelection = false;
-            this.ingredientListView.Location = new System.Drawing.Point(49, 112);
+            this.ingredientListView.Location = new System.Drawing.Point(58, 112);
             this.ingredientListView.Name = "ingredientListView";
-            this.ingredientListView.Size = new System.Drawing.Size(938, 694);
+            this.ingredientListView.Size = new System.Drawing.Size(946, 710);
             this.ingredientListView.TabIndex = 71;
             this.ingredientListView.UseCompatibleStateImageBehavior = false;
+            // 
+            // guna2CustomGradientPanel1
+            // 
+            this.guna2CustomGradientPanel1.BorderRadius = 50;
+            this.guna2CustomGradientPanel1.CustomizableEdges.BottomLeft = false;
+            this.guna2CustomGradientPanel1.CustomizableEdges.BottomRight = false;
+            this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
+            this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
+            this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
+            this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(1066, 88);
+            this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(614, 85);
+            this.guna2CustomGradientPanel1.TabIndex = 72;
             // 
             // managerColdStorageUC
             // 
@@ -309,8 +310,8 @@
             this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.searchTextBox);
             this.Controls.Add(this.seachButton);
+            this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.guna2Button3);
             this.Name = "managerColdStorageUC";
             this.Size = new System.Drawing.Size(1675, 932);
             this.Load += new System.EventHandler(this.managerColdStorageUC_Load);
@@ -333,7 +334,7 @@
         private Guna.UI2.WinForms.Guna2TextBox placeImportTextBox;
         private Guna.UI2.WinForms.Guna2TextBox contactTextBox;
         private Guna.UI2.WinForms.Guna2Button addButton;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private System.Windows.Forms.ListView ingredientListView;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
     }
 }

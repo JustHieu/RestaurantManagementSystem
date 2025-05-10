@@ -69,7 +69,7 @@
             this.label1.Font = new System.Drawing.Font("SF Pro Display", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(27, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(264, 56);
+            this.label1.Size = new System.Drawing.Size(270, 56);
             this.label1.TabIndex = 0;
             this.label1.Text = "User Profile";
             // 
@@ -102,25 +102,30 @@
             // genderLabel
             // 
             this.genderLabel.AutoSize = true;
+            this.genderLabel.BackColor = System.Drawing.Color.Transparent;
             this.genderLabel.Font = new System.Drawing.Font("SF Pro Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.genderLabel.Location = new System.Drawing.Point(154, 261);
             this.genderLabel.Name = "genderLabel";
-            this.genderLabel.Size = new System.Drawing.Size(39, 18);
+            this.genderLabel.Size = new System.Drawing.Size(41, 18);
             this.genderLabel.TabIndex = 16;
             this.genderLabel.Text = "label";
+            this.genderLabel.Click += new System.EventHandler(this.genderLabel_Click);
             // 
             // roleLabel
             // 
             this.roleLabel.AutoSize = true;
+            this.roleLabel.BackColor = System.Drawing.Color.Transparent;
             this.roleLabel.Font = new System.Drawing.Font("SF Pro Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roleLabel.Location = new System.Drawing.Point(138, 298);
             this.roleLabel.Name = "roleLabel";
-            this.roleLabel.Size = new System.Drawing.Size(39, 18);
+            this.roleLabel.Size = new System.Drawing.Size(41, 18);
             this.roleLabel.TabIndex = 15;
             this.roleLabel.Text = "label";
+            this.roleLabel.Click += new System.EventHandler(this.roleLabel_Click);
             // 
             // pictureBox
             // 
+            this.pictureBox.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox.ImageRotate = 0F;
             this.pictureBox.Location = new System.Drawing.Point(106, 49);
             this.pictureBox.Name = "pictureBox";
@@ -129,16 +134,19 @@
             this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox.TabIndex = 3;
             this.pictureBox.TabStop = false;
+            this.pictureBox.Click += new System.EventHandler(this.pictureBox_Click);
             // 
             // nameLabel
             // 
             this.nameLabel.AutoSize = true;
+            this.nameLabel.BackColor = System.Drawing.Color.Transparent;
             this.nameLabel.Font = new System.Drawing.Font("SF Pro Display", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameLabel.Location = new System.Drawing.Point(90, 217);
             this.nameLabel.Name = "nameLabel";
             this.nameLabel.Size = new System.Drawing.Size(73, 27);
             this.nameLabel.TabIndex = 2;
             this.nameLabel.Text = "label4";
+            this.nameLabel.Click += new System.EventHandler(this.nameLabel_Click);
             // 
             // guna2CustomGradientPanel2
             // 
@@ -164,6 +172,7 @@
             // 
             // dobTextBox
             // 
+            this.dobTextBox.BackColor = System.Drawing.Color.Transparent;
             this.dobTextBox.BorderRadius = 12;
             this.dobTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.dobTextBox.DefaultText = "";
@@ -185,16 +194,18 @@
             // label12
             // 
             this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("SF Pro Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(672, 140);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(65, 18);
+            this.label12.Size = new System.Drawing.Size(67, 18);
             this.label12.TabIndex = 13;
             this.label12.Text = "BirthDay";
             // 
             // statusLabel
             // 
             this.statusLabel.AutoSize = true;
+            this.statusLabel.BackColor = System.Drawing.Color.Transparent;
             this.statusLabel.Font = new System.Drawing.Font("SF Pro Display", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.statusLabel.ForeColor = System.Drawing.Color.Olive;
             this.statusLabel.Location = new System.Drawing.Point(1023, 138);
@@ -207,16 +218,18 @@
             // label10
             // 
             this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("SF Pro Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(945, 140);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(57, 18);
+            this.label10.Size = new System.Drawing.Size(59, 18);
             this.label10.TabIndex = 11;
             this.label10.Text = "Status: ";
             // 
             // updateBtn
             // 
             this.updateBtn.AutoRoundedCorners = true;
+            this.updateBtn.BackColor = System.Drawing.Color.Transparent;
             this.updateBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.updateBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.updateBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -233,6 +246,7 @@
             // 
             // addressTextBox
             // 
+            this.addressTextBox.BackColor = System.Drawing.Color.Transparent;
             this.addressTextBox.BorderRadius = 12;
             this.addressTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.addressTextBox.DefaultText = "";
@@ -253,6 +267,7 @@
             // 
             // nameTextBox
             // 
+            this.nameTextBox.BackColor = System.Drawing.Color.Transparent;
             this.nameTextBox.BorderRadius = 12;
             this.nameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.nameTextBox.DefaultText = "";
@@ -274,10 +289,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("SF Pro Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(372, 140);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(63, 18);
+            this.label5.Size = new System.Drawing.Size(65, 18);
             this.label5.TabIndex = 7;
             this.label5.Text = "Address";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -285,6 +301,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("SF Pro Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(58, 140);
             this.label6.Name = "label6";
@@ -295,6 +312,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.label3.Location = new System.Drawing.Point(42, 31);
@@ -327,6 +345,7 @@
             // 
             // changePhonenumberBtn
             // 
+            this.changePhonenumberBtn.BackColor = System.Drawing.Color.Transparent;
             this.changePhonenumberBtn.BorderColor = System.Drawing.Color.LightGray;
             this.changePhonenumberBtn.BorderRadius = 9;
             this.changePhonenumberBtn.BorderThickness = 1;
@@ -347,6 +366,7 @@
             // 
             // changePasswordBtn
             // 
+            this.changePasswordBtn.BackColor = System.Drawing.Color.Transparent;
             this.changePasswordBtn.BorderColor = System.Drawing.Color.Silver;
             this.changePasswordBtn.BorderRadius = 9;
             this.changePasswordBtn.BorderThickness = 1;
@@ -367,6 +387,7 @@
             // 
             // phoneTextBox
             // 
+            this.phoneTextBox.BackColor = System.Drawing.Color.Transparent;
             this.phoneTextBox.BorderRadius = 12;
             this.phoneTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.phoneTextBox.DefaultText = "";
@@ -388,15 +409,17 @@
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("SF Pro Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(851, 115);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(50, 18);
+            this.label9.Size = new System.Drawing.Size(52, 18);
             this.label9.TabIndex = 13;
             this.label9.Text = "Phone";
             // 
             // passwordTextBox
             // 
+            this.passwordTextBox.BackColor = System.Drawing.Color.Transparent;
             this.passwordTextBox.BorderRadius = 12;
             this.passwordTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.passwordTextBox.DefaultText = "";
@@ -418,15 +441,17 @@
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("SF Pro Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(452, 115);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(71, 18);
+            this.label8.Size = new System.Drawing.Size(75, 18);
             this.label8.TabIndex = 11;
             this.label8.Text = "Password";
             // 
             // usernameTextBox
             // 
+            this.usernameTextBox.BackColor = System.Drawing.Color.Transparent;
             this.usernameTextBox.BorderRadius = 12;
             this.usernameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.usernameTextBox.DefaultText = "";
@@ -448,16 +473,18 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("SF Pro Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(48, 115);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(76, 18);
+            this.label7.Size = new System.Drawing.Size(78, 18);
             this.label7.TabIndex = 9;
             this.label7.Text = "Username";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.label4.Location = new System.Drawing.Point(36, 29);
@@ -485,7 +512,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.Controls.Add(this.guna2CustomGradientPanel3);
             this.Controls.Add(this.guna2CustomGradientPanel2);
             this.Controls.Add(this.guna2CustomGradientPanel1);
