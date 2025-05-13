@@ -27,5 +27,10 @@ namespace RestaurantManagementSystem
         {
 
         }
+
+        private void nameLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

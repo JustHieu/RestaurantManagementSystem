@@ -16,10 +16,12 @@ namespace RestaurantManagementSystem
         {
             InitializeComponent();
         }
-        public void SetData(string ingredientName, decimal quantity)
+        public void SetData(string ingredientName, decimal quantity, DateTime usedTime)
         {
             nameLabel.Text = ingredientName;
             quantityLabel.Text = quantity + "g";  // hoặc "ml", tuỳ loại
+            timeLabel.Text = usedTime.ToString("dd/MM/yyyy HH:mm:ss");
+
         }
 
 

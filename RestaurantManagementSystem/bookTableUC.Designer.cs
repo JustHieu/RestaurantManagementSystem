@@ -128,7 +128,7 @@
             this.datePicker.Name = "datePicker";
             this.datePicker.Size = new System.Drawing.Size(228, 36);
             this.datePicker.TabIndex = 31;
-            this.datePicker.Value = new System.DateTime(2025, 4, 4, 0, 0, 0, 0);
+            this.datePicker.Value = new System.DateTime(2025, 4, 14, 0, 0, 0, 0);
             // 
             // specialRequestsTextBox
             // 
@@ -223,11 +223,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Luxury", 55.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 55.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(535, 158);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(623, 117);
+            this.label4.Size = new System.Drawing.Size(603, 104);
             this.label4.TabIndex = 27;
             this.label4.Text = "Book A Table";
             // 

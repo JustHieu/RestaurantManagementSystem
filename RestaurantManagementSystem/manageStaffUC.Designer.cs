@@ -182,11 +182,12 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(714, 631);
             this.panel1.TabIndex = 55;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // insertImageButton
             // 
             this.insertImageButton.Image = global::RestaurantManagementSystem.Properties.Resources.image;
-            this.insertImageButton.Location = new System.Drawing.Point(617, 216);
+            this.insertImageButton.Location = new System.Drawing.Point(617, 227);
             this.insertImageButton.Name = "insertImageButton";
             this.insertImageButton.Size = new System.Drawing.Size(44, 43);
             this.insertImageButton.TabIndex = 85;
@@ -197,8 +198,8 @@
             // 
             this.staffImage.BackColor = System.Drawing.Color.White;
             this.staffImage.Image = global::RestaurantManagementSystem.Properties.Resources.man__1_;
-            this.staffImage.Location = new System.Drawing.Point(431, 44);
-            this.staffImage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.staffImage.Location = new System.Drawing.Point(431, 55);
+            this.staffImage.Margin = new System.Windows.Forms.Padding(2);
             this.staffImage.Name = "staffImage";
             this.staffImage.Size = new System.Drawing.Size(230, 215);
             this.staffImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -220,16 +221,16 @@
             "Waiter",
             "Manager",
             "Chef"});
-            this.positionComboBox.Location = new System.Drawing.Point(201, 273);
+            this.positionComboBox.Location = new System.Drawing.Point(229, 338);
             this.positionComboBox.Name = "positionComboBox";
-            this.positionComboBox.Size = new System.Drawing.Size(482, 36);
+            this.positionComboBox.Size = new System.Drawing.Size(405, 36);
             this.positionComboBox.TabIndex = 83;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(59, 280);
+            this.label7.Location = new System.Drawing.Point(59, 338);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(89, 27);
             this.label7.TabIndex = 82;
@@ -249,16 +250,16 @@
             this.sexComboBox.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.sexComboBox.Location = new System.Drawing.Point(201, 173);
+            this.sexComboBox.Location = new System.Drawing.Point(166, 154);
             this.sexComboBox.Name = "sexComboBox";
-            this.sexComboBox.Size = new System.Drawing.Size(196, 36);
+            this.sexComboBox.Size = new System.Drawing.Size(231, 36);
             this.sexComboBox.TabIndex = 81;
             // 
             // sexLabel
             // 
             this.sexLabel.AutoSize = true;
             this.sexLabel.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sexLabel.Location = new System.Drawing.Point(59, 173);
+            this.sexLabel.Location = new System.Drawing.Point(59, 143);
             this.sexLabel.Name = "sexLabel";
             this.sexLabel.Size = new System.Drawing.Size(48, 27);
             this.sexLabel.TabIndex = 80;
@@ -268,7 +269,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(59, 499);
+            this.label6.Location = new System.Drawing.Point(61, 521);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(88, 27);
             this.label6.TabIndex = 79;
@@ -278,7 +279,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(59, 427);
+            this.label5.Location = new System.Drawing.Point(60, 430);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(149, 27);
             this.label5.TabIndex = 78;
@@ -288,7 +289,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(59, 97);
+            this.label4.Location = new System.Drawing.Point(59, 70);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(68, 27);
             this.label4.TabIndex = 77;
@@ -306,12 +307,12 @@
             this.addressTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.addressTextBox.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
             this.addressTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.addressTextBox.Location = new System.Drawing.Point(230, 487);
+            this.addressTextBox.Location = new System.Drawing.Point(232, 509);
             this.addressTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.addressTextBox.Name = "addressTextBox";
             this.addressTextBox.PlaceholderText = "";
             this.addressTextBox.SelectedText = "";
-            this.addressTextBox.Size = new System.Drawing.Size(412, 38);
+            this.addressTextBox.Size = new System.Drawing.Size(404, 38);
             this.addressTextBox.TabIndex = 75;
             // 
             // phoneNumberTextBox
@@ -326,7 +327,7 @@
             this.phoneNumberTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.phoneNumberTextBox.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
             this.phoneNumberTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.phoneNumberTextBox.Location = new System.Drawing.Point(230, 421);
+            this.phoneNumberTextBox.Location = new System.Drawing.Point(231, 424);
             this.phoneNumberTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.phoneNumberTextBox.Name = "phoneNumberTextBox";
             this.phoneNumberTextBox.PlaceholderText = "";
@@ -346,12 +347,12 @@
             this.nameTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.nameTextBox.Font = new System.Drawing.Font("Philosopher", 10.2F, System.Drawing.FontStyle.Bold);
             this.nameTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.nameTextBox.Location = new System.Drawing.Point(195, 97);
+            this.nameTextBox.Location = new System.Drawing.Point(166, 70);
             this.nameTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.PlaceholderText = "";
             this.nameTextBox.SelectedText = "";
-            this.nameTextBox.Size = new System.Drawing.Size(201, 38);
+            this.nameTextBox.Size = new System.Drawing.Size(230, 38);
             this.nameTextBox.TabIndex = 73;
             // 
             // birthDatePicker
@@ -365,11 +366,11 @@
             this.birthDatePicker.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold);
             this.birthDatePicker.ForeColor = System.Drawing.Color.Black;
             this.birthDatePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.birthDatePicker.Location = new System.Drawing.Point(230, 342);
+            this.birthDatePicker.Location = new System.Drawing.Point(203, 233);
             this.birthDatePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.birthDatePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.birthDatePicker.Name = "birthDatePicker";
-            this.birthDatePicker.Size = new System.Drawing.Size(233, 42);
+            this.birthDatePicker.Size = new System.Drawing.Size(194, 42);
             this.birthDatePicker.TabIndex = 70;
             this.birthDatePicker.Value = new System.DateTime(2025, 3, 24, 0, 0, 0, 0);
             // 
@@ -377,7 +378,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(59, 352);
+            this.label2.Location = new System.Drawing.Point(59, 243);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(128, 27);
             this.label2.TabIndex = 71;

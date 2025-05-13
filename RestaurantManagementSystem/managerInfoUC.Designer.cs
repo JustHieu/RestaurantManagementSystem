@@ -101,26 +101,26 @@
             // 
             // genderLabel
             // 
-            this.genderLabel.AutoSize = true;
             this.genderLabel.BackColor = System.Drawing.Color.Transparent;
             this.genderLabel.Font = new System.Drawing.Font("SF Pro Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.genderLabel.Location = new System.Drawing.Point(154, 261);
+            this.genderLabel.Location = new System.Drawing.Point(90, 245);
             this.genderLabel.Name = "genderLabel";
-            this.genderLabel.Size = new System.Drawing.Size(41, 18);
+            this.genderLabel.Size = new System.Drawing.Size(183, 34);
             this.genderLabel.TabIndex = 16;
             this.genderLabel.Text = "label";
+            this.genderLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.genderLabel.Click += new System.EventHandler(this.genderLabel_Click);
             // 
             // roleLabel
             // 
-            this.roleLabel.AutoSize = true;
             this.roleLabel.BackColor = System.Drawing.Color.Transparent;
             this.roleLabel.Font = new System.Drawing.Font("SF Pro Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roleLabel.Location = new System.Drawing.Point(138, 298);
+            this.roleLabel.Location = new System.Drawing.Point(90, 279);
             this.roleLabel.Name = "roleLabel";
-            this.roleLabel.Size = new System.Drawing.Size(41, 18);
+            this.roleLabel.Size = new System.Drawing.Size(183, 37);
             this.roleLabel.TabIndex = 15;
             this.roleLabel.Text = "label";
+            this.roleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.roleLabel.Click += new System.EventHandler(this.roleLabel_Click);
             // 
             // pictureBox
@@ -138,14 +138,14 @@
             // 
             // nameLabel
             // 
-            this.nameLabel.AutoSize = true;
             this.nameLabel.BackColor = System.Drawing.Color.Transparent;
             this.nameLabel.Font = new System.Drawing.Font("SF Pro Display", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nameLabel.Location = new System.Drawing.Point(90, 217);
+            this.nameLabel.Location = new System.Drawing.Point(40, 204);
             this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(73, 27);
+            this.nameLabel.Size = new System.Drawing.Size(291, 41);
             this.nameLabel.TabIndex = 2;
             this.nameLabel.Text = "label4";
+            this.nameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.nameLabel.Click += new System.EventHandler(this.nameLabel_Click);
             // 
             // guna2CustomGradientPanel2
@@ -204,13 +204,12 @@
             // 
             // statusLabel
             // 
-            this.statusLabel.AutoSize = true;
             this.statusLabel.BackColor = System.Drawing.Color.Transparent;
             this.statusLabel.Font = new System.Drawing.Font("SF Pro Display", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.statusLabel.ForeColor = System.Drawing.Color.Olive;
-            this.statusLabel.Location = new System.Drawing.Point(1023, 138);
+            this.statusLabel.Location = new System.Drawing.Point(1001, 137);
             this.statusLabel.Name = "statusLabel";
-            this.statusLabel.Size = new System.Drawing.Size(62, 21);
+            this.statusLabel.Size = new System.Drawing.Size(95, 26);
             this.statusLabel.TabIndex = 12;
             this.statusLabel.Text = "label11";
             this.statusLabel.Click += new System.EventHandler(this.statusLabel_Click);
@@ -359,7 +358,7 @@
             this.changePhonenumberBtn.ForeColor = System.Drawing.Color.Green;
             this.changePhonenumberBtn.Location = new System.Drawing.Point(455, 245);
             this.changePhonenumberBtn.Name = "changePhonenumberBtn";
-            this.changePhonenumberBtn.Size = new System.Drawing.Size(201, 45);
+            this.changePhonenumberBtn.Size = new System.Drawing.Size(212, 45);
             this.changePhonenumberBtn.TabIndex = 15;
             this.changePhonenumberBtn.Text = "Change phone number";
             this.changePhonenumberBtn.Click += new System.EventHandler(this.changePhonenumberBtn_Click);
@@ -380,7 +379,7 @@
             this.changePasswordBtn.ForeColor = System.Drawing.Color.Green;
             this.changePasswordBtn.Location = new System.Drawing.Point(51, 245);
             this.changePasswordBtn.Name = "changePasswordBtn";
-            this.changePasswordBtn.Size = new System.Drawing.Size(191, 45);
+            this.changePasswordBtn.Size = new System.Drawing.Size(198, 45);
             this.changePasswordBtn.TabIndex = 11;
             this.changePasswordBtn.Text = "Change password";
             this.changePasswordBtn.Click += new System.EventHandler(this.changePasswordBtn_Click);
@@ -521,7 +520,6 @@
             this.Name = "managerInfoUC";
             this.Size = new System.Drawing.Size(1722, 1047);
             this.guna2CustomGradientPanel1.ResumeLayout(false);
-            this.guna2CustomGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.guna2CustomGradientPanel2.ResumeLayout(false);
             this.guna2CustomGradientPanel2.PerformLayout();

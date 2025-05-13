@@ -32,6 +32,9 @@
             this.searchTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.seachButton = new Guna.UI2.WinForms.Guna2Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.guna2CustomGradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // flowPanel
@@ -91,11 +94,40 @@
             this.panel1.Size = new System.Drawing.Size(247, 675);
             this.panel1.TabIndex = 67;
             // 
+            // guna2CustomGradientPanel1
+            // 
+            this.guna2CustomGradientPanel1.BorderRadius = 10;
+            this.guna2CustomGradientPanel1.Controls.Add(this.label1);
+            this.guna2CustomGradientPanel1.CustomizableEdges.BottomLeft = false;
+            this.guna2CustomGradientPanel1.CustomizableEdges.BottomRight = false;
+            this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
+            this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
+            this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.Silver;
+            this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(176, 120);
+            this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1301, 75);
+            this.guna2CustomGradientPanel1.TabIndex = 68;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("SF Pro Display", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(512, 10);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(302, 56);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Table History";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // managerTableHistory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.searchTextBox);
             this.Controls.Add(this.seachButton);
@@ -103,6 +135,8 @@
             this.Name = "managerTableHistory";
             this.Size = new System.Drawing.Size(2015, 901);
             this.Load += new System.EventHandler(this.managerTableHistory_Load);
+            this.guna2CustomGradientPanel1.ResumeLayout(false);
+            this.guna2CustomGradientPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -113,5 +147,7 @@
         private Guna.UI2.WinForms.Guna2TextBox searchTextBox;
         private Guna.UI2.WinForms.Guna2Button seachButton;
         private System.Windows.Forms.Panel panel1;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
+        private System.Windows.Forms.Label label1;
     }
 }

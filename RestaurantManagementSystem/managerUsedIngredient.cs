@@ -27,7 +27,7 @@ namespace RestaurantManagementSystem
         {
             string connectionString = db.Connectstring();
             string query = @"
-        SELECT Name AS IngredientName, SUM(Quantity) AS TotalQuantity
+        SELECT Name AS IngredientName, SUM(Quantity) AS TotalQuantity, MAX(UsedTime) AS UsedTime
         FROM UsedIngredient
         GROUP BY Name";
 
@@ -45,10 +45,11 @@ namespace RestaurantManagementSystem
                     {
                         string name = reader["IngredientName"].ToString();
                         decimal totalQuantity = Convert.ToDecimal(reader["TotalQuantity"]);
+                        DateTime usedTime = Convert.ToDateTime(reader["UsedTime"]);
 
                         // Tạo UserControl hiển thị nguyên liệu
                         usedIngredientUC uc = new usedIngredientUC();
-                        uc.SetData(name, totalQuantity);  // Giả sử SetData là public void SetData(string, decimal)
+                        uc.SetData(name, totalQuantity, usedTime);  // Giả sử SetData là public void SetData(string, decimal, DateTime)
                         showPanel.Controls.Add(uc);
                     }
 

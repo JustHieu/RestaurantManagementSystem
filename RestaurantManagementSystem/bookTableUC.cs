@@ -20,6 +20,7 @@ namespace RestaurantManagementSystem
             InitializeComponent();
             comboBoxPersonNumber.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxPersonNumber.SelectedIndex = 0;
+            datePicker.Value = DateTime.Now;
         }
         private int GetRandomAvailableTable()
         {
