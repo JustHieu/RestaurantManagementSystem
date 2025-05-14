@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "Q:\\CODE\\LapTrinhWinform\\B\\RestaurantManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|q:\\code\\laptrinhwinform\\b\\restaurantmanagementsystem\\restaurantmanagementsystem\\booktablefrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\booktablefrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|q:\\code\\laptrinhwinform\\b\\restaurantmanagementsystem\\restaurantmanagementsystem\\stafftablestatusuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\stafftablestatusuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|q:\\code\\laptrinhwinform\\b\\restaurantmanagementsystem\\restaurantmanagementsystem\\booktablefrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\booktablefrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|q:\\code\\laptrinhwinform\\b\\restaurantmanagementsystem\\restaurantmanagementsystem\\stafftablestatusuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC8431DE-6D7B-407D-B226-FC0BE9F0589C}|RestaurantManagementSystem\\RestaurantManagementSystem.csproj|solutionrelative:restaurantmanagementsystem\\stafftablestatusuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,26 +27,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "bookTableFrm.cs",
-              "DocumentMoniker": "Q:\\CODE\\LapTrinhWinform\\B\\RestaurantManagementSystem\\RestaurantManagementSystem\\bookTableFrm.cs",
-              "RelativeDocumentMoniker": "RestaurantManagementSystem\\bookTableFrm.cs",
-              "ToolTip": "Q:\\CODE\\LapTrinhWinform\\B\\RestaurantManagementSystem\\RestaurantManagementSystem\\bookTableFrm.cs",
-              "RelativeToolTip": "RestaurantManagementSystem\\bookTableFrm.cs",
-              "ViewState": "AgIAAA4BAAAAAAAAAAAcwB8BAAAAAAAAAAAAAA==",
+              "Title": "staffTableStatusUC.cs",
+              "DocumentMoniker": "Q:\\CODE\\LapTrinhWinform\\B\\RestaurantManagementSystem\\RestaurantManagementSystem\\staffTableStatusUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\staffTableStatusUC.cs",
+              "ToolTip": "Q:\\CODE\\LapTrinhWinform\\B\\RestaurantManagementSystem\\RestaurantManagementSystem\\staffTableStatusUC.cs",
+              "RelativeToolTip": "RestaurantManagementSystem\\staffTableStatusUC.cs",
+              "ViewState": "AgIAAM8AAAAAAAAAAAAuwLYAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T20:10:29.595Z",
+              "WhenOpened": "2025-05-14T12:29:06.45Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "bookTableFrm.cs [Design]",
-              "DocumentMoniker": "Q:\\CODE\\LapTrinhWinform\\B\\RestaurantManagementSystem\\RestaurantManagementSystem\\bookTableFrm.cs",
-              "RelativeDocumentMoniker": "RestaurantManagementSystem\\bookTableFrm.cs",
-              "ToolTip": "Q:\\CODE\\LapTrinhWinform\\B\\RestaurantManagementSystem\\RestaurantManagementSystem\\bookTableFrm.cs [Design]",
-              "RelativeToolTip": "RestaurantManagementSystem\\bookTableFrm.cs [Design]",
+              "Title": "staffTableStatusUC.cs [Design]",
+              "DocumentMoniker": "Q:\\CODE\\LapTrinhWinform\\B\\RestaurantManagementSystem\\RestaurantManagementSystem\\staffTableStatusUC.cs",
+              "RelativeDocumentMoniker": "RestaurantManagementSystem\\staffTableStatusUC.cs",
+              "ToolTip": "Q:\\CODE\\LapTrinhWinform\\B\\RestaurantManagementSystem\\RestaurantManagementSystem\\staffTableStatusUC.cs [Design]",
+              "RelativeToolTip": "RestaurantManagementSystem\\staffTableStatusUC.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T19:59:16.515Z",
+              "WhenOpened": "2025-05-14T11:37:35.46Z",
               "EditorCaption": " [Design]"
             }
           ]

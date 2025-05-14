@@ -35,7 +35,7 @@ namespace RestaurantManagementSystem
         private string GetTotalOrder()
         {
             string connectionString = db.Connectstring();
-            string query = "SELECT COUNT(*) FROM PaymentHistory"; // Câu lệnh SQL để đếm số bản ghi
+            string query = "SELECT COUNT(*) FROM PaymentHistory";
 
             try
             {
@@ -92,14 +92,12 @@ namespace RestaurantManagementSystem
                 {
                     conn.Open();
 
-                    // Thực thi câu lệnh SQL để tính tổng chi phí theo Name
                     SqlCommand cmd = new SqlCommand(query, conn);
                     SqlDataReader reader = cmd.ExecuteReader();
 
-                    // Lặp qua các kết quả và tính tổng chi phí
                     while (reader.Read())
                     {
-                        totalCost += reader.IsDBNull(0) ? 0 : reader.GetDecimal(0); // Cộng dồn tổng chi phí
+                        totalCost += reader.IsDBNull(0) ? 0 : reader.GetDecimal(0); 
                     }
                 }
             }
@@ -113,7 +111,7 @@ namespace RestaurantManagementSystem
         private string GetTotalEmployee()
         {
             string connectionString = db.Connectstring();
-            string query = "SELECT COUNT(*) FROM Employee"; // Câu lệnh SQL để đếm số bản ghi
+            string query = "SELECT COUNT(*) FROM Employee"; 
 
             try
             {
@@ -153,7 +151,6 @@ namespace RestaurantManagementSystem
             Dictionary<DateTime, DailyStats> statsMap = new Dictionary<DateTime, DailyStats>();
             string connectionString = db.Connectstring();
 
-            // Doanh thu
             string revenueQuery = @"SELECT CAST(time AS DATE), SUM(totalAmount) 
                             FROM PaymentHistory 
                             GROUP BY CAST(time AS DATE)";
@@ -173,7 +170,6 @@ namespace RestaurantManagementSystem
                 reader.Close();
             }
 
-            // Chi phí
             string costQuery = @"SELECT CAST(UsedTime AS DATE), SUM(Amount * Price)
                          FROM UsedIngredient
                          GROUP BY CAST(UsedTime AS DATE)";
@@ -210,21 +206,19 @@ namespace RestaurantManagementSystem
             chart.ChartAreas[0].AxisX.Title = "Ngày";
             chart.ChartAreas[0].AxisY.Title = "$";
 
-            // Set chart title
-            chart.Titles.Add("Thống kê doanh thu, chi phí, lợi nhuận theo ngày");
+            chart.Titles.Add("Revenue, Cost, and Profit Statistics by Day");
 
-            // Create series
-            var revenueSeries = new System.Windows.Forms.DataVisualization.Charting.Series("Doanh Thu")
+            var revenueSeries = new System.Windows.Forms.DataVisualization.Charting.Series("Revenue")
             {
                 ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Column,
                 Color = Color.RoyalBlue
             };
-            var costSeries = new System.Windows.Forms.DataVisualization.Charting.Series("Chi Phí")
+            var costSeries = new System.Windows.Forms.DataVisualization.Charting.Series("Cost")
             {
                 ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Column,
                 Color = Color.Goldenrod
             };
-            var profitSeries = new System.Windows.Forms.DataVisualization.Charting.Series("Lợi Nhuận")
+            var profitSeries = new System.Windows.Forms.DataVisualization.Charting.Series("Profit")
             {
                 ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Column,
                 Color = Color.Firebrick
@@ -246,10 +240,10 @@ namespace RestaurantManagementSystem
         {
             string connectionString = db.Connectstring();
             string query = @"
-        SELECT TOP 3 d.Name, d.Price
-        FROM DishSold ds
-        JOIN Dish d ON ds.DishID = d.Id
-        ORDER BY ds.TotalQuantity DESC";
+                            SELECT TOP 3 d.Name, d.Price
+                            FROM DishSold ds
+                            JOIN Dish d ON ds.DishID = d.Id
+                            ORDER BY ds.TotalQuantity DESC";
 
             List<(string name, decimal price)> result = new List<(string, decimal)>();
 
@@ -274,9 +268,8 @@ namespace RestaurantManagementSystem
 
             foreach (var item in topDishes)
             {
-                bestSellerUC dishUC = new bestSellerUC();  // giả sử bạn có UserControl này
-                dishUC.SetData(item.name, item.price);     // bạn cần có hàm public void SetData(string name, decimal price)
-                bestSellerPanel.Controls.Add(dishUC);
+                bestSellerUC dishUC = new bestSellerUC(); 
+                dishUC.SetData(item.name, item.price);     
             }
         }
 

@@ -86,13 +86,13 @@ namespace RestaurantManagementSystem
                         break;
 
                     default:
-                        MessageBox.Show("Role không hợp lệ.");
+                        MessageBox.Show("Invalid role!");
                         break;
                 }
             }
             else
             {
-                MessageBox.Show("Sai tài khoản hoặc mật khẩu!", "Đăng nhập thất bại", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Incorrect username or password!", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
 

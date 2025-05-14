@@ -8,28 +8,144 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.IO;
 using System.Linq;
 using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls.Primitives;
+//using System.Windows.Documents;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
 
+// alias đúng
+using PdfFont = iTextSharp.text.Font;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace RestaurantManagementSystem
 {
     public partial class staffTableStatusUC : UserControl
     {
-        
-        Database db= new Database();
+
+        Database db = new Database();
         public staffTableStatusUC()
         {
             InitializeComponent();
             LoadTables();
-           
+
         }
+        private void GenerateInvoicePdf(int tableId, int idBooking, decimal totalAmount)
+        {
+
+            string cnn = db.Connectstring();
+            string customerName = "", phone = "-";
+            DataTable order = new DataTable();
+
+            using (SqlConnection conn = new SqlConnection(cnn))
+            {
+                conn.Open();
+
+                string infoSql = @"SELECT t.name, t.phone
+                           FROM Tables t
+                           JOIN BookingKey bk ON t.idTable = bk.idTable
+                           WHERE t.idTable = @tbl";
+                using (SqlCommand cmd = new SqlCommand(infoSql, conn))
+                {
+                    cmd.Parameters.AddWithValue("@tbl", tableId);
+                    using (SqlDataReader rd = cmd.ExecuteReader())
+                    {
+                        if (rd.Read())
+                        {
+                            customerName = rd.IsDBNull(0) ? "Guest" : rd.GetString(0);
+                            phone = rd.IsDBNull(1) ? "-" : rd.GetString(1);
+                        }
+                    }
+                }
+
+                string orderSql = @"SELECT d.Name, td.quantity, td.price
+                            FROM TableDetail td
+                            JOIN Dish d ON td.dishID = d.Id
+                            WHERE td.idBooking = @bk";
+                using (SqlDataAdapter ad = new SqlDataAdapter(orderSql, conn))
+                {
+                    ad.SelectCommand.Parameters.AddWithValue("@bk", idBooking);
+                    ad.Fill(order);
+                }
+            }
+
+            string folder = Path.Combine(
+                Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),
+                "Invoices");
+            Directory.CreateDirectory(folder);
+
+            string filePath = Path.Combine(
+                folder, $"Invoice_Table{tableId}_{DateTime.Now:yyyyMMdd_HHmmss}.pdf");
+
+            Document doc = new Document(PageSize.A5, 30, 30, 20, 20);
+            PdfWriter.GetInstance(doc, new FileStream(filePath, FileMode.Create));
+            doc.Open();
+
+            PdfFont titleFont = FontFactory.GetFont("Helvetica", 16, PdfFont.BOLD);
+            PdfFont normal = FontFactory.GetFont("Helvetica", 11);
+            PdfFont bold = FontFactory.GetFont("Helvetica", 11, PdfFont.BOLD);
+
+            Paragraph header = new Paragraph("RESTAURANT INVOICE\n", titleFont)
+            { Alignment = Element.ALIGN_CENTER };
+            doc.Add(header);
+            doc.Add(new Paragraph($"Date: {DateTime.Now:dd/MM/yyyy HH:mm}", normal));
+            doc.Add(new Paragraph($"Table: {tableId}", normal));
+            doc.Add(new Paragraph($"Customer: {customerName}", normal));
+            doc.Add(new Paragraph($"Phone: {phone}\n", normal));
+            doc.Add(new Paragraph("\n", normal));
+
+            PdfPTable tbl = new PdfPTable(4) { WidthPercentage = 100 };
+            tbl.SetWidths(new float[] { 40, 15, 20, 25 });
+
+            void Cell(string txt, PdfFont f, int align = Element.ALIGN_LEFT)
+            {
+                PdfPCell c = new PdfPCell(new Phrase(txt, f))
+                {
+                    HorizontalAlignment = align,
+                    Padding = 5
+                };
+                tbl.AddCell(c);
+            }
+
+            Cell("Dish", bold);
+            Cell("Qty", bold, Element.ALIGN_CENTER);
+            Cell("Unit", bold, Element.ALIGN_RIGHT);
+            Cell("Total", bold, Element.ALIGN_RIGHT);
+
+            foreach (DataRow row in order.Rows)
+            {
+                string dish = row["Name"].ToString();
+                int qty = Convert.ToInt32(row["quantity"]);
+                decimal tot = Convert.ToDecimal(row["price"]);
+                decimal unit = tot / qty;
+
+                Cell(dish, normal);
+                Cell(qty.ToString(), normal, Element.ALIGN_CENTER);
+                Cell(unit.ToString("C"), normal, Element.ALIGN_RIGHT);
+                Cell(tot.ToString("C"), normal, Element.ALIGN_RIGHT);
+            }
+
+            PdfPCell blank = new PdfPCell(new Phrase("")) { Colspan = 3, Border = 0 };
+            tbl.AddCell(blank);
+            Cell(totalAmount.ToString("C"), bold, Element.ALIGN_RIGHT);
+
+            doc.Add(tbl);
+
+            doc.Add(new Paragraph("\nThank you and see you again!", normal)
+            { Alignment = Element.ALIGN_CENTER });
+
+            doc.Close();
+
+            Process.Start(filePath);
+        }
+
         private int GetBookingIdByTable(int tableId)
         {
             string connectionString = db.Connectstring();
@@ -50,50 +166,50 @@ namespace RestaurantManagementSystem
                     }
                     else
                     {
-                        MessageBox.Show("Không tìm thấy mã đặt chỗ cho bàn này.");
+                        MessageBox.Show("No booking ID found for this table.");
                         return -1;
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi khi lấy idBooking từ idTable: " + ex.Message);
+                MessageBox.Show("Error retrieving idBooking from idTable " + ex.Message);
                 return -1;
             }
         }
 
         private void LoadTables()
         {
+            tablePanel.Controls.Clear();
             DataTable tableData = GetTablesData();
             if (tableData == null) return;
 
             foreach (DataRow row in tableData.Rows)
             {
                 int id = Convert.ToInt32(row["idTable"]);
-                string status = row["status"].ToString(); // LẤY TRẠNG THÁI
+                string status = row["status"].ToString();
                 tableUC tableItem = new tableUC();
                 tableItem.SetTableID(id);
-                tableItem.SetStatus(status == "Full"); // true = bàn có người
+                tableItem.SetStatus(status == "Full");
 
-                // Sự kiện khi chọn bàn
+
                 tableItem.OnTableSelected += (s, e) =>
                 {
                     foreach (tableUC item in tablePanel.Controls)
                     {
-                        item.SetSelected(false);  // Hủy chọn tất cả bàn
+                        item.SetSelected(false);
                     }
-                    tableItem.SetSelected(true);  // Đặt bàn hiện tại là đã chọn
-                    LoadTableDetails(id);  // Hiển thị chi tiết bàn
+                    tableItem.SetSelected(true);
+                    LoadTableDetails(id);
                 };
                 tablePanel.Controls.Add(tableItem);
             }
         }
 
-        // Hàm lấy danh sách bàn từ cơ sở dữ liệu
         private DataTable GetTablesData()
         {
             string connectionString = db.Connectstring();
-            string query = "SELECT idTable, status FROM Tables";  // THÊM 'status'
+            string query = "SELECT idTable, status FROM Tables";
 
             try
             {
@@ -115,15 +231,15 @@ namespace RestaurantManagementSystem
         {
             string connectionString = db.Connectstring();
             string query = @"
-        SELECT 
-            d.Id AS dishID,
-            d.Name,
-            SUM(td.quantity) AS quantity,
-            SUM(td.price) AS price
-        FROM TableDetail td
-        JOIN Dish d ON td.dishID = d.Id
-        WHERE td.idBooking = @idBooking
-        GROUP BY d.Id, d.Name";
+                            SELECT 
+                                d.Id AS dishID,
+                                d.Name,
+                                SUM(td.quantity) AS quantity,
+                                SUM(td.price) AS price
+                            FROM TableDetail td
+                            JOIN Dish d ON td.dishID = d.Id
+                            WHERE td.idBooking = @idBooking
+                            GROUP BY d.Id, d.Name";
 
             try
             {
@@ -144,8 +260,6 @@ namespace RestaurantManagementSystem
             }
         }
 
-
-        // Hàm hiển thị chi tiết món ăn trong FlowLayoutPanel
         private void LoadTableDetails(int tableId)
         {
             detailPanel.Controls.Clear();
@@ -158,7 +272,7 @@ namespace RestaurantManagementSystem
         }
         private decimal GetTotalAmount(int idBooking)
         {
-            DataTable orderData = GetOrderList(idBooking);  // Đã gộp theo món ăn
+            DataTable orderData = GetOrderList(idBooking);
             if (orderData == null) return 0;
 
             decimal totalAmount = 0;
@@ -173,7 +287,7 @@ namespace RestaurantManagementSystem
 
                 showTableDetailUC detailItem = new showTableDetailUC();
                 int dishID = Convert.ToInt32(row["dishID"]);
-                detailItem.SetData(name, quantity, unitPrice, dishID); // Gán đơn giá lại để hiển thị đúng
+                detailItem.SetData(name, quantity, unitPrice, dishID);
                 detailPanel.Controls.Add(detailItem);
 
                 totalAmount += totalPrice;
@@ -181,7 +295,6 @@ namespace RestaurantManagementSystem
 
             return totalAmount;
         }
-         
 
         private int GetSelectedTableId()
         {
@@ -197,7 +310,6 @@ namespace RestaurantManagementSystem
             }
             return -1;
         }
-
         private void ClearTableData(int tableId)
         {
             string connectionString = db.Connectstring();
@@ -207,11 +319,11 @@ namespace RestaurantManagementSystem
                 {
                     conn.Open();
 
-                    // Lấy idBooking từ idTable
+
                     int idBooking = GetBookingIdByTable(tableId);
                     if (idBooking == -1) return;
 
-                    // Xóa dữ liệu trong bảng TableDetail liên quan đến idBooking
+
                     string deleteDetailQuery = "DELETE FROM TableDetail WHERE idBooking = @idBooking";
                     using (SqlCommand deleteDetailCmd = new SqlCommand(deleteDetailQuery, conn))
                     {
@@ -219,7 +331,7 @@ namespace RestaurantManagementSystem
                         deleteDetailCmd.ExecuteNonQuery();
                     }
 
-                    // Xóa dữ liệu trong bảng BookingKey liên quan đến idBooking
+
                     string deleteBookingQuery = "DELETE FROM BookingKey WHERE idBooking = @idBooking";
                     using (SqlCommand deleteBookingCmd = new SqlCommand(deleteBookingQuery, conn))
                     {
@@ -227,76 +339,45 @@ namespace RestaurantManagementSystem
                         deleteBookingCmd.ExecuteNonQuery();
                     }
 
-                    // Cập nhật trạng thái bàn về "Trống"
+
                     string updateTableQuery = "UPDATE Tables SET name = NULL, phone = NULL, time = NULL, personNumber = 0, price = 0, status = 'Empty' WHERE idTable = @idTable";
                     using (SqlCommand updateTableCmd = new SqlCommand(updateTableQuery, conn))
                     {
                         updateTableCmd.Parameters.AddWithValue("@idTable", tableId);
                         updateTableCmd.ExecuteNonQuery();
                     }
-
-                    MessageBox.Show("Thanh toán thành công! Bàn đã được dọn dẹp và sẵn sàng phục vụ khách mới.");
+                    MessageBox.Show("Payment successful! The table has been cleaned and is ready to serve the next customer");
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi khi thanh toán: " + ex.Message);
+                MessageBox.Show("Error during payment:" + ex.Message);
             }
-        }
-
-
-
-
-
-        private void TableControl_OnTableClicked(object sender, int tableID)
-        {
-            
-        }
-
-        private void staffTableStatusUC_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tableUC1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void orderListView_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
         }
 
         private void payButton_Click(object sender, EventArgs e)
         {
-            // Lấy ID bàn đang chọn
             int selectedTableId = GetSelectedTableId();
             if (selectedTableId == -1)
             {
-                MessageBox.Show("Vui lòng chọn bàn để thanh toán.");
+                MessageBox.Show("Please select a table to proceed with payment.");
                 return;
             }
 
-            // Xác nhận thanh toán
-            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn thanh toán bàn này?", "Xác nhận thanh toán", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult result = MessageBox.Show("Are you sure you want to pay for this table?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
                 int idBooking = GetBookingIdByTable(selectedTableId);
                 decimal totalAmount = GetTotalAmount(idBooking);
                 DateTime? dt = GetBookingTimeByTable(selectedTableId);
-                
-                AddPaymentToThanhToan(idBooking,selectedTableId, totalAmount, dt);
+
+                AddPaymentToThanhToan(idBooking, selectedTableId, totalAmount, dt);
+                GenerateInvoicePdf(selectedTableId, idBooking, totalAmount);
                 AddToUsedIngredient(selectedTableId);
                 ClearTableData(selectedTableId);
-                LoadTables();  // Tải lại danh sách bàn
-                detailPanel.Controls.Clear();  // Xóa hiển thị chi tiết
-                totalLabel.Text = "0 VND";  // Đặt lại tổng tiền
+                LoadTables();
+                detailPanel.Controls.Clear();
+                totalLabel.Text = "0 VND";
             }
         }
 
@@ -310,14 +391,13 @@ namespace RestaurantManagementSystem
                 {
                     conn.Open();
 
-                    // ✅ Tính chi phí nguyên liệu từ bảng UsedIngredient
                     string costQuery = "SELECT SUM(Quantity * Price) FROM UsedIngredient WHERE idTable = @idTable";
                     SqlCommand costCmd = new SqlCommand(costQuery, conn);
                     costCmd.Parameters.AddWithValue("@idTable", idTable);
                     object result = costCmd.ExecuteScalar();
                     decimal ingredientCost = (result != DBNull.Value && result != null) ? Convert.ToDecimal(result) : 0;
 
-                    // ✅ Lưu vào PaymentHistory bao gồm ingredientCost
+
                     string query = @"INSERT INTO PaymentHistory 
                              (idBooking, idTable, totalAmount, bookingTime, ingredientCost)
                              VALUES (@idBooking, @idTable, @totalAmount, @bookingTime, @ingredientCost)";
@@ -334,11 +414,9 @@ namespace RestaurantManagementSystem
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi khi lưu thanh toán: " + ex.Message);
+                MessageBox.Show("Error " + ex.Message);
             }
         }
-
-
 
         private DateTime? GetBookingTimeByTable(int idTable)
         {
@@ -356,19 +434,19 @@ namespace RestaurantManagementSystem
 
                     if (result != null)
                     {
-                        return Convert.ToDateTime(result);  // Trả về thời gian đặt (DateTime)
+                        return Convert.ToDateTime(result);
                     }
                     else
                     {
-                        MessageBox.Show("Không tìm thấy thời gian đặt cho mã bàn này.");
-                        return null;  // Nếu không có kết quả, trả về null
+                        MessageBox.Show("No booking time found for this table ID.");
+                        return null;
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi khi truy vấn thời gian đặt: " + ex.Message);
-                return null;  // Nếu có lỗi, trả về null
+                MessageBox.Show("Error querying booking time: " + ex.Message);
+                return null;
             }
         }
 
@@ -376,25 +454,25 @@ namespace RestaurantManagementSystem
         {
             string connectionString = db.Connectstring();
             string selectQuery = @"
-        SELECT 
-            d.Name AS DishName,
-            i.Name AS IngredientName,
-            (dia.QuantityRequired * td.quantity) AS TotalQuantityRequired,
-            i.Price AS IngredientPrice,
-            td.quantity AS TableQuantity -- Số lượng món ăn từ TableDetail
-         FROM 
-            Tables t
-            JOIN BookingKey bk ON t.idTable = bk.idTable
-            JOIN TableDetail td ON bk.idBooking = td.idBooking
-            JOIN Dish d ON td.dishID = d.Id
-            JOIN DishIngredientAssignment dia ON d.Id = dia.DishID
-            JOIN Ingredient i ON dia.IngredientID = i.Id
-        WHERE 
-            t.idTable = @idTable";
+                                SELECT 
+                                    d.Name AS DishName,
+                                    i.Name AS IngredientName,
+                                    (dia.QuantityRequired * td.quantity) AS TotalQuantityRequired,
+                                    i.Price AS IngredientPrice,
+                                    td.quantity AS TableQuantity -- Số lượng món ăn từ TableDetail
+                                 FROM 
+                                    Tables t
+                                    JOIN BookingKey bk ON t.idTable = bk.idTable
+                                    JOIN TableDetail td ON bk.idBooking = td.idBooking
+                                    JOIN Dish d ON td.dishID = d.Id
+                                    JOIN DishIngredientAssignment dia ON d.Id = dia.DishID
+                                    JOIN Ingredient i ON dia.IngredientID = i.Id
+                                WHERE 
+                                    t.idTable = @idTable";
 
-                string insertQuery = @"
-        INSERT INTO UsedIngredient (idTable, DishName, Name, Quantity, Price, Amount)
-        VALUES (@idTable, @DishName, @Name, @Quantity, @Price, @Amount)";  // Thêm Amount vào câu lệnh
+            string insertQuery = @"
+                                INSERT INTO UsedIngredient (idTable, DishName, Name, Quantity, Price, Amount)
+                                VALUES (@idTable, @DishName, @Name, @Quantity, @Price, @Amount)";
 
             try
             {
@@ -402,25 +480,21 @@ namespace RestaurantManagementSystem
                 {
                     conn.Open();
 
-                    // Fetch ingredients used for the table
                     SqlCommand selectCmd = new SqlCommand(selectQuery, conn);
                     selectCmd.Parameters.AddWithValue("@idTable", idTable);
                     SqlDataAdapter adapter = new SqlDataAdapter(selectCmd);
                     DataTable dt = new DataTable();
                     adapter.Fill(dt);
 
-                    // Insert each ingredient into UsedIngredient table
                     foreach (DataRow row in dt.Rows)
                     {
                         string dishName = row["DishName"].ToString();
                         string ingredientName = row["IngredientName"].ToString();
                         decimal quantity = Convert.ToDecimal(row["TotalQuantityRequired"]);
                         decimal price = Convert.ToDecimal(row["IngredientPrice"]);
-                        int tableQuantity = Convert.ToInt32(row["TableQuantity"]);  // Lấy số lượng món ăn từ TableDetail
+                        int tableQuantity = Convert.ToInt32(row["TableQuantity"]);
 
-                        // Chỉ sử dụng td.quantity (tableQuantity) cho Amount
-                        int amount = tableQuantity;  // Amount chỉ bằng số lượng món ăn (kiểu int)
-
+                        int amount = tableQuantity;
                         using (SqlCommand insertCmd = new SqlCommand(insertQuery, conn))
                         {
                             insertCmd.Parameters.AddWithValue("@idTable", idTable);
@@ -428,7 +502,7 @@ namespace RestaurantManagementSystem
                             insertCmd.Parameters.AddWithValue("@Name", ingredientName);
                             insertCmd.Parameters.AddWithValue("@Quantity", quantity);
                             insertCmd.Parameters.AddWithValue("@Price", price);
-                            insertCmd.Parameters.AddWithValue("@Amount", amount);  
+                            insertCmd.Parameters.AddWithValue("@Amount", amount);
                             insertCmd.ExecuteNonQuery();
                         }
                     }
@@ -439,8 +513,5 @@ namespace RestaurantManagementSystem
                 MessageBox.Show("Error adding ingredients to UsedIngredient: " + ex.Message);
             }
         }
-
-
     }
-
 }

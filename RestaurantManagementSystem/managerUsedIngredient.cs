@@ -27,9 +27,9 @@ namespace RestaurantManagementSystem
         {
             string connectionString = db.Connectstring();
             string query = @"
-        SELECT Name AS IngredientName, SUM(Quantity) AS TotalQuantity, MAX(UsedTime) AS UsedTime
-        FROM UsedIngredient
-        GROUP BY Name";
+                            SELECT Name AS IngredientName, SUM(Quantity) AS TotalQuantity, MAX(UsedTime) AS UsedTime
+                            FROM UsedIngredient
+                            GROUP BY Name";
 
             try
             {
@@ -39,7 +39,7 @@ namespace RestaurantManagementSystem
                     SqlCommand cmd = new SqlCommand(query, conn);
                     SqlDataReader reader = cmd.ExecuteReader();
 
-                    showPanel.Controls.Clear(); // Xoá các item cũ
+                    showPanel.Controls.Clear();
 
                     while (reader.Read())
                     {
@@ -47,9 +47,8 @@ namespace RestaurantManagementSystem
                         decimal totalQuantity = Convert.ToDecimal(reader["TotalQuantity"]);
                         DateTime usedTime = Convert.ToDateTime(reader["UsedTime"]);
 
-                        // Tạo UserControl hiển thị nguyên liệu
                         usedIngredientUC uc = new usedIngredientUC();
-                        uc.SetData(name, totalQuantity, usedTime);  // Giả sử SetData là public void SetData(string, decimal, DateTime)
+                        uc.SetData(name, totalQuantity, usedTime);  
                         showPanel.Controls.Add(uc);
                     }
 
@@ -58,19 +57,9 @@ namespace RestaurantManagementSystem
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi khi load nguyên liệu sử dụng: " + ex.Message);
+                MessageBox.Show("Error loading used ingredients: " + ex.Message);
             }
         }
 
-
-        private void managerUsedIngredient_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

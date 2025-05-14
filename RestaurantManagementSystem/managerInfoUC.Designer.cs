@@ -109,7 +109,7 @@
             this.genderLabel.TabIndex = 16;
             this.genderLabel.Text = "label";
             this.genderLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.genderLabel.Click += new System.EventHandler(this.genderLabel_Click);
+
             // 
             // roleLabel
             // 
@@ -121,7 +121,6 @@
             this.roleLabel.TabIndex = 15;
             this.roleLabel.Text = "label";
             this.roleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.roleLabel.Click += new System.EventHandler(this.roleLabel_Click);
             // 
             // pictureBox
             // 
@@ -134,7 +133,6 @@
             this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox.TabIndex = 3;
             this.pictureBox.TabStop = false;
-            this.pictureBox.Click += new System.EventHandler(this.pictureBox_Click);
             // 
             // nameLabel
             // 
@@ -146,7 +144,6 @@
             this.nameLabel.TabIndex = 2;
             this.nameLabel.Text = "label4";
             this.nameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.nameLabel.Click += new System.EventHandler(this.nameLabel_Click);
             // 
             // guna2CustomGradientPanel2
             // 
@@ -212,7 +209,6 @@
             this.statusLabel.Size = new System.Drawing.Size(95, 26);
             this.statusLabel.TabIndex = 12;
             this.statusLabel.Text = "label11";
-            this.statusLabel.Click += new System.EventHandler(this.statusLabel_Click);
             // 
             // label10
             // 
@@ -295,7 +291,6 @@
             this.label5.Size = new System.Drawing.Size(65, 18);
             this.label5.TabIndex = 7;
             this.label5.Text = "Address";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -319,7 +314,6 @@
             this.label3.Size = new System.Drawing.Size(226, 23);
             this.label3.TabIndex = 5;
             this.label3.Text = "General infomation";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // guna2CustomGradientPanel3
             // 

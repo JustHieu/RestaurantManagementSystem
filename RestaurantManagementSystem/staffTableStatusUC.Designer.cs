@@ -188,7 +188,7 @@
             this.Controls.Add(this.tablePanel);
             this.Name = "staffTableStatusUC";
             this.Size = new System.Drawing.Size(1675, 932);
-            this.Load += new System.EventHandler(this.staffTableStatusUC_Load);
+
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             this.guna2CustomGradientPanel1.PerformLayout();

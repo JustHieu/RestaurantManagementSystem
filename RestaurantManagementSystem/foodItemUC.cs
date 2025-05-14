@@ -62,38 +62,6 @@ namespace RestaurantManagementSystem
                 //dishImage.Image = Properties.Resources.defaultImage;
             }
         }
-       
-
-
-        private void lblPrice_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pictureBox_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblDescription_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void nameLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void foodItemUC_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void addBtn_Click_1(object sender, EventArgs e)
         {

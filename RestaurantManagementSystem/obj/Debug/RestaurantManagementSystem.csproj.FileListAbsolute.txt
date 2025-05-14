@@ -1128,3 +1128,7 @@ Q:\CODE\LapTrinhWinform\B\RestaurantManagementSystem\RestaurantManagementSystem\
 Q:\CODE\LapTrinhWinform\B\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\Restaura.BF770190.Up2Date
 Q:\CODE\LapTrinhWinform\B\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.exe
 Q:\CODE\LapTrinhWinform\B\RestaurantManagementSystem\RestaurantManagementSystem\obj\Debug\RestaurantManagementSystem.pdb
+Q:\CODE\LapTrinhWinform\B\RestaurantManagementSystem\RestaurantManagementSystem\bin\Debug\BouncyCastle.Cryptography.dll
+Q:\CODE\LapTrinhWinform\B\RestaurantManagementSystem\RestaurantManagementSystem\bin\Debug\itextsharp.dll
+Q:\CODE\LapTrinhWinform\B\RestaurantManagementSystem\RestaurantManagementSystem\bin\Debug\BouncyCastle.Cryptography.xml
+Q:\CODE\LapTrinhWinform\B\RestaurantManagementSystem\RestaurantManagementSystem\bin\Debug\itextsharp.xml

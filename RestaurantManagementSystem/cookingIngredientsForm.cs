@@ -51,7 +51,6 @@ namespace RestaurantManagementSystem
                 string ingredientId = selectedItem.SubItems[0].Text;
                 string ingredientName = selectedItem.SubItems[1].Text;
                 string quantity = selectedItem.SubItems[2].Text;
-                // Có thể thêm logic nếu cần hiển thị hoặc xử lý thông tin
             }
         }
 
@@ -59,7 +58,7 @@ namespace RestaurantManagementSystem
         {
             if (listView1.SelectedItems.Count == 0)
             {
-                MessageBox.Show("Vui lòng chọn một nguyên liệu.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please select an ingredient.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -67,11 +66,11 @@ namespace RestaurantManagementSystem
             string ingredientName = listView1.SelectedItems[0].SubItems[1].Text;
 
             string quantityStr = Microsoft.VisualBasic.Interaction.InputBox(
-                $"Nhập số lượng cần dùng cho '{ingredientName}':", "Số lượng", "1");
+                $"Enter the quantity needed for '{ingredientName}':", "Số lượng", "1");
 
             if (string.IsNullOrWhiteSpace(quantityStr) || !int.TryParse(quantityStr, out int quantity) || quantity <= 0)
             {
-                MessageBox.Show("Số lượng không hợp lệ. Vui lòng nhập số dương.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Invalid quantity. Please enter a positive number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -157,7 +156,7 @@ namespace RestaurantManagementSystem
         {
             if (ingListView.Items.Count == 0)
             {
-                MessageBox.Show("Bạn chưa thêm nguyên liệu nào!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("You haven't added any ingredients!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -167,7 +166,6 @@ namespace RestaurantManagementSystem
                 SqlTransaction transaction = conn.BeginTransaction();
                 try
                 {
-                    // Xóa nguyên liệu cũ
                     using (SqlCommand deleteCmd = new SqlCommand(
                         "DELETE FROM DishIngredientAssignment WHERE DishID = @DishID", conn, transaction))
                     {
@@ -175,16 +173,15 @@ namespace RestaurantManagementSystem
                         deleteCmd.ExecuteNonQuery();
                     }
 
-                    // Thêm nguyên liệu mới
                     foreach (ListViewItem item in ingListView.Items)
                     {
                         if (!int.TryParse(item.SubItems[0].Text, out int ingredientId))
                         {
-                            throw new Exception($"ID nguyên liệu không hợp lệ: {item.SubItems[0].Text}");
+                            throw new Exception($"Invalid ingredient ID: {item.SubItems[0].Text}");
                         }
                         if (!decimal.TryParse(item.SubItems[2].Text, out decimal quantityRequired) || quantityRequired <= 0)
                         {
-                            throw new Exception($"Số lượng không hợp lệ cho nguyên liệu: {item.SubItems[1].Text}");
+                            throw new Exception($"Invalid quantity for ingredient: {item.SubItems[1].Text}");
                         }
 
                         using (SqlCommand insertCmd = new SqlCommand(@"
@@ -199,13 +196,13 @@ namespace RestaurantManagementSystem
                     }
 
                     transaction.Commit();
-                    MessageBox.Show("Cập nhật thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Update successful!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Close();
                 }
                 catch (Exception ex)
                 {
                     transaction.Rollback();
-                    MessageBox.Show("Lỗi lưu dữ liệu: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Error saving data: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
@@ -241,17 +238,17 @@ namespace RestaurantManagementSystem
         {
             if (ingListView.SelectedItems.Count == 0)
             {
-                MessageBox.Show("Vui lòng chọn nguyên liệu cần xóa.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please select the ingredient you want to delete.", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            var result = MessageBox.Show("Bạn có chắc chắn muốn xóa nguyên liệu này?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            var result = MessageBox.Show("Are you sure you want to delete this ingredient?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (result != DialogResult.Yes) return;
 
             ListViewItem selectedItem = ingListView.SelectedItems[0];
             if (!int.TryParse(selectedItem.SubItems[0].Text, out int ingredientId))
             {
-                MessageBox.Show("ID nguyên liệu không hợp lệ.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Invalid ingredient ID.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -268,9 +265,7 @@ namespace RestaurantManagementSystem
             }
 
             ingListView.Items.Remove(selectedItem);
-            MessageBox.Show("Đã xóa nguyên liệu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Ingredient deleted successfully!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
-
-
     }
 }

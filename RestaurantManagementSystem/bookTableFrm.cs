@@ -22,8 +22,8 @@ namespace RestaurantManagementSystem
             InitializeComponent();
             this.tableId = idTable;
             this.idBooking = bookingId;
-            LoadOrderDetails();  // Load đúng thông tin của bàn
-            LoadMenu();          // Load menu món ăn
+            LoadOrderDetails(); 
+            LoadMenu();  
         }
 
         private SqlDataReader GetMenuData()
@@ -46,7 +46,6 @@ namespace RestaurantManagementSystem
             }
         }
 
-        // Hàm load menu từ cơ sở dữ liệu
         private void LoadMenu()
         {
             menuPanel.Controls.Clear();
@@ -71,6 +70,7 @@ namespace RestaurantManagementSystem
 
         private void LoadOrderDetails()
         {
+            existingDishIDs.Clear();
             Database db = new Database();
             string connectionString = db.Connectstring();
             string query  = @"
@@ -80,8 +80,7 @@ namespace RestaurantManagementSystem
                             WHERE td.idTable = @TableID AND td.idBooking = @idBooking
                             GROUP BY d.Id, d.Name
                             ";
-                                    
-
+                                  
             try
             {
                 using (SqlConnection conn = new SqlConnection(connectionString))
@@ -89,11 +88,11 @@ namespace RestaurantManagementSystem
                     conn.Open();
                     SqlCommand cmd = new SqlCommand(query, conn);
                     cmd.Parameters.AddWithValue("@TableID", tableId);
-                    cmd.Parameters.AddWithValue("@idBooking", idBooking);  // Thêm idBooking vào câu lệnh SQL
+                    cmd.Parameters.AddWithValue("@idBooking", idBooking); 
 
                     SqlDataReader reader = cmd.ExecuteReader();
-                    orderPanel.Controls.Clear();
-                    
+                    //orderPanel.Controls.Clear();
+                    showPanel.Controls.Clear();
                     while (reader.Read())
                     {
                         int dishID = reader.GetInt32(0);
@@ -128,7 +127,6 @@ namespace RestaurantManagementSystem
                 }
             }
 
-
             foodOrderUC newItem = new foodOrderUC();
             newItem.SetData(item.DishID, item.FoodName, item.FoodPrice, 1);
             newItem.OnDeleteFood += (s, e) => RemoveFromOrder(newItem);
@@ -139,7 +137,6 @@ namespace RestaurantManagementSystem
             orderPanel.Controls.Remove(item);
             MessageBox.Show("Removed: " + item.FoodName);
         }
-        // Hàm lưu món ăn vào cơ sở dữ liệu
         private void SaveOrderToDatabase(foodOrderUC item)
         {
             Database db = new Database();
@@ -150,8 +147,6 @@ namespace RestaurantManagementSystem
                 using (SqlConnection conn = new SqlConnection(connectionString))
                 {
                     conn.Open();
-
-                    // 1. Kiểm tra xem món đã tồn tại chưa
                     string checkQuery = @"SELECT quantity FROM TableDetail 
                                   WHERE idBooking = @idBooking AND idTable = @idTable AND dishID = @dishID";
                     SqlCommand checkCmd = new SqlCommand(checkQuery, conn);
@@ -161,7 +156,7 @@ namespace RestaurantManagementSystem
 
                     object result = checkCmd.ExecuteScalar();
 
-                    if (result != null) // Đã tồn tại → cộng dồn
+                    if (result != null) 
                     {
                         int oldQuantity = Convert.ToInt32(result);
                         int newQuantity = oldQuantity + item.Quantity;
@@ -178,7 +173,7 @@ namespace RestaurantManagementSystem
                         updateCmd.Parameters.AddWithValue("@dishID", item.DishID);
                         updateCmd.ExecuteNonQuery();
                     }
-                    else // Chưa có → thêm mới
+                    else
                     {
                         string insertQuery = @"INSERT INTO TableDetail 
                     (idBooking, idTable, dishID, quantity, price) 
@@ -199,21 +194,9 @@ namespace RestaurantManagementSystem
             }
         }
 
-
-        // Nút tải lại menu
         private void btnLoadMenu_Click(object sender, EventArgs e)
         {
             LoadMenu();
-        }
-
-        private void menuPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void bookTableFrm_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void completeButton_Click(object sender, EventArgs e)
@@ -227,7 +210,7 @@ namespace RestaurantManagementSystem
                 }
             }
             orderPanel.Controls.Clear();
-            LoadOrderDetails(); // Cập nhật lại showPanel sau khi thêm món
+            LoadOrderDetails(); 
 
         }
 
@@ -246,14 +229,12 @@ namespace RestaurantManagementSystem
                 using (SqlConnection conn = new SqlConnection(connectionString))
                 {
                     conn.Open();
-
-                    // Kiểm tra nếu món ăn đã tồn tại trong bảng DishSold
                     string checkQuery = "SELECT TotalQuantity FROM DishSold WHERE DishID = @dishID";
                     SqlCommand checkCmd = new SqlCommand(checkQuery, conn);
                     checkCmd.Parameters.AddWithValue("@dishID", dishID);
                     object result = checkCmd.ExecuteScalar();
 
-                    if (result != null)  // Đã tồn tại -> cập nhật số lượng
+                    if (result != null)  
                     {
                         int currentQuantity = Convert.ToInt32(result);
                         string updateQuery = "UPDATE DishSold SET TotalQuantity = @newQuantity WHERE DishID = @dishID";
@@ -262,7 +243,7 @@ namespace RestaurantManagementSystem
                         updateCmd.Parameters.AddWithValue("@dishID", dishID);
                         updateCmd.ExecuteNonQuery();
                     }
-                    else  // Chưa có -> thêm mới
+                    else  
                     {
                         string insertQuery = "INSERT INTO DishSold (DishID, TotalQuantity) VALUES (@dishID, @quantity)";
                         SqlCommand insertCmd = new SqlCommand(insertQuery, conn);
@@ -278,14 +259,5 @@ namespace RestaurantManagementSystem
             }
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

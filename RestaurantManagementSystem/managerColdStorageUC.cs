@@ -33,7 +33,6 @@ namespace RestaurantManagementSystem
             string connectionString = db.Connectstring();
             try
             {
-                // Lấy ID từ item được chọn
                 int selectedId = int.Parse(item.SubItems[0].Text);
 
                 using (SqlConnection conn = new SqlConnection(connectionString))
@@ -46,13 +45,10 @@ namespace RestaurantManagementSystem
 
                     if (reader.Read())
                     {
-                        // Gán dữ liệu lên các TextBox
                         idTextBox.Text = reader["ID"].ToString();
                         nameTextBox.Text = reader["Name"].ToString();
                         quantityTextBox.Text = reader["Quantity"].ToString();
                         priceTextBox.Text = reader["Price"].ToString();
-                        /*importDateTimePicker.Value = Convert.ToDateTime(reader["ImportDate"]);
-                        expiryDateTimePicker.Value = Convert.ToDateTime(reader["ExpiryDate"]);*/
                         placeImportTextBox.Text = reader["Original"].ToString();
                         contactTextBox.Text = reader["PhoneNumber"].ToString();
                     }
@@ -61,10 +57,9 @@ namespace RestaurantManagementSystem
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi hiển thị thông tin: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error displaying information: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
 
         private void SetupListView()
         {
@@ -72,7 +67,6 @@ namespace RestaurantManagementSystem
             ingredientListView.FullRowSelect = true;
             ingredientListView.GridLines = true;
 
-            // Thêm các cột vào ListView
             ingredientListView.Columns.Add("ID", 100, HorizontalAlignment.Center);
             ingredientListView.Columns.Add("Name", 200, HorizontalAlignment.Center);
             ingredientListView.Columns.Add("Quantity (g)", 150, HorizontalAlignment.Center);
@@ -81,7 +75,6 @@ namespace RestaurantManagementSystem
             ingredientListView.Columns.Add("Phone Number", 150, HorizontalAlignment.Center);
         }
 
-        // Hàm tải nguyên liệu lên ListView
         private void LoadIngredients()
         {
             Database db = new Database();
@@ -95,11 +88,10 @@ namespace RestaurantManagementSystem
                     SqlCommand cmd = new SqlCommand(query, conn);
                     SqlDataReader reader = cmd.ExecuteReader();
 
-                    ingredientListView.Items.Clear(); // Xóa dữ liệu cũ trước khi tải mới
+                    ingredientListView.Items.Clear(); 
 
                     while (reader.Read())
                     {
-                        // Lấy dữ liệu từ cơ sở dữ liệu
                         string id = reader["Id"].ToString();
                         string name = reader["Name"].ToString();
                         string quantity = reader["Quantity"].ToString();
@@ -107,7 +99,6 @@ namespace RestaurantManagementSystem
                         string original = reader["Original"].ToString();
                         string phoneNumber = reader["PhoneNumber"].ToString();
 
-                        // Tạo một dòng mới trong ListView
                         ListViewItem item = new ListViewItem(id);
                         item.SubItems.Add(name);
                         item.SubItems.Add(quantity);
@@ -115,7 +106,6 @@ namespace RestaurantManagementSystem
                         item.SubItems.Add(original);
                         item.SubItems.Add(phoneNumber);
 
-                        // Thêm dòng vào ListView
                         ingredientListView.Items.Add(item);
                     }
                     reader.Close();
@@ -123,18 +113,8 @@ namespace RestaurantManagementSystem
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi tải nguyên liệu: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error loading ingredients: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void addButton_Click(object sender, EventArgs e)
@@ -155,21 +135,17 @@ namespace RestaurantManagementSystem
                     cmd.Parameters.AddWithValue("@PhoneNumber", contactTextBox.Text);
 
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Thêm nguyên liệu thành công!", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Ingredient added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     ClearFields();
                     LoadIngredients();
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi thêm nguyên liệu: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error adding ingredient: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-        private void searchTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
         private void ClearFields()
         {
             nameTextBox.Text = "";
@@ -183,7 +159,7 @@ namespace RestaurantManagementSystem
         {
             if (ingredientListView.SelectedItems.Count == 0)
             {
-                MessageBox.Show("Vui lòng chọn nguyên liệu cần xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please select the ingredient to delete!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             Database db = new Database();
@@ -199,13 +175,13 @@ namespace RestaurantManagementSystem
                     cmd.Parameters.AddWithValue("@Id", selectedId);
 
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Xóa nguyên liệu thành công!", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Ingredient deleted successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     LoadIngredients();
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi xóa nguyên liệu: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Error deleting ingredient: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

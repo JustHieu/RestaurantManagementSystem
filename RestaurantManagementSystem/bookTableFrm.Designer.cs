@@ -59,7 +59,6 @@
             this.menuPanel.Name = "menuPanel";
             this.menuPanel.Size = new System.Drawing.Size(1403, 791);
             this.menuPanel.TabIndex = 0;
-            this.menuPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.menuPanel_Paint);
             // 
             // searchTextBox
             // 
@@ -95,7 +94,6 @@
             this.label1.Size = new System.Drawing.Size(209, 45);
             this.label1.TabIndex = 66;
             this.label1.Text = "NEW ORDER";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // completeButton
             // 
@@ -181,7 +179,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Philosopher", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(37, 14);
+            this.label2.Location = new System.Drawing.Point(51, 14);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(227, 45);
             this.label2.TabIndex = 78;
@@ -199,7 +197,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 76;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // seachButton
             // 
@@ -278,7 +275,6 @@
             this.Name = "bookTableFrm";
             this.Text = "bookTableFrm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.bookTableFrm_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

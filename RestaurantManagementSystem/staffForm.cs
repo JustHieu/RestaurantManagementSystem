@@ -22,11 +22,6 @@ namespace RestaurantManagementSystem
             _username = username;
         }
 
-        private void guna2Panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void logOutButton_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -144,7 +139,6 @@ namespace RestaurantManagementSystem
             }
             catch (Exception ex)
             {
-                // Xử lý lỗi nếu có
                 MessageBox.Show("Error: " + ex.Message);
             }
 

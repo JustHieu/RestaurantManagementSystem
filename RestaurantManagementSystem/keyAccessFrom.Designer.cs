@@ -66,7 +66,7 @@
             this.keyTxt.SelectedText = "";
             this.keyTxt.Size = new System.Drawing.Size(332, 44);
             this.keyTxt.TabIndex = 7;
-            this.keyTxt.TextChanged += new System.EventHandler(this.keyTxt_TextChanged);
+
             // 
             // guna2CustomGradientPanel1
             // 
@@ -188,7 +188,7 @@
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(120, 27);
             this.guna2HtmlLabel1.TabIndex = 25;
             this.guna2HtmlLabel1.Text = "Your Key:";
-            this.guna2HtmlLabel1.Click += new System.EventHandler(this.guna2HtmlLabel1_Click);
+
             // 
             // keyAccessFrom
             // 

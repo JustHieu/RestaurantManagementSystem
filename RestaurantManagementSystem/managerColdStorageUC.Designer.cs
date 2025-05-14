@@ -58,7 +58,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(614, 654);
             this.panel1.TabIndex = 1;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // contactTextBox
             // 
@@ -214,7 +213,6 @@
             this.searchTextBox.SelectedText = "";
             this.searchTextBox.Size = new System.Drawing.Size(389, 53);
             this.searchTextBox.TabIndex = 59;
-            this.searchTextBox.TextChanged += new System.EventHandler(this.searchTextBox_TextChanged);
             // 
             // seachButton
             // 

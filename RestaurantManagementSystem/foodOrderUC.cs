@@ -34,7 +34,6 @@ namespace RestaurantManagementSystem
             quantityLabel.Text = quantity.ToString();
         }
 
-        // Cập nhật số lượng món ăn
         public void UpdateQuantity(int additionalQuantity)
         {
             Quantity += additionalQuantity;

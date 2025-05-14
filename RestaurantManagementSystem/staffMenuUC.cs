@@ -24,8 +24,6 @@ namespace RestaurantManagementSystem
             LoadOccupiedTablesToComboBox();
         }
 
-        
-
         private void startersButton_Click(object sender, EventArgs e)
         {
             ResetButtonColors();
@@ -65,7 +63,7 @@ namespace RestaurantManagementSystem
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
-                    tableCB.Items.Add(reader.GetInt32(0));  // Thêm ID bàn
+                    tableCB.Items.Add(reader.GetInt32(0));  
                 }
                 reader.Close();
             }
@@ -84,22 +82,20 @@ namespace RestaurantManagementSystem
                     conn.Open();
                     string query = "SELECT * FROM Dish";
 
-                    // Kiểm tra searchType để quyết định lọc theo 'Type' hoặc 'Name'
                     if (!string.IsNullOrEmpty(keyword))
                     {
                         if (searchType == "Type")
                         {
-                            query += " WHERE Type LIKE @Keyword";  // Lọc theo loại món ăn
+                            query += " WHERE Type LIKE @Keyword"; 
                         }
                         else if (searchType == "Name")
                         {
-                            query += " WHERE Name LIKE @Keyword";  // Lọc theo tên món ăn
+                            query += " WHERE Name LIKE @Keyword"; 
                         }
                     }
 
                     SqlCommand cmd = new SqlCommand(query, conn);
 
-                    // Thêm tham số tìm kiếm nếu có
                     if (!string.IsNullOrEmpty(keyword))
                     {
                         cmd.Parameters.AddWithValue("@Keyword", "%" + keyword + "%");
@@ -115,16 +111,14 @@ namespace RestaurantManagementSystem
                         string description = reader["Descrip"].ToString();
                         decimal price = Convert.ToDecimal(reader["Price"]);
                         string picturePath = reader["Picture"].ToString();
-                        string dishType = reader["Type"].ToString();  // Lấy loại món ăn
+                        string dishType = reader["Type"].ToString();  
 
-                        // Tạo một UserControl cho mỗi món ăn
                         foodItemUC itemUC = new foodItemUC();
                         //showTableDetailUC itemAdd = new showTableDetailUC();
                         //itemAdd.SetData(name,1,price);
                         itemUC.SetData(id, name, description, price, picturePath);
                         itemUC.OnAddFood += (s, e) => AddToOrder(itemUC);
 
-                        // Hiển thị món ăn lên giao diện
                         foodFlowLayoutPanel.Controls.Add(itemUC);
                     }
                     reader.Close();
@@ -139,16 +133,14 @@ namespace RestaurantManagementSystem
         private void FoodItem_OnAddClicked(object sender, EventArgs e)
         {
 
-           
-            
         }
 
         private void deleteAllButton_Click(object sender, EventArgs e)
         {
             orderFlowLayoutPanel.Controls.Clear();
             orderFlowLayoutPanel.Controls.Clear();
-            currentTotalAmount = 0;  // ✅ Reset tổng tiền
-            totalLabel.Text = "0 $"; // ✅ Reset hiển thị
+            currentTotalAmount = 0; 
+            totalLabel.Text = "0 $"; 
         }
         private int GetLatestBookingID(int tableId)
         {
@@ -223,7 +215,6 @@ namespace RestaurantManagementSystem
 
             int selectedTableID = Convert.ToInt32(tableCB.SelectedItem);
 
-            // Lấy idBooking mới nhất của bàn
             int bookingID = GetLatestBookingID(selectedTableID);
             if (bookingID == -1)
             {
@@ -239,7 +230,7 @@ namespace RestaurantManagementSystem
            
 
             orderFlowLayoutPanel.Controls.Clear();
-            MessageBox.Show("✅ Order updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Order updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             currentTotalAmount = 0;
             totalLabel.Text = "0 $";
         }
@@ -259,21 +250,18 @@ namespace RestaurantManagementSystem
         {
             string selectedOption = arrangeComboBox.SelectedItem.ToString();
 
-            List<FoodItem> foodItems = GetFoodItems(); // Giả sử bạn có một hàm để lấy danh sách các món ăn
+            List<FoodItem> foodItems = GetFoodItems();
 
             if (selectedOption == "A -> Z")
             {
-                // Sắp xếp theo tên từ A đến Z
                 foodItems = foodItems.OrderBy(f => f.Name).ToList();
             }
             else if (selectedOption == "Z -> A")
-            {
-                // Sắp xếp theo tên từ Z đến A 
+            { 
                 foodItems = foodItems.OrderByDescending(f => f.Name).ToList();
             }
 
-            // Cập nhật lại giao diện sau khi sắp xếp
-            DisplayFoodItems(foodItems); // Giả sử bạn có một hàm để hiển thị các món ăn lên giao diện
+            DisplayFoodItems(foodItems); 
         }
         private List<FoodItem> GetFoodItems()
         {
@@ -327,7 +315,7 @@ namespace RestaurantManagementSystem
                 if (control is showTableDetailUC orderItem && orderItem.FoodName == item.FoodName)
                 {
                     orderItem.UpdateQuantity(1);
-                    currentTotalAmount += item.FoodPrice; // ✅ Cộng giá
+                    currentTotalAmount += item.FoodPrice; 
                     itemExists = true;
                     break;
                 }
@@ -338,7 +326,7 @@ namespace RestaurantManagementSystem
                 showTableDetailUC newItem = new showTableDetailUC();
                 newItem.SetData(item.FoodName, 1, item.FoodPrice, item.DishID);
                 orderFlowLayoutPanel.Controls.Add(newItem);
-                currentTotalAmount += item.FoodPrice; // ✅ Cộng giá
+                currentTotalAmount += item.FoodPrice; 
             }
 
             totalLabel.Text = currentTotalAmount.ToString("C0");

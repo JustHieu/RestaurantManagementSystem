@@ -49,7 +49,6 @@
             this.nameLabel.Size = new System.Drawing.Size(265, 27);
             this.nameLabel.TabIndex = 7;
             this.nameLabel.Text = "Bún đậu mắm tôm";
-            this.nameLabel.Click += new System.EventHandler(this.nameLabel_Click);
             // 
             // quantityLabel
             // 
@@ -156,7 +155,6 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "usedIngredientUC";
             this.Size = new System.Drawing.Size(1357, 56);
-            this.Load += new System.EventHandler(this.usedIngredientUC_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -31,7 +31,6 @@
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.closeLoginForm = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.signUpBtn = new Guna.UI2.WinForms.Guna2Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.emailTextbox = new Guna.UI2.WinForms.Guna2TextBox();
@@ -56,7 +55,6 @@
             this.guna2CustomGradientPanel1.BorderRadius = 160;
             this.guna2CustomGradientPanel1.Controls.Add(this.closeLoginForm);
             this.guna2CustomGradientPanel1.Controls.Add(this.label5);
-            this.guna2CustomGradientPanel1.Controls.Add(this.signUpBtn);
             this.guna2CustomGradientPanel1.Controls.Add(this.label4);
             this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
             this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
@@ -93,26 +91,6 @@
             this.label5.Text = "Register with your personal details to use all\r\nof site features";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // signUpBtn
-            // 
-            this.signUpBtn.BackColor = System.Drawing.Color.Transparent;
-            this.signUpBtn.BorderColor = System.Drawing.Color.White;
-            this.signUpBtn.BorderRadius = 10;
-            this.signUpBtn.BorderThickness = 1;
-            this.signUpBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.signUpBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.signUpBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.signUpBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.signUpBtn.FillColor = System.Drawing.Color.Transparent;
-            this.signUpBtn.Font = new System.Drawing.Font("SF Pro Display", 12F);
-            this.signUpBtn.ForeColor = System.Drawing.Color.White;
-            this.signUpBtn.Location = new System.Drawing.Point(197, 354);
-            this.signUpBtn.Name = "signUpBtn";
-            this.signUpBtn.Size = new System.Drawing.Size(150, 40);
-            this.signUpBtn.TabIndex = 10;
-            this.signUpBtn.Text = "SIGN UP";
-            this.signUpBtn.Click += new System.EventHandler(this.signUpBtn_Click);
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -122,7 +100,7 @@
             this.label4.Location = new System.Drawing.Point(154, 205);
             this.label4.Name = "label4";
             this.label4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label4.Size = new System.Drawing.Size(252, 48);
+            this.label4.Size = new System.Drawing.Size(259, 48);
             this.label4.TabIndex = 2;
             this.label4.Text = "Hello, Friend!";
             // 
@@ -132,7 +110,7 @@
             this.label1.Font = new System.Drawing.Font("SF Pro Display", 34.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(177, 62);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(205, 69);
+            this.label1.Size = new System.Drawing.Size(207, 69);
             this.label1.TabIndex = 1;
             this.label1.Text = "Sign In";
             // 
@@ -319,7 +297,6 @@
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2Button signInBtn;
         private System.Windows.Forms.Label check;
-        private Guna.UI2.WinForms.Guna2Button signUpBtn;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox closeLoginForm;

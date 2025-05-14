@@ -64,17 +64,13 @@ namespace RestaurantManagementSystem
                             staffImage.Image = Image.FromFile(picturePath);
                             staffImage.SizeMode = PictureBoxSizeMode.StretchImage;
                         }
-                       /* else
-                        {
-                            staffImage.Image = Properties.Resources.no_image;
-                        }*/
                     }
                     reader.Close();
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi hiển thị thông tin: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error displaying information: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -91,7 +87,6 @@ namespace RestaurantManagementSystem
                     SqlCommand cmd = new SqlCommand(query, conn);
                     SqlDataReader reader = cmd.ExecuteReader();
 
-                    // Xóa dữ liệu cũ trước khi thêm mới
                     staffListView.Items.Clear();
 
                     while (reader.Read())
@@ -111,7 +106,7 @@ namespace RestaurantManagementSystem
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi tải dữ liệu nhân viên: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error loading employee data: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -127,7 +122,6 @@ namespace RestaurantManagementSystem
             staffListView.FullRowSelect = true;
             staffListView.GridLines = true;
 
-            // Thiết lập các cột
             staffListView.Columns.Add("ID", 50, HorizontalAlignment.Center);
             staffListView.Columns.Add("Name", 150, HorizontalAlignment.Left);
             staffListView.Columns.Add("Sex", 80, HorizontalAlignment.Center);
@@ -159,14 +153,14 @@ namespace RestaurantManagementSystem
                     cmd.Parameters.AddWithValue("@Picture", finalImagePath);
 
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Thêm nhân viên thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Employee added successfully!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     ClearFields();
                     LoadStaffData();
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi thêm nhân viên: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error adding employee: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
@@ -203,7 +197,7 @@ namespace RestaurantManagementSystem
         {
             if (staffListView.SelectedItems.Count == 0)
             {
-                MessageBox.Show("Vui lòng chọn nhân viên cần cập nhật!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please select the employee to update!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -213,11 +207,10 @@ namespace RestaurantManagementSystem
                 int selectedId;
                 if (!int.TryParse(staffListView.SelectedItems[0].SubItems[0].Text, out selectedId))
                 {
-                    MessageBox.Show("Không thể lấy ID của nhân viên!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Unable to retrieve the employee's ID!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
-                // Lấy đường dẫn ảnh từ cơ sở dữ liệu nếu chưa chọn ảnh mới
                 string finalImagePath = imagePath;
                 string connectionString = db.Connectstring();
 
@@ -243,7 +236,6 @@ namespace RestaurantManagementSystem
                 {
                     conn.Open();
 
-                    // Câu lệnh UPDATE
                     string query = @"UPDATE Employee 
                              SET Name = @Name, 
                                  Sex = @Sex, 
@@ -256,11 +248,9 @@ namespace RestaurantManagementSystem
 
                     SqlCommand cmd = new SqlCommand(query, conn);
 
-                    // Đảm bảo giá trị hợp lệ từ ComboBox
                     string sexValue = sexComboBox.SelectedItem != null ? sexComboBox.SelectedItem.ToString() : "Male";
                     string positionValue = positionComboBox.SelectedItem != null ? positionComboBox.SelectedItem.ToString() : "Staff";
 
-                    // Thêm tham số từ các TextBox và ComboBox
                     cmd.Parameters.AddWithValue("@Name", nameTextBox.Text);
                     cmd.Parameters.AddWithValue("@Sex", sexValue);
                     cmd.Parameters.AddWithValue("@Position", positionValue);
@@ -274,22 +264,20 @@ namespace RestaurantManagementSystem
 
                     if (rowsAffected > 0)
                     {
-                        MessageBox.Show("Cập nhật thông tin nhân viên thành công!", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Employee information updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         ClearFields();
                         LoadStaffData();
                     }
                     else
                     {
-                        MessageBox.Show("Không tìm thấy nhân viên cần cập nhật!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Employee to update not found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi cập nhật nhân viên: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error updating employee: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-
         }
 
         private void checkButton_Click(object sender, EventArgs e)
@@ -302,7 +290,7 @@ namespace RestaurantManagementSystem
             string connectionString = db.Connectstring();
             if (staffListView.SelectedItems.Count == 0)
             {
-                MessageBox.Show("Vui lòng chọn nhân viên cần xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please select the employee to delete!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -317,58 +305,54 @@ namespace RestaurantManagementSystem
                     cmd.Parameters.AddWithValue("@ID", selectedId);
                     cmd.ExecuteNonQuery();
 
-                    // Tìm ID lớn nhất sau khi xóa
                     string maxIdQuery = "SELECT ISNULL(MAX(ID), 0) FROM Employee";
                     SqlCommand maxIdCmd = new SqlCommand(maxIdQuery, conn);
                     int maxId = (int)maxIdCmd.ExecuteScalar();
 
-                    // Đặt lại giá trị tự tăng
                     string reseedQuery = $"DBCC CHECKIDENT ('Employee', RESEED, {maxId})";
                     SqlCommand reseedCmd = new SqlCommand(reseedQuery, conn);
                     reseedCmd.ExecuteNonQuery();
 
-                    MessageBox.Show("Xóa nhân viên thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Employee deleted successfully!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     ClearFields();
                     LoadStaffData();
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi xóa nhân viên: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error deleting employee: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void seachButton_Click(object sender, EventArgs e)
         {
-            string keyword = searchTextBox.Text.Trim().ToLower();  // Lấy nội dung từ ô tìm kiếm
+            string keyword = searchTextBox.Text.Trim().ToLower(); 
 
             if (string.IsNullOrEmpty(keyword))
             {
-                MessageBox.Show("Vui lòng nhập tên nhân viên cần tìm!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please enter the employee's name to search!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
             foreach (ListViewItem item in staffListView.Items)
             {
-                string name = item.SubItems[0].Text.ToLower();  // Cột Name trong ListView
+                string name = item.SubItems[0].Text.ToLower();
 
                 if (name.Contains(keyword))
                 {
-                    // Chọn và focus vào dòng tìm thấy
                     item.Selected = true;
                     item.Focused = true;
                     item.EnsureVisible();
                     staffListView.Select();
 
-                    // Hiển thị bảng thông tin chi tiết
                     DisplayEmployeeInformation(item);
 
-                    MessageBox.Show($"Tìm thấy nhân viên: ID = {item.SubItems[0].Text}", "Kết quả", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show($"Found employee: ID = {item.SubItems[0].Text}", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
             }
 
-            MessageBox.Show("Không tìm thấy nhân viên nào phù hợp!", "Kết quả", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("No matching employee found!", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

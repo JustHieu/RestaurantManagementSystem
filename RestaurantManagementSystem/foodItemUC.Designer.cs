@@ -68,7 +68,7 @@
             this.priceLabel.Size = new System.Drawing.Size(77, 27);
             this.priceLabel.TabIndex = 14;
             this.priceLabel.Text = "120000";
-            this.priceLabel.Click += new System.EventHandler(this.lblPrice_Click);
+
             // 
             // nameLabel
             // 
@@ -80,7 +80,7 @@
             this.nameLabel.TabIndex = 6;
             this.nameLabel.Text = "THAI BEEF SALAT";
             this.nameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.nameLabel.Click += new System.EventHandler(this.nameLabel_Click);
+
             // 
             // panel1
             // 
@@ -91,7 +91,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(272, 93);
             this.panel1.TabIndex = 16;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+
             // 
             // descripLabel
             // 
@@ -111,7 +111,7 @@
             this.dishImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.dishImage.TabIndex = 13;
             this.dishImage.TabStop = false;
-            this.dishImage.Click += new System.EventHandler(this.pictureBox_Click);
+
             // 
             // guna2BorderlessForm1
             // 
@@ -133,7 +133,7 @@
             this.Name = "foodItemUC";
             this.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
             this.Size = new System.Drawing.Size(296, 372);
-            this.Load += new System.EventHandler(this.foodItemUC_Load);
+
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dishImage)).EndInit();

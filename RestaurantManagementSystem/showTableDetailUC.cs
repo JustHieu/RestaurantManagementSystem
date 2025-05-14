@@ -30,7 +30,7 @@ namespace RestaurantManagementSystem
             FoodName = name;
             Quantity = quantity;
             Price = price;
-            DishID = dishID; // gán ID món ăn
+            DishID = dishID; 
             nameLabel.Text = name;
             priceLabel.Text = $"{price:C}";
             quantityLabel.Text = quantity.ToString();
@@ -47,9 +47,9 @@ namespace RestaurantManagementSystem
         public void UpdateQuantity(int additionalQuantity)
         {
             Quantity += additionalQuantity;
-            priceLabel.Text = (Price * Quantity).ToString("C"); // Cập nhật lại tổng giá
-            quantityLabel.Text = Quantity.ToString();  // Cập nhật lại số lượng
-            TotalPrice = Price * Quantity;  // Cập nhật lại giá trị tổng
+            priceLabel.Text = (Price * Quantity).ToString("C");
+            quantityLabel.Text = Quantity.ToString();
+            TotalPrice = Price * Quantity; 
         }
 
     }

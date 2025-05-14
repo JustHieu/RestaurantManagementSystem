@@ -34,7 +34,6 @@ namespace RestaurantManagementSystem
                     conn.Open();
                     string query = "SELECT idThanhToan, idTable, time, totalAmount FROM PaymentHistory";
 
-                    // Nếu có từ khóa tìm kiếm, thêm điều kiện vào câu truy vấn
                     if (!string.IsNullOrEmpty(keyword))
                     {
                         query += " WHERE idTable LIKE @Keyword";
@@ -42,7 +41,6 @@ namespace RestaurantManagementSystem
 
                     SqlCommand cmd = new SqlCommand(query, conn);
 
-                    // Thêm tham số tìm kiếm nếu có
                     if (!string.IsNullOrEmpty(keyword))
                     {
                         cmd.Parameters.AddWithValue("@Keyword", "%" + keyword + "%");
@@ -58,7 +56,6 @@ namespace RestaurantManagementSystem
                         decimal totalAmount = Convert.ToDecimal(reader["totalAmount"]);
                         DateTime bookingTime = Convert.ToDateTime(reader["time"]);
 
-                        // Tạo một UserControl cho mỗi món ăn
                         managerTableHistoryMiniUC item = new managerTableHistoryMiniUC();
                         item.setIdThanhToan(idThanhToan);
                         item.Tag(id);
@@ -72,9 +69,8 @@ namespace RestaurantManagementSystem
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi tải dữ liệu: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Data loading error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
         }
 
         private void seachButton_Click(object sender, EventArgs e)

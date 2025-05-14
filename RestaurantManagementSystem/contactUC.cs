@@ -29,11 +29,9 @@ namespace RestaurantManagementSystem
             guna2PictureBox4.MouseLeave += (s, e) => ZoomOut(guna2PictureBox4);
             this.Resize += (s, e) =>
             {
-                // Đảm bảo rằng WebView2 luôn có góc bo tròn khi form thay đổi kích thước
                 ApplyRoundedCorners(webView21);
             };
 
-            // Gọi hàm để áp dụng bo tròn ngay từ đầu
             ApplyRoundedCorners(webView21);
         }
 
@@ -53,28 +51,27 @@ namespace RestaurantManagementSystem
         }
         private void ZoomIn(PictureBox pic)
         {
-            pic.Size = new Size((int)(pic.Width * 1.1), (int)(pic.Height * 1.1)); // Phóng to 10%
+            pic.Size = new Size((int)(pic.Width * 1.1), (int)(pic.Height * 1.1)); 
             pic.Location = new Point(pic.Location.X - (int)(pic.Width * 0.05), pic.Location.Y - (int)(pic.Height * 0.05)); // Giữ tâm
         }
 
         private void ZoomOut(PictureBox pic)
         {
-            pic.Size = new Size((int)(pic.Width / 1.1), (int)(pic.Height / 1.1)); // Thu nhỏ về ban đầu
-            pic.Location = new Point(pic.Location.X + (int)(pic.Width * 0.05), pic.Location.Y + (int)(pic.Height * 0.05)); // Giữ tâm
+            pic.Size = new Size((int)(pic.Width / 1.1), (int)(pic.Height / 1.1)); 
+            pic.Location = new Point(pic.Location.X + (int)(pic.Width * 0.05), pic.Location.Y + (int)(pic.Height * 0.05)); 
         }
         private void ApplyRoundedCorners(WebView2 webView)
         {
-            // Tạo một vùng bo tròn cho WebView2
+
             using (GraphicsPath path = new GraphicsPath())
             {
-                int cornerRadius = 30;  // Độ bo tròn của góc
-                path.AddArc(0, 0, cornerRadius, cornerRadius, 180, 90); // Top-left corner
-                path.AddArc(webView.Width - cornerRadius - 1, 0, cornerRadius, cornerRadius, 270, 90); // Top-right corner
-                path.AddArc(webView.Width - cornerRadius - 1, webView.Height - cornerRadius - 1, cornerRadius, cornerRadius, 0, 90); // Bottom-right corner
-                path.AddArc(0, webView.Height - cornerRadius - 1, cornerRadius, cornerRadius, 90, 90); // Bottom-left corner
+                int cornerRadius = 30; 
+                path.AddArc(0, 0, cornerRadius, cornerRadius, 180, 90); 
+                path.AddArc(webView.Width - cornerRadius - 1, 0, cornerRadius, cornerRadius, 270, 90); 
+                path.AddArc(webView.Width - cornerRadius - 1, webView.Height - cornerRadius - 1, cornerRadius, cornerRadius, 0, 90); 
+                path.AddArc(0, webView.Height - cornerRadius - 1, cornerRadius, cornerRadius, 90, 90); 
                 path.CloseFigure();
 
-                // Áp dụng vùng bo tròn cho WebView2
                 webView.Region = new Region(path);
             }
         }

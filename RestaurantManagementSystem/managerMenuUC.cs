@@ -84,7 +84,7 @@ namespace RestaurantManagementSystem
                                 dishImage.SizeMode = PictureBoxSizeMode.StretchImage;
                             }
 
-                            MessageBox.Show("Đã chọn món: " + name + " (ID: " + selectedDishId + ")");
+                            MessageBox.Show("Selected dish: " + name + " (ID: " + selectedDishId + ")");
                         };
 
                         if (File.Exists(picturePath))
@@ -99,7 +99,7 @@ namespace RestaurantManagementSystem
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi tải dữ liệu: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Failed to load data: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
@@ -132,14 +132,14 @@ namespace RestaurantManagementSystem
                     insertCmd.Parameters.AddWithValue("@DishID", newDishId);
                     insertCmd.ExecuteNonQuery();
 
-                    MessageBox.Show("Thêm món ăn mới thành công!", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("New dish added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     ClearFields();
                     LoadMenuItems();
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi thêm món ăn: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error adding dish: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -148,7 +148,7 @@ namespace RestaurantManagementSystem
         {
             if (selectedDishId == -1)
             {
-                MessageBox.Show("Vui lòng chọn món ăn cần xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please select a dish to delete!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -179,7 +179,7 @@ namespace RestaurantManagementSystem
                     int rowsAffected = deleteDishCmd.ExecuteNonQuery();
                     if (rowsAffected > 0)
                     {
-                        MessageBox.Show("Xóa món ăn thành công!", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Dish deleted successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         ClearFields();
                         LoadMenuItems();
                     }
@@ -187,10 +187,9 @@ namespace RestaurantManagementSystem
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi xóa món ăn: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error deleting dish: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         
         private void changeButton_Click(object sender, EventArgs e)
         {
@@ -198,7 +197,7 @@ namespace RestaurantManagementSystem
             string dishType = typeComboBox.SelectedItem.ToString();
             if (selectedDishId == -1)
             {
-                MessageBox.Show("Vui lòng chọn món ăn cần cập nhật!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please select a dish to update!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -216,19 +215,18 @@ namespace RestaurantManagementSystem
                     cmd.Parameters.AddWithValue("@Id", selectedDishId);
                     cmd.Parameters.AddWithValue("@Type", dishType);
                     cmd.ExecuteNonQuery();
-                    
-                    MessageBox.Show("Cập nhật món ăn thành công!", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    MessageBox.Show("Dish updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     ClearFields();  
                     LoadMenuItems();
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi cập nhật món ăn: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error updating dish: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-     
         private void ClearFields()
         {
             nameTextBox.Text = "";
@@ -237,11 +235,6 @@ namespace RestaurantManagementSystem
             dishImage.Image = null;
             imagePath = "";
             selectedDishId = -1;
-        }
-
-        private void managerMenuUC_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void seachBtn_Click(object sender, EventArgs e)
@@ -254,7 +247,7 @@ namespace RestaurantManagementSystem
         {
             if (selectedDishId == -1)
             {
-                MessageBox.Show("Vui lòng chọn một món ăn trước!");
+                MessageBox.Show("Please select a dish first!");
                 return;
             }
 
@@ -280,9 +273,5 @@ namespace RestaurantManagementSystem
             }
         }
 
-        private void menuPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }

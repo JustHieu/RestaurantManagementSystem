@@ -46,7 +46,6 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Used Ingredients";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // showPanel
             // 
@@ -81,7 +80,6 @@
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "managerUsedIngredient";
             this.Size = new System.Drawing.Size(1675, 932);
-            this.Load += new System.EventHandler(this.managerUsedIngredient_Load);
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             this.guna2CustomGradientPanel1.PerformLayout();
             this.ResumeLayout(false);

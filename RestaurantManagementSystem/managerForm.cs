@@ -23,7 +23,6 @@ namespace RestaurantManagementSystem
             menuButton_Click(null, EventArgs.Empty);
             _username = username;
         }
-
         private void menuButton_Click(object sender, EventArgs e)
         {
             managerMenuUC menu = new managerMenuUC();
@@ -135,16 +134,6 @@ namespace RestaurantManagementSystem
             this.Close();
         }
 
-        private void showPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void guna2Panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void accountSettingBtn_Click(object sender, EventArgs e)
         {
             int employeeID = getEmployeeID(_username);
@@ -191,7 +180,6 @@ namespace RestaurantManagementSystem
             }
             catch (Exception ex)
             {
-                // Xử lý lỗi nếu có
                 MessageBox.Show("Error: " + ex.Message);
             }
 

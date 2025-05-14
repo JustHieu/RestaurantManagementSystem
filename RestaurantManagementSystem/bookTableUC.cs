@@ -46,7 +46,7 @@ namespace RestaurantManagementSystem
 
                     if (availableTables.Count == 0)
                     {
-                        return -1;  // Không có bàn trống
+                        return -1;  
                     }
 
                     Random rand = new Random();
@@ -61,13 +61,12 @@ namespace RestaurantManagementSystem
             }
         }
 
-        //
         private Regex emailRegex = new Regex(@"^[^@\s]+@[^@\s]+\.[^@\s]+$", RegexOptions.Compiled);
         private Regex phoneRegex = new Regex(@"^\d+$", RegexOptions.Compiled);
         private string GenerateKey()
         {
             Random rand = new Random();
-            return rand.Next(100000, 999999).ToString();  // Random từ 100000 đến 999999
+            return rand.Next(100000, 999999).ToString();  
         }
         private bool IsTableAvailable(int tableId, DateTime selectedTime)
         {
@@ -90,7 +89,7 @@ namespace RestaurantManagementSystem
 
                         if (selectedTime < nextAvailableTime)
                         {
-                            MessageBox.Show("Bàn đã được đặt trước đó. Bạn chỉ có thể đặt sau: " + nextAvailableTime.ToString("HH:mm dd/MM/yyyy"));
+                            MessageBox.Show("This table has already been reserved. You can only book it after: " + nextAvailableTime.ToString("HH:mm dd/MM/yyyy"));
                             return false;
                         }
                     }
@@ -99,7 +98,7 @@ namespace RestaurantManagementSystem
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi kiểm tra bàn: " + ex.Message);
+                MessageBox.Show("Error while checking the table: " + ex.Message);
                 return false;
             }
         }
@@ -109,7 +108,6 @@ namespace RestaurantManagementSystem
         {
             bool isValid = true;
 
-            // Kiểm tra Name
             if (string.IsNullOrWhiteSpace(txtName.Text))
             {
                 errorProvider1.SetError(txtName, "The field is required.");
@@ -120,7 +118,6 @@ namespace RestaurantManagementSystem
                 errorProvider1.SetError(txtName, "");
             }
 
-            // Kiểm tra Phone
             if (string.IsNullOrWhiteSpace(txtPhone.Text) || !phoneRegex.IsMatch(txtPhone.Text))
             {
                 errorProvider1.SetError(txtPhone, "The telephone number is invalid.");
@@ -168,7 +165,6 @@ namespace RestaurantManagementSystem
                 {
                     conn.Open();
 
-                    // Cập nhật trạng thái bàn và thông tin người đặt
                     string updateQuery = "UPDATE Tables SET name = @Name, phone = @Phone, time = @ReservationTime, " +
                                          "personNumber = @PersonNumber, status = 'Full' WHERE idTable = @TableID";
                     SqlCommand updateCmd = new SqlCommand(updateQuery, conn);

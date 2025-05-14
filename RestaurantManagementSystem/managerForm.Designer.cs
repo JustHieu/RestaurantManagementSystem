@@ -67,7 +67,7 @@
             this.showPanel.Name = "showPanel";
             this.showPanel.Size = new System.Drawing.Size(1128, 987);
             this.showPanel.TabIndex = 18;
-            this.showPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.showPanel_Paint);
+
             // 
             // titleLabel
             // 
@@ -175,7 +175,7 @@
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.Size = new System.Drawing.Size(284, 1063);
             this.guna2Panel3.TabIndex = 16;
-            this.guna2Panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel3_Paint);
+
             // 
             // settingPanel
             // 

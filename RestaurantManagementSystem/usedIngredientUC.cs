@@ -19,20 +19,8 @@ namespace RestaurantManagementSystem
         public void SetData(string ingredientName, decimal quantity, DateTime usedTime)
         {
             nameLabel.Text = ingredientName;
-            quantityLabel.Text = quantity + "g";  // hoặc "ml", tuỳ loại
+            quantityLabel.Text = quantity + "g";  // hoặc "ml"
             timeLabel.Text = usedTime.ToString("dd/MM/yyyy HH:mm:ss");
-
-        }
-
-
-        private void usedIngredientUC_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void nameLabel_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

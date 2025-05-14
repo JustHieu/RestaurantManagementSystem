@@ -28,7 +28,6 @@ namespace RestaurantManagementSystem
         {
             string connectionString = db.Connectstring();
 
-            // Câu lệnh SQL để truy vấn thông tin nhân viên theo EmployeeID
             string query = "SELECT Name, Sex, Position, BirthOfDay, PhoneNumber, Address, Picture, status " +
                            "FROM Employee WHERE ID = @EmployeeID";
 
@@ -36,21 +35,16 @@ namespace RestaurantManagementSystem
             {
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
-                    // Mở kết nối tới cơ sở dữ liệu
                     connection.Open();
 
-                    // Tạo đối tượng SqlCommand để thực thi câu lệnh SQL
                     using (SqlCommand cmd = new SqlCommand(query, connection))
                     {
-                        // Thêm tham số EmployeeID vào câu lệnh SQL
                         cmd.Parameters.AddWithValue("@EmployeeID", _employeeID);
 
-                        // Thực thi câu lệnh và lấy dữ liệu
                         using (SqlDataReader reader = cmd.ExecuteReader())
                         {
                             if (reader.Read())
                             {
-                                // Đọc dữ liệu từ kết quả truy vấn và hiển thị lên form
                                 nameLabel.Text = reader["Name"].ToString();
                                 nameTextBox.Text = reader["Name"].ToString();
                                 genderLabel.Text = reader["Sex"].ToString();
@@ -69,14 +63,12 @@ namespace RestaurantManagementSystem
                                 {
                                     statusLabel.ForeColor = Color.Red;
                                 }
-                                // Hiển thị ảnh (nếu có đường dẫn ảnh trong Picture)
                                 string picturePath = reader["Picture"].ToString();
                                 if (!string.IsNullOrEmpty(picturePath))
                                 {
-                                    pictureBox.Image = Image.FromFile(picturePath);  // Hiển thị ảnh từ đường dẫn
+                                    pictureBox.Image = Image.FromFile(picturePath);  
                                 }
 
-                                
                             }
                         }
                     }
@@ -86,7 +78,6 @@ namespace RestaurantManagementSystem
             {
                 MessageBox.Show("Error loading employee data: " + ex.Message);
             }
-        
         
         }
         public string getPassword(string username)
@@ -107,10 +98,8 @@ namespace RestaurantManagementSystem
                     {
                         cmd.Parameters.AddWithValue("@Username", username);
 
-                        // Thực thi câu lệnh và lấy dữ liệu
-                        var result = cmd.ExecuteScalar(); // Lấy giá trị đầu tiên từ truy vấn
+                        var result = cmd.ExecuteScalar(); 
 
-                        // Nếu kết quả không phải DBNull (có kết quả trả về)
                         if (result != DBNull.Value)
                         {
                             password = result.ToString();
@@ -120,22 +109,10 @@ namespace RestaurantManagementSystem
             }
             catch (Exception ex)
             {
-                // Xử lý ngoại lệ (nếu có lỗi trong quá trình truy vấn)
                 MessageBox.Show("Error: " + ex.Message);
             }
 
-            return password;  // Trả về mật khẩu (hoặc null nếu không tìm thấy username)
-        }
-
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
+            return password; 
         }
 
         private void updateBtn_Click(object sender, EventArgs e)
@@ -147,52 +124,44 @@ namespace RestaurantManagementSystem
 
             if (!DateTime.TryParseExact(dobTextBox.Text, dateFormat, CultureInfo.InvariantCulture, DateTimeStyles.None, out birthDate))
             {
-                MessageBox.Show("Ngày sinh không hợp lệ. Vui lòng nhập lại ngày sinh theo định dạng dd/MM/yyyy.");
+                MessageBox.Show("Invalid date of birth. Please enter the date in the format dd/MM/yyyy.");
                 return;
             }
 
-
-            // Câu lệnh SQL để cập nhật thông tin nhân viên
             string query = "UPDATE Employee SET Name = @Name, Address = @Address, BirthOfDay = @BirthOfDay WHERE ID = @EmployeeID";
 
             try
             {
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
-                    // Mở kết nối tới cơ sở dữ liệu
                     connection.Open();
 
-                    // Khai báo SqlCommand để thực thi câu lệnh SQL
                     using (SqlCommand cmd = new SqlCommand(query, connection))
                     {
-                        // Thêm tham số vào câu lệnh SQL để tránh SQL Injection
-                        cmd.Parameters.AddWithValue("@Name", nameTextBox.Text);  // Tên từ TextBox
-                        cmd.Parameters.AddWithValue("@Address", addressTextBox.Text);  // Địa chỉ từ TextBox
-                        cmd.Parameters.AddWithValue("@BirthOfDay", birthDate);  // Ngày sinh từ TextBox sau khi kiểm tra hợp lệ
-                        cmd.Parameters.AddWithValue("@EmployeeID", _employeeID);  // EmployeeID từ form hoặc biến toàn cục
+                        cmd.Parameters.AddWithValue("@Name", nameTextBox.Text);  
+                        cmd.Parameters.AddWithValue("@Address", addressTextBox.Text); 
+                        cmd.Parameters.AddWithValue("@BirthOfDay", birthDate);  
+                        cmd.Parameters.AddWithValue("@EmployeeID", _employeeID);  
 
-                        // Thực thi câu lệnh SQL để cập nhật
                         int rowsAffected = cmd.ExecuteNonQuery();
 
-                        // Kiểm tra xem có dòng nào bị thay đổi hay không
                         if (rowsAffected > 0)
                         {
-                            MessageBox.Show("Cập nhật thông tin nhân viên thành công.");
+                            MessageBox.Show("Employee information updated successfully.");
                             LoadData();
                         }
                         else
                         {
-                            MessageBox.Show("Không có thay đổi nào được thực hiện.");
+                            MessageBox.Show("No changes were made.");
                         }
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi: " + ex.Message);
+                MessageBox.Show("Error: " + ex.Message);
             }
         }
-
         private void changePasswordBtn_Click(object sender, EventArgs e)
         {
             string connectionString = db.Connectstring();
@@ -203,7 +172,7 @@ namespace RestaurantManagementSystem
 
             if (newPassword == oldPassword)
             {
-                MessageBox.Show("Mật khẩu mới phải khác với mật khẩu cũ.");
+                MessageBox.Show("The new password must be different from the old password.");
                 return;
             }
 
@@ -217,25 +186,25 @@ namespace RestaurantManagementSystem
 
                     using (SqlCommand cmdUpdatePassword = new SqlCommand(queryUpdatePassword, connection))
                     {
-                        cmdUpdatePassword.Parameters.AddWithValue("@NewPassword", newPassword); // Set the new password
-                        cmdUpdatePassword.Parameters.AddWithValue("@Username", _username); // Set the username
+                        cmdUpdatePassword.Parameters.AddWithValue("@NewPassword", newPassword); 
+                        cmdUpdatePassword.Parameters.AddWithValue("@Username", _username); 
 
                         int rowsAffected = cmdUpdatePassword.ExecuteNonQuery();
 
                         if (rowsAffected > 0)
                         {
-                            MessageBox.Show("Mật khẩu đã được cập nhật thành công.");
+                            MessageBox.Show("The password has been updated successfully.");
                         }
                         else
                         {
-                            MessageBox.Show("Không thể cập nhật mật khẩu. Vui lòng thử lại.");
+                            MessageBox.Show("Unable to update the password. Please try again.");
                         }
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi khi thay đổi mật khẩu: " + ex.Message);
+                MessageBox.Show("Error when changing the password: " + ex.Message);
             }
         }
 
@@ -246,13 +215,13 @@ namespace RestaurantManagementSystem
 
             if (string.IsNullOrEmpty(phoneNumber))
             {
-                MessageBox.Show("Số điện thoại không thể để trống.");
+                MessageBox.Show("Phone number cannot be empty.");
                 return;
             }
 
             if (phoneNumber.Length < 10 || phoneNumber.Length > 11)
             {
-                MessageBox.Show("Số điện thoại không hợp lệ. Vui lòng nhập lại.");
+                MessageBox.Show("Invalid phone number. Please enter again.");
                 return;
             }
 
@@ -266,53 +235,27 @@ namespace RestaurantManagementSystem
 
                     using (SqlCommand cmd = new SqlCommand(query, connection))
                     {
-                        cmd.Parameters.AddWithValue("@PhoneNumber", phoneNumber); // Set the new phone number
-                        cmd.Parameters.AddWithValue("@EmployeeID", _employeeID); // EmployeeID from the form or class
+                        cmd.Parameters.AddWithValue("@PhoneNumber", phoneNumber); 
+                        cmd.Parameters.AddWithValue("@EmployeeID", _employeeID);
 
-                        // Execute the query to update the phone number
                         int rowsAffected = cmd.ExecuteNonQuery();
 
                         if (rowsAffected > 0)
                         {
-                            MessageBox.Show("Cập nhật số điện thoại thành công.");
+                            MessageBox.Show("The password has been updated successfully.");
                             LoadData(); 
                         }
                         else
                         {
-                            MessageBox.Show("Không thể cập nhật số điện thoại. Vui lòng thử lại.");
+                            MessageBox.Show("Unable to update the password. Please try again.");
                         }
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi khi cập nhật số điện thoại: " + ex.Message);
+                MessageBox.Show("Error updating phone number: " + ex.Message);
             }
-
-        }
-
-        private void statusLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void roleLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void genderLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void nameLabel_Click(object sender, EventArgs e)
-        {
 
         }
     }

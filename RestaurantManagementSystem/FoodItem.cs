@@ -8,11 +8,11 @@ namespace RestaurantManagementSystem
 {
     internal class FoodItem
     {
-        public int Id { get; set; }          // ID của món ăn
-        public string Name { get; set; }     // Tên của món ăn
-        public string Description { get; set; } // Mô tả của món ăn
-        public decimal Price { get; set; }   // Giá của món ăn
-        public string PicturePath { get; set; } // Đường dẫn đến hình ảnh món ăn
-        public string Type { get; set; }     // Loại món ăn (Main Dish, Starter, Beverage, ...)
+        public int Id { get; set; }          
+        public string Name { get; set; }     
+        public string Description { get; set; } 
+        public decimal Price { get; set; }  
+        public string PicturePath { get; set; } 
+        public string Type { get; set; }     
     }
 }

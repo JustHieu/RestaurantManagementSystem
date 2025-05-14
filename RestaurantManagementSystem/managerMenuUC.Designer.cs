@@ -146,7 +146,6 @@
             this.menuPanel.Name = "menuPanel";
             this.menuPanel.Size = new System.Drawing.Size(1145, 712);
             this.menuPanel.TabIndex = 50;
-            this.menuPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.menuPanel_Paint);
             // 
             // guna2CustomGradientPanel1
             // 
@@ -351,7 +350,6 @@
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
             this.Name = "managerMenuUC";
             this.Size = new System.Drawing.Size(1675, 932);
-            this.Load += new System.EventHandler(this.managerMenuUC_Load);
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dishImage)).EndInit();
             this.ResumeLayout(false);

@@ -86,7 +86,6 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(262, 170);
             this.guna2Panel1.TabIndex = 19;
-            this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
             // statusPanel
             // 
@@ -112,7 +111,6 @@
             this.idTableLabel.TabIndex = 20;
             this.idTableLabel.Text = "label2";
             this.idTableLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.idTableLabel.Click += new System.EventHandler(this.idTableLabel_Click);
             // 
             // label1
             // 
@@ -137,7 +135,6 @@
             this.Margin = new System.Windows.Forms.Padding(20);
             this.Name = "tableUC";
             this.Size = new System.Drawing.Size(262, 170);
-            this.Load += new System.EventHandler(this.tableUC_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.ResumeLayout(false);
