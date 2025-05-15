@@ -454,64 +454,95 @@ namespace RestaurantManagementSystem
         {
             string connectionString = db.Connectstring();
             string selectQuery = @"
-                                SELECT 
-                                    d.Name AS DishName,
-                                    i.Name AS IngredientName,
-                                    (dia.QuantityRequired * td.quantity) AS TotalQuantityRequired,
-                                    i.Price AS IngredientPrice,
-                                    td.quantity AS TableQuantity -- Số lượng món ăn từ TableDetail
-                                 FROM 
-                                    Tables t
-                                    JOIN BookingKey bk ON t.idTable = bk.idTable
-                                    JOIN TableDetail td ON bk.idBooking = td.idBooking
-                                    JOIN Dish d ON td.dishID = d.Id
-                                    JOIN DishIngredientAssignment dia ON d.Id = dia.DishID
-                                    JOIN Ingredient i ON dia.IngredientID = i.Id
-                                WHERE 
-                                    t.idTable = @idTable";
+        SELECT 
+            d.Name AS DishName,
+            i.Id AS IngredientID,
+            i.Name AS IngredientName,
+            (dia.QuantityRequired * td.quantity) AS TotalQuantityRequired,
+            i.Price AS IngredientPrice,
+            td.quantity AS TableQuantity
+        FROM 
+            Tables t
+            JOIN BookingKey bk ON t.idTable = bk.idTable
+            JOIN TableDetail td ON bk.idBooking = td.idBooking
+            JOIN Dish d ON td.dishID = d.Id
+            JOIN DishIngredientAssignment dia ON d.Id = dia.DishID
+            JOIN Ingredient i ON dia.IngredientID = i.Id
+        WHERE 
+            t.idTable = @idTable";
 
             string insertQuery = @"
-                                INSERT INTO UsedIngredient (idTable, DishName, Name, Quantity, Price, Amount)
-                                VALUES (@idTable, @DishName, @Name, @Quantity, @Price, @Amount)";
+        INSERT INTO UsedIngredient (idTable, DishName, Name, Quantity, Price, Amount, UsedTime)
+        VALUES (@idTable, @DishName, @Name, @Quantity, @Price, @Amount, GETDATE())";
+
+            string updateIngredientQuery = @"
+        UPDATE Ingredient
+        SET Quantity = Quantity - @UsedQuantity
+        WHERE Id = @IngredientID";
 
             try
             {
                 using (SqlConnection conn = new SqlConnection(connectionString))
                 {
                     conn.Open();
-
-                    SqlCommand selectCmd = new SqlCommand(selectQuery, conn);
-                    selectCmd.Parameters.AddWithValue("@idTable", idTable);
-                    SqlDataAdapter adapter = new SqlDataAdapter(selectCmd);
-                    DataTable dt = new DataTable();
-                    adapter.Fill(dt);
-
-                    foreach (DataRow row in dt.Rows)
+                    using (SqlTransaction transaction = conn.BeginTransaction())
                     {
-                        string dishName = row["DishName"].ToString();
-                        string ingredientName = row["IngredientName"].ToString();
-                        decimal quantity = Convert.ToDecimal(row["TotalQuantityRequired"]);
-                        decimal price = Convert.ToDecimal(row["IngredientPrice"]);
-                        int tableQuantity = Convert.ToInt32(row["TableQuantity"]);
-
-                        int amount = tableQuantity;
-                        using (SqlCommand insertCmd = new SqlCommand(insertQuery, conn))
+                        try
                         {
-                            insertCmd.Parameters.AddWithValue("@idTable", idTable);
-                            insertCmd.Parameters.AddWithValue("@DishName", dishName);
-                            insertCmd.Parameters.AddWithValue("@Name", ingredientName);
-                            insertCmd.Parameters.AddWithValue("@Quantity", quantity);
-                            insertCmd.Parameters.AddWithValue("@Price", price);
-                            insertCmd.Parameters.AddWithValue("@Amount", amount);
-                            insertCmd.ExecuteNonQuery();
+                            SqlCommand selectCmd = new SqlCommand(selectQuery, conn, transaction);
+                            selectCmd.Parameters.AddWithValue("@idTable", idTable);
+
+                            SqlDataAdapter adapter = new SqlDataAdapter(selectCmd);
+                            DataTable dt = new DataTable();
+                            adapter.Fill(dt);
+
+                            foreach (DataRow row in dt.Rows)
+                            {
+                                string dishName = row["DishName"].ToString();
+                                string ingredientName = row["IngredientName"].ToString();
+                                int ingredientId = Convert.ToInt32(row["IngredientID"]);
+                                decimal quantity = Convert.ToDecimal(row["TotalQuantityRequired"]);
+                                decimal price = Convert.ToDecimal(row["IngredientPrice"]);
+                                int tableQuantity = Convert.ToInt32(row["TableQuantity"]);
+
+                                int amount = tableQuantity;
+
+                                // Insert UsedIngredient
+                                using (SqlCommand insertCmd = new SqlCommand(insertQuery, conn, transaction))
+                                {
+                                    insertCmd.Parameters.AddWithValue("@idTable", idTable);
+                                    insertCmd.Parameters.AddWithValue("@DishName", dishName);
+                                    insertCmd.Parameters.AddWithValue("@Name", ingredientName);
+                                    insertCmd.Parameters.AddWithValue("@Quantity", quantity);
+                                    insertCmd.Parameters.AddWithValue("@Price", price);
+                                    insertCmd.Parameters.AddWithValue("@Amount", amount);
+                                    insertCmd.ExecuteNonQuery();
+                                }
+
+                                // Update trừ kho Ingredient
+                                using (SqlCommand updateCmd = new SqlCommand(updateIngredientQuery, conn, transaction))
+                                {
+                                    updateCmd.Parameters.AddWithValue("@UsedQuantity", quantity);
+                                    updateCmd.Parameters.AddWithValue("@IngredientID", ingredientId);
+                                    updateCmd.ExecuteNonQuery();
+                                }
+                            }
+
+                            transaction.Commit();
+                        }
+                        catch (Exception ex)
+                        {
+                            transaction.Rollback();
+                            MessageBox.Show("Error adding ingredients and updating stock: " + ex.Message);
                         }
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error adding ingredients to UsedIngredient: " + ex.Message);
+                MessageBox.Show("Database connection error: " + ex.Message);
             }
         }
+
     }
 }

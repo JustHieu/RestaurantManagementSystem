@@ -25,6 +25,39 @@ namespace RestaurantManagementSystem
             LoadOrderDetails(); 
             LoadMenu();  
         }
+        private void SearchDishByName(string keyword)
+        {
+            menuPanel.Controls.Clear(); 
+
+            Database db = new Database();
+            string connectionString = db.Connectstring();
+            string query = "SELECT Id, Name, Descrip, Price, Picture FROM Dish WHERE Name LIKE @keyword";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@keyword", "%" + keyword + "%");
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    int dishID = reader.GetInt32(0);
+                    string name = reader.GetString(1);
+                    string descrip = reader.IsDBNull(2) ? "No description" : reader.GetString(2);
+                    decimal price = reader.GetDecimal(3);
+                    string imagePath = reader.IsDBNull(4) ? "default.jpg" : reader.GetString(4);
+
+                    foodItemUC item = new foodItemUC();
+                    item.SetData(dishID, name, descrip, price, imagePath);
+                    item.OnAddFood += (s, e) => AddToOrder(item);
+
+                    menuPanel.Controls.Add(item);
+                }
+
+                reader.Close();
+            }
+        }
 
         private SqlDataReader GetMenuData()
         {
@@ -67,6 +100,31 @@ namespace RestaurantManagementSystem
             }
             reader?.Close();
         }
+        private void DeleteSavedDishFromDatabase(int dishId)
+        {
+            Database db = new Database();
+            string connectionString = db.Connectstring();
+            string query = @"DELETE FROM TableDetail 
+                     WHERE idBooking = @idBooking AND idTable = @tableId AND dishID = @dishId";
+
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(connectionString))
+                {
+                    conn.Open();
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@idBooking", idBooking);
+                    cmd.Parameters.AddWithValue("@tableId", tableId);
+                    cmd.Parameters.AddWithValue("@dishId", dishId);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("❌ Error: " + ex.Message);
+            }
+        }
+
 
         private void LoadOrderDetails()
         {
@@ -102,7 +160,13 @@ namespace RestaurantManagementSystem
                         decimal unitPrice = totalPrice / quantity; 
 
                         foodOrderUC orderItem = new foodOrderUC();
-                        orderItem.SetData(dishID, name, unitPrice, quantity); 
+                        orderItem.SetData(dishID, name, unitPrice, quantity);
+                        orderItem.OnDeleteFood += (s, e) =>
+                        {
+                            DeleteSavedDishFromDatabase(dishID);  
+                            showPanel.Controls.Remove(orderItem); 
+                            LoadOrderDetails(); 
+                        };
                         showPanel.Controls.Add(orderItem);
                         
 
@@ -259,5 +323,22 @@ namespace RestaurantManagementSystem
             }
         }
 
+        private void bookTableFrm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void seachButton_Click(object sender, EventArgs e)
+        {
+            string keyword = searchTextBox.Text.Trim();
+            if (!string.IsNullOrEmpty(keyword))
+            {
+                SearchDishByName(keyword);
+            }
+            else
+            {
+                LoadMenu(); 
+            }
+        }
     }
 }

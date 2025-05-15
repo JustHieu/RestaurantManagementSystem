@@ -219,7 +219,6 @@
             this.positionComboBox.ItemHeight = 30;
             this.positionComboBox.Items.AddRange(new object[] {
             "Waiter",
-            "Manager",
             "Chef"});
             this.positionComboBox.Location = new System.Drawing.Point(229, 338);
             this.positionComboBox.Name = "positionComboBox";

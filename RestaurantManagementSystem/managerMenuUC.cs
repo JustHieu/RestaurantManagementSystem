@@ -113,6 +113,18 @@ namespace RestaurantManagementSystem
                 using (SqlConnection conn = new SqlConnection(connectionString))
                 {
                     conn.Open();
+                    string newDishName = nameTextBox.Text.Trim().ToLower();
+                    string checkQuery = "SELECT COUNT(*) FROM Dish WHERE LOWER(Name) = @Name";
+                    SqlCommand checkCmd = new SqlCommand(checkQuery, conn);
+                    checkCmd.Parameters.AddWithValue("@Name", newDishName);
+
+                    int exists = (int)checkCmd.ExecuteScalar();
+                    if (exists > 0)
+                    {
+                        MessageBox.Show("The dish already exists. Please try again!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+
                     string query = "INSERT INTO Dish (Name, Descrip, Price, Picture, Type) VALUES (@Name, @Descrip, @Price, @Picture, @Type)";
                     SqlCommand cmd = new SqlCommand(query, conn);
                     cmd.Parameters.AddWithValue("@Name", nameTextBox.Text);
@@ -273,5 +285,9 @@ namespace RestaurantManagementSystem
             }
         }
 
+        private void managerMenuUC_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -159,29 +159,45 @@ namespace RestaurantManagementSystem
         {
             if (ingredientListView.SelectedItems.Count == 0)
             {
-                MessageBox.Show("Please select the ingredient to delete!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please choose your ingredient", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+
             Database db = new Database();
             string connectionString = db.Connectstring();
+
             try
             {
                 using (SqlConnection conn = new SqlConnection(connectionString))
                 {
                     conn.Open();
                     int selectedId = int.Parse(ingredientListView.SelectedItems[0].Text);
+
+                    
+                    string checkQuery = "SELECT COUNT(*) FROM DishIngredientAssignment WHERE IngredientID = @Id";
+                    SqlCommand checkCmd = new SqlCommand(checkQuery, conn);
+                    checkCmd.Parameters.AddWithValue("@Id", selectedId);
+                    int count = (int)checkCmd.ExecuteScalar();
+
+                    if (count > 0)
+                    {
+                        MessageBox.Show("Cannot delete the ingredient because it is being used in a dish!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+
+                    
                     string query = "DELETE FROM Ingredient WHERE Id = @Id";
                     SqlCommand cmd = new SqlCommand(query, conn);
                     cmd.Parameters.AddWithValue("@Id", selectedId);
 
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Ingredient deleted successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Delete ingredient succesfully", "Succesfull", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     LoadIngredients();
                 }
             }
             catch (Exception ex)
             {
-                    MessageBox.Show("Error deleting ingredient: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error deleting inngredient: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

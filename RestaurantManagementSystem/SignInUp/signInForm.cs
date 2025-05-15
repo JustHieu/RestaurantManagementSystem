@@ -44,16 +44,7 @@ namespace RestaurantManagementSystem
 
         private void signUpBtn_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            signUpForm signUpForm = new signUpForm();
-            signUpForm.Show();
             
-                signUpForm.FormClosed += (s, args) =>
-                {
-                    
-                        this.Show();
-                    
-                };
             
         }
 

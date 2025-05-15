@@ -83,7 +83,8 @@ namespace RestaurantManagementSystem
                 using (SqlConnection conn = new SqlConnection(connectionString))
                 {
                     conn.Open();
-                    string query = "SELECT ID, Name, Sex, Position, BirthOfDay, PhoneNumber, Address FROM Employee";
+                    // Modified query to exclude employees with status 'Deactive'
+                    string query = "SELECT ID, Name, Sex, Position, BirthOfDay, PhoneNumber, Address FROM Employee WHERE status = 'Active'";
                     SqlCommand cmd = new SqlCommand(query, conn);
                     SqlDataReader reader = cmd.ExecuteReader();
 
@@ -142,7 +143,10 @@ namespace RestaurantManagementSystem
 
                     string finalImagePath = string.IsNullOrEmpty(imagePath) ? "default.jpg" : imagePath;
 
-                    string query = "INSERT INTO Employee (Name, Sex, Position, BirthOfDay, PhoneNumber, Address, Picture) VALUES (@Name, @Sex, @Position, @BirthOfDay, @PhoneNumber, @Address, @Picture)";
+                    // Modified query to return the inserted ID
+                    string query = "INSERT INTO Employee (Name, Sex, Position, BirthOfDay, PhoneNumber, Address, Picture) " +
+                                  "OUTPUT INSERTED.ID " +
+                                  "VALUES (@Name, @Sex, @Position, @BirthOfDay, @PhoneNumber, @Address, @Picture)";
                     SqlCommand cmd = new SqlCommand(query, conn);
                     cmd.Parameters.AddWithValue("@Name", nameTextBox.Text);
                     cmd.Parameters.AddWithValue("@Sex", sexComboBox.SelectedItem?.ToString() ?? "Male");
@@ -152,10 +156,12 @@ namespace RestaurantManagementSystem
                     cmd.Parameters.AddWithValue("@Address", addressTextBox.Text);
                     cmd.Parameters.AddWithValue("@Picture", finalImagePath);
 
-                    cmd.ExecuteNonQuery();
+                    // ExecuteScalar to get the new ID
+                    int newEmployeeId = (int)cmd.ExecuteScalar();
                     MessageBox.Show("Employee added successfully!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     ClearFields();
                     LoadStaffData();
+                    openFormSignUp(newEmployeeId);
                 }
             }
             catch (Exception ex)
@@ -163,6 +169,11 @@ namespace RestaurantManagementSystem
                 MessageBox.Show("Error adding employee: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
+        }
+        private void openFormSignUp(int id)
+        {
+            signUpForm signUp = new signUpForm(id);
+            signUp.Show();
         }
         private void ClearFields()
         {
@@ -282,7 +293,57 @@ namespace RestaurantManagementSystem
 
         private void checkButton_Click(object sender, EventArgs e)
         {
+            if (staffListView.SelectedItems.Count == 0)
+            {
+                MessageBox.Show("Please select an employee to check!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
+            try
+            {
+                // Get the selected employee's name from staffListView (SubItems[1] is Name)
+                string selectedName = staffListView.SelectedItems[0].SubItems[1].Text;
+                string connectionString = db.Connectstring();
+
+                using (SqlConnection conn = new SqlConnection(connectionString))
+                {
+                    conn.Open();
+
+                    // Query to get the ID from Employee table based on the name
+                    string employeeQuery = "SELECT ID FROM Employee WHERE Name = @Name AND status = 'Active'";
+                    SqlCommand employeeCmd = new SqlCommand(employeeQuery, conn);
+                    employeeCmd.Parameters.AddWithValue("@Name", selectedName);
+                    object result = employeeCmd.ExecuteScalar();
+
+                    if (result == null)
+                    {
+                        MessageBox.Show("Employee not found in the database!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+
+                    int selectedId = (int)result;
+
+                    // Check if the employee has an account
+                    string accountQuery = "SELECT COUNT(*) FROM Account WHERE EmployeeID = @EmployeeID";
+                    SqlCommand accountCmd = new SqlCommand(accountQuery, conn);
+                    accountCmd.Parameters.AddWithValue("@EmployeeID", selectedId);
+                    int accountCount = (int)accountCmd.ExecuteScalar();
+
+                    if (accountCount > 0)
+                    {
+                        MessageBox.Show("This employee already has an account.", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show($"No account found for {selectedName}. Opening signup form...", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        openFormSignUp(selectedId);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error checking account: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void deleteButton_Click(object sender, EventArgs e)
@@ -290,7 +351,7 @@ namespace RestaurantManagementSystem
             string connectionString = db.Connectstring();
             if (staffListView.SelectedItems.Count == 0)
             {
-                MessageBox.Show("Please select the employee to delete!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please select the employee to deactivate!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -300,27 +361,36 @@ namespace RestaurantManagementSystem
                 {
                     conn.Open();
                     int selectedId = int.Parse(staffListView.SelectedItems[0].SubItems[0].Text);
-                    string query = "DELETE FROM Employee WHERE ID = @ID";
-                    SqlCommand cmd = new SqlCommand(query, conn);
-                    cmd.Parameters.AddWithValue("@ID", selectedId);
-                    cmd.ExecuteNonQuery();
 
-                    string maxIdQuery = "SELECT ISNULL(MAX(ID), 0) FROM Employee";
-                    SqlCommand maxIdCmd = new SqlCommand(maxIdQuery, conn);
-                    int maxId = (int)maxIdCmd.ExecuteScalar();
+                    // Update status to "Deactive" in Employee table
+                    string updateEmployeeQuery = "UPDATE Employee SET status = @Status WHERE ID = @ID";
+                    SqlCommand updateEmployeeCmd = new SqlCommand(updateEmployeeQuery, conn);
+                    updateEmployeeCmd.Parameters.AddWithValue("@Status", "Deactive");
+                    updateEmployeeCmd.Parameters.AddWithValue("@ID", selectedId);
+                    int employeeRowsAffected = updateEmployeeCmd.ExecuteNonQuery();
 
-                    string reseedQuery = $"DBCC CHECKIDENT ('Employee', RESEED, {maxId})";
-                    SqlCommand reseedCmd = new SqlCommand(reseedQuery, conn);
-                    reseedCmd.ExecuteNonQuery();
+                    // Update status to "Deactive" in Account table
+                    string updateAccountQuery = "UPDATE Account SET status = @Status WHERE EmployeeID = @EmployeeID";
+                    SqlCommand updateAccountCmd = new SqlCommand(updateAccountQuery, conn);
+                    updateAccountCmd.Parameters.AddWithValue("@Status", "Deactive");
+                    updateAccountCmd.Parameters.AddWithValue("@EmployeeID", selectedId);
+                    updateAccountCmd.ExecuteNonQuery();
 
-                    MessageBox.Show("Employee deleted successfully!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    ClearFields();
-                    LoadStaffData();
+                    if (employeeRowsAffected > 0)
+                    {
+                        MessageBox.Show("Employee and associated account(s) deactivated successfully!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        ClearFields();
+                        LoadStaffData();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Employee to deactivate not found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error deleting employee: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error deactivating employee: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
