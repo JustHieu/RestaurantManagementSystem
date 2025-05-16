@@ -32,22 +32,24 @@
             this.showPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.titleLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.notificationButton = new System.Windows.Forms.Button();
             this.accountLabel = new System.Windows.Forms.Label();
-            this.accontPictureBox = new System.Windows.Forms.PictureBox();
-            this.quitButton = new System.Windows.Forms.Button();
             this.menuPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.settingPanel = new Guna.UI2.WinForms.Guna2Panel();
-            this.settingBtn = new Guna.UI2.WinForms.Guna2Button();
             this.tableStatusPanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.reservationListPanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.notificationButton = new System.Windows.Forms.Button();
+            this.accontPictureBox = new System.Windows.Forms.PictureBox();
+            this.quitButton = new System.Windows.Forms.Button();
+            this.reservationListButton = new Guna.UI2.WinForms.Guna2Button();
+            this.settingBtn = new Guna.UI2.WinForms.Guna2Button();
             this.tableStatusButton = new Guna.UI2.WinForms.Guna2Button();
             this.menuButton = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.logOutButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.accontPictureBox)).BeginInit();
             this.guna2Panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.accontPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,6 +87,71 @@
             this.panel1.Size = new System.Drawing.Size(1156, 76);
             this.panel1.TabIndex = 20;
             // 
+            // accountLabel
+            // 
+            this.accountLabel.AutoSize = true;
+            this.accountLabel.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accountLabel.ForeColor = System.Drawing.Color.White;
+            this.accountLabel.Location = new System.Drawing.Point(1392, 25);
+            this.accountLabel.Name = "accountLabel";
+            this.accountLabel.Size = new System.Drawing.Size(70, 27);
+            this.accountLabel.TabIndex = 13;
+            this.accountLabel.Text = "STAFF";
+            // 
+            // menuPanel
+            // 
+            this.menuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.menuPanel.Location = new System.Drawing.Point(3, 198);
+            this.menuPanel.Name = "menuPanel";
+            this.menuPanel.Size = new System.Drawing.Size(10, 70);
+            this.menuPanel.TabIndex = 11;
+            // 
+            // guna2Panel3
+            // 
+            this.guna2Panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
+            this.guna2Panel3.Controls.Add(this.reservationListPanel);
+            this.guna2Panel3.Controls.Add(this.reservationListButton);
+            this.guna2Panel3.Controls.Add(this.settingPanel);
+            this.guna2Panel3.Controls.Add(this.settingBtn);
+            this.guna2Panel3.Controls.Add(this.tableStatusPanel);
+            this.guna2Panel3.Controls.Add(this.menuPanel);
+            this.guna2Panel3.Controls.Add(this.tableStatusButton);
+            this.guna2Panel3.Controls.Add(this.menuButton);
+            this.guna2Panel3.Controls.Add(this.pictureBox2);
+            this.guna2Panel3.Controls.Add(this.logOutButton);
+            this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2Panel3.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel3.Name = "guna2Panel3";
+            this.guna2Panel3.Size = new System.Drawing.Size(256, 735);
+            this.guna2Panel3.TabIndex = 19;
+            // 
+            // settingPanel
+            // 
+            this.settingPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.settingPanel.Location = new System.Drawing.Point(3, 349);
+            this.settingPanel.Name = "settingPanel";
+            this.settingPanel.Size = new System.Drawing.Size(10, 70);
+            this.settingPanel.TabIndex = 19;
+            this.settingPanel.Visible = false;
+            // 
+            // tableStatusPanel
+            // 
+            this.tableStatusPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.tableStatusPanel.Location = new System.Drawing.Point(3, 274);
+            this.tableStatusPanel.Name = "tableStatusPanel";
+            this.tableStatusPanel.Size = new System.Drawing.Size(10, 70);
+            this.tableStatusPanel.TabIndex = 15;
+            this.tableStatusPanel.Visible = false;
+            // 
+            // reservationListPanel
+            // 
+            this.reservationListPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.reservationListPanel.Location = new System.Drawing.Point(3, 425);
+            this.reservationListPanel.Name = "reservationListPanel";
+            this.reservationListPanel.Size = new System.Drawing.Size(10, 70);
+            this.reservationListPanel.TabIndex = 21;
+            this.reservationListPanel.Visible = false;
+            // 
             // notificationButton
             // 
             this.notificationButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -97,17 +164,6 @@
             this.notificationButton.Size = new System.Drawing.Size(46, 45);
             this.notificationButton.TabIndex = 19;
             this.notificationButton.UseVisualStyleBackColor = true;
-            // 
-            // accountLabel
-            // 
-            this.accountLabel.AutoSize = true;
-            this.accountLabel.Font = new System.Drawing.Font("Philosopher", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.accountLabel.ForeColor = System.Drawing.Color.White;
-            this.accountLabel.Location = new System.Drawing.Point(1392, 25);
-            this.accountLabel.Name = "accountLabel";
-            this.accountLabel.Size = new System.Drawing.Size(70, 27);
-            this.accountLabel.TabIndex = 13;
-            this.accountLabel.Text = "STAFF";
             // 
             // accontPictureBox
             // 
@@ -134,39 +190,27 @@
             this.quitButton.UseVisualStyleBackColor = true;
             this.quitButton.Click += new System.EventHandler(this.quitButton_Click);
             // 
-            // menuPanel
+            // reservationListButton
             // 
-            this.menuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.menuPanel.Location = new System.Drawing.Point(3, 198);
-            this.menuPanel.Name = "menuPanel";
-            this.menuPanel.Size = new System.Drawing.Size(10, 70);
-            this.menuPanel.TabIndex = 11;
-            // 
-            // guna2Panel3
-            // 
-            this.guna2Panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
-            this.guna2Panel3.Controls.Add(this.settingPanel);
-            this.guna2Panel3.Controls.Add(this.settingBtn);
-            this.guna2Panel3.Controls.Add(this.tableStatusPanel);
-            this.guna2Panel3.Controls.Add(this.menuPanel);
-            this.guna2Panel3.Controls.Add(this.tableStatusButton);
-            this.guna2Panel3.Controls.Add(this.menuButton);
-            this.guna2Panel3.Controls.Add(this.pictureBox2);
-            this.guna2Panel3.Controls.Add(this.logOutButton);
-            this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2Panel3.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(256, 735);
-            this.guna2Panel3.TabIndex = 19;
-            // 
-            // settingPanel
-            // 
-            this.settingPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.settingPanel.Location = new System.Drawing.Point(3, 349);
-            this.settingPanel.Name = "settingPanel";
-            this.settingPanel.Size = new System.Drawing.Size(10, 70);
-            this.settingPanel.TabIndex = 19;
-            this.settingPanel.Visible = false;
+            this.reservationListButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.reservationListButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.reservationListButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.reservationListButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.reservationListButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
+            this.reservationListButton.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold);
+            this.reservationListButton.ForeColor = System.Drawing.Color.White;
+            this.reservationListButton.Image = global::RestaurantManagementSystem.Properties.Resources.history;
+            this.reservationListButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.reservationListButton.ImageOffset = new System.Drawing.Point(20, 0);
+            this.reservationListButton.Location = new System.Drawing.Point(3, 425);
+            this.reservationListButton.Name = "reservationListButton";
+            this.reservationListButton.Size = new System.Drawing.Size(253, 70);
+            this.reservationListButton.TabIndex = 22;
+            this.reservationListButton.Text = "Reservation List";
+            this.reservationListButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.reservationListButton.TextFormatNoPrefix = true;
+            this.reservationListButton.TextOffset = new System.Drawing.Point(30, 0);
+            this.reservationListButton.Click += new System.EventHandler(this.reservationListButton_Click);
             // 
             // settingBtn
             // 
@@ -188,15 +232,6 @@
             this.settingBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.settingBtn.TextOffset = new System.Drawing.Point(30, 0);
             this.settingBtn.Click += new System.EventHandler(this.settingBtn_Click);
-            // 
-            // tableStatusPanel
-            // 
-            this.tableStatusPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.tableStatusPanel.Location = new System.Drawing.Point(3, 274);
-            this.tableStatusPanel.Name = "tableStatusPanel";
-            this.tableStatusPanel.Size = new System.Drawing.Size(10, 70);
-            this.tableStatusPanel.TabIndex = 15;
-            this.tableStatusPanel.Visible = false;
             // 
             // tableStatusButton
             // 
@@ -283,8 +318,8 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.accontPictureBox)).EndInit();
             this.guna2Panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.accontPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
@@ -308,5 +343,7 @@
         private System.Windows.Forms.Button logOutButton;
         private Guna.UI2.WinForms.Guna2Panel settingPanel;
         private Guna.UI2.WinForms.Guna2Button settingBtn;
+        private Guna.UI2.WinForms.Guna2Panel reservationListPanel;
+        private Guna.UI2.WinForms.Guna2Button reservationListButton;
     }
 }

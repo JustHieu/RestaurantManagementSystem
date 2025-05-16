@@ -16,7 +16,7 @@ namespace RestaurantManagementSystem
         }
         public string Connectstring()
         {
-            string str = "Data Source=.\\SQLEXPRESS;Initial Catalog=RestaurantData;Persist Security Info=True;User ID=sa;Password=123";
+            string str = "Data Source=LAPTOP-HCL43H54;Initial Catalog=RestaurantData;Persist Security Info=True;User ID=sa;Password=123";
             return str;
         }
     }

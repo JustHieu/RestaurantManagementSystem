@@ -396,6 +396,12 @@
     <Compile Include="staffForm.Designer.cs">
       <DependentUpon>staffForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="staffItemReservationUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="staffItemReservationUC.Designer.cs">
+      <DependentUpon>staffItemReservationUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="staffKitchenUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -407,6 +413,12 @@
     </Compile>
     <Compile Include="staffMenuUC.Designer.cs">
       <DependentUpon>staffMenuUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="staffReservationListUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="staffReservationListUC.Designer.cs">
+      <DependentUpon>staffReservationListUC.cs</DependentUpon>
     </Compile>
     <Compile Include="staffTableStatusUC.cs">
       <SubType>UserControl</SubType>
@@ -518,11 +530,17 @@
     <EmbeddedResource Include="staffForm.resx">
       <DependentUpon>staffForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="staffItemReservationUC.resx">
+      <DependentUpon>staffItemReservationUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="staffKitchenUC.resx">
       <DependentUpon>staffKitchenUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="staffMenuUC.resx">
       <DependentUpon>staffMenuUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staffReservationListUC.resx">
+      <DependentUpon>staffReservationListUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="staffTableStatusUC.resx">
       <DependentUpon>staffTableStatusUC.cs</DependentUpon>

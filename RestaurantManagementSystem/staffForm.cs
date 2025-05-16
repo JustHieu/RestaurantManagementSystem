@@ -82,10 +82,12 @@ namespace RestaurantManagementSystem
             menuButton.FillColor = Color.FromArgb(20, 28, 38);
             tableStatusButton.FillColor = Color.FromArgb(20, 28, 38);
             settingBtn.FillColor = Color.FromArgb(20, 28, 38);
+            reservationListButton.FillColor = Color.FromArgb(20, 28, 38);
 
             menuPanel.Visible = false;
             tableStatusPanel.Visible = false;
             settingPanel.Visible = false;
+            reservationListPanel.Visible = false;
         }
 
         private void quitButton_Click(object sender, EventArgs e)
@@ -143,6 +145,24 @@ namespace RestaurantManagementSystem
             }
 
             return employeeID;
+        }
+
+        private void reservationListButton_Click(object sender, EventArgs e)
+        {
+            staffReservationListUC kc = new staffReservationListUC();
+            showPanel.Controls.Clear();
+            kc.Dock = DockStyle.Fill;
+            showPanel.Controls.Add(kc);
+
+            ResetButtonColors();
+            reservationListPanel.Visible = true;
+
+            Guna.UI2.WinForms.Guna2Button clickedButton = sender as Guna.UI2.WinForms.Guna2Button;
+            if (clickedButton != null)
+            {
+                clickedButton.FillColor = Color.FromArgb(50, 58, 68);
+                titleLabel.Text = "Reservation List";
+            }
         }
     }
 }
